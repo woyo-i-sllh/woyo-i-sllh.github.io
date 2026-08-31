@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+/* 图片图注（可爱字体） */
+.markdown-body figure {
+  margin: 1.75rem auto;
+  text-align: center;
+}
+.markdown-body figure img {
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.markdown-body figure figcaption {
+  margin-top: 0.6rem;
+  font-family: 'ZCOOL KuaiLe', '幼圆', 'YouYuan', 'Microsoft YaHei', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  color: #7a6a8c;
+  text-align: center;
+}
+.markdown-body figure figcaption::before {
+  content: '✦ ';
+  color: #e0a1c0;
+}
+.markdown-body figure figcaption::after {
+  content: ' ✦';
+  color: #e0a1c0;
+}
