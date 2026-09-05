@@ -25,3 +25,21 @@
   content: ' ✦';
   color: #e0a1c0;
 }
+
+/* 图片四宫格画廊 */
+.markdown-body figure.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 1.5rem 0 1rem;
+}
+.markdown-body figure.gallery img {
+  flex: 1 1 calc(25% - 8px);
+  min-width: 140px;
+  max-width: 100%;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .markdown-body figure.gallery img { flex-basis: calc(50% - 5px); }
+}
