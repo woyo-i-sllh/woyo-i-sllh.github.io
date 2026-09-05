@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>すずめ - RADWIMPS feat.十明｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#e03131;--accent-soft:rgba(224,49,49,.28);--bg1:#fff7f7;--bg2:#ffe0e0;--bg3:#fff0f0;--card:rgba(255,255,255,.87);--hover:rgba(224,49,49,.07);--line:rgba(224,49,49,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
+  color:var(--accent);margin:34px 0 14px;}
+.part-label:first-child{margin-top:2px;}
+.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
+.stanza{margin:0 0 6px;}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">すずめ</h1>
+    <div class="cn-title">铃芽</div>
+    <div class="artist">RADWIMPS feat.十明</div>
+    <p class="subtitle">《铃芽之旅》主题曲 —— 门后是灾难与别离，身后是想见的人；少女一路奔跑，去关上那扇扇往门。</p>
+    <div class="credit">作詞・作曲：野田洋次郎 ／ RADWIMPS feat.十明 ／ 映画『すずめの戸締まり』主題歌</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にある <ruby>赤<rt>あか</rt></ruby>と<ruby>青<rt>あお</rt></ruby>き<ruby>線<rt>せん</rt></ruby></div><div class="cn">存在于你体内的红色与蓝色丝线</div></div>
+<div class="row"><div class="jp">それらが<ruby>結<rt>むす</rt></ruby>ばれるのは <ruby>心<rt>しん</rt></ruby>の<ruby>臓<rt>ぞう</rt></ruby></div><div class="cn">将它们系在一起的，是心脏</div></div>
+<div class="row"><div class="jp"><ruby>風<rt>かぜ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>でも<ruby>負<rt>ま</rt></ruby>けないような<ruby>声<rt>こえ</rt></ruby>で</div><div class="cn">用那即使在风中也绝不认输的声音</div></div>
+<div class="row"><div class="jp"><ruby>届<rt>とど</rt></ruby>ける<ruby>言葉<rt>ことば</rt></ruby>を<ruby>今<rt>いま</rt></ruby>は<ruby>育<rt>そだ</rt></ruby>ててる</div><div class="cn">此刻，我正在孕育着想要传达给你的话语</div></div></section>
+<section class="stanza"><div class="row"><div class="jp"><ruby>時<rt>とき</rt></ruby>はまくらぎ <ruby>風<rt>かぜ</rt></ruby>はにきはだ <ruby>星<rt>ほし</rt></ruby>はうぶすな <ruby>人<rt>ひと</rt></ruby>はかげろう</div><div class="cn">时光是枕木，清风是柔嫩的肌肤，星辰是故土，而人是浮光掠影</div></div>
+<div class="row"><div class="jp">なんで<ruby>泣<rt>な</rt></ruby>いてるのと<ruby>聞<rt>き</rt></ruby>かれ<ruby>答<rt>こた</rt></ruby>えれる <ruby>涙<rt>なみだ</rt></ruby>なんかじゃ</div><div class="cn">若有人问我为何哭泣，我能给出的答案，绝非眼泪这种东西</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>ら<ruby>出<rt>で</rt></ruby><ruby>逢<rt>あ</rt></ruby>えたことの<ruby>意味<rt>いみ</rt></ruby>にはまるで <ruby>追<rt>お</rt></ruby>いつかない</div><div class="cn">那根本追不上我们相遇这件事本身的意义</div></div>
+<div class="row"><div class="jp">この<ruby>身<rt>み</rt></ruby>ひとつじゃ <ruby>足<rt>た</rt></ruby>りない<ruby>叫<rt>さけ</rt></ruby>び</div><div class="cn">这单薄的一副身躯，怎么也喊不尽的呐喊</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>手<rt>て</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れた<ruby>時<rt>とき</rt></ruby>にだけ<ruby>震<rt>ふる</rt></ruby>えた <ruby>心<rt>こころ</rt></ruby>があったよ</div><div class="cn">有一颗心，只有在触碰到你的手时才会颤抖——它确实存在过啊</div></div>
+<div class="row"><div class="jp"><ruby>意味<rt>いみ</rt></ruby>をいくつ<ruby>越<rt>こ</rt></ruby>えれば<ruby>僕<rt>ぼく</rt></ruby>らは<ruby>辿<rt>たど</rt></ruby>り つけるのかな</div><div class="cn">要越过多少重意义，我们才能抵达彼此呢</div></div>
+<div class="row"><div class="jp"><ruby>愚<rt>おろ</rt></ruby>かさでいい <ruby>醜<rt>みにく</rt></ruby>さでいい <ruby>正<rt>ただ</rt></ruby>しさのその<ruby>先<rt>さき</rt></ruby>で <ruby>君<rt>きみ</rt></ruby>と<ruby>手<rt>て</rt></ruby>を<ruby>取<rt>と</rt></ruby>りたい</div><div class="cn">笨拙也没关系，丑陋也没关系，我想在“正确”的更前方，牵起你的手</div></div></section>
+<div class="part-label">或许</div><section class="stanza"><div class="row"><div class="jp"><ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>せない <ruby>大切<rt>たいせつ</rt></ruby>な<ruby>記憶<rt>きおく</rt></ruby></div><div class="cn">无法想起的、珍贵的记忆</div></div>
+<div class="row"><div class="jp"><ruby>言葉<rt>ことば</rt></ruby>にならない ここにある<ruby>想<rt>おも</rt></ruby>い</div><div class="cn">无法化作言语的、存在于这里的心意</div></div>
+<div class="row"><div class="jp">もしかしたら もしかしたら</div><div class="cn">或许，或许</div></div>
+<div class="row"><div class="jp">それだけでこの<ruby>心<rt>こころ</rt></ruby>はできてる</div><div class="cn">仅凭这些，就足以构成这颗心</div></div>
+<div class="row"><div class="jp">もしかしたら もしかしたら</div><div class="cn">或许，或许</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>に「<ruby>気<rt>き</rt></ruby>づいて」と<ruby>今<rt>いま</rt></ruby>もその<ruby>胸<rt>むね</rt></ruby>を</div><div class="cn">直到现在，那颗心仍在捶着胸口，喊着“看看我啊”</div></div>
+<div class="row"><div class="jp"><ruby>打<rt>う</rt></ruby>ち<ruby>鳴<rt>な</rt></ruby>らす</div><div class="cn">一声又一声地敲响</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">なんで<ruby>泣<rt>な</rt></ruby>いてるのと<ruby>聞<rt>き</rt></ruby>かれ<ruby>答<rt>こた</rt></ruby>えれる <ruby>涙<rt>なみだ</rt></ruby>なんかじゃ</div><div class="cn">若有人问我为何哭泣，我能给出的答案，绝非眼泪这种东西</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>ら<ruby>出<rt>で</rt></ruby><ruby>逢<rt>あ</rt></ruby>えたことの<ruby>意味<rt>いみ</rt></ruby>にはまるで <ruby>追<rt>お</rt></ruby>いつかない</div><div class="cn">那根本追不上我们相遇这件事本身的意义</div></div>
+<div class="row"><div class="jp">この<ruby>身<rt>み</rt></ruby>ひとつじゃ <ruby>足<rt>た</rt></ruby>りない<ruby>叫<rt>さけ</rt></ruby>び</div><div class="cn">这单薄的一副身躯，怎么也喊不尽的呐喊</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>手<rt>て</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れた<ruby>時<rt>とき</rt></ruby>にだけ<ruby>震<rt>ふる</rt></ruby>えた <ruby>心<rt>こころ</rt></ruby>があったよ</div><div class="cn">有一颗心，只有在触碰到你的手时才会颤抖——它确实存在过啊</div></div>
+<div class="row"><div class="jp"><ruby>意味<rt>いみ</rt></ruby>をいくつ<ruby>越<rt>こ</rt></ruby>えれば<ruby>僕<rt>ぼく</rt></ruby>らは<ruby>辿<rt>たど</rt></ruby>り つけるのかな</div><div class="cn">要越过多少重意义，我们才能抵达彼此呢</div></div>
+<div class="row"><div class="jp"><ruby>愚<rt>おろ</rt></ruby>かさでいい <ruby>醜<rt>みにく</rt></ruby>さでいい <ruby>正<rt>ただ</rt></ruby>しさのその<ruby>先<rt>さき</rt></ruby>で <ruby>君<rt>きみ</rt></ruby>と<ruby>生<rt>い</rt></ruby>きてきたい</div><div class="cn">笨拙也没关系，丑陋也没关系，我想在“正确”的更前方，和你一起活下去</div></div></section>
+  </main>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+</body>
+</html>

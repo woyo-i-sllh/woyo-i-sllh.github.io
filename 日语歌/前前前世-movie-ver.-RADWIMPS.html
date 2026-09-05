@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>前前前世 (movie ver.) - RADWIMPS｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#e8590c;--accent-soft:rgba(232,89,12,.28);--bg1:#fffaf4;--bg2:#ffe4cc;--bg3:#fff1e2;--card:rgba(255,255,255,.87);--hover:rgba(232,89,12,.07);--line:rgba(232,89,12,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
+  color:var(--accent);margin:34px 0 14px;}
+.part-label:first-child{margin-top:2px;}
+.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
+.stanza{margin:0 0 6px;}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title"><ruby>前前前世<rt>ぜんぜんぜんせ</rt></ruby> (movie ver.)</h1>
+    <div class="cn-title">前前前世（电影版）</div>
+    <div class="artist">RADWIMPS</div>
+    <p class="subtitle">《你的名字。》主题曲 —— “从你的前前前世起，我就在寻找你。”彗星之下，少年一路狂奔向你。</p>
+    <div class="credit">作詞・作曲：野田洋次郎 ／ RADWIMPS ／ 映画『君の名は。』主題歌（movie ver.）</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<div class="part-label">终于见到你</div><section class="stanza"><div class="row"><div class="jp">やっと<ruby>眼<rt>め</rt></ruby>を<ruby>覚<rt>さ</rt></ruby>ましたかい</div><div class="cn">你总算醒过来了吗</div></div>
+<div class="row"><div class="jp">それなのになぜ<ruby>眼<rt>め</rt></ruby>も<ruby>合<rt>あ</rt></ruby>わせやしないんだい？</div><div class="cn">可为什么连看都不看我一眼呢？</div></div>
+<div class="row"><div class="jp">「<ruby>遅<rt>おく</rt></ruby>いよ」と<ruby>怒<rt>おこ</rt></ruby>る<ruby>君<rt>きみ</rt></ruby></div><div class="cn">你气呼呼地说“也太慢了吧”</div></div>
+<div class="row"><div class="jp">これでもやれるだけ<ruby>飛<rt>と</rt></ruby>ばしてきたんだよ</div><div class="cn">可我已经拼尽全力飞奔到你身边了啊</div></div>
+<div class="row"><div class="jp"><ruby>心<rt>こころ</rt></ruby>が<ruby>身体<rt>しんたい</rt></ruby>を<ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>してきたんだよ</div><div class="cn">我的心，甚至已经先一步冲过了身体啊</div></div></section>
+<section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>髪<rt>かみ</rt></ruby>や<ruby>瞳<rt>ひとみ</rt></ruby>だけで<ruby>胸<rt>むね</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いよ</div><div class="cn">光是你的发丝和眼眸，就让我胸口隐隐作痛</div></div>
+<div class="row"><div class="jp"><ruby>同<rt>おな</rt></ruby>じ<ruby>時<rt>とき</rt></ruby>を<ruby>吸<rt>す</rt></ruby>いこんで<ruby>離<rt>はな</rt></ruby>したくないよ</div><div class="cn">好想吸进与你相同的时光，再也不要分开</div></div>
+<div class="row"><div class="jp"><ruby>遥<rt>はる</rt></ruby>か<ruby>昔<rt>むかし</rt></ruby>から<ruby>知<rt>し</rt></ruby>る その<ruby>声<rt>こえ</rt></ruby>に</div><div class="cn">对着那个自远古时代便已熟悉的声音</div></div>
+<div class="row"><div class="jp"><ruby>生<rt>う</rt></ruby>まれてはじめて <ruby>何<rt>なに</rt></ruby>を<ruby>言<rt>い</rt></ruby>えばいい？</div><div class="cn">有生以来第一次，我该说些什么才好？</div></div></section>
+<div class="part-label">从你的前前前世起</div><section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>前前前世<rt>ぜんぜんぜんせ</rt></ruby>から<ruby>僕<rt>ぼく</rt></ruby>は <ruby>君<rt>きみ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しはじめたよ</div><div class="cn">从你的前前前世起，我就开始了寻找你的旅程</div></div>
+<div class="row"><div class="jp">そのぶきっちょな<ruby>笑<rt>わら</rt></ruby>い<ruby>方<rt>かた</rt></ruby>をめがけて やってきたんだよ</div><div class="cn">追着你那笨拙生涩的笑容，我一路来到了这里</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>が<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>全部<rt>ぜんぶ</rt></ruby>なくなって チリヂリになったって</div><div class="cn">就算你消失得干干净净，碎散成一片一片</div></div>
+<div class="row"><div class="jp">もう<ruby>迷<rt>まよ</rt></ruby>わない また<ruby>1<rt>いち</rt></ruby>から<ruby>探<rt>さが</rt></ruby>しはじめるさ</div><div class="cn">我也不会再迷路，大不了从 1 重新找起</div></div>
+<div class="row"><div class="jp">むしろ<ruby>0<rt>ぜろ</rt></ruby>から また<ruby>宇宙<rt>うちゅう</rt></ruby>をはじめてみようか</div><div class="cn">不如干脆从 0 开始，让整个宇宙重新来过</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">どっから<ruby>話<rt>はな</rt></ruby>すかな</div><div class="cn">该从哪里说起好呢</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>が<ruby>眠<rt>ねむ</rt></ruby>っていた<ruby>間<rt>あいだ</rt></ruby>のストーリー</div><div class="cn">在你沉睡期间发生的故事</div></div>
+<div class="row"><div class="jp"><ruby>何億<rt>なんおく</rt></ruby> <ruby>何光年<rt>なんこうねん</rt></ruby><ruby>分<rt>ぶん</rt></ruby>の<ruby>物語<rt>ものがたり</rt></ruby>を <ruby>語<rt>かた</rt></ruby>りにきたんだよ</div><div class="cn">我是来讲那横跨数亿、数光年的故事给你听的啊</div></div>
+<div class="row"><div class="jp">けどいざその<ruby>姿<rt>すがた</rt></ruby> この<ruby>眼<rt>め</rt></ruby>に<ruby>映<rt>うつ</rt></ruby>すと</div><div class="cn">可一旦把你的身影映入这双眼眸</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>も<ruby>知<rt>し</rt></ruby>らぬ<ruby>君<rt>きみ</rt></ruby>とジャレて <ruby>戯<rt>たわむ</rt></ruby>れたいよ</div><div class="cn">就想和连你自己都未曾察觉的那个你，嬉闹着玩在一起</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>消<rt>き</rt></ruby>えぬ<ruby>痛<rt>いた</rt></ruby>みまで<ruby>愛<rt>あい</rt></ruby>してみたいよ</div><div class="cn">就连你无法抹去的伤痛，我也想一并去爱</div></div></section>
+<div class="part-label">重逢</div><section class="stanza"><div class="row"><div class="jp"><ruby>銀河<rt>ぎんが</rt></ruby><ruby>何<rt>なん</rt></ruby><ruby>個<rt>こ</rt></ruby><ruby>分<rt>ぶん</rt></ruby>かの <ruby>果<rt>は</rt></ruby>てに<ruby>出<rt>で</rt></ruby><ruby>逢<rt>あ</rt></ruby>えた</div><div class="cn">在相隔不知多少个银河的尽头，与你相逢</div></div>
+<div class="row"><div class="jp">その<ruby>手<rt>て</rt></ruby>を<ruby>壊<rt>こわ</rt></ruby>さずに どう<ruby>握<rt>にぎ</rt></ruby>ったならいい？</div><div class="cn">要怎样才能握住你的手，而不把它弄伤呢？</div></div></section>
+<div class="part-label">革命前夜</div><section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>前前前世<rt>ぜんぜんぜんせ</rt></ruby>から<ruby>僕<rt>ぼく</rt></ruby>は <ruby>君<rt>きみ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しはじめたよ</div><div class="cn">从你的前前前世起，我就开始了寻找你的旅程</div></div>
+<div class="row"><div class="jp">その<ruby>騒<rt>さわ</rt></ruby>がしい<ruby>声<rt>こえ</rt></ruby>と<ruby>涙<rt>なみだ</rt></ruby>をめがけ やってきたんだよ</div><div class="cn">追着你吵闹的声音和眼泪，我一路来到了这里</div></div>
+<div class="row"><div class="jp">そんな<ruby>革命<rt>かくめい</rt></ruby><ruby>前夜<rt>ぜんや</rt></ruby>の<ruby>僕<rt>ぼく</rt></ruby>らを <ruby>誰<rt>だれ</rt></ruby>が<ruby>止<rt>と</rt></ruby>めるというんだろう</div><div class="cn">置身于这样的革命前夜，又有谁能让我们停下脚步呢</div></div>
+<div class="row"><div class="jp">もう<ruby>迷<rt>まよ</rt></ruby>わない <ruby>君<rt>きみ</rt></ruby>のハートに<ruby>旗<rt>はた</rt></ruby>を<ruby>立<rt>た</rt></ruby>てるよ</div><div class="cn">我不会再迷路了，我要在你的心上竖起一面旗帜</div></div></section>
+<div class="part-label">尾声</div><section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>は<ruby>僕<rt>ぼく</rt></ruby>から<ruby>諦<rt>あきら</rt></ruby>め<ruby>方<rt>かた</rt></ruby>を <ruby>奪<rt>うば</rt></ruby>い<ruby>取<rt>と</rt></ruby>ったの</div><div class="cn">是你从我这里，把“放弃的方法”夺走了啊</div></div>
+<div class="row"><div class="jp"><ruby>前前前世<rt>ぜんぜんぜんせ</rt></ruby>から<ruby>僕<rt>ぼく</rt></ruby>は <ruby>君<rt>きみ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しはじめたよ</div><div class="cn">从前前前世起，我就开始了寻找你的旅程</div></div>
+<div class="row"><div class="jp">そのぶきっちょな<ruby>笑<rt>わら</rt></ruby>い<ruby>方<rt>かた</rt></ruby>をめがけて やってきたんだよ</div><div class="cn">追着你那笨拙生涩的笑容，我一路来到了这里</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>が<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>全部<rt>ぜんぶ</rt></ruby>なくなって チリヂリになったって</div><div class="cn">就算你消失得干干净净，碎散成一片一片</div></div>
+<div class="row"><div class="jp">もう<ruby>迷<rt>まよ</rt></ruby>わない また<ruby>1<rt>いち</rt></ruby>から<ruby>探<rt>さが</rt></ruby>しはじめるさ</div><div class="cn">我也不会再迷路，大不了从 1 重新找起</div></div>
+<div class="row"><div class="jp"><ruby>何光年<rt>なんこうねん</rt></ruby>でも この<ruby>歌<rt>うた</rt></ruby>を<ruby>口<rt>くち</rt></ruby>ずさみながら</div><div class="cn">哪怕相隔数光年，我也会一边哼着这首歌一边前行</div></div></section>
+  </main>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+</body>
+</html>

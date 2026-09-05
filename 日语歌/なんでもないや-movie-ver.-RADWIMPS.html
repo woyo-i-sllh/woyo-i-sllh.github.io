@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>なんでもないや (movie ver.) - RADWIMPS｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#0c8599;--accent-soft:rgba(12,133,153,.28);--bg1:#f2fbfc;--bg2:#d6f0f5;--bg3:#e9f8fb;--card:rgba(255,255,255,.87);--hover:rgba(12,133,153,.07);--line:rgba(12,133,153,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
+  color:var(--accent);margin:34px 0 14px;}
+.part-label:first-child{margin-top:2px;}
+.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
+.stanza{margin:0 0 6px;}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">なんでもないや (movie ver.)</h1>
+    <div class="cn-title">没什么大不了（电影版）</div>
+    <div class="artist">RADWIMPS</div>
+    <p class="subtitle">《你的名字。》片尾曲 —— 字幕滚动，全场静默；电影散场后，人们哼着“没什么大不了”走出影院。</p>
+    <div class="credit">作詞・作曲：野田洋次郎 ／ RADWIMPS ／ 映画『君の名は。』エンディング主題歌（movie ver.）</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<section class="stanza"><div class="row"><div class="jp"><ruby>二人<rt>ふたり</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby> <ruby>通<rt>とお</rt></ruby>り<ruby>過<rt>す</rt></ruby>ぎた<ruby>風<rt>かぜ</rt></ruby>は</div><div class="cn">从我们之间穿过的风</div></div>
+<div class="row"><div class="jp">どこから<ruby>寂<rt>さび</rt></ruby>しさを <ruby>運<rt>はこ</rt></ruby>んできたの</div><div class="cn">是从哪里带来了这份寂寞呢</div></div>
+<div class="row"><div class="jp"><ruby>泣<rt>な</rt></ruby>いたりした そのあとの<ruby>空<rt>そら</rt></ruby>は</div><div class="cn">哭过之后的那片天空</div></div>
+<div class="row"><div class="jp">やけに<ruby>透<rt>す</rt></ruby>き<ruby>通<rt>とお</rt></ruby>っていたり したんだ</div><div class="cn">总是出奇地清澈透明</div></div>
+<div class="row"><div class="jp">いつもは<ruby>尖<rt>とが</rt></ruby>ってた <ruby>父<rt>ちち</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>が</div><div class="cn">平日里总是刺耳的爸爸的话</div></div>
+<div class="row"><div class="jp"><ruby>今日<rt>きょう</rt></ruby>は<ruby>暖<rt>あたた</rt></ruby>かく<ruby>感<rt>かん</rt></ruby>じました</div><div class="cn">今天却觉得格外温暖</div></div>
+<div class="row"><div class="jp"><ruby>優<rt>やさ</rt></ruby>しさも<ruby>笑顔<rt>えがお</rt></ruby>も <ruby>夢<rt>ゆめ</rt></ruby>の<ruby>語<rt>かた</rt></ruby>り<ruby>方<rt>かた</rt></ruby>も</div><div class="cn">温柔也好，笑容也好，连述说梦想的方式也好</div></div>
+<div class="row"><div class="jp"><ruby>知<rt>し</rt></ruby>らなくて<ruby>全部<rt>ぜんぶ</rt></ruby> <ruby>君<rt>きみ</rt></ruby>を<ruby>真似<rt>まね</rt></ruby>たよ</div><div class="cn">我全都不会，所以只好一一模仿你</div></div></section>
+<div class="part-label">再一点点就好</div><section class="stanza"><div class="row"><div class="jp">もう<ruby>少<rt>すこ</rt></ruby>しだけでいい</div><div class="cn">再一点点就好</div></div>
+<div class="row"><div class="jp">あと<ruby>少<rt>すこ</rt></ruby>しだけでいい</div><div class="cn">再多一点点就好</div></div>
+<div class="row"><div class="jp">もう<ruby>少<rt>すこ</rt></ruby>しだけでいいから</div><div class="cn">真的，再一点点就好</div></div>
+<div class="row"><div class="jp">もう<ruby>少<rt>すこ</rt></ruby>しだけでいい</div><div class="cn">再一点点就好</div></div>
+<div class="row"><div class="jp">あと<ruby>少<rt>すこ</rt></ruby>しだけでいい</div><div class="cn">再多一点点就好</div></div>
+<div class="row"><div class="jp">もう<ruby>少<rt>すこ</rt></ruby>しだけ くっついていようか</div><div class="cn">再这样多依偎一会儿吧</div></div></section>
+<div class="part-label">跨越时间的我们</div><section class="stanza"><div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>らタイムフライヤー <ruby>時<rt>とき</rt></ruby>を<ruby>駆<rt>か</rt></ruby>け<ruby>上<rt>あ</rt></ruby>がるクライマー</div><div class="cn">我们是时光飞行者，是攀上时间的攀登者</div></div>
+<div class="row"><div class="jp"><ruby>時<rt>とき</rt></ruby>のかくれんぼ はぐれっこは もういやなんだ</div><div class="cn">在捉迷藏的时光里，我再也不想和你走散了</div></div>
+<div class="row"><div class="jp"><ruby>嬉<rt>うれ</rt></ruby>しくて<ruby>泣<rt>な</rt></ruby>くのは <ruby>悲<rt>かな</rt></ruby>しくて<ruby>笑<rt>わら</rt></ruby>うのは</div><div class="cn">高兴得哭出来，悲伤得笑出来</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>が <ruby>君<rt>きみ</rt></ruby>を<ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>したんだよ</div><div class="cn">是你的心，追过了你自己啊</div></div></section>
+<section class="stanza"><div class="row"><div class="jp"><ruby>星<rt>ほし</rt></ruby>にまで<ruby>願<rt>ねが</rt></ruby>って <ruby>手<rt>て</rt></ruby>にいれたオモチャも</div><div class="cn">连向星星许愿才得到的玩具</div></div>
+<div class="row"><div class="jp"><ruby>部屋<rt>へや</rt></ruby>の<ruby>隅<rt>すみ</rt></ruby>っこに<ruby>今<rt>いま</rt></ruby> <ruby>転<rt>ころ</rt></ruby>がってる</div><div class="cn">现在也还滚落在房间的角落里</div></div>
+<div class="row"><div class="jp"><ruby>叶<rt>かな</rt></ruby>えたい<ruby>夢<rt>ゆめ</rt></ruby>も <ruby>今日<rt>きょう</rt></ruby>で<ruby>100個<rt>ひゃっこ</rt></ruby>できたよ</div><div class="cn">想实现的梦想，到今天已经攒够 100 个了</div></div>
+<div class="row"><div class="jp">たった<ruby>一<rt>ひと</rt></ruby>つといつか <ruby>交換<rt>こうかん</rt></ruby>こしよう</div><div class="cn">总有一天，要拿它们和你那独一无二的一个交换</div></div>
+<div class="row"><div class="jp">いつもは<ruby>喋<rt>しゃべ</rt></ruby>らない あの<ruby>子<rt>こ</rt></ruby>に<ruby>今日<rt>きょう</rt></ruby>は</div><div class="cn">平时总不爱说话的那个孩子，今天</div></div>
+<div class="row"><div class="jp"><ruby>放課後<rt>ほうかご</rt></ruby>「また<ruby>明日<rt>あした</rt></ruby>」と <ruby>声<rt>こえ</rt></ruby>をかけた</div><div class="cn">放学后，我对他说了一句“明天见”</div></div>
+<div class="row"><div class="jp"><ruby>慣<rt>な</rt></ruby>れないことも たまにならいいね</div><div class="cn">不习惯的事情，偶尔来一次也不错呢</div></div>
+<div class="row"><div class="jp"><ruby>特<rt>とく</rt></ruby>にあなたが <ruby>隣<rt>となり</rt></ruby>にいたら</div><div class="cn">尤其是当你就在我身边的时候</div></div></section>
+<div class="part-label">再一点点就好</div><section class="stanza"><div class="row"><div class="jp">もう<ruby>少<rt>すこ</rt></ruby>しだけでいい</div><div class="cn">再一点点就好</div></div>
+<div class="row"><div class="jp">あと<ruby>少<rt>すこ</rt></ruby>しだけでいい</div><div class="cn">再多一点点就好</div></div>
+<div class="row"><div class="jp">もう<ruby>少<rt>すこ</rt></ruby>しだけでいいから</div><div class="cn">真的，再一点点就好</div></div>
+<div class="row"><div class="jp">もう<ruby>少<rt>すこ</rt></ruby>しだけでいい</div><div class="cn">再一点点就好</div></div>
+<div class="row"><div class="jp">あと<ruby>少<rt>すこ</rt></ruby>しだけでいい</div><div class="cn">再多一点点就好</div></div>
+<div class="row"><div class="jp">もう<ruby>少<rt>すこ</rt></ruby>しだけ くっついていようよ</div><div class="cn">再这样多依偎一会儿吧</div></div></section>
+<div class="part-label">我早就认识你</div><section class="stanza"><div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>らタイムフライヤー</div><div class="cn">我们是时光飞行者</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>を<ruby>知<rt>し</rt></ruby>っていたんだ <ruby>僕<rt>ぼく</rt></ruby>が <ruby>僕<rt>ぼく</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>を</div><div class="cn">我其实早就认识你，比记住我自己的名字还要早</div></div>
+<div class="row"><div class="jp"><ruby>覚<rt>おぼ</rt></ruby>えるよりずっと<ruby>前<rt>まえ</rt></ruby>に</div><div class="cn">在很久很久以前</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>のいない <ruby>世界<rt>せかい</rt></ruby>にも <ruby>何<rt>なに</rt></ruby>かの<ruby>意味<rt>いみ</rt></ruby>は きっとあって</div><div class="cn">没有你的世界，也一定有着某种意义</div></div>
+<div class="row"><div class="jp">でも<ruby>君<rt>きみ</rt></ruby>のいない <ruby>世界<rt>せかい</rt></ruby>など <ruby>夏<rt>なつ</rt></ruby><ruby>休<rt>やす</rt></ruby>みのない <ruby>八月<rt>はちがつ</rt></ruby>のよう</div><div class="cn">可是没有你的世界，就像没有暑假的八月</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>のいない <ruby>世界<rt>せかい</rt></ruby>など <ruby>笑<rt>わら</rt></ruby>うことない サンタのよう</div><div class="cn">没有你的世界，就像不会微笑的圣诞老人</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>のいない <ruby>世界<rt>せかい</rt></ruby>など</div><div class="cn">没有你的世界啊</div></div></section>
+<div class="part-label">没什么大不了</div><section class="stanza"><div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>らタイムフライヤー <ruby>時<rt>とき</rt></ruby>を<ruby>駆<rt>か</rt></ruby>け<ruby>上<rt>あ</rt></ruby>がるクライマー</div><div class="cn">我们是时光飞行者，是攀上时间的攀登者</div></div>
+<div class="row"><div class="jp"><ruby>時<rt>とき</rt></ruby>のかくれんぼ はぐれっこは もういやなんだ</div><div class="cn">在捉迷藏的时光里，我再也不想和你走散了</div></div>
+<div class="row"><div class="jp">なんでもないや やっぱりなんでもないや</div><div class="cn">没什么大不了，果然没什么大不了</div></div>
+<div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby>から<ruby>行<rt>い</rt></ruby>くよ</div><div class="cn">我现在就出发去见你</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>らタイムフライヤー <ruby>時<rt>とき</rt></ruby>を<ruby>駆<rt>か</rt></ruby>け<ruby>上<rt>あ</rt></ruby>がるクライマー</div><div class="cn">我们是时光飞行者，是攀上时间的攀登者</div></div>
+<div class="row"><div class="jp"><ruby>時<rt>とき</rt></ruby>のかくれんぼ はぐれっこ はもういいよ</div><div class="cn">捉迷藏的时光，就到此为止吧</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>は<ruby>派手<rt>はで</rt></ruby>なクライヤー その<ruby>涙<rt>なみだ</rt></ruby> <ruby>止<rt>と</rt></ruby>めてみたいな</div><div class="cn">你是个爱哭鬼，好想替你止住那些眼泪</div></div>
+<div class="row"><div class="jp">だけど <ruby>君<rt>きみ</rt></ruby>は<ruby>拒<rt>こば</rt></ruby>んだ</div><div class="cn">可你却拒绝了</div></div>
+<div class="row"><div class="jp"><ruby>零<rt>こぼ</rt></ruby>れるままの <ruby>涙<rt>なみだ</rt></ruby>を<ruby>見<rt>み</rt></ruby>てわかった</div><div class="cn">看着你任由泪水滚落的样子，我终于明白了</div></div>
+<div class="row"><div class="jp"><ruby>嬉<rt>うれ</rt></ruby>しくて<ruby>泣<rt>な</rt></ruby>くのは <ruby>悲<rt>かな</rt></ruby>しくて <ruby>笑<rt>わら</rt></ruby>うのは</div><div class="cn">高兴得哭出来，悲伤得笑出来</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>が <ruby>僕<rt>ぼく</rt></ruby>を<ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>したんだよ</div><div class="cn">是我的心，追过了我自己啊</div></div></section>
+  </main>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+</body>
+</html>

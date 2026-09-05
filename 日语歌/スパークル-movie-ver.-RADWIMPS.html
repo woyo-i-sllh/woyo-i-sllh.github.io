@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スパークル (movie ver.) - RADWIMPS｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#e67700;--accent-soft:rgba(230,119,0,.28);--bg1:#fffdf5;--bg2:#fff0c2;--bg3:#fff7dd;--card:rgba(255,255,255,.87);--hover:rgba(230,119,0,.07);--line:rgba(230,119,0,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
+  color:var(--accent);margin:34px 0 14px;}
+.part-label:first-child{margin-top:2px;}
+.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
+.stanza{margin:0 0 6px;}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">スパークル (movie ver.)</h1>
+    <div class="cn-title">火花（电影版）</div>
+    <div class="artist">RADWIMPS</div>
+    <p class="subtitle">《你的名字。》插曲 —— 黄昏之时，彗星当空，两个人终于在那条坡道上重逢。</p>
+    <div class="credit">作詞・作曲：野田洋次郎 ／ RADWIMPS ／ 映画『君の名は。』挿入歌（movie ver.）</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<section class="stanza"><div class="row"><div class="jp">まだこの<ruby>世界<rt>せかい</rt></ruby>は <ruby>僕<rt>ぼく</rt></ruby>を<ruby>飼<rt>か</rt></ruby>いならしてたいみたいだ</div><div class="cn">这个世界，似乎还想把我驯服得服服帖帖</div></div>
+<div class="row"><div class="jp"><ruby>望<rt>のぞ</rt></ruby>み<ruby>通<rt>とお</rt></ruby>りいいだろう <ruby>美<rt>うつく</rt></ruby>しくもがくよ</div><div class="cn">如你所愿也好，我会挣扎得漂亮给你看</div></div>
+<div class="row"><div class="jp"><ruby>互<rt>たが</rt></ruby>いの<ruby>砂時計<rt>すなどけい</rt></ruby> <ruby>眺<rt>なが</rt></ruby>めながらキスをしようよ</div><div class="cn">让我们一边凝视着彼此的沙漏，一边亲吻吧</div></div>
+<div class="row"><div class="jp">「さよなら」から<ruby>一番<rt>いちばん</rt></ruby> <ruby>遠<rt>とお</rt></ruby>い <ruby>場所<rt>ばしょ</rt></ruby>で<ruby>待<rt>ま</rt></ruby>ち<ruby>合<rt>あ</rt></ruby>わせよう</div><div class="cn">让我们在离“再见”最远的地方相会吧</div></div>
+<div class="row"><div class="jp"><ruby>辞書<rt>じしょ</rt></ruby>にある<ruby>言葉<rt>ことば</rt></ruby>で <ruby>出来<rt>でき</rt></ruby><ruby>上<rt>あ</rt></ruby>がった<ruby>世界<rt>せかい</rt></ruby>を<ruby>憎<rt>にく</rt></ruby>んだ</div><div class="cn">我曾憎恨这个用字典里的词语堆砌而成的世界</div></div>
+<div class="row"><div class="jp"><ruby>万華鏡<rt>まんげきょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で <ruby>八月<rt>はちがつ</rt></ruby>のある<ruby>朝<rt>あさ</rt></ruby></div><div class="cn">在万花筒之中，八月的一个清晨</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>は<ruby>僕<rt>ぼく</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で ハニかんでは<ruby>澄<rt>す</rt></ruby>ましてみせた</div><div class="cn">你在我面前，害羞地强作镇定给我看</div></div>
+<div class="row"><div class="jp">この<ruby>世界<rt>せかい</rt></ruby>の<ruby>教科書<rt>きょうかしょ</rt></ruby>のような<ruby>笑顔<rt>えがお</rt></ruby>で</div><div class="cn">带着那宛如世界教科书般的笑容</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">ついに<ruby>時<rt>とき</rt></ruby>はきた <ruby>昨日<rt>きのう</rt></ruby>までは<ruby>序章<rt>じょしょう</rt></ruby>の<ruby>序章<rt>じょしょう</rt></ruby>で</div><div class="cn">这一刻终于来临，昨天为止都还只是序章的序章</div></div>
+<div class="row"><div class="jp"><ruby>飛<rt>と</rt></ruby>ばし<ruby>読<rt>よ</rt></ruby>みでいいから ここからが<ruby>僕<rt>ぼく</rt></ruby>だよ</div><div class="cn">就算被跳着读完也没关系，从这里开始才是真正的我</div></div>
+<div class="row"><div class="jp"><ruby>経験<rt>けいけん</rt></ruby>と<ruby>知識<rt>ちしき</rt></ruby>と カビの<ruby>生<rt>は</rt></ruby>えかかった<ruby>勇気<rt>ゆうき</rt></ruby>を<ruby>持<rt>も</rt></ruby>って</div><div class="cn">带着经验、知识，还有那快要发霉的勇气</div></div>
+<div class="row"><div class="jp">いまだかつてないスピードで <ruby>君<rt>きみ</rt></ruby>のもとへダイブを</div><div class="cn">以史无前例的速度，向你的身边纵身一跃</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">まどろみの<ruby>中<rt>なか</rt></ruby>で <ruby>生<rt>なま</rt></ruby><ruby>温<rt>ぬる</rt></ruby>いコーラに</div><div class="cn">在半梦半醒之间，对着那杯温吞的可乐</div></div>
+<div class="row"><div class="jp">ここでないどこかを <ruby>夢<rt>ゆめ</rt></ruby><ruby>見<rt>み</rt></ruby>たよ</div><div class="cn">我曾梦见某个不是这里的地方</div></div>
+<div class="row"><div class="jp"><ruby>教室<rt>きょうしつ</rt></ruby>の<ruby>窓<rt>まど</rt></ruby>の<ruby>外<rt>そと</rt></ruby>に</div><div class="cn">就在教室的窗外</div></div>
+<div class="row"><div class="jp"><ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>揺<rt>ゆ</rt></ruby>られ <ruby>運<rt>はこ</rt></ruby>ばれる<ruby>朝<rt>あさ</rt></ruby>に</div><div class="cn">在随电车摇晃、被载向远方的清晨里</div></div>
+<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>し<ruby>方<rt>かた</rt></ruby>さえも <ruby>君<rt>きみ</rt></ruby>の<ruby>匂<rt>にお</rt></ruby>いがした</div><div class="cn">连如何去爱的方式，都沾染着你的气息</div></div>
+<div class="row"><div class="jp"><ruby>歩<rt>ある</rt></ruby>き<ruby>方<rt>かた</rt></ruby>さえも その<ruby>笑<rt>わら</rt></ruby>い<ruby>声<rt>こえ</rt></ruby>がした</div><div class="cn">连走路的姿态，都回响着你的笑声</div></div></section>
+<div class="part-label">将你的一切烙进眼里</div><section class="stanza"><div class="row"><div class="jp">いつか<ruby>消<rt>き</rt></ruby>えてなくなる <ruby>君<rt>きみ</rt></ruby>のすべてを</div><div class="cn">总有一天会消失不见的、你的一切</div></div>
+<div class="row"><div class="jp">この<ruby>眼<rt>め</rt></ruby>に<ruby>焼<rt>や</rt></ruby>き<ruby>付<rt>つ</rt></ruby>けておくことは</div><div class="cn">把这一切烙印在这双眼眸里这件事</div></div>
+<div class="row"><div class="jp">もう<ruby>権利<rt>けんり</rt></ruby>なんかじゃない <ruby>義務<rt>ぎむ</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>うんだ</div><div class="cn">早已不是什么权利，而是我的义务</div></div></section>
+<div class="part-label">一生的恋爱</div><section class="stanza"><div class="row"><div class="jp"><ruby>運命<rt>うんめい</rt></ruby>だとか<ruby>未来<rt>みらい</rt></ruby>とかって <ruby>言葉<rt>ことば</rt></ruby>がどれだけ<ruby>手<rt>て</rt></ruby>を</div><div class="cn">所谓命运、所谓未来，无论这些词语把手伸得多远</div></div>
+<div class="row"><div class="jp"><ruby>伸<rt>の</rt></ruby>ばそうと<ruby>届<rt>とど</rt></ruby>かない <ruby>場所<rt>ばしょ</rt></ruby>で<ruby>僕<rt>ぼく</rt></ruby>ら<ruby>恋<rt>こい</rt></ruby>をする</div><div class="cn">在它们也触不可及的地方，我们谈着恋爱</div></div>
+<div class="row"><div class="jp"><ruby>時計<rt>とけい</rt></ruby>の<ruby>針<rt>はり</rt></ruby>も<ruby>二人<rt>ふたり</rt></ruby>を <ruby>横<rt>よこ</rt></ruby><ruby>目<rt>め</rt></ruby>に<ruby>見<rt>み</rt></ruby>ながら<ruby>進<rt>すす</rt></ruby>む</div><div class="cn">就连时钟的指针，也一边斜眼望着我们一边前行</div></div>
+<div class="row"><div class="jp">そんな<ruby>世界<rt>せかい</rt></ruby>を<ruby>二人<rt>ふたり</rt></ruby>で <ruby>一生<rt>いっしょう</rt></ruby> いや、<ruby>何<rt>なん</rt></ruby><ruby>章<rt>しょう</rt></ruby>でも</div><div class="cn">在这样的世界里，我们两个人——一辈子，不，无论多少章</div></div>
+<div class="row"><div class="jp"><ruby>生<rt>い</rt></ruby>き<ruby>抜<rt>ぬ</rt></ruby>いていこう</div><div class="cn">都要一起活下去</div></div></section>
+  </main>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>夢灯籠 - RADWIMPS｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#7048e8;--accent-soft:rgba(112,72,232,.28);--bg1:#faf9ff;--bg2:#eae5ff;--bg3:#f4f0ff;--card:rgba(255,255,255,.87);--hover:rgba(112,72,232,.07);--line:rgba(112,72,232,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
+  color:var(--accent);margin:34px 0 14px;}
+.part-label:first-child{margin-top:2px;}
+.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
+.stanza{margin:0 0 6px;}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title"><ruby>夢灯籠<rt>ゆめとうろう</rt></ruby></h1>
+    <div class="cn-title">梦灯笼</div>
+    <div class="artist">RADWIMPS</div>
+    <p class="subtitle">新海诚电影《你的名字。》片头曲 —— 前奏一响，彗星划破夜空，一场跨越时间的相遇就此开始。</p>
+    <div class="credit">作詞・作曲：野田洋次郎 ／ RADWIMPS ／ 映画『君の名は。』主題歌</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<section class="stanza"><div class="row"><div class="jp">あぁ このまま<ruby>僕<rt>ぼく</rt></ruby>たちの<ruby>声<rt>こえ</rt></ruby>が <ruby>世界<rt>せかい</rt></ruby>の<ruby>端<rt>はし</rt></ruby>っこまで<ruby>消<rt>き</rt></ruby>えることなく</div><div class="cn">啊，如果我们俩的声音，能不被湮灭地传到世界的尽头就好了。</div></div>
+<div class="row"><div class="jp"><ruby>届<rt>とど</rt></ruby>いたりしたらいいのにな</div><div class="cn">要是能传达到就好了呢。</div></div>
+<div class="row"><div class="jp">そしたらねぇ <ruby>二人<rt>ふたり</rt></ruby>で どんな<ruby>言葉<rt>ことば</rt></ruby>を<ruby>放<rt>はな</rt></ruby>とう</div><div class="cn">那样的话呢，我们两个人，会说出怎样的话来。</div></div>
+<div class="row"><div class="jp"><ruby>消<rt>き</rt></ruby>えることない<ruby>約束<rt>やくそく</rt></ruby>を <ruby>二人<rt>ふたり</rt></ruby>で「せーの」で <ruby>言<rt>い</rt></ruby>おう</div><div class="cn">让我们俩齐声“一二”，许下一个永不消逝的约定吧。</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">あぁ「<ruby>願<rt>ねが</rt></ruby>ったらなにがしかが<ruby>叶<rt>かな</rt></ruby>う」 その<ruby>言葉<rt>ことば</rt></ruby>の<ruby>眼<rt>め</rt></ruby>をもう<ruby>見<rt>み</rt></ruby>れなくなったのは</div><div class="cn">啊，“只要许愿就一定会实现”——这句话的眼睛，是从什么时候起再也无法直视了呢。</div></div>
+<div class="row"><div class="jp"><ruby>一体<rt>いったい</rt></ruby>いつからだろうか なにゆえだろうか</div><div class="cn">到底是从什么时候开始的呢，又是因为什么呢。</div></div>
+<div class="row"><div class="jp">あぁ <ruby>雨<rt>あめ</rt></ruby>の<ruby>止<rt>や</rt></ruby>むまさにその<ruby>切れ間<rt>きれま</rt></ruby>と <ruby>虹<rt>にじ</rt></ruby>の<ruby>出発点<rt>しゅっぱつてん</rt></ruby> <ruby>終点<rt>しゅうてん</rt></ruby>と</div><div class="cn">啊，就在雨停的那一刹那，还有彩虹的起点与终点——</div></div>
+<div class="row"><div class="jp">この<ruby>命<rt>いのち</rt></ruby><ruby>果<rt>は</rt></ruby>てる<ruby>場所<rt>ばしょ</rt></ruby>に<ruby>何<rt>なに</rt></ruby>かがあるって いつも<ruby>言<rt>い</rt></ruby>い<ruby>張<rt>は</rt></ruby>っていた</div><div class="cn">我一直固执地相信，在生命走到尽头的地方，一定存在着什么。</div></div></section>
+<div class="part-label">向着你的名字</div><section class="stanza"><div class="row"><div class="jp">いつか<ruby>行<rt>い</rt></ruby>こう <ruby>全生命<rt>ぜんせいめい</rt></ruby>も<ruby>未到<rt>みとう</rt></ruby> <ruby>未開拓<rt>みかいたく</rt></ruby>の</div><div class="cn">总有一天出发吧，去往所有生命都未曾到达、尚未开拓的——</div></div>
+<div class="row"><div class="jp"><ruby>感情<rt>かんじょう</rt></ruby>にハイタッチして <ruby>時間<rt>じかん</rt></ruby>にキスを</div><div class="cn">与情感击掌相庆，与时间轻轻一吻。</div></div>
+<div class="row"><div class="jp">５<ruby>次元<rt>じげん</rt></ruby>にからかわれて それでも<ruby>君<rt>きみ</rt></ruby>をみるよ</div><div class="cn">就算被五次元百般捉弄，我依然会望向你。</div></div>
+<div class="row"><div class="jp">また「はじめまして」の<ruby>合図<rt>あいず</rt></ruby>を <ruby>決<rt>き</rt></ruby>めよう</div><div class="cn">让我们再定下一个“初次见面”的暗号吧。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>名<rt>な</rt></ruby>を <ruby>今<rt>いま</rt></ruby><ruby>追<rt>お</rt></ruby>いかけるよ</div><div class="cn">此刻，我正追寻着你的名字。</div></div></section>
+  </main>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+</body>
+</html>

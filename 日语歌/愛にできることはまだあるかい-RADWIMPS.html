@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>愛にできることはまだあるかい - RADWIMPS｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#0ca678;--accent-soft:rgba(12,166,120,.28);--bg1:#f2fbf7;--bg2:#d3f1e5;--bg3:#e9f8f1;--card:rgba(255,255,255,.87);--hover:rgba(12,166,120,.07);--line:rgba(12,166,120,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
+  color:var(--accent);margin:34px 0 14px;}
+.part-label:first-child{margin-top:2px;}
+.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
+.stanza{margin:0 0 6px;}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title"><ruby>愛<rt>あい</rt></ruby>にできることはまだあるかい</h1>
+    <div class="cn-title">爱能做到的还有什么</div>
+    <div class="artist">RADWIMPS</div>
+    <p class="subtitle">《天气之子》主题曲 —— 在永远放晴的东京上空，少年拼尽全力奔向那个教会他“世界因你而改变”的少女。</p>
+    <div class="credit">作詞・作曲：野田洋次郎 ／ RADWIMPS ／ 映画『天気の子』主題歌</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<div class="part-label">在胜者的时代</div><section class="stanza"><div class="row"><div class="jp"><ruby>何<rt>なに</rt></ruby>も<ruby>持<rt>も</rt></ruby>たずに <ruby>生<rt>う</rt></ruby>まれ<ruby>堕<rt>お</rt></ruby>ちた<ruby>僕<rt>ぼく</rt></ruby></div><div class="cn">一无所有地坠入这世间的我</div></div>
+<div class="row"><div class="jp"><ruby>永遠<rt>えいえん</rt></ruby>の<ruby>隙間<rt>すきま</rt></ruby>で のたうち<ruby>回<rt>まわ</rt></ruby>ってる</div><div class="cn">正在永恒的缝隙里痛苦地翻滚挣扎</div></div>
+<div class="row"><div class="jp"><ruby>諦<rt>あきら</rt></ruby>めた<ruby>者<rt>もの</rt></ruby>と <ruby>賢<rt>かしこ</rt></ruby>い<ruby>者<rt>もの</rt></ruby>だけが</div><div class="cn">只有选择放弃的人，和足够聪明的人</div></div>
+<div class="row"><div class="jp"><ruby>勝者<rt>しょうしゃ</rt></ruby>の<ruby>時代<rt>じだい</rt></ruby>に どこで<ruby>息<rt>いき</rt></ruby>を<ruby>吸<rt>す</rt></ruby>う</div><div class="cn">才能在属于胜者的时代里，找到喘息之处</div></div>
+<div class="row"><div class="jp"><ruby>支配者<rt>しはいしゃ</rt></ruby>も<ruby>神<rt>かみ</rt></ruby>も どこか<ruby>他人顔<rt>たにんかお</rt></ruby></div><div class="cn">统治者也好，神明也好，都摆着一副事不关己的脸</div></div>
+<div class="row"><div class="jp">だけど<ruby>本当<rt>ほんとう</rt></ruby>は <ruby>分<rt>わ</rt></ruby>かっているはず</div><div class="cn">可其实他们心里，应该比谁都清楚</div></div></section>
+<div class="part-label">那一天的你</div><section class="stanza"><div class="row"><div class="jp"><ruby>勇気<rt>ゆうき</rt></ruby>や<ruby>希望<rt>きぼう</rt></ruby>や <ruby>絆<rt>きずな</rt></ruby>とかの<ruby>魔法<rt>まほう</rt></ruby></div><div class="cn">勇气啊、希望啊，还有羁绊之类的魔法</div></div>
+<div class="row"><div class="jp"><ruby>使<rt>つか</rt></ruby>い<ruby>道<rt>みち</rt></ruby>もなく オトナは<ruby>眼<rt>め</rt></ruby>を<ruby>背<rt>そむ</rt></ruby>ける</div><div class="cn">大人们找不到用武之地，便纷纷别过眼去</div></div>
+<div class="row"><div class="jp">それでもあの<ruby>日<rt>ひ</rt></ruby>の <ruby>君<rt>きみ</rt></ruby>が<ruby>今<rt>いま</rt></ruby>もまだ</div><div class="cn">可那一天遇见的你，直到现在依然</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>の<ruby>全正義<rt>ぜんせいぎ</rt></ruby>の ど<ruby>真<rt>ま</rt></ruby>ん<ruby>中<rt>なか</rt></ruby>にいる</div><div class="cn">站在我全部正义的正中央</div></div>
+<div class="row"><div class="jp"><ruby>世界<rt>せかい</rt></ruby>が<ruby>背中<rt>せなか</rt></ruby>を <ruby>向<rt>む</rt></ruby>けてもまだなお</div><div class="cn">即使整个世界都转身背对着我</div></div>
+<div class="row"><div class="jp"><ruby>立<rt>た</rt></ruby>ち<ruby>向<rt>む</rt></ruby>かう<ruby>君<rt>きみ</rt></ruby>が <ruby>今<rt>いま</rt></ruby>もここにいる</div><div class="cn">那个迎面而上的你，现在也依然在这里</div></div></section>
+<div class="part-label">副歌｜爱能做到的还有什么</div><section class="stanza"><div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>にできることはまだあるかい</div><div class="cn">爱能做到的事情，还会有吗</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>にできることはまだあるかい</div><div class="cn">我能做到的事情，还会有吗</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>がくれた<ruby>勇気<rt>ゆうき</rt></ruby>だから <ruby>君<rt>きみ</rt></ruby>のために<ruby>使<rt>つか</rt></ruby>いたいんだ</div><div class="cn">因为那是你给我的勇气，所以我想把它用在你身上</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>分<rt>わ</rt></ruby>け<ruby>合<rt>あ</rt></ruby>った<ruby>愛<rt>あい</rt></ruby>だから <ruby>君<rt>きみ</rt></ruby>とじゃなきゃ<ruby>意味<rt>いみ</rt></ruby>がないんだ</div><div class="cn">因为那是与你分享过的爱，不是和你一起，就毫无意义</div></div>
+<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>にできることはまだあるかい</div><div class="cn">爱能做到的事情，还会有吗</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>にできることは まだあるかい</div><div class="cn">我能做到的事情，还会有吗</div></div></section>
+<div class="part-label">命运与意志</div><section class="stanza"><div class="row"><div class="jp"><ruby>運命<rt>うんめい</rt></ruby>とはつまり サイコロの<ruby>出<rt>で</rt></ruby>た<ruby>目<rt>め</rt></ruby>?</div><div class="cn">所谓命运，说到底不过是骰子掷出的点数吗？</div></div>
+<div class="row"><div class="jp">はたまた<ruby>神<rt>かみ</rt></ruby>の いつもの<ruby>気<rt>き</rt></ruby>まぐれ</div><div class="cn">又或者，只是神明一贯的任性？</div></div>
+<div class="row"><div class="jp"><ruby>選<rt>えら</rt></ruby>び<ruby>選<rt>えら</rt></ruby>ばれた <ruby>脱<rt>ぬ</rt></ruby>げられぬ<ruby>鎧<rt>よろい</rt></ruby></div><div class="cn">是主动选择、又被选中的，脱不下的铠甲</div></div>
+<div class="row"><div class="jp">もしくは<ruby>遥<rt>はる</rt></ruby>かな <ruby>揺<rt>ゆ</rt></ruby>らぐことない<ruby>意志<rt>いし</rt></ruby></div><div class="cn">又或是那份遥远而绝不会动摇的意志</div></div>
+<div class="row"><div class="jp"><ruby>果<rt>は</rt></ruby>たさぬ<ruby>願<rt>ねが</rt></ruby>いと <ruby>叶<rt>かな</rt></ruby>わぬ<ruby>再会<rt>さいかい</rt></ruby>と</div><div class="cn">无法实现的愿望，无法重逢的再会</div></div>
+<div class="row"><div class="jp">ほどけぬ<ruby>誤解<rt>ごかい</rt></ruby>と <ruby>降<rt>ふ</rt></ruby>り<ruby>積<rt>つ</rt></ruby>もる<ruby>憎悪<rt>ぞうお</rt></ruby>と</div><div class="cn">解不开的误会，越积越深的憎恨</div></div>
+<div class="row"><div class="jp"><ruby>許<rt>ゆる</rt></ruby>し<ruby>合<rt>あ</rt></ruby>う<ruby>声<rt>こえ</rt></ruby>と <ruby>握<rt>にぎ</rt></ruby>りしめ<ruby>合<rt>あ</rt></ruby>う<ruby>手<rt>て</rt></ruby>を</div><div class="cn">还有彼此原谅的声音，和紧紧相握的手</div></div>
+<div class="row"><div class="jp">この<ruby>星<rt>ほし</rt></ruby>は<ruby>今日<rt>きょう</rt></ruby>も <ruby>抱<rt>かか</rt></ruby>えて<ruby>生<rt>い</rt></ruby>きてる</div><div class="cn">这颗星球，今天也依然背负着这一切活下去</div></div></section>
+<div class="part-label">副歌</div><section class="stanza"><div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>にできることはまだあるかい?</div><div class="cn">爱能做到的事情，还会有吗？</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>にできることはまだあるかい</div><div class="cn">我能做到的事情，还会有吗</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>がくれた<ruby>勇気<rt>ゆうき</rt></ruby>だから <ruby>君<rt>きみ</rt></ruby>のために<ruby>使<rt>つか</rt></ruby>いたいんだ</div><div class="cn">因为那是你给我的勇气，所以我想把它用在你身上</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>育<rt>そだ</rt></ruby>てた<ruby>愛<rt>あい</rt></ruby>だから <ruby>君<rt>きみ</rt></ruby>とじゃなきゃ<ruby>意味<rt>いみ</rt></ruby>がないんだ</div><div class="cn">因为那是与你一起培育的爱，不是和你一起，就毫无意义</div></div>
+<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>にできることはまだあるかい</div><div class="cn">爱能做到的事情，还会有吗</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>にできることは まだあるかい</div><div class="cn">我能做到的事情，还会有吗</div></div></section>
+<div class="part-label">回答我啊</div><section class="stanza"><div class="row"><div class="jp"><ruby>何<rt>なに</rt></ruby>もない<ruby>僕<rt>ぼく</rt></ruby>たちに なぜ<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>見<rt>み</rt></ruby>させたか</div><div class="cn">为什么让一无所有的我们，得以看见梦想</div></div>
+<div class="row"><div class="jp"><ruby>終<rt>お</rt></ruby>わりある<ruby>人生<rt>じんせい</rt></ruby>に なぜ<ruby>希望<rt>きぼう</rt></ruby>を<ruby>持<rt>も</rt></ruby>たせたか</div><div class="cn">为什么让终将结束的人生，怀揣起希望</div></div>
+<div class="row"><div class="jp">なぜこの<ruby>手<rt>て</rt></ruby>をすり<ruby>抜<rt>ぬ</rt></ruby>ける ものばかり<ruby>与<rt>あた</rt></ruby>えたか</div><div class="cn">为什么给我们的，尽是些会从指缝间溜走的东西</div></div>
+<div class="row"><div class="jp">それでもなおしがみつく <ruby>僕<rt>ぼく</rt></ruby>らは<ruby>醜<rt>みにく</rt></ruby>いかい それとも、きれいかい</div><div class="cn">即便如此仍要紧紧抓住不放的我们，是丑陋的，还是美丽的呢</div></div>
+<div class="row"><div class="jp"><ruby>答<rt>こた</rt></ruby>えてよ</div><div class="cn">回答我啊</div></div></section>
+<div class="part-label">即便如此</div><section class="stanza"><div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>の<ruby>歌<rt>うた</rt></ruby>も <ruby>歌<rt>うた</rt></ruby>われ<ruby>尽<rt>つ</rt></ruby>くした</div><div class="cn">爱的歌，也已经被唱到了淋漓尽致</div></div>
+<div class="row"><div class="jp"><ruby>数多<rt>あまた</rt></ruby>の<ruby>映画<rt>えいが</rt></ruby>で <ruby>語<rt>かた</rt></ruby>られ<ruby>尽<rt>つ</rt></ruby>くした</div><div class="cn">在无数电影里，也已经被讲到了淋漓尽致</div></div>
+<div class="row"><div class="jp">そんな<ruby>荒野<rt>こうや</rt></ruby>に <ruby>生<rt>う</rt></ruby>まれ<ruby>落<rt>お</rt></ruby>ちた<ruby>僕<rt>ぼく</rt></ruby>、<ruby>君<rt>きみ</rt></ruby> それでも</div><div class="cn">而在这样的荒野中降生的我与你——即便如此</div></div>
+<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>にできることはまだあるよ</div><div class="cn">爱能做到的事情，一定还有</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>にできることはまだあるよ</div><div class="cn">我能做到的事情，一定还有</div></div></section>
+  </main>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+</body>
+</html>
