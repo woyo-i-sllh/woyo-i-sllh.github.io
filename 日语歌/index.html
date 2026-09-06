@@ -25,13 +25,26 @@ h1{text-align:center;font-size:clamp(26px,4vw,38px);letter-spacing:.12em;margin:
 .c-artist{margin-top:12px;color:#8a7f7a;font-size:13px;}
 .c-go{margin-top:20px;color:var(--accent);font-size:13.5px;font-weight:700;}
 .note{text-align:center;margin-top:46px;color:#a09691;font-size:13px;line-height:2;}
+
+
+.search-wrap{max-width:520px;margin:-10px auto 34px;text-align:center;}
+#songSearch{width:100%;padding:13px 22px;border-radius:999px;border:1.5px solid rgba(214,51,108,.22);background:rgba(255,255,255,.92);font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Microsoft YaHei',sans-serif;font-size:15px;color:#2b2623;outline:none;box-shadow:0 6px 20px rgba(70,60,90,.08);transition:border .15s, box-shadow .15s;}
+#songSearch:focus{border-color:rgba(214,51,108,.55);box-shadow:0 6px 22px rgba(214,51,108,.16);}
+.search-count{margin-top:9px;font-family:'ZCOOL KuaiLe','幼圆','YouYuan',sans-serif;font-size:13px;color:#a09691;letter-spacing:.1em;}
+
 </style>
 </head>
 <body>
 <div class="page">
   <h1>🎵 我的日语歌词卡</h1>
   <p class="sub">日文歌词（汉字标注平假名）＋ 中文翻译，左右对照</p>
-  <div class="cards">
+  
+<div class="search-wrap">
+  <input id="songSearch" type="search" placeholder="搜索歌名 / 歌手 / 中文名..." autocomplete="off">
+  <div class="search-count" id="songCount"></div>
+</div>
+
+<div class="cards">
     <a class="card" style="--accent:#d6336c;--accent-soft:rgba(214,51,108,.28);--bg1:#fff7fa;--bg2:#ffe3ec;--bg3:#fff0f5;--card:rgba(255,255,255,.85);--hover:rgba(214,51,108,.07);--line:rgba(214,51,108,.18);" href="好きだから。-『ユイカ』.html">
       <div class="c-num">01</div>
       <div class="c-title"><ruby>好き<rt>すき</rt></ruby>だから。</div>
@@ -102,9 +115,254 @@ h1{text-align:center;font-size:clamp(26px,4vw,38px);letter-spacing:.12em;margin:
       <div class="c-cn">铃芽</div>
       <div class="c-artist">RADWIMPS feat.十明</div>
       <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#a61e4d;--accent-soft:rgba(166,30,77,.28);--bg1:#fff5f7;--bg2:#fbdce5;--bg3:#fdeaf0;--card:rgba(255,255,255,.87);--hover:rgba(166,30,77,.07);--line:rgba(166,30,77,.18);" href="ヤキモチ-高橋優.html">
+      <div class="c-num">10</div>
+      <div class="c-title">ヤキモチ</div>
+      <div class="c-cn">吃醋（嫉妒）</div>
+      <div class="c-artist">高橋優</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#d6336c;--accent-soft:rgba(214,51,108,.28);--bg1:#fff7fa;--bg2:#ffe3ec;--bg3:#fff0f5;--card:rgba(255,255,255,.85);--hover:rgba(214,51,108,.07);--line:rgba(214,51,108,.18);" href="気まぐれロマンティック-いきものがかり.html">
+      <div class="c-num">11</div>
+      <div class="c-title"><ruby>気<rt>き</rt></ruby>まぐれロマンティック</div>
+      <div class="c-cn">心血来潮的浪漫</div>
+      <div class="c-artist">いきものがかり</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#0c8599;--accent-soft:rgba(12,133,153,.28);--bg1:#f2fbfc;--bg2:#d6f0f5;--bg3:#e9f8fb;--card:rgba(255,255,255,.87);--hover:rgba(12,133,153,.07);--line:rgba(12,133,153,.18);" href="自転車-JUDY-AND-MARY.html">
+      <div class="c-num">12</div>
+      <div class="c-title"><ruby>自転車<rt>じてんしゃ</rt></ruby></div>
+      <div class="c-cn">自行车</div>
+      <div class="c-artist">JUDY AND MARY</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#0ca678;--accent-soft:rgba(12,166,120,.28);--bg1:#f2fbf7;--bg2:#d3f1e5;--bg3:#e9f8f1;--card:rgba(255,255,255,.87);--hover:rgba(12,166,120,.07);--line:rgba(12,166,120,.18);" href="小さな恋のうた-MONGOL800.html">
+      <div class="c-num">13</div>
+      <div class="c-title"><ruby>小<rt>ちい</rt></ruby>さな<ruby>恋<rt>こい</rt></ruby>のうた</div>
+      <div class="c-cn">小小恋歌</div>
+      <div class="c-artist">MONGOL800</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#e03131;--accent-soft:rgba(224,49,49,.28);--bg1:#fff7f7;--bg2:#ffe0e0;--bg3:#fff0f0;--card:rgba(255,255,255,.87);--hover:rgba(224,49,49,.07);--line:rgba(224,49,49,.18);" href="愛唄-GReeeeN.html">
+      <div class="c-num">14</div>
+      <div class="c-title"><ruby>愛<rt>あい</rt></ruby><ruby>唄<rt>うた</rt></ruby></div>
+      <div class="c-cn">爱之歌</div>
+      <div class="c-artist">GReeeeN</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#e67700;--accent-soft:rgba(230,119,0,.28);--bg1:#fffdf5;--bg2:#fff0c2;--bg3:#fff7dd;--card:rgba(255,255,255,.87);--hover:rgba(230,119,0,.07);--line:rgba(230,119,0,.18);" href="出逢った頃のように-Every-Little-Thing.html">
+      <div class="c-num">15</div>
+      <div class="c-title"><ruby>出<rt>で</rt></ruby><ruby>逢<rt>あ</rt></ruby>った<ruby>頃<rt>ころ</rt></ruby>のように</div>
+      <div class="c-cn">像初次相遇时那样</div>
+      <div class="c-artist">Every Little Thing</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#74b816;--accent-soft:rgba(116,184,22,.28);--bg1:#f7fbeb;--bg2:#e4f3c8;--bg3:#f2f9e2;--card:rgba(255,255,255,.87);--hover:rgba(116,184,22,.07);--line:rgba(116,184,22,.18);" href="風吹けば恋-チャットモンチー.html">
+      <div class="c-num">16</div>
+      <div class="c-title"><ruby>風<rt>かぜ</rt></ruby><ruby>吹<rt>ふ</rt></ruby>けば<ruby>恋<rt>こい</rt></ruby></div>
+      <div class="c-cn">风吹起时便是恋爱</div>
+      <div class="c-artist">チャットモンチー</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#f59f00;--accent-soft:rgba(245,159,0,.28);--bg1:#fffaf0;--bg2:#ffe8bf;--bg3:#fff5dd;--card:rgba(255,255,255,.87);--hover:rgba(245,159,0,.07);--line:rgba(245,159,0,.18);" href="AM11-00-HY.html">
+      <div class="c-num">17</div>
+      <div class="c-title">AM11:00</div>
+      <div class="c-cn">上午十一点</div>
+      <div class="c-artist">HY</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);" href="奏-スキマスイッチ.html">
+      <div class="c-num">18</div>
+      <div class="c-title"><ruby>奏<rt>かなで</rt></ruby></div>
+      <div class="c-cn">奏（かなで）</div>
+      <div class="c-artist">スキマスイッチ</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#364fc7;--accent-soft:rgba(54,79,199,.28);--bg1:#f3f5fd;--bg2:#dde3fa;--bg3:#eaeefc;--card:rgba(255,255,255,.87);--hover:rgba(54,79,199,.07);--line:rgba(54,79,199,.18);" href="粉雪-レミオロメン.html">
+      <div class="c-num">19</div>
+      <div class="c-title"><ruby>粉雪<rt>こなゆき</rt></ruby></div>
+      <div class="c-cn">粉雪</div>
+      <div class="c-artist">レミオロメン</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#2f9e44;--accent-soft:rgba(47,158,68,.28);--bg1:#f6fcf7;--bg2:#dbf1e0;--bg3:#edf9f0;--card:rgba(255,255,255,.87);--hover:rgba(47,158,68,.07);--line:rgba(47,158,68,.18);" href="キセキ-GReeeeN.html">
+      <div class="c-num">20</div>
+      <div class="c-title">キセキ</div>
+      <div class="c-cn">奇迹（キセキ）</div>
+      <div class="c-artist">GReeeeN</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#7048e8;--accent-soft:rgba(112,72,232,.28);--bg1:#faf9ff;--bg2:#eae5ff;--bg3:#f4f0ff;--card:rgba(255,255,255,.87);--hover:rgba(112,72,232,.07);--line:rgba(112,72,232,.18);" href="ありがとう-いきものがかり.html">
+      <div class="c-num">21</div>
+      <div class="c-title">ありがとう</div>
+      <div class="c-cn">谢谢你</div>
+      <div class="c-artist">いきものがかり</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#be4bdb;--accent-soft:rgba(190,75,219,.28);--bg1:#fdf3ff;--bg2:#f3d4fb;--bg3:#f9e9fd;--card:rgba(255,255,255,.87);--hover:rgba(190,75,219,.07);--line:rgba(190,75,219,.18);" href="STARS-中島美嘉.html">
+      <div class="c-num">22</div>
+      <div class="c-title">STARS</div>
+      <div class="c-cn">群星</div>
+      <div class="c-artist">中島美嘉</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#099268;--accent-soft:rgba(9,146,104,.28);--bg1:#effaf5;--bg2:#cdeee1;--bg3:#e3f6ee;--card:rgba(255,255,255,.87);--hover:rgba(9,146,104,.07);--line:rgba(9,146,104,.18);" href="あなたに-MONGOL800.html">
+      <div class="c-num">23</div>
+      <div class="c-title">あなたに</div>
+      <div class="c-cn">献给你</div>
+      <div class="c-artist">MONGOL800</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#e64980;--accent-soft:rgba(230,73,128,.28);--bg1:#fff4f8;--bg2:#ffe0ec;--bg3:#fff0f6;--card:rgba(255,255,255,.87);--hover:rgba(230,73,128,.07);--line:rgba(230,73,128,.18);" href="言わないけどね。-大原ゆい子.html">
+      <div class="c-num">24</div>
+      <div class="c-title"><ruby>言<rt>い</rt></ruby>わないけどね。</div>
+      <div class="c-cn">虽然不会说出口哦。</div>
+      <div class="c-artist">大原ゆい子</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#8d6e63;--accent-soft:rgba(141,110,99,.28);--bg1:#faf6f3;--bg2:#ece0d9;--bg3:#f5ede8;--card:rgba(255,255,255,.87);--hover:rgba(141,110,99,.07);--line:rgba(141,110,99,.18);" href="やさしい気持ち-Chara.html">
+      <div class="c-num">25</div>
+      <div class="c-title">やさしい気持ち</div>
+      <div class="c-cn">温柔的心意</div>
+      <div class="c-artist">Chara</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#5f3dc4;--accent-soft:rgba(95,61,196,.28);--bg1:#f7f4fe;--bg2:#e4dbfb;--bg3:#f1ecfd;--card:rgba(255,255,255,.87);--hover:rgba(95,61,196,.07);--line:rgba(95,61,196,.18);" href="夢で逢えたら-大瀧詠一.html">
+      <div class="c-num">26</div>
+      <div class="c-title"><ruby>夢<rt>ゆめ</rt></ruby>で<ruby>逢<rt>あ</rt></ruby>えたら</div>
+      <div class="c-cn">若能在梦中相逢</div>
+      <div class="c-artist">大瀧詠一</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#495057;--accent-soft:rgba(73,80,87,.28);--bg1:#f4f5f6;--bg2:#e0e3e6;--bg3:#eceef0;--card:rgba(255,255,255,.87);--hover:rgba(73,80,87,.07);--line:rgba(73,80,87,.18);" href="Over-Drive-JUDY-AND-MARY.html">
+      <div class="c-num">27</div>
+      <div class="c-title">Over Drive</div>
+      <div class="c-cn">Over Drive（全速飞驰）</div>
+      <div class="c-artist">JUDY AND MARY</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#e67700;--accent-soft:rgba(230,119,0,.28);--bg1:#fffdf5;--bg2:#fff0c2;--bg3:#fff7dd;--card:rgba(255,255,255,.87);--hover:rgba(230,119,0,.07);--line:rgba(230,119,0,.18);" href="ひまわりの約束-秦基博.html">
+      <div class="c-num">28</div>
+      <div class="c-title">ひまわりの<ruby>約束<rt>やくそく</rt></ruby></div>
+      <div class="c-cn">向日葵的约定</div>
+      <div class="c-artist">秦基博</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#e8590c;--accent-soft:rgba(232,89,12,.28);--bg1:#fffaf4;--bg2:#ffe4cc;--bg3:#fff1e2;--card:rgba(255,255,255,.87);--hover:rgba(232,89,12,.07);--line:rgba(232,89,12,.18);" href="学園天国-フィンガー5.html">
+      <div class="c-num">29</div>
+      <div class="c-title"><ruby>学園<rt>がくえん</rt></ruby><ruby>天国<rt>てんごく</rt></ruby></div>
+      <div class="c-cn">学园天国</div>
+      <div class="c-artist">フィンガー5</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#74b816;--accent-soft:rgba(116,184,22,.28);--bg1:#f7fbeb;--bg2:#e4f3c8;--bg3:#f2f9e2;--card:rgba(255,255,255,.87);--hover:rgba(116,184,22,.07);--line:rgba(116,184,22,.18);" href="じょいふる-いきものがかり.html">
+      <div class="c-num">30</div>
+      <div class="c-title">じょいふる</div>
+      <div class="c-cn">Joyful（欢乐满满）</div>
+      <div class="c-artist">いきものがかり</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#e03131;--accent-soft:rgba(224,49,49,.28);--bg1:#fff7f7;--bg2:#ffe0e0;--bg3:#fff0f0;--card:rgba(255,255,255,.87);--hover:rgba(224,49,49,.07);--line:rgba(224,49,49,.18);" href="サンタが町にやってくる-クリスマスソング.html">
+      <div class="c-num">31</div>
+      <div class="c-title">サンタが町にやってくる</div>
+      <div class="c-cn">圣诞老人进城来</div>
+      <div class="c-artist">クリスマスソング</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#0c8599;--accent-soft:rgba(12,133,153,.28);--bg1:#f2fbfc;--bg2:#d6f0f5;--bg3:#e9f8fb;--card:rgba(255,255,255,.87);--hover:rgba(12,133,153,.07);--line:rgba(12,133,153,.18);" href="スノーマジックファンタジー-SEKAI-NO-OWARI.html">
+      <div class="c-num">32</div>
+      <div class="c-title">スノーマジックファンタジー</div>
+      <div class="c-cn">雪的魔法幻想曲</div>
+      <div class="c-artist">SEKAI NO OWARI</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#a61e4d;--accent-soft:rgba(166,30,77,.28);--bg1:#fff5f7;--bg2:#fbdce5;--bg3:#fdeaf0;--card:rgba(255,255,255,.87);--hover:rgba(166,30,77,.07);--line:rgba(166,30,77,.18);" href="花-ORANGE-RANGE.html">
+      <div class="c-num">33</div>
+      <div class="c-title">花</div>
+      <div class="c-cn">花</div>
+      <div class="c-artist">ORANGE RANGE</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#f59f00;--accent-soft:rgba(245,159,0,.28);--bg1:#fffaf0;--bg2:#ffe8bf;--bg3:#fff5dd;--card:rgba(255,255,255,.87);--hover:rgba(245,159,0,.07);--line:rgba(245,159,0,.18);" href="明日への扉-I-WiSH.html">
+      <div class="c-num">34</div>
+      <div class="c-title"><ruby>明日<rt>あした</rt></ruby>への<ruby>扉<rt>とびら</rt></ruby></div>
+      <div class="c-cn">通往明天的大门</div>
+      <div class="c-artist">I WiSH</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#5f3dc4;--accent-soft:rgba(95,61,196,.28);--bg1:#f7f4fe;--bg2:#e4dbfb;--bg3:#f1ecfd;--card:rgba(255,255,255,.87);--hover:rgba(95,61,196,.07);--line:rgba(95,61,196,.18);" href="天体観測-BUMP-OF-CHICKEN.html">
+      <div class="c-num">35</div>
+      <div class="c-title"><ruby>天体観測<rt>てんたいかんそく</rt></ruby></div>
+      <div class="c-cn">天体观测</div>
+      <div class="c-artist">BUMP OF CHICKEN</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#e64980;--accent-soft:rgba(230,73,128,.28);--bg1:#fff4f8;--bg2:#ffe0ec;--bg3:#fff0f6;--card:rgba(255,255,255,.87);--hover:rgba(230,73,128,.07);--line:rgba(230,73,128,.18);" href="fragile-Every-Little-Thing.html">
+      <div class="c-num">36</div>
+      <div class="c-title">fragile</div>
+      <div class="c-cn">fragile（易碎）</div>
+      <div class="c-artist">Every Little Thing</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#d6336c;--accent-soft:rgba(214,51,108,.28);--bg1:#fff7fa;--bg2:#ffe3ec;--bg3:#fff0f5;--card:rgba(255,255,255,.85);--hover:rgba(214,51,108,.07);--line:rgba(214,51,108,.18);" href="君に届け-flumpool.html">
+      <div class="c-num">37</div>
+      <div class="c-title"><ruby>君<rt>きみ</rt></ruby>に<ruby>届<rt>とど</rt></ruby>け</div>
+      <div class="c-cn">传达给你</div>
+      <div class="c-artist">flumpool</div>
+      <div class="c-go">打开歌词 →</div>
     </a></div>
   <p class="note">想加入新的歌？直接告诉我歌名就行，我会往这个文件夹里继续添加 ♪<br>
   歌词出典：歌ネット（uta-net.com）／翻译为个人学习用意译，请勿商用。</p>
 </div>
+<script>
+(function(){
+  var input = document.getElementById('songSearch');
+  if (!input) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var count = document.getElementById('songCount');
+  function render(){
+    var q = (input.value||'').trim().toLowerCase();
+    var n = 0;
+    cards.forEach(function(c){
+      var hit = !q || (c.textContent||'').toLowerCase().indexOf(q) > -1;
+      c.style.display = hit ? '' : 'none';
+      if (hit) n++;
+    });
+    if (count) count.textContent = q ? ('找到 ' + n + ' / ' + cards.length + ' 首') : ('共 ' + cards.length + ' 首歌');
+  }
+  input.addEventListener('input', render);
+  render();
+})();
+</script>
+
 </body>
 </html>
