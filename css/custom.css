@@ -43,3 +43,10 @@
 @media (max-width: 640px) {
   .markdown-body figure.gallery img { flex-basis: calc(50% - 5px); }
 }
+
+/* 夜间背景（主题 bg_image.dark 的双重保险 + 更清晰） */
+html.dark body::before {
+  background-image: url('/images/night.png');
+  opacity: 0.9;
+  filter: none;
+}
