@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eternal reality - fripSide｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#0c8599;--accent-soft:rgba(12,133,153,.28);--bg1:#f2fbfc;--bg2:#d6f0f5;--bg3:#e9f8fb;--card:rgba(255,255,255,.87);--hover:rgba(12,133,153,.07);--line:rgba(12,133,153,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
+  color:var(--accent);margin:34px 0 14px;}
+.part-label:first-child{margin-top:2px;}
+.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
+.stanza{margin:0 0 6px;}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+  .links-tools button,.l-editor,.links-empty{display:none !important;}
+}
+/* ---------- 找歌链接卡片 ---------- */
+.links{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:22px 40px 26px;box-shadow:0 18px 50px rgba(80,60,90,.10);margin-top:22px;}
+.links-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.links-title{font-size:16px;margin:0;color:var(--accent);letter-spacing:.08em;}
+.links-title small{font-weight:400;color:#a09691;font-size:12px;letter-spacing:0;margin-left:6px;}
+.links-tools{display:flex;gap:8px;flex-wrap:wrap;}
+.links-tools button{font-family:inherit;font-size:12.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.links-tools button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.links-tools button.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.link-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.links-empty{color:#a09691;font-size:13px;margin:16px 0 0;line-height:1.8;}
+.chip{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#2b2623;background:#fff;
+  border:1px solid var(--line);border-radius:999px;padding:5px 8px 5px 16px;font-size:13.5px;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);transition:border-color .15s;}
+.chip:hover{border-color:var(--accent);}
+.chip a{display:inline-flex;align-items:center;gap:9px;color:inherit;text-decoration:none;}
+.chip a:hover{color:var(--accent);}
+.chip .host{color:#a09691;font-size:11.5px;}
+.chip .x{border:none;background:none;color:#c9bfb9;font-size:14px;cursor:pointer;line-height:1;padding:2px 8px;border-radius:50%;}
+.chip .x:hover{color:#fff;background:#e03131;}
+.l-editor{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center;}
+.l-editor[hidden]{display:none !important;}
+.l-in{font-family:inherit;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;color:#2b2623;min-width:0;outline:none;}
+.l-in:focus{border-color:var(--accent);}
+.l-in#inLabel{flex:1 1 150px;}
+.l-in#inUrl{flex:2 1 280px;}
+.l-editor button{font-family:inherit;font-size:13.5px;color:#fff;background:var(--accent);border:none;border-radius:10px;padding:9px 18px;cursor:pointer;}
+.l-editor #btnSetPw{background:none;color:var(--accent);border:1px solid var(--accent-soft);}
+.l-hint{flex-basis:100%;color:#a09691;font-size:12.5px;line-height:1.8;}
+.l-hint strong{color:#7d716c;}
+.l-note{flex-basis:100%;color:#e03131;font-size:12px;margin:0;}
+@media (max-width:780px){ .links{padding:18px 16px 20px;} .l-in{flex:1 1 100%;} }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">eternal reality</h1>
+    <div class="cn-title">永恒的真实</div>
+    <div class="artist">fripSide</div>
+    <p class="subtitle">《某科学的超电磁炮S》OP2 —— 与相互信任的伙伴牵起双手，用无可动摇的力量把握现实，把坦诚的愿望贯彻到底。</p>
+    <div class="credit">作詞：八木沼悟志 ／ 作曲：小室哲哉・八木沼悟志 ／ 編曲：八木沼悟志 ／ 2013年8月21日 発売 ／ TVアニメ『とある科学の超電磁砲S』後期OP（第17話～）</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<div class="part-label">副歌 · 闪耀的希望</div><section class="stanza"><div class="row"><div class="jp"><ruby>輝<rt>かがや</rt></ruby>く<ruby>希望<rt>きぼう</rt></ruby>が この<ruby>街<rt>まち</rt></ruby>を<ruby>駆<rt>か</rt></ruby>け<ruby>抜<rt>ぬ</rt></ruby>けるから</div><div class="cn">闪耀的希望 正穿梭点缀于这条街道</div></div>
+<div class="row"><div class="jp">いつだって <ruby>信<rt>しん</rt></ruby>じ<ruby>合<rt>あ</rt></ruby>える<ruby>仲間<rt>なかま</rt></ruby>と <ruby>手<rt>て</rt></ruby>を<ruby>繋<rt>つな</rt></ruby>ぎながら</div><div class="cn">无论何时 都与相互信任的伙伴牵系双手</div></div>
+<div class="row"><div class="jp"><ruby>心<rt>こころ</rt></ruby>のまま <ruby>信<rt>しん</rt></ruby>じる<ruby>明日<rt>あした</rt></ruby>を<ruby>捜<rt>さが</rt></ruby>し<ruby>続<rt>つづ</rt></ruby>けてる</div><div class="cn">我心依旧 不断追寻着理想中的明天</div></div></section>
+<div class="part-label">第一节 · 同甘共苦</div><section class="stanza"><div class="row"><div class="jp"><ruby>立<rt>た</rt></ruby>ち<ruby>尽<rt>つ</rt></ruby>くす <ruby>雑踏<rt>ざっとう</rt></ruby>のなか <ruby>遠<rt>とお</rt></ruby>ざかる<ruby>君<rt>きみ</rt></ruby>を<ruby>見<rt>み</rt></ruby>つめてた</div><div class="cn">曾孤身伫立于喧嚣的都市 目送着你的背影远去</div></div>
+<div class="row"><div class="jp">“<ruby>分<rt>わ</rt></ruby>かち<ruby>合<rt>あ</rt></ruby>う” その<ruby>大切<rt>たいせつ</rt></ruby>さ <ruby>今<rt>いま</rt></ruby>は<ruby>理解<rt>わか</rt></ruby>っているから</div><div class="cn">“同甘共苦”的重要性 如今已能深刻理解</div></div>
+<div class="row"><div class="jp">いくつもの<ruby>笑顔<rt>えがお</rt></ruby>が <ruby>今日<rt>きょう</rt></ruby>を<ruby>彩<rt>いろど</rt></ruby>って</div><div class="cn">无数的笑容 让今日艳丽多彩</div></div>
+<div class="row"><div class="jp">みんなを<ruby>包<rt>つつ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>む そんな<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby>を<ruby>守<rt>まも</rt></ruby>りたい</div><div class="cn">为大家带来欢乐的氛围 我当然要将此守护到底</div></div></section>
+<div class="part-label">副歌 · 无可动摇的力量</div><section class="stanza"><div class="row"><div class="jp"><ruby>動<rt>うご</rt></ruby>き<ruby>出<rt>だ</rt></ruby>す<ruby>夢<rt>ゆめ</rt></ruby>を この<ruby>空<rt>そら</rt></ruby>に<ruby>響<rt>ひび</rt></ruby>かせたら</div><div class="cn">萌芽初生的梦想 若能响彻这片天空</div></div>
+<div class="row"><div class="jp"><ruby>揺<rt>ゆ</rt></ruby>るぎない<ruby>能力<rt>チカラ</rt></ruby> <ruby>現実<rt>げんじつ</rt></ruby>を<ruby>捉<rt>とら</rt></ruby>えていく</div><div class="cn">这份无可动摇的力量 便会牢牢地把握住现实</div></div>
+<div class="row"><div class="jp"><ruby>弱<rt>よわ</rt></ruby>さ<ruby>打<rt>う</rt></ruby>ち<ruby>明<rt>あ</rt></ruby>ける そんな<ruby>強<rt>つよ</rt></ruby>さを<ruby>持<rt>も</rt></ruby>てたから</div><div class="cn">现在的我已经深知 承认自己的弱小是一种坚强</div></div>
+<div class="row"><div class="jp">いつの<ruby>日<rt>ひ</rt></ruby>も <ruby>忘<rt>わす</rt></ruby>れないよ この<ruby>絆<rt>きずな</rt></ruby>だけ<ruby>抱<rt>だ</rt></ruby>きしめて</div><div class="cn">无论何时都绝不会忘记 彼此的羁绊我将倍加珍惜</div></div>
+<div class="row"><div class="jp"><ruby>胸<rt>むね</rt></ruby>を<ruby>張<rt>は</rt></ruby>って <ruby>誇<rt>ほこ</rt></ruby>れる<ruby>未来<rt>みらい</rt></ruby>を<ruby>撃<rt>う</rt></ruby>ち<ruby>貫<rt>つらぬ</rt></ruby>いてく</div><div class="cn">昂首挺胸 为了骄傲的未来而击穿一切险阻</div></div></section>
+<div class="part-label">第二节 · 与你相遇以来</div><section class="stanza"><div class="row"><div class="jp"><ruby>一人<rt>ひとり</rt></ruby>きり <ruby>心<rt>こころ</rt></ruby><ruby>閉<rt>と</rt></ruby>ざして いくつかの<ruby>闇<rt>やみ</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えてきた</div><div class="cn">独自一人 闭锁着内心 一路跨越无数个孤寂黑暗</div></div>
+<div class="row"><div class="jp">いつからか <ruby>気<rt>き</rt></ruby>づかされてた <ruby>一人<rt>ひとり</rt></ruby>じゃないその<ruby>強<rt>つよ</rt></ruby>さを</div><div class="cn">忘记是何时 才忽然察觉到 这份坚强不能只靠孤身一人</div></div>
+<div class="row"><div class="jp"><ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す <ruby>初<rt>はじ</rt></ruby>めて<ruby>君<rt>きみ</rt></ruby>と<ruby>逢<rt>あ</rt></ruby>った<ruby>日<rt>ひ</rt></ruby>を</div><div class="cn">回忆顿时涌现 初次与你邂逅的日子</div></div>
+<div class="row"><div class="jp">あれから たくさんの お<ruby>互<rt>たが</rt></ruby>いの<ruby>気持<rt>きも</rt></ruby>ちを<ruby>交<rt>か</rt></ruby>わして</div><div class="cn">于此之后 彼此心意相通 分担着喜怒哀愁</div></div>
+<div class="row"><div class="jp"><ruby>手<rt>て</rt></ruby>にした<ruby>煌<rt>きら</rt></ruby>めき この<ruby>世界<rt>せかい</rt></ruby><ruby>照<rt>て</rt></ruby>らしていく</div><div class="cn">紧握于手的璀璨辉煌 不断照耀着这个世界</div></div>
+<div class="row"><div class="jp"><ruby>重<rt>かさ</rt></ruby>なる<ruby>想<rt>おも</rt></ruby>いが <ruby>私<rt>わたし</rt></ruby>を<ruby>導<rt>みちび</rt></ruby>いている</div><div class="cn">相互交织的信念 指引我不断向前</div></div>
+<div class="row"><div class="jp"><ruby>大好<rt>だいす</rt></ruby>きな<ruby>君<rt>きみ</rt></ruby>の その<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>守<rt>まも</rt></ruby>りたいから</div><div class="cn">为了最喜欢的你 我愿守护你的梦想</div></div>
+<div class="row"><div class="jp">いつだって <ruby>信<rt>しん</rt></ruby>じ<ruby>合<rt>あ</rt></ruby>える<ruby>仲間<rt>なかま</rt></ruby>と <ruby>心<rt>こころ</rt></ruby><ruby>繋<rt>つな</rt></ruby>いでる</div><div class="cn">无论何时 都将能与相互信任的伙伴 紧紧契合着心灵</div></div>
+<div class="row"><div class="jp"><ruby>私<rt>わたし</rt></ruby>らしく <ruby>真<rt>ま</rt></ruby>っ<ruby>直<rt>す</rt></ruby>ぐな<ruby>願<rt>ねが</rt></ruby>いを<ruby>貫<rt>つらぬ</rt></ruby>いていく</div><div class="cn">以自己的方式 去贯彻这份坦诚的愿望</div></div></section>
+<div class="part-label">桥段 · Eternal reality</div><section class="stanza"><div class="row"><div class="jp">foo…We can accept reality</div><div class="cn">喔…我们能直面真实</div></div>
+<div class="row"><div class="jp">I'll link the personal wall for me and you</div><div class="cn">我将会与你的心紧紧相连</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>優<rt>やさ</rt></ruby>しさを</div><div class="cn">你的温柔体贴</div></div>
+<div class="row"><div class="jp">(The feeling dive into my heart)</div><div class="cn">（直抵我的内心）</div></div>
+<div class="row"><div class="jp">いつも<ruby>感<rt>かん</rt></ruby>じてる</div><div class="cn">始终能深切感受</div></div>
+<div class="row"><div class="jp">(So, I continue eternal reality)</div><div class="cn">（所以 我将延续这永恒的真实）</div></div></section>
+<div class="part-label">结尾 · 延续永恒的真实</div><section class="stanza"><div class="row"><div class="jp"><ruby>動<rt>うご</rt></ruby>き<ruby>出<rt>だ</rt></ruby>す<ruby>夢<rt>ゆめ</rt></ruby>を この<ruby>空<rt>そら</rt></ruby>に<ruby>響<rt>ひび</rt></ruby>かせたら</div><div class="cn">萌芽初生的梦想 若能响彻这片天空</div></div>
+<div class="row"><div class="jp"><ruby>揺<rt>ゆ</rt></ruby>るぎない<ruby>能力<rt>チカラ</rt></ruby> <ruby>現実<rt>げんじつ</rt></ruby>を<ruby>捉<rt>とら</rt></ruby>えていく</div><div class="cn">这份无可动摇的力量 便会牢牢地把握住现实</div></div>
+<div class="row"><div class="jp"><ruby>輝<rt>かがや</rt></ruby>く<ruby>希望<rt>きぼう</rt></ruby>が この<ruby>街<rt>まち</rt></ruby>を<ruby>駆<rt>か</rt></ruby>け<ruby>抜<rt>ぬ</rt></ruby>けるから</div><div class="cn">闪耀的希望 正穿梭点缀于这条街道</div></div>
+<div class="row"><div class="jp">いつだって <ruby>信<rt>しん</rt></ruby>じ<ruby>合<rt>あ</rt></ruby>える<ruby>仲間<rt>なかま</rt></ruby>と <ruby>手<rt>て</rt></ruby>を<ruby>繋<rt>つな</rt></ruby>ぎながら</div><div class="cn">无论何时 都与相互信任的伙伴牵系双手</div></div>
+<div class="row"><div class="jp"><ruby>心<rt>こころ</rt></ruby>のまま <ruby>信<rt>しん</rt></ruby>じる<ruby>明日<rt>あした</rt></ruby>を<ruby>捜<rt>さが</rt></ruby>し<ruby>続<rt>つづ</rt></ruby>けてる</div><div class="cn">我心依旧 不断追寻着理想中的明天</div></div></section>
+  </main>
+  <section class="links">
+    <div class="links-head">
+      <div class="links-title">🔗 找歌链接 <small>点击即可打开</small></div>
+      <div class="links-tools">
+        <button id="btnEdit" onclick="toggleEdit()">🔒 管理链接</button>
+        <button id="btnExport" onclick="exportPage()" style="display:none">⬇ 导出本页（含链接）</button>
+      </div>
+    </div>
+    <div id="linkList" class="link-list"></div>
+    <p class="links-empty" id="linksEmpty">还没有添加链接 —— 点右上「管理链接」，粘贴 YouTube / B站 / 网易云 等地址，方便以后快速找歌。</p>
+    <div class="l-editor" id="lEditor" hidden>
+      <input id="inLabel" class="l-in" type="text" placeholder="名称（如：MV / 现场版 / 网易云）">
+      <input id="inUrl" class="l-in" type="url" placeholder="https://… 完整链接">
+      <button id="btnAdd" onclick="addLink()">＋ 添加</button>
+      <button id="btnSetPw" onclick="setPw()" type="button">设密码</button>
+      <div class="l-hint" id="lHint"></div>
+      <p class="l-note" id="lNote"></p>
+    </div>
+  </section>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+<script id="linksData">
+window.__linksInit = [["YouTube 搜索", "https://www.youtube.com/results?search_query=eternal+reality+fripSide"], ["B站 搜索", "https://search.bilibili.com/all?keyword=eternal+reality+fripSide"]];
+window.__linksPw = "";
+</script>
+<script>
+/* ===== 找歌链接管理 =====
+   规则：每首歌的链接 = 页面内置默认 + 本浏览器里的增删（localStorage 按页面名存）。
+   其他访客打开这个文件/网站时，改的是“他自己的浏览器”，永远影响不到你看到的列表。
+   「管理密码」：EDITOR_KEY 非空时（或本机设过密码），增删必须先输密码；导出/分享的文件同样生效。 */
+(function(){
+  var file = decodeURIComponent((location.pathname.split('/').pop() || 'page'));
+  var LS='tk_links_'+file, PS='tk_pw_'+file;
+  var mem={}, memOk=true;
+  try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); }
+  catch(e){ memOk=false; }
+  function load(k){ if(memOk){ try{ return localStorage.getItem(k); }catch(e){ return null; } } return (k in mem)?mem[k]:null; }
+  function save(k,v){ if(memOk){ try{ localStorage.setItem(k,v); return; }catch(e){} } mem[k]=v; }
+  function del(k){ if(memOk){ try{ localStorage.removeItem(k); return; }catch(e){} } delete mem[k]; }
+  var pwStored = load(PS);
+  var PAGE_PW = (typeof window.__linksPw!=='undefined' && window.__linksPw) ? window.__linksPw : '';
+  var baked = (typeof window.__linksInit!=='undefined' && Array.isArray(window.__linksInit)) ? window.__linksInit : [];
+  function currentList(){
+    var raw = load(LS);
+    if(raw){ try{ var o=JSON.parse(raw); if(o && Array.isArray(o.list)) return o.list; }catch(e){} }
+    return baked.slice();
+  }
+  function persist(list){ save(LS, JSON.stringify({list:list})); }
+  var editOn=false, req = pwStored || PAGE_PW;
+  function hostOf(u){ try{ return new URL(u).host.replace(/^www\./,''); }catch(e){ return ''; } }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function render(){
+    var list=currentList(), box=document.getElementById('linkList'), empty=document.getElementById('linksEmpty');
+    box.innerHTML='';
+    if(!list.length){ empty.style.display='block'; }
+    else{
+      empty.style.display='none';
+      list.forEach(function(it,i){
+        var label=(it && it[0]) || (it && it[1]) || '', url=(it && it[1]) || '';
+        if(!url) return;
+        var span=document.createElement('span'); span.className='chip';
+        var a=document.createElement('a'); a.href=url; a.target='_blank'; a.rel='noreferrer';
+        a.innerHTML='<span class="cl">'+esc(label)+'</span><span class="host">'+esc(hostOf(url))+'</span>';
+        span.appendChild(a);
+        if(editOn){
+          var x=document.createElement('button');
+          x.className='x'; x.title='删除'; x.type='button'; x.textContent='✕';
+          x.onclick=(function(k){ return function(ev){ ev.preventDefault(); ev.stopPropagation(); if(confirm('删除这条链接？')){ var l=currentList(); l.splice(k,1); persist(l); render(); } }; })(i);
+          span.appendChild(x);
+        }
+        box.appendChild(span);
+      });
+    }
+    if(editOn){
+      document.getElementById('lEditor').hidden=false;
+      var h='编辑中：改动只保存在<strong>这个浏览器</strong>；点「导出本页」可把当前链接写进一个 html 文件带走或分享。';
+      if(req){ h+=' 密码已启用：不知道密码的访客无法增删。'; }
+      else{ h+=' 目前<strong>未设密码</strong>：任何访客都能增删，但只影响各自的浏览器。建议点「设密码」或改 lyric_build.py 的 EDITOR_KEY 后重新构建。'; }
+      document.getElementById('lHint').innerHTML=h;
+      document.getElementById('lNote').textContent = memOk ? '' : '注意：此环境不支持 localStorage，本次改动关闭页面后会丢失。';
+    } else {
+      document.getElementById('lEditor').hidden=true;
+    }
+  }
+  window.toggleEdit=function(){
+    if(!editOn){
+      if(req){
+        var p=prompt('请输入管理密码：');
+        if(p===null) return;
+        if(p!==req){ alert('密码错误'); return; }
+      }
+      editOn=true;
+      var b=document.getElementById('btnEdit');
+      b.textContent='🔓 完成编辑'; b.classList.add('on');
+      document.getElementById('btnExport').style.display='';
+    } else {
+      editOn=false;
+      var b2=document.getElementById('btnEdit');
+      b2.textContent='🔒 管理链接'; b2.classList.remove('on');
+      document.getElementById('btnExport').style.display='none';
+    }
+    render();
+  };
+  window.addLink=function(){
+    var label=document.getElementById('inLabel').value.trim();
+    var url=document.getElementById('inUrl').value.trim();
+    if(!/^https?:\/\//i.test(url)){ alert('链接要以 http:// 或 https:// 开头'); return; }
+    if(!label) label=url;
+    var list=currentList(); list.push([label,url]);
+    persist(list); render();
+    document.getElementById('inLabel').value=''; document.getElementById('inUrl').value='';
+  };
+  window.setPw=function(){
+    var p=prompt('设置本机管理密码（留空 = 取消保护）。设置后增删链接都要先输入它。');
+    if(p===null) return;
+    if(p===''){ pwStored=''; del(PS); }
+    else { pwStored=p; save(PS,p); }
+    req = pwStored || PAGE_PW;
+    alert(req ? '密码已启用。' : '保护已取消（任何访客都能增删，但只影响各自浏览器）。');
+  };
+  window.exportPage=function(){
+    var list=currentList();
+    var doc=document.getElementById('linksData');
+    var old=doc.textContent;
+    function jsSafe(o){ return JSON.stringify(o).replace(/<\//g,'<\\/'); }
+    var fresh='window.__linksInit = '+jsSafe(list)+';\nwindow.__linksPw = '+jsSafe(PAGE_PW)+';';
+    var html=document.documentElement.outerHTML.replace(old, fresh);
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=file;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    alert('已导出：'+file+'\n这个新文件已把当前全部链接写进页面，发给别人或上传后，他们也能看到这些链接。');
+  };
+  render();
+})();
+</script>
+</body>
+</html>
