@@ -227,7 +227,7 @@ function toggleCn(){
 }
 </script>
 <script id="linksData">
-window.__linksInit = [["YouTube 搜索", "https://www.youtube.com/results?search_query=%E5%A5%BD%E3%81%8D%E3%81%A0%E3%81%8B%E3%82%89%E3%80%82+%E3%80%8E%E3%83%A6%E3%82%A4%E3%82%AB%E3%80%8F"], ["B站 搜索", "https://search.bilibili.com/all?keyword=%E5%A5%BD%E3%81%8D%E3%81%A0%E3%81%8B%E3%82%89%E3%80%82+%E3%80%8E%E3%83%A6%E3%82%A4%E3%82%AB%E3%80%8F"]];
+window.__linksInit = [["B站（手动添加）", "https://www.bilibili.com/video/BV1cL411W7Kz/?spm_id_from=333.337.search-card.all.click&vd_source=05e16800da73324bb59560c10c732139"], ["YouTube 搜索", "https://www.youtube.com/results?search_query=%E5%A5%BD%E3%81%8D%E3%81%A0%E3%81%8B%E3%82%89%E3%80%82+%E3%80%8E%E3%83%A6%E3%82%A4%E3%82%AB%E3%80%8F"], ["B站 搜索", "https://search.bilibili.com/all?keyword=%E5%A5%BD%E3%81%8D%E3%81%A0%E3%81%8B%E3%82%89%E3%80%82+%E3%80%8E%E3%83%A6%E3%82%A4%E3%82%AB%E3%80%8F"]];
 window.__linksPw = "";
 </script>
 <script>
@@ -247,12 +247,27 @@ window.__linksPw = "";
   var pwStored = load(PS);
   var PAGE_PW = (typeof window.__linksPw!=='undefined' && window.__linksPw) ? window.__linksPw : '';
   var baked = (typeof window.__linksInit!=='undefined' && Array.isArray(window.__linksInit)) ? window.__linksInit : [];
-  function currentList(){
+  function bakedUrls(){ return baked.map(function(x){ return x && x[1]; }); }
+  function loadLocalExtras(){
     var raw = load(LS);
-    if(raw){ try{ var o=JSON.parse(raw); if(o && Array.isArray(o.list)) return o.list; }catch(e){} }
-    return baked.slice();
+    if(raw){ try{
+      var o=JSON.parse(raw);
+      if(o && Array.isArray(o.list)){
+        var bu=bakedUrls();
+        // 旧数据里可能存过“整份列表”，过滤掉与数据库重复的部分，只保留本机新增
+        return o.list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+      }
+    }catch(e){} }
+    return [];
   }
-  function persist(list){ save(LS, JSON.stringify({list:list})); }
+  var localExtras = loadLocalExtras();
+  // 页面最终列表 = 数据库/内置链接（所有人可见） + 本机新增（只影响自己）
+  function currentList(){ return baked.concat(localExtras); }
+  function persist(list){
+    var bu=bakedUrls();
+    localExtras = list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+    save(LS, JSON.stringify({list:localExtras}));
+  }
   var editOn=false, req = pwStored || PAGE_PW;
   function hostOf(u){ try{ return new URL(u).host.replace(/^www\./,''); }catch(e){ return ''; } }
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
@@ -271,8 +286,10 @@ window.__linksPw = "";
         span.appendChild(a);
         if(editOn){
           var x=document.createElement('button');
-          x.className='x'; x.title='删除'; x.type='button'; x.textContent='✕';
-          x.onclick=(function(k){ return function(ev){ ev.preventDefault(); ev.stopPropagation(); if(confirm('删除这条链接？')){ var l=currentList(); l.splice(k,1); persist(l); render(); } }; })(i);
+          x.className='x'; x.title=(i<baked.length?'来自数据库，需在 songs.db 里删除':'删除本机新增'); x.type='button'; x.textContent='✕';
+          x.onclick=(function(k){ return function(ev){ ev.preventDefault(); ev.stopPropagation();
+            if(k<baked.length){ alert('这条来自数据库（songs.db），所有设备都能看到；要删除请用 linkdb.py rm，或直接告诉我。'); return; }
+            if(confirm('删除这条本机新增的链接？')){ var l=currentList(); l.splice(k,1); persist(l); render(); } }; })(i);
           span.appendChild(x);
         }
         box.appendChild(span);
@@ -280,7 +297,7 @@ window.__linksPw = "";
     }
     if(editOn){
       document.getElementById('lEditor').hidden=false;
-      var h='编辑中：改动只保存在<strong>这个浏览器</strong>；点「导出本页」可把当前链接写进一个 html 文件带走或分享。';
+      var h='列表 = <strong>数据库链接</strong>（所有人可见） + <strong>本机新增</strong>（仅自己）。数据库链接用 _tools\\linkdb.py 管理；点「导出本页」可把全部链接写进一个 html 带走或分享。';
       if(req){ h+=' 密码已启用：不知道密码的访客无法增删。'; }
       else{ h+=' 目前<strong>未设密码</strong>：任何访客都能增删，但只影响各自的浏览器。建议点「设密码」或改 lyric_build.py 的 EDITOR_KEY 后重新构建。'; }
       document.getElementById('lHint').innerHTML=h;
