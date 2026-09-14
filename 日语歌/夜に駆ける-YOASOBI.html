@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>夜に駆ける - YOASOBI｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
+  color:var(--accent);margin:34px 0 14px;}
+.part-label:first-child{margin-top:2px;}
+.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
+.stanza{margin:0 0 6px;}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+  .links-tools button,.l-editor,.links-empty{display:none !important;}
+}
+/* ---------- 找歌链接卡片 ---------- */
+.links{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:22px 40px 26px;box-shadow:0 18px 50px rgba(80,60,90,.10);margin-top:22px;}
+.links-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.links-title{font-size:16px;margin:0;color:var(--accent);letter-spacing:.08em;}
+.links-title small{font-weight:400;color:#a09691;font-size:12px;letter-spacing:0;margin-left:6px;}
+.links-tools{display:flex;gap:8px;flex-wrap:wrap;}
+.links-tools button{font-family:inherit;font-size:12.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.links-tools button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.links-tools button.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.link-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.links-empty{color:#a09691;font-size:13px;margin:16px 0 0;line-height:1.8;}
+.chip{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#2b2623;background:#fff;
+  border:1px solid var(--line);border-radius:999px;padding:5px 8px 5px 16px;font-size:13.5px;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);transition:border-color .15s;}
+.chip:hover{border-color:var(--accent);}
+.chip a{display:inline-flex;align-items:center;gap:9px;color:inherit;text-decoration:none;}
+.chip a:hover{color:var(--accent);}
+.chip .host{color:#a09691;font-size:11.5px;}
+.chip .x{border:none;background:none;color:#c9bfb9;font-size:14px;cursor:pointer;line-height:1;padding:2px 8px;border-radius:50%;}
+.chip .x:hover{color:#fff;background:#e03131;}
+.l-editor{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center;}
+.l-editor[hidden]{display:none !important;}
+.l-in{font-family:inherit;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;color:#2b2623;min-width:0;outline:none;}
+.l-in:focus{border-color:var(--accent);}
+.l-in#inLabel{flex:1 1 150px;}
+.l-in#inUrl{flex:2 1 280px;}
+.l-editor button{font-family:inherit;font-size:13.5px;color:#fff;background:var(--accent);border:none;border-radius:10px;padding:9px 18px;cursor:pointer;}
+.l-editor #btnSetPw{background:none;color:var(--accent);border:1px solid var(--accent-soft);}
+.l-hint{flex-basis:100%;color:#a09691;font-size:12.5px;line-height:1.8;}
+.l-hint strong{color:#7d716c;}
+.l-note{flex-basis:100%;color:#e03131;font-size:12px;margin:0;}
+@media (max-width:780px){ .links{padding:18px 16px 20px;} .l-in{flex:1 1 100%;} }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">夜に駆ける</h1>
+    <div class="cn-title"></div>
+    <div class="artist">YOASOBI</div>
+    <p class="subtitle"></p>
+    <div class="credit"></div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<section class="stanza"><div class="row"><div class="jp"><ruby>沈<rt>しず</rt></ruby>むように<ruby>溶<rt>と</rt></ruby>けてゆくように</div><div class="cn">像是沉溺溶化一般</div></div>
+<div class="row"><div class="jp"><ruby>二人<rt>ふたり</rt></ruby>だけの<ruby>空<rt>そら</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる<ruby>夜<rt>よる</rt></ruby>に</div><div class="cn">在只有你我二人的广阔夜空之下</div></div>
+<div class="row"><div class="jp">「さよなら」だけだった</div><div class="cn">你只留下了一句「再见了」</div></div>
+<div class="row"><div class="jp">その<ruby>一言<rt>ひとこと</rt></ruby>で<ruby>全<rt>すべ</rt></ruby>てが<ruby>分<rt>わ</rt></ruby>かった</div><div class="cn">但仅仅这三个字我就明白了一切</div></div>
+<div class="row"><div class="jp"><ruby>日<rt>ひ</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>み<ruby>出<rt>だ</rt></ruby>した<ruby>空<rt>そら</rt></ruby>と<ruby>君<rt>きみ</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby></div><div class="cn">日落时分的天空与你的身影</div></div>
+<div class="row"><div class="jp">フェンス<ruby>越<rt>ご</rt></ruby>しに<ruby>重<rt>かさ</rt></ruby>なっていた</div><div class="cn">在围栏的外侧重叠在一起</div></div>
+<div class="row"><div class="jp"><ruby>初<rt>はじ</rt></ruby>めて<ruby>会<rt>あ</rt></ruby>った<ruby>日<rt>ひ</rt></ruby>から</div><div class="cn">从相遇的那天开始</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>の<ruby>全<rt>すべ</rt></ruby>てを<ruby>奪<rt>うば</rt></ruby>った</div><div class="cn">我的内心全部都被你夺去</div></div>
+<div class="row"><div class="jp">どこか<ruby>儚<rt>はかな</rt></ruby>い<ruby>空気<rt>くうき</rt></ruby>を<ruby>纏<rt>まと</rt></ruby>う<ruby>君<rt>きみ</rt></ruby>は</div><div class="cn">缠绕着飘渺氤氲的你</div></div>
+<div class="row"><div class="jp"><ruby>寂<rt>さみ</rt></ruby>しい<ruby>目<rt>め</rt></ruby>をしてたんだ</div><div class="cn">眼神却显得如此寂寞</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">いつだってチックタックと</div><div class="cn">在这时针不停转动的世界里</div></div>
+<div class="row"><div class="jp"><ruby>鳴<rt>な</rt></ruby>る<ruby>世界<rt>せかい</rt></ruby>で<ruby>何度<rt>なんど</rt></ruby>だってさ</div><div class="cn">无论多少次</div></div>
+<div class="row"><div class="jp"><ruby>触<rt>ふ</rt></ruby>れる<ruby>心無<rt>こころな</rt></ruby>い<ruby>言葉<rt>ことば</rt></ruby>うるさい<ruby>声<rt>こえ</rt></ruby>に</div><div class="cn">去触碰那残酷之言刺耳之声</div></div>
+<div class="row"><div class="jp"><ruby>涙<rt>なみだ</rt></ruby>が<ruby>零<rt>こぼ</rt></ruby>れそうでも</div><div class="cn">都会泫然欲泣</div></div>
+<div class="row"><div class="jp">ありきたりな<ruby>喜<rt>よろこ</rt></ruby>びきっと<ruby>二人<rt>ふたり</rt></ruby>なら<ruby>見<rt>み</rt></ruby>つけられる</div><div class="cn">但若是两个人的话 一定能寻找到属于我们的平凡的喜悦</div></div>
+<div class="row"><div class="jp"><ruby>騒<rt>さわ</rt></ruby>がしい<ruby>日々<rt>ひび</rt></ruby>に<ruby>笑<rt>わら</rt></ruby>えない<ruby>君<rt>きみ</rt></ruby>に</div><div class="cn">为在喧嚣的日子里失去笑容的你</div></div>
+<div class="row"><div class="jp"><ruby>思<rt>おも</rt></ruby>い<ruby>付<rt>つ</rt></ruby>く<ruby>限<rt>かぎ</rt></ruby>り<ruby>眩<rt>まぶ</rt></ruby>しい<ruby>明日<rt>あす</rt></ruby>を</div><div class="cn">献上所能想象到的一切耀眼的明天</div></div>
+<div class="row"><div class="jp"><ruby>明<rt>あ</rt></ruby>けない<ruby>夜<rt>よる</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちてゆく<ruby>前<rt>まえ</rt></ruby>に</div><div class="cn">在坠入永不破晓的黑夜之前</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>の<ruby>手<rt>て</rt></ruby>を<ruby>掴<rt>つか</rt></ruby>んでほら</div><div class="cn">来 抓住我的手吧</div></div>
+<div class="row"><div class="jp"><ruby>忘<rt>わす</rt></ruby>れてしまいたくて<ruby>閉<rt>と</rt></ruby>じ<ruby>込<rt>こ</rt></ruby>めた<ruby>日々<rt>ひび</rt></ruby>も</div><div class="cn">即使是那些想要尽数忘却的封闭的日子</div></div></section>
+<section class="stanza"><div class="row"><div class="jp"><ruby>抱<rt>だ</rt></ruby>きしめた<ruby>温<rt>ぬく</rt></ruby>もりで<ruby>溶<rt>と</rt></ruby>かすから</div><div class="cn">我也会用相拥时的温暖将其溶化</div></div>
+<div class="row"><div class="jp"><ruby>怖<rt>こわ</rt></ruby>くないよいつか<ruby>日<rt>ひ</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>るまで</div><div class="cn">没有什么害怕的哦 直到黎明再次降临</div></div>
+<div class="row"><div class="jp"><ruby>二人<rt>ふたり</rt></ruby>でいよう</div><div class="cn">两人紧紧相依吧</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>にしか<ruby>見<rt>み</rt></ruby>えない</div><div class="cn">讨厌总是注视着</div></div>
+<div class="row"><div class="jp"><ruby>何<rt>なに</rt></ruby>かを<ruby>見<rt>み</rt></ruby>つめる<ruby>君<rt>きみ</rt></ruby>が<ruby>嫌<rt>きら</rt></ruby>いだ</div><div class="cn">我所看不见的东西的你</div></div>
+<div class="row"><div class="jp"><ruby>見惚<rt>みと</rt></ruby>れているかのような<ruby>恋<rt>こい</rt></ruby>するような</div><div class="cn">讨厌你那看得入迷一般</div></div>
+<div class="row"><div class="jp">そんな<ruby>顔<rt>かお</rt></ruby>が<ruby>嫌<rt>きら</rt></ruby>いだ</div><div class="cn">坠入爱河一般的表情啊</div></div>
+<div class="row"><div class="jp"><ruby>信<rt>しん</rt></ruby>じていたいけど<ruby>信<rt>しん</rt></ruby>じれないこと</div><div class="cn">虽然曾想要去相信却无法相信</div></div>
+<div class="row"><div class="jp">そんなのどうしたってきっと</div><div class="cn">那种事情不论如何</div></div>
+<div class="row"><div class="jp">これからだっていくつもあって</div><div class="cn">今后定会重蹈覆辙</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">そのたんび<ruby>怒<rt>おこ</rt></ruby>って<ruby>泣<rt>な</rt></ruby>いていくの</div><div class="cn">那时一定会生气地哭出来吧</div></div>
+<div class="row"><div class="jp">それでもきっと</div><div class="cn">即便如此</div></div>
+<div class="row"><div class="jp">いつかはきっと</div><div class="cn">我仍然相信着 终有一天</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>らはきっと</div><div class="cn">我们一定能够</div></div>
+<div class="row"><div class="jp"><ruby>分<rt>わ</rt></ruby>かり<ruby>合<rt>あ</rt></ruby>えるさ<ruby>信<rt>しん</rt></ruby>じてるよ</div><div class="cn">心意相通</div></div>
+<div class="row"><div class="jp">もう<ruby>嫌<rt>いや</rt></ruby>だって<ruby>疲<rt>つか</rt></ruby>れたんだって</div><div class="cn">你说着「已经受够了啊」「已经疲惫了啊」</div></div>
+<div class="row"><div class="jp">がむしゃらに<ruby>差<rt>さ</rt></ruby>し<ruby>伸<rt>の</rt></ruby>べた<ruby>僕<rt>ぼく</rt></ruby>の<ruby>手<rt>て</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>払<rt>はら</rt></ruby>う<ruby>君<rt>きみ</rt></ruby></div><div class="cn">将我不顾一切向你伸出的手甩开</div></div>
+<div class="row"><div class="jp">もう<ruby>嫌<rt>いや</rt></ruby>だって<ruby>疲<rt>つか</rt></ruby>れたよなんて</div><div class="cn">「已经受够了啊」「已经疲惫了啊」</div></div>
+<div class="row"><div class="jp"><ruby>本当<rt>ほんとう</rt></ruby>は<ruby>僕<rt>ぼく</rt></ruby>も<ruby>言<rt>い</rt></ruby>いたいんだ</div><div class="cn">其实我也想这样说啊</div></div>
+<div class="row"><div class="jp">ほらまたチックタックと</div><div class="cn">看啊 在这时针仍然不停转动的世界里</div></div></section>
+<section class="stanza"><div class="row"><div class="jp"><ruby>鳴<rt>な</rt></ruby>る<ruby>世界<rt>せかい</rt></ruby>で<ruby>何度<rt>なんど</rt></ruby>だってさ</div><div class="cn">无论多少次</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>為<rt>ため</rt></ruby>に<ruby>用意<rt>ようい</rt></ruby>した<ruby>言葉<rt>ことば</rt></ruby>どれも<ruby>届<rt>とど</rt></ruby>かない</div><div class="cn">为了你而准备的话语一句都不能传达给你</div></div>
+<div class="row"><div class="jp">「<ruby>終<rt>お</rt></ruby>わりにしたい」だなんてさ</div><div class="cn">「想要结束了啊」</div></div>
+<div class="row"><div class="jp"><ruby>釣<rt>つ</rt></ruby>られて<ruby>言葉<rt>ことば</rt></ruby>にした<ruby>時<rt>とき</rt></ruby></div><div class="cn">当我不由说出这句话的时候</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>は<ruby>初<rt>はじ</rt></ruby>めて<ruby>笑<rt>わら</rt></ruby>った</div><div class="cn">你第一次绽放了笑容</div></div>
+<div class="row"><div class="jp"><ruby>騒<rt>さわ</rt></ruby>がしい<ruby>日々<rt>ひび</rt></ruby>に<ruby>笑<rt>わら</rt></ruby>えなくなっていた</div><div class="cn">在喧嚣的日子里失去笑容的你</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>の<ruby>目<rt>め</rt></ruby>に<ruby>映<rt>うつ</rt></ruby>る<ruby>君<rt>きみ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>だ</div><div class="cn">在我的眼中却无比动人</div></div>
+<div class="row"><div class="jp"><ruby>明<rt>あ</rt></ruby>けない<ruby>夜<rt>よる</rt></ruby>に<ruby>溢<rt>こぼ</rt></ruby>れた<ruby>涙<rt>なみだ</rt></ruby>も</div><div class="cn">于永不破晓的黑夜里夺眶而出的眼泪</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>笑顔<rt>えがお</rt></ruby>に<ruby>溶<rt>と</rt></ruby>けていく</div><div class="cn">也会因为你的笑容而消散</div></div>
+<div class="row"><div class="jp"><ruby>変<rt>か</rt></ruby>わらない<ruby>日々<rt>ひび</rt></ruby>に<ruby>泣<rt>な</rt></ruby>いていた<ruby>僕<rt>ぼく</rt></ruby>を</div><div class="cn">你将于一成不变的日子里哭泣的我</div></div></section>
+<section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>は<ruby>優<rt>やさ</rt></ruby>しく<ruby>終<rt>お</rt></ruby>わりへと<ruby>誘<rt>さそ</rt></ruby>う</div><div class="cn">温柔地引向终结</div></div>
+<div class="row"><div class="jp"><ruby>沈<rt>しず</rt></ruby>むように<ruby>溶<rt>と</rt></ruby>けてゆくように</div><div class="cn">像是沉溺溶化一般</div></div>
+<div class="row"><div class="jp"><ruby>染<rt>し</rt></ruby>み<ruby>付<rt>つ</rt></ruby>いた<ruby>霧<rt>きり</rt></ruby>が<ruby>晴<rt>は</rt></ruby>れる</div><div class="cn">染上的氤氲终于散开</div></div>
+<div class="row"><div class="jp"><ruby>忘<rt>わす</rt></ruby>れてしまいたくて<ruby>閉<rt>と</rt></ruby>じ<ruby>込<rt>こ</rt></ruby>めた<ruby>日々<rt>ひび</rt></ruby>に</div><div class="cn">在想要尽数忘却的封闭的日子中</div></div>
+<div class="row"><div class="jp"><ruby>差<rt>さ</rt></ruby>し<ruby>伸<rt>の</rt></ruby>べてくれた<ruby>君<rt>きみ</rt></ruby>の<ruby>手<rt>て</rt></ruby>を<ruby>取<rt>と</rt></ruby>る</div><div class="cn">紧握住你向我伸出的双手</div></div>
+<div class="row"><div class="jp"><ruby>涼<rt>すず</rt></ruby>しい<ruby>風<rt>かぜ</rt></ruby>が<ruby>空<rt>そら</rt></ruby>を<ruby>泳<rt>およ</rt></ruby>ぐように<ruby>今<rt>いま</rt></ruby><ruby>吹<rt>ふ</rt></ruby>き<ruby>抜<rt>ぬ</rt></ruby>けていく</div><div class="cn">凉爽的风如同泳于夜空一般吹拂而过</div></div>
+<div class="row"><div class="jp"><ruby>繋<rt>つな</rt></ruby>いだ<ruby>手<rt>て</rt></ruby>を<ruby>離<rt>はな</rt></ruby>さないでよ</div><div class="cn">不要松开紧紧牵住的双手哦</div></div>
+<div class="row"><div class="jp"><ruby>二人<rt>ふたり</rt></ruby><ruby>今<rt>いま</rt></ruby>、<ruby>夜<rt>よる</rt></ruby>に<ruby>駆<rt>か</rt></ruby>け<ruby>出<rt>だ</rt></ruby>していく</div><div class="cn">两人现在，向夜晚飞奔而去</div></div>
+<div class="row"><div class="jp">Seize a move, you're on me, falling, and we were dissolving</div><div class="cn">捕捉到一个动作，你与我同行，坠落，我们正融化开来</div></div>
+<div class="row"><div class="jp">You and me, skies above and wide, it brings on the True night on me</div><div class="cn">你和我头顶那广阔无垠的天空，给我带来了真正的夜晚</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">All I could feel was a “goodbye”</div><div class="cn">我能感觉到的只是一声“再见”</div></div>
+<div class="row"><div class="jp">Those only words you wrote, it's plenty to understand ya</div><div class="cn">你写的那些话，已经足够让我明白你</div></div>
+<div class="row"><div class="jp">The sun is going down, the sky behind and visions of you would stand</div><div class="cn">夕阳西下，身后的天空和你的幻象都巍然屹立</div></div>
+<div class="row"><div class="jp">Overlapping with you and the fence beyond</div><div class="cn">与你和远处的栅栏重叠</div></div>
+<div class="row"><div class="jp">Remember the night that we met up</div><div class="cn">犹记我们相遇的那晚</div></div>
+<div class="row"><div class="jp">Broke into me and taken everything left in my heart</div><div class="cn">你闯入我的世界，带走了我心中的一切</div></div>
+<div class="row"><div class="jp">So fragile is that air, it always keeps on revolving near and wide</div><div class="cn">如此脆弱的空气，不断地在你周围旋转</div></div>
+<div class="row"><div class="jp">Loneliness envelops deep in your eyes</div><div class="cn">孤独将你的双眸深深笼罩</div></div>
+<div class="row"><div class="jp">It's stuck in “tick-and-tocking” mode</div><div class="cn">这个世界被困在“滴答作响”模式</div></div>
+<div class="row"><div class="jp">Never refraining shamble, block of sound</div><div class="cn">晃晃悠悠地走动着，充满了声响</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">Too many terrible noises around</div><div class="cn">周围有太多可怖的声音</div></div>
+<div class="row"><div class="jp">And the voice ringing in me gets louder</div><div class="cn">我内心的声音逐渐增大</div></div>
+<div class="row"><div class="jp">With tears about to fall</div><div class="cn">伴随着快要流下的眼泪</div></div>
+<div class="row"><div class="jp">I need to find me an average happy tiptoe</div><div class="cn">我必须找到我的平凡幸福</div></div>
+<div class="row"><div class="jp">Locating, never tough when I'm with you</div><div class="cn">正寻找，和你在一起就不会痛苦了</div></div>
+<div class="row"><div class="jp">Saw what got seen hid beneath, and louder nights keep beating</div><div class="cn">看是什么隐藏于深处，更喧嚣的夜继续不停跳动</div></div>
+<div class="row"><div class="jp">I'm going to you, and giving brighter shiny tomorrows</div><div class="cn">我奔向你奔去，奉上无数光明灿烂的明天</div></div>
+<div class="row"><div class="jp">What can "night" for you mean, infinite? You could run with me</div><div class="cn">“夜晚”对你来说意味着什么，无限？你可以和我一起奔跑</div></div>
+<div class="row"><div class="jp">Place your hand in mine, you gotta stay, hold up</div><div class="cn">握住我的手，你得留下，坚持下去</div></div>
+<div class="row"><div class="jp">Want to leave it behind, dark cruel days, in deep, you may have hid before</div><div class="cn">想把那段你藏起来的黑暗残酷的日子抛弃在过去</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">I'm embracing you until more heat dissolve what is caught up</div><div class="cn">我会拥抱你直到温暖复苏以融化那黑暗的过去为止</div></div>
+<div class="row"><div class="jp">Sun will soon rise up into a day you're no more too afraid</div><div class="cn">太阳很快就会升起，你已经不用再害怕了</div></div>
+<div class="row"><div class="jp">Keep all of me in you</div><div class="cn">把我的一切都留存于你的心中吧</div></div>
+<div class="row"><div class="jp">Only perceiving through your eyes</div><div class="cn">仅仅是凝望着你的双眸</div></div>
+<div class="row"><div class="jp">I see nothing, I'll soon hate you, keep me out, I'm crying out</div><div class="cn">我什么也没看见，我很快对你心生厌意，你将我排斥在外，而我放声大哭</div></div>
+<div class="row"><div class="jp">You're falling into deeper fascination, giving away your love</div><div class="cn">你深陷更深邃的魅力之中，散发着你的爱意</div></div>
+<div class="row"><div class="jp">That expression has got me crying out</div><div class="cn">那样的表情让我痛哭流涕啊</div></div>
+<div class="row"><div class="jp">She's gonna try to me, she's gonna lie</div><div class="cn">她要试探我，她要扯谎</div></div>
+<div class="row"><div class="jp">Got to force a belief and trust to keep on</div><div class="cn">除了强迫维持信仰与信赖无路可仿</div></div>
+<div class="row"><div class="jp">Every time it happens, heap of attack, and now I'm back in</div><div class="cn">每当那[4]再度发生时，总是各种好言相劝，然后又重蹈覆辙</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">I got to cry, then who knows?</div><div class="cn">我汪然欲涕，而谁又知晓？</div></div>
+<div class="row"><div class="jp">So we gotta keep on</div><div class="cn">所以我们要继续走下去</div></div>
+<div class="row"><div class="jp">If you gotta keep on</div><div class="cn">如果你想要继续走下去</div></div>
+<div class="row"><div class="jp">Then we're gonna keep on</div><div class="cn">我们则可以继续走下去</div></div>
+<div class="row"><div class="jp">One day, we will understand, I'm believing in you</div><div class="cn">那么总有一天，我们会心意相通，我相信着你</div></div>
+<div class="row"><div class="jp">"No, wanna stop it, you got me tired of walking"</div><div class="cn">“不，我想放弃了，你让我疲于奔波”</div></div>
+<div class="row"><div class="jp">As I show my needs, I reach to get back on, still not fit in</div><div class="cn">我向你提出要求时，我也曾努力想回首，却仍满是不适</div></div>
+<div class="row"><div class="jp">You free my hand, then leave it</div><div class="cn">你放开我的手，弃之不理</div></div>
+<div class="row"><div class="jp">"No, wanna stop it, you got me tired of walking"</div><div class="cn">“不，我想放弃了，你让我疲于奔波”</div></div>
+<div class="row"><div class="jp">Never told you the truth, I'm feeling that inside</div><div class="cn">这也是我从未对你吐出，我内心的真情实感</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">Back for another "tick-and-tocking" mode</div><div class="cn">又回到另一个“滴答作响”模式</div></div>
+<div class="row"><div class="jp">Never refraining shamble, block of sound</div><div class="cn">晃晃悠悠地走动着，充满了声响</div></div>
+<div class="row"><div class="jp">Killing, oh, too many words that I gathered around</div><div class="cn">你抹除着我那太多东拼西凑的词语</div></div>
+<div class="row"><div class="jp">Won't let me go to your mind</div><div class="cn">不让我了解你的心思</div></div>
+<div class="row"><div class="jp">"I want it to be done" is what went out</div><div class="cn">“想要一了百了啊”最后不自觉地从</div></div>
+<div class="row"><div class="jp">It found a way to finally leak out of me</div><div class="cn">我嘴边滑落时</div></div>
+<div class="row"><div class="jp">And for once, I could make you let out a smile</div><div class="cn">终于，我能让你首次绽放笑颜</div></div>
+<div class="row"><div class="jp">Saw what got seen hid beneath, and louder nights are keeping me down</div><div class="cn">看是什么隐藏于深处，更喧嚣的夜让我沮丧不已</div></div>
+<div class="row"><div class="jp">My new images of you, now, appear heavenly now</div><div class="cn">对你那崭新的印象，现在，美丽无比</div></div>
+<div class="row"><div class="jp">What can "night" for you mean when fallen seas of tears are gone</div><div class="cn">“夜晚”对你来说意味着什么？当那像海般零落的泪水消失之时</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">They dissolve into the peace inside of you</div><div class="cn">融入你内心的宁静</div></div>
+<div class="row"><div class="jp">Calling to life, hit beneath, crying days in the eternal</div><div class="cn">呼唤人生，叩击内心，哭泣的日子成为了过去</div></div>
+<div class="row"><div class="jp">Give me what I saw in you, oh, what an end to stop all</div><div class="cn">将我在你身上的所见给我，啊，这结束一切的终点</div></div>
+<div class="row"><div class="jp">Seize a move, you're on me, falling and we were dissolving</div><div class="cn">捕捉到一个动作，你与我同行，坠落，我们正融化开来</div></div>
+<div class="row"><div class="jp">See me to it, fog is leaving, bright air move</div><div class="cn">而我也察觉，雾正散去，明亮的氛围已然来临</div></div>
+<div class="row"><div class="jp">Want to leave it behind, tucked all days away, forget, and hid beneath</div><div class="cn">想把一切都抛在过去，将过去全部雪藏，遗忘，隐藏在内心深处</div></div>
+<div class="row"><div class="jp">Hand in hand, extend to me, that let me know beyond falls</div><div class="cn">我牵着你那向我伸出的，宛如能让我知晓那超脱坠落的手</div></div>
+<div class="row"><div class="jp">Through the seas of beyond, so loud and blows you afloat in the sky</div><div class="cn">越过那远方的海洋，它喧嚣着将你吹浮于空中</div></div>
+<div class="row"><div class="jp">New wind moving into you</div><div class="cn">新的风正将你吹拂</div></div>
+<div class="row"><div class="jp">Tonight, don't ever lose sight of me and let go</div><div class="cn">今晚，不要将我忘记，不要舍我离去</div></div></section>
+<section class="stanza"><div class="row"><div class="jp">You and me are running through the night in dark, I'll take you</div><div class="cn">你与我在跑过黑暗无边的夜，我带你一同奔去</div></div></section>
+  </main>
+  <section class="links">
+    <div class="links-head">
+      <div class="links-title">🔗 找歌链接 <small>点击即可打开</small></div>
+      <div class="links-tools">
+        <button id="btnEdit" onclick="toggleEdit()">🔒 管理链接</button>
+        <button id="btnExport" onclick="exportPage()" style="display:none">⬇ 导出本页（含链接）</button>
+      </div>
+    </div>
+    <div id="linkList" class="link-list"></div>
+    <p class="links-empty" id="linksEmpty">还没有添加链接 —— 点右上「管理链接」，粘贴 YouTube / B站 / 网易云 等地址，方便以后快速找歌。</p>
+    <div class="l-editor" id="lEditor" hidden>
+      <input id="inLabel" class="l-in" type="text" placeholder="名称（如：MV / 现场版 / 网易云）">
+      <input id="inUrl" class="l-in" type="url" placeholder="https://… 完整链接">
+      <button id="btnAdd" onclick="addLink()">＋ 添加</button>
+      <button id="btnSetPw" onclick="setPw()" type="button">设密码</button>
+      <div class="l-hint" id="lHint"></div>
+      <p class="l-note" id="lNote"></p>
+    </div>
+  </section>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+<script id="linksData">
+window.__linksInit = [["B站（人工选定）", "https://www.bilibili.com/video/BV1de4y1S73F/"], ["YouTube 搜索", "https://www.youtube.com/results?search_query=%E5%A4%9C%E3%81%AB%E9%A7%86%E3%81%91%E3%82%8B+YOASOBI"], ["B站 搜索", "https://search.bilibili.com/all?keyword=%E5%A4%9C%E3%81%AB%E9%A7%86%E3%81%91%E3%82%8B+YOASOBI"]];
+window.__linksPw = "";
+</script>
+<script>
+/* ===== 找歌链接管理 =====
+   规则：每首歌的链接 = 页面内置默认 + 本浏览器里的增删（localStorage 按页面名存）。
+   其他访客打开这个文件/网站时，改的是“他自己的浏览器”，永远影响不到你看到的列表。
+   「管理密码」：EDITOR_KEY 非空时（或本机设过密码），增删必须先输密码；导出/分享的文件同样生效。 */
+(function(){
+  var file = decodeURIComponent((location.pathname.split('/').pop() || 'page'));
+  var LS='tk_links_'+file, PS='tk_pw_'+file;
+  var mem={}, memOk=true;
+  try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); }
+  catch(e){ memOk=false; }
+  function load(k){ if(memOk){ try{ return localStorage.getItem(k); }catch(e){ return null; } } return (k in mem)?mem[k]:null; }
+  function save(k,v){ if(memOk){ try{ localStorage.setItem(k,v); return; }catch(e){} } mem[k]=v; }
+  function del(k){ if(memOk){ try{ localStorage.removeItem(k); return; }catch(e){} } delete mem[k]; }
+  var pwStored = load(PS);
+  var PAGE_PW = (typeof window.__linksPw!=='undefined' && window.__linksPw) ? window.__linksPw : '';
+  var baked = (typeof window.__linksInit!=='undefined' && Array.isArray(window.__linksInit)) ? window.__linksInit : [];
+  function bakedUrls(){ return baked.map(function(x){ return x && x[1]; }); }
+  function loadLocalExtras(){
+    var raw = load(LS);
+    if(raw){ try{
+      var o=JSON.parse(raw);
+      if(o && Array.isArray(o.list)){
+        var bu=bakedUrls();
+        // 旧数据里可能存过“整份列表”，过滤掉与数据库重复的部分，只保留本机新增
+        return o.list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+      }
+    }catch(e){} }
+    return [];
+  }
+  var localExtras = loadLocalExtras();
+  // 页面最终列表 = 数据库/内置链接（所有人可见） + 本机新增（只影响自己）
+  function currentList(){ return baked.concat(localExtras); }
+  function persist(list){
+    var bu=bakedUrls();
+    localExtras = list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+    save(LS, JSON.stringify({list:localExtras}));
+  }
+  var editOn=false, req = pwStored || PAGE_PW;
+  function hostOf(u){ try{ return new URL(u).host.replace(/^www\./,''); }catch(e){ return ''; } }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function render(){
+    var list=currentList(), box=document.getElementById('linkList'), empty=document.getElementById('linksEmpty');
+    box.innerHTML='';
+    if(!list.length){ empty.style.display='block'; }
+    else{
+      empty.style.display='none';
+      list.forEach(function(it,i){
+        var label=(it && it[0]) || (it && it[1]) || '', url=(it && it[1]) || '';
+        if(!url) return;
+        var span=document.createElement('span'); span.className='chip';
+        var a=document.createElement('a'); a.href=url; a.target='_blank'; a.rel='noreferrer';
+        a.innerHTML='<span class="cl">'+esc(label)+'</span><span class="host">'+esc(hostOf(url))+'</span>';
+        span.appendChild(a);
+        if(editOn){
+          var x=document.createElement('button');
+          x.className='x'; x.title=(i<baked.length?'来自数据库，需在 songs.db 里删除':'删除本机新增'); x.type='button'; x.textContent='✕';
+          x.onclick=(function(k){ return function(ev){ ev.preventDefault(); ev.stopPropagation();
+            if(k<baked.length){ alert('这条来自数据库（songs.db），所有设备都能看到；要删除请用 linkdb.py rm，或直接告诉我。'); return; }
+            if(confirm('删除这条本机新增的链接？')){ var l=currentList(); l.splice(k,1); persist(l); render(); } }; })(i);
+          span.appendChild(x);
+        }
+        box.appendChild(span);
+      });
+    }
+    if(editOn){
+      document.getElementById('lEditor').hidden=false;
+      var h='列表 = <strong>数据库链接</strong>（所有人可见） + <strong>本机新增</strong>（仅自己）。数据库链接用 _tools\\linkdb.py 管理；点「导出本页」可把全部链接写进一个 html 带走或分享。';
+      if(req){ h+=' 密码已启用：不知道密码的访客无法增删。'; }
+      else{ h+=' 目前<strong>未设密码</strong>：任何访客都能增删，但只影响各自的浏览器。建议点「设密码」或改 lyric_build.py 的 EDITOR_KEY 后重新构建。'; }
+      document.getElementById('lHint').innerHTML=h;
+      document.getElementById('lNote').textContent = memOk ? '' : '注意：此环境不支持 localStorage，本次改动关闭页面后会丢失。';
+    } else {
+      document.getElementById('lEditor').hidden=true;
+    }
+  }
+  window.toggleEdit=function(){
+    if(!editOn){
+      if(req){
+        var p=prompt('请输入管理密码：');
+        if(p===null) return;
+        if(p!==req){ alert('密码错误'); return; }
+      }
+      editOn=true;
+      var b=document.getElementById('btnEdit');
+      b.textContent='🔓 完成编辑'; b.classList.add('on');
+      document.getElementById('btnExport').style.display='';
+    } else {
+      editOn=false;
+      var b2=document.getElementById('btnEdit');
+      b2.textContent='🔒 管理链接'; b2.classList.remove('on');
+      document.getElementById('btnExport').style.display='none';
+    }
+    render();
+  };
+  window.addLink=function(){
+    var label=document.getElementById('inLabel').value.trim();
+    var url=document.getElementById('inUrl').value.trim();
+    if(!/^https?:\/\//i.test(url)){ alert('链接要以 http:// 或 https:// 开头'); return; }
+    if(!label) label=url;
+    var list=currentList(); list.push([label,url]);
+    persist(list); render();
+    document.getElementById('inLabel').value=''; document.getElementById('inUrl').value='';
+  };
+  window.setPw=function(){
+    var p=prompt('设置本机管理密码（留空 = 取消保护）。设置后增删链接都要先输入它。');
+    if(p===null) return;
+    if(p===''){ pwStored=''; del(PS); }
+    else { pwStored=p; save(PS,p); }
+    req = pwStored || PAGE_PW;
+    alert(req ? '密码已启用。' : '保护已取消（任何访客都能增删，但只影响各自浏览器）。');
+  };
+  window.exportPage=function(){
+    var list=currentList();
+    var doc=document.getElementById('linksData');
+    var old=doc.textContent;
+    function jsSafe(o){ return JSON.stringify(o).replace(/<\//g,'<\\/'); }
+    var fresh='window.__linksInit = '+jsSafe(list)+';\nwindow.__linksPw = '+jsSafe(PAGE_PW)+';';
+    var html=document.documentElement.outerHTML.replace(old, fresh);
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=file;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    alert('已导出：'+file+'\n这个新文件已把当前全部链接写进页面，发给别人或上传后，他们也能看到这些链接。');
+  };
+  render();
+})();
+</script>
+</body>
+</html>
