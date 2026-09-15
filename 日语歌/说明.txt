@@ -1,32 +1,187 @@
-﻿我的日语歌词卡（F:\life\日语歌）
-================================
+﻿============================================================
+ 我的歌（日语 + 华语）— 使用说明 & 技术复现手册
+ 根目录：F:\life\songs
+============================================================
 
-用途
-----
-把喜欢的日语歌做成“歌词卡”页面：
-  · 日文歌词在左，中文翻译在右，逐行对应；
-  · 歌词里的汉字上方标注了平假名（假名），方便跟唱和学习。
+【一、这是什么】
+把喜欢的歌做成「歌词卡 + 本地播放器」：
+  · 日语歌：左日文（汉字上方标平假名注音）/ 右中文翻译，逐行对应；
+  · 华语歌：纯歌词（不做翻译和注音）；
+  · 本地播放器：可听 mp3 / 看 mp4，支持切版本、记音量、记上次播放版本；
+  · 纯 HTML/CSS/少量 JS + 一个零依赖本地服务，断网可用。
 
-目前收录
---------
-  1. 好きだから。（因为喜欢你。） —— 『ユイカ』
-  2. 別の人の彼女になったよ（我已经成了别人的女朋友） —— wacci
+【二、目录结构】（重要：所有脚本都按这个结构找文件）
+  F:\life\songs\
+    ├─ 日语歌\                     ← 日语歌词卡（每首一个 .html + index.html + 说明.txt）
+    │    └─ _tools\
+    │         ├─ lyric_data.py      ★ 日语歌数据源（歌名/歌词/注音/翻译）
+    │         ├─ lyric_build.py     构建器：校验注音 → 生成 html/index/说明.txt
+    │         └─ 说明_template.txt  说明.txt 的模板（改这里，别直接改说明.txt）
+    ├─ 华语歌\                     ← 华语歌词卡（每首 .html + index.html）
+    ├─ media\<歌名>\                ← 下载好的 mp4 + mp3（两个库共用）
+    ├─ app\
+    │    ├─ server.py              播放器服务端（双库：日语/华语）
+    │    └─ player.html            播放器界面
+    ├─ tools\                      各类工具脚本（见第六节）
+    ├─ data\
+    │    ├─ songs.db               日语歌数据库（歌名/链接/媒体）
+    │    └─ cpop.db                华语歌数据库
+    └─ logs\                       运行日志、pid 文件
 
-文件说明
---------
-  index.html                     —— 歌曲总目录（打开它就能看到全部歌）
-  好きだから。-『ユイカ』.html     —— 单曲页面
-  別の人の彼女になったよ-wacci.html —— 单曲页面
+【三、页面功能】
+  · 「隐藏假名」：藏起汉字上方的假名，用来自己回忆读音；
+  · 「隐藏翻译」：只看日文，练听力/阅读；
+  · 「打印」：可打印或另存为 PDF；
+  · 「🔗 找歌链接」：显示这首歌的所有链接（数据库里的，所有人可见）；
+  · 「＋ 添加链接」：直接在页面上粘贴链接入库（严格绑定当前页，同名歌不串）。
 
-使用小技巧
-----------
-  · 页面右上角可以一键“隐藏假名”或“隐藏翻译”，用来练习回忆。
-  · “打印”按钮可以打印 / 存成 PDF。
+【四、播放器（本地听歌/看 MV）】
+  · 启动：双击桌面「启动听歌.bat」，或 python F:\life\songs\tools\start_server.py
+  · 地址：http://127.0.0.1:8787/   （顶部可切 日语歌 / 华语歌）
+  · 停止：桌面「停止听歌.bat」，或 python F:\life\songs\tools\stop_server.py
+  · 功能：
+      - 左边歌单（可搜索），右边播放区 + 歌词联动；
+      - 听歌(mp3) / 看MV(mp4) 一键切换；
+      - 「版本」下拉：同一首歌的不同版本（原曲 / 高桥李依翻唱 / 合集分P 等），
+        显示原视频标题；默认优先人工添加的版本，并记住上次选择；
+      - 音量全局统一（任意一个视频里调音量，所有视频都生效）；
+      - 「复制下载命令」：复制该版本的下载命令；
+      - 链接区：显示/添加链接（数据库里的链接需用 linkdb 删除）。
 
-添加新歌
---------
-  想加新歌的话，直接把歌名（最好带上歌手）告诉我即可，
-  我会按照同样的样式生成新页面并更新 index.html。
-  中文翻译是我做的意译，供学习参考；歌词以歌ネット（uta-net.com）为准。
+【五、标准流程（以后加歌都按这个来）】
 
-仅供个人学习日语使用，请勿用于商业用途。
+◆ 日语歌：加一首新歌
+  1) 【日文歌词 + 注音】以日本歌词站为准，优先级：
+        uta-net（歌ネット，最权威，常限流）→ UtaTen（うたてん，带官方ふりがな）
+        → 萌娘百科日文页（带 ruby）→ j-lyric
+     注音要求：汉字按词连缀整体标注；带送假名只标汉字部分；
+     特殊读法（能力=チカラ、標的=やつ、運命=さだめ 等）必须按官方标注。
+  2) 【中文翻译】由 AI（Codex）直接翻译，意译即可、看懂就行，不照抄网络译本。
+  3) 【写卡片】把 (日文, 注音, 中文) 写进 日语歌\_tools\lyric_data.py，然后
+        cd F:\life\songs\日语歌\_tools
+        python lyric_build.py        # 校验注音 + 生成 html/index/说明.txt
+  4) 【加链接】播放器里选中这首歌 → 粘贴 B站链接 → 添加；或
+        python F:\life\songs\tools\linkdb.py add "歌名" "名称" "https://…" --kind mv
+  5) 【下载】python F:\life\songs\tools\download.py fetch --all
+        （只下没下过的；单首 --song "歌名"，指定链接 --link-id N）
+  6) 【发布】日语歌词站：运行 F:\life\hexo\woyoblog\sync_jpop.ps1
+
+◆ 日语歌：加 B站 合集里的歌
+  · 用分P接口列出全部曲目：https://api.bilibili.com/x/player/pagelist?bvid=<BV号>
+  · 已有歌 → 给那首歌加一个版本（链接带 &p=N）；新歌 → 建条目 + 占位页 + 链接
+  · 再按上面的 3)~6) 走一遍（歌词卡可分批补）
+
+◆ 华语歌：加一首新歌
+  1) python F:\life\songs\tools\zh_fetch.py fetch      # QQ音乐抓歌词（含词曲、专辑）
+  2) python F:\life\songs\tools\zh_build.py            # 生成华语歌词卡 + index
+  3) python F:\life\songs\tools\zh_find_bilibili.py --missing   # 自动搜 B站 视频
+  4) python F:\life\songs\tools\zh_download.py --all   # 下载 mp4+mp3
+  5) 发布：把 华语歌\*.html 复制到 F:\life\hexo\woyoblog\source\华语歌 后 hexo g -d
+
+
+【五·补、卡片"长相"规范（每次写卡片必须遵守）】
+  ◆ 字体（可爱体）
+     · 卡片界面文字统一用 **ZCOOL KuaiLe（站酷快乐体）**，兜底 幼圆/YouYuan；
+       构建器（lyric_build.py）已内置该字体与 Google Fonts 引用，**本地和线上都生效**，
+       不再依赖 Hexo 的 inject_jpop.js（那个只是早期补丁）。
+     · 歌词正文（.jp）保留明朝体/宋体系（Yu Mincho / MS Mincho / Noto Serif JP），
+       保证日文汉字与假名的可读性；翻译（.cn）用黑体系。
+  ◆ 分段与分段语（重点！）
+     · 必须**按歌曲结构**分段，不能按固定行数硬切；
+     · 段落标题统一成「角色 · 首句片段」，例如：
+          开场 · 肩書きの上で
+          副歌 · そんなこといつからできる
+          副歌（再来）· そんなこといつからできる
+          第一段 · わがままな髪
+          尾声 · 有罪な 人生です
+       **不许只写"副歌"、"第N节"这种光秃秃的标签**，必须带首句片段；
+     · 识别副歌的方法：找重复出现的 2~4 行歌词块（重复≥2 次）作为副歌，
+       其余按 10~12 行切主歌段，过短的段（≤2 行）并入相邻段；
+     · 自动分段只是**初稿**，上线的歌要人工复核；工具：tools\resegment.py（见下）。
+
+【六、工具一览】
+  · linkdb.py            日语歌：链接/曲库管理（add/list/rm/export/sync）
+  · find_bilibili.py     日语歌：B站在线搜索选视频（--missing / --all / --song）
+  · download.py          日语歌下载（--all / --song / --link-id / --tag，支持 --cookies）
+  · refresh_link_titles.py  把链接名统一刷成视频标题
+  · bili_check.py        cookies 体检（是否登录/大会员）
+  · progress.py          看下载进度（多少首已下、还剩哪些）
+  · start_server.py / stop_server.py   播放器服务启停（桌面 bat 调用）
+  · queue_after.py       排队：等某批次下完自动接着下
+  · auto_lyrics2.py      批量补歌词卡（网易云 → UtaTen → 萌娘兜底；快速源优先）
+  · fix_furigana.py      从 UtaTen/萌娘替换缺注音，逐首保存进度
+  · fill_remaining_furigana.py  外站没有时用 pykakasi 兜底补齐汉字注音
+  · repair_furigana_alignment.py 严格校验词面是否出现在当前行，修复错行注音
+  · resegment.py         按副歌重复和歌词结构重新分段，生成「角色 · 首句」标签
+  · patch_remaining_lyrics.py  对只剩占位页、且不在 lyric_data.py 的歌曲补建条目
+  · fill_missing_translations.py 清理制作人/标题等元数据行，补齐剩余中文翻译
+  · zh_fetch.py          华语歌：QQ音乐抓歌词 → cpop.db
+  · zh_build.py          华语歌：生成歌词卡
+  · zh_find_bilibili.py  华语歌：B站搜视频
+  · zh_download.py       华语歌：下载 mp4+mp3
+
+
+◆ 补齐 / 复核歌词卡（页面出现“歌词整理中”时）
+  1) python F:\life\songs	oolsuto_lyrics2.py --limit 100
+  2) python F:\life\songs	oolsix_furigana.py
+  3) python F:\life\songs	oolsill_remaining_furigana.py
+  4) python F:\life\songs	ools
+epair_furigana_alignment.py
+  5) python F:\life\songs	ools
+esegment.py
+  6) cd F:\life\songs\日语歌\_tools
+     python lyric_build.py
+  验收必须同时满足：
+    · data_songs = 237，html_cards = 237，placeholder_pages = 0；
+    · 构建日志中 [无注音汉字] = 0，NOT FOUND = 0；
+    · 所有非纯音乐歌词行都有中文翻译；
+    · 每个分段标签都是「开场/第一段/副歌/桥段/尾声 … · 首句片段」格式。
+  纯音乐（如 時代を超える想い、桜花抄、想い出は遠くの日々）统一写成
+  「纯音乐 · 无歌词」，不参与翻译和注音校验。
+
+【七、技术实现细节】
+
+(1) 左右两栏逐行对齐
+  · 每行是一个 <div class="row">，内含 .jp（日文）与 .cn（中文）；
+  · .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;}
+
+(2) 假名 = HTML <ruby>：<ruby>漢字<rt>かな</rt></ruby>
+  · CSS：.jp ruby{ruby-position:over;ruby-align:distribute-space}
+  · 「隐藏假名」= body 加 no-rt 类 → body.no-rt ruby rt{display:none}
+
+(3) 构建器（lyric_build.py）
+  · 校验每行汉字的注音覆盖是否完整、与 pykakasi 的差异（差异需人工判断）；
+  · 生成每首歌 html + index.html；
+  · 用 说明_template.txt 生成 说明.txt。
+
+(4) 数据库（data\songs.db / data\cpop.db）
+  · songs 表：歌名/歌手/专辑；links 表：链接（主键=页面文件名，唯一约束 (song_file,url)）；
+  · media 表：下载结果（kind、path、size、duration、video_id、title、来源 url）；
+  · 构建时把 links 写进 HTML 的 window.__linksInit → 链接随网页同步到所有设备。
+
+(5) 播放器服务端（app\server.py，Python 标准库，零依赖）
+  · GET /api/songs?lang=jp|zh ；GET /media/<相对路径>（支持 Range，可拖进度条）；
+  · GET /lyrics/<lang>/<页面名>（iframe 联动）；POST /api/link（绑定当前页加链接）。
+
+(6) 下载（yt-dlp + ffmpeg）
+  · 优先 H.264(avc1)+AAC（兼容性好）；先下 mp4，再抽 320k mp3；
+  · 绿色版工具在 tools\bin、tools\venv，不动系统。
+
+【八、常见问题】
+  · uta-net 403：被限流，等恢复或改用 UtaTen/萌娘；恢复后用于交叉核对。
+  · B站搜索 412：需要 cookies；脚本自动读 tools\cookies.txt 或 F:\life\songs\cookies.txt。
+  · cookies 不生效：多数插件不含 HttpOnly 的 SESSDATA；用「Get cookies.txt LOCALLY」
+    重新导出，或完全退出 Edge 后用 --cookies-from-browser edge；bili_check.py 可体检。
+  · 控制台乱码：脚本统一 UTF-8；bat 用 UTF-8(无BOM) + chcp 65001。
+  · 播放器连不上：重启用桌面「启动听歌.bat」。
+
+【九、当前收录】
+  · 日语歌：237 首（完整列表见文末）
+  · 华语歌：35 首（周杰伦 25 + 赵雷 10），数据库 data\cpop.db，卡片在 华语歌\
+
+【十、版权说明】
+  歌词原文版权归原作者所有；中文翻译为本工具（AI）意译，仅供个人学习日语使用，
+  请勿用于商业用途。
+------------------------------------------------------------
+（本说明文件由 _tools\lyric_build.py 从 _tools\说明_template.txt 自动生成）
+------------------------------------------------------------
