@@ -1,9 +1,327 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><title>Time after time ～花舞う街で～ - 倉木麻衣｜日语歌词卡</title>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time after time ～花舞う街で～ - 倉木麻衣｜日语歌词卡</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
-body{font-family:"Yu Gothic UI","Microsoft YaHei",sans-serif;margin:0;padding:40px;background:#f7f7fb;color:#333}
-.box{max-width:700px;margin:0 auto;background:#fff;border-radius:16px;padding:30px 34px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-h1{font-size:26px;margin:0 0 6px}.a{color:#888;font-size:14px}.tip{margin-top:20px;padding:14px;border-radius:10px;background:#fff8e6;color:#8a6d3b;font-size:14px;line-height:1.8}
-</style></head><body><div class="box"><h1>Time after time ～花舞う街で～</h1><div class="a">倉木麻衣</div>
-<div class="tip">歌词整理中……（这首歌的歌词卡还在制作，稍后会补上日文歌词 + 假名 + 中文对照）</div>
-</div></body></html>
+
+body{--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
+  color:var(--accent);margin:34px 0 14px;}
+.part-label:first-child{margin-top:2px;}
+.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
+.stanza{margin:0 0 6px;}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+  .links-tools button,.l-editor,.links-empty{display:none !important;}
+}
+/* ---------- 找歌链接卡片 ---------- */
+.links{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:22px 40px 26px;box-shadow:0 18px 50px rgba(80,60,90,.10);margin-top:22px;}
+.links-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.links-title{font-size:16px;margin:0;color:var(--accent);letter-spacing:.08em;}
+.links-title small{font-weight:400;color:#a09691;font-size:12px;letter-spacing:0;margin-left:6px;}
+.links-tools{display:flex;gap:8px;flex-wrap:wrap;}
+.links-tools button{font-family:inherit;font-size:12.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.links-tools button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.links-tools button.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.link-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.links-empty{color:#a09691;font-size:13px;margin:16px 0 0;line-height:1.8;}
+.chip{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#2b2623;background:#fff;
+  border:1px solid var(--line);border-radius:999px;padding:5px 8px 5px 16px;font-size:13.5px;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);transition:border-color .15s;}
+.chip:hover{border-color:var(--accent);}
+.chip a{display:inline-flex;align-items:center;gap:9px;color:inherit;text-decoration:none;}
+.chip a:hover{color:var(--accent);}
+.chip .host{color:#a09691;font-size:11.5px;}
+.chip .x{border:none;background:none;color:#c9bfb9;font-size:14px;cursor:pointer;line-height:1;padding:2px 8px;border-radius:50%;}
+.chip .x:hover{color:#fff;background:#e03131;}
+.l-editor{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center;}
+.l-editor[hidden]{display:none !important;}
+.l-in{font-family:inherit;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;color:#2b2623;min-width:0;outline:none;}
+.l-in:focus{border-color:var(--accent);}
+.l-in#inLabel{flex:1 1 150px;}
+.l-in#inUrl{flex:2 1 280px;}
+.l-editor button{font-family:inherit;font-size:13.5px;color:#fff;background:var(--accent);border:none;border-radius:10px;padding:9px 18px;cursor:pointer;}
+.l-editor #btnSetPw{background:none;color:var(--accent);border:1px solid var(--accent-soft);}
+.l-hint{flex-basis:100%;color:#a09691;font-size:12.5px;line-height:1.8;}
+.l-hint strong{color:#7d716c;}
+.l-note{flex-basis:100%;color:#e03131;font-size:12px;margin:0;}
+@media (max-width:780px){ .links{padding:18px 16px 20px;} .l-in{flex:1 1 100%;} }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">Time after time ～花舞う街で～</h1>
+    <div class="cn-title"></div>
+    <div class="artist">倉木麻衣</div>
+    <p class="subtitle"></p>
+    <div class="credit"></div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<div class="part-label">开场 · もしも君に巡り逢えたら</div><section class="stanza"><div class="row"><div class="jp">もしも<ruby>君<rt>きみ</rt></ruby>に<ruby>巡<rt>めぐ</rt></ruby>り<ruby>逢<rt>あ</rt></ruby>えたら</div><div class="cn">如果还能与你重逢</div></div>
+<div class="row"><div class="jp"><ruby>二度<rt>にど</rt></ruby>と<ruby>君<rt>きみ</rt></ruby>の<ruby>手<rt>て</rt></ruby>を<ruby>離<rt>はな</rt></ruby>さない</div><div class="cn">绝不会再次松开你的手</div></div>
+<div class="row"><div class="jp"><ruby>春<rt>はる</rt></ruby>の<ruby>終<rt>お</rt></ruby>わり<ruby>告<rt>つ</rt></ruby>げる <ruby>花御堂<rt>はなみどう</rt></ruby></div><div class="cn">如果上天让你我再次相遇</div></div>
+<div class="row"><div class="jp"><ruby>霞<rt>かす</rt></ruby>む<ruby>花<rt>はな</rt></ruby> <ruby>一枚<rt>ひとひら</rt></ruby></div><div class="cn">我绝对不会再次松开你的手</div></div>
+<div class="row"><div class="jp"><ruby>蘇<rt>よみがえ</rt></ruby>る <ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>で</rt></ruby>の<ruby>歌<rt>うた</rt></ruby></div><div class="cn">在这个宣告春季结束的佛之花殿</div></div>
+<div class="row"><div class="jp">この<ruby>胸<rt>むね</rt></ruby>に <ruby>今<rt>いま</rt></ruby>も<ruby>優<rt>やさ</rt></ruby>しく</div><div class="cn">朦胧的花朵一瓣飘零</div></div>
+<div class="row"><div class="jp"><ruby>Time<rt>タイム</rt></ruby> <ruby>after<rt>アフター</rt></ruby> <ruby>time<rt>タイム</rt></ruby></div><div class="cn">记忆中的歌声缓缓的苏醒</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>出逢<rt>であ</rt></ruby>った<ruby>奇跡<rt>きせき</rt></ruby></div><div class="cn">至今还在胸中的温柔回荡</div></div>
+<div class="row"><div class="jp"><ruby>緩<rt>ゆる</rt></ruby>やかな<ruby>風吹<rt>かぜふ</rt></ruby>く<ruby>街<rt>まち</rt></ruby>で</div><div class="cn">一次又一次</div></div>
+<div class="row"><div class="jp">そっと<ruby>手<rt>て</rt></ruby>を<ruby>繋<rt>つな</rt></ruby>ぎ <ruby>歩<rt>ある</rt></ruby>いた<ruby>坂道<rt>さかみち</rt></ruby></div><div class="cn">与你相遇的奇迹</div></div>
+<div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby>も<ruby>忘<rt>わす</rt></ruby>れない<ruby>約束<rt>やくそく</rt></ruby></div><div class="cn">在那微风缓缓吹过的街道</div></div>
+<div class="row"><div class="jp"><ruby>風<rt>かぜ</rt></ruby>に<ruby>君<rt>きみ</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえる</div><div class="cn">悄悄的牵着手一起走过的坡道</div></div></section>
+<div class="part-label">第一段 · 薄氷 冴返る 遠い記憶</div><section class="stanza"><div class="row"><div class="jp"><ruby>薄氷<rt>うすらい</rt></ruby> <ruby>冴返<rt>さえかえ</rt></ruby>る <ruby>遠<rt>とお</rt></ruby>い<ruby>記憶<rt>きおく</rt></ruby></div><div class="cn">直到如今也无法忘记的约定</div></div>
+<div class="row"><div class="jp"><ruby>傷付<rt>きずつ</rt></ruby>く<ruby>怖<rt>こわ</rt></ruby>さを<ruby>知<rt>し</rt></ruby>らず <ruby>誓<rt>ちか</rt></ruby>った</div><div class="cn">在风中可以听到你的声音</div></div>
+<div class="row"><div class="jp">いつか また この<ruby>場所<rt>ばしょ</rt></ruby>で</div><div class="cn">如薄冰般寒冷遥远的记忆</div></div>
+<div class="row"><div class="jp"><ruby>巡<rt>めぐ</rt></ruby>り<ruby>逢<rt>あ</rt></ruby>おう <ruby>薄紅色<rt>うすべにいろ</rt></ruby>の</div><div class="cn">曾经许下了誓言还不知道受伤的可怕</div></div>
+<div class="row"><div class="jp"><ruby>季節<rt>きせつ</rt></ruby>が<ruby>来<rt>く</rt></ruby>る<ruby>日<rt>ひ</rt></ruby>に <ruby>笑顔<rt>えがお</rt></ruby>で</div><div class="cn">何时才能再次在这里</div></div>
+<div class="row"><div class="jp"><ruby>Time<rt>タイム</rt></ruby> <ruby>after<rt>アフター</rt></ruby> <ruby>time<rt>タイム</rt></ruby></div><div class="cn">在薄红色季节来临的时候</div></div>
+<div class="row"><div class="jp">ひとり <ruby>花舞<rt>はなま</rt></ruby>う<ruby>街<rt>まち</rt></ruby>で</div><div class="cn">带着笑容再一次与你相遇</div></div>
+<div class="row"><div class="jp"><ruby>散<rt>ち</rt></ruby>らざるときは<ruby>戻<rt>もど</rt></ruby>らないけれど</div><div class="cn">一个人走落花纷飞的街道上</div></div>
+<div class="row"><div class="jp">あの<ruby>日<rt>ひ</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ <ruby>変<rt>か</rt></ruby>わらない<ruby>景色<rt>けしき</rt></ruby>に</div><div class="cn">尽管逝去的时光已经无法挽回</div></div>
+<div class="row"><div class="jp"><ruby>涙<rt>なみだ</rt></ruby>ひらり <ruby>待<rt>ま</rt></ruby>っていたよ</div><div class="cn">但景色却一如往昔</div></div>
+<div class="row"><div class="jp"><ruby>風舞<rt>かぜま</rt></ruby>う<ruby>花<rt>はな</rt></ruby>びらが <ruby>水面<rt>みなも</rt></ruby>を<ruby>撫<rt>な</rt></ruby>でるように</div><div class="cn">我还是和那天一样带着泪水等待着你</div></div>
+<div class="row"><div class="jp"><ruby>大切<rt>たいせつ</rt></ruby>に<ruby>想<rt>おも</rt></ruby>うほど <ruby>切<rt>せつ</rt></ruby>なく…</div><div class="cn">就如同随风飘舞的花瓣拂过水面一般</div></div></section>
+<div class="part-label">第二段 · 人は皆 孤独と言うけれど</div><section class="stanza"><div class="row"><div class="jp"><ruby>人<rt>ひと</rt></ruby>は<ruby>皆<rt>みな</rt></ruby> <ruby>孤独<rt>こどく</rt></ruby>と<ruby>言<rt>い</rt></ruby>うけれど</div><div class="cn">越是珍贵的回忆 就越无法忘记</div></div>
+<div class="row"><div class="jp"><ruby>探<rt>さが</rt></ruby>さずにはいられない <ruby>誰<rt>だれ</rt></ruby>かを</div><div class="cn">虽说人都是孤独的</div></div>
+<div class="row"><div class="jp"><ruby>儚<rt>はかな</rt></ruby>く<ruby>壊<rt>こわ</rt></ruby>れやすいものばかり</div><div class="cn">但人们却总是在寻找着另一半</div></div>
+<div class="row"><div class="jp"><ruby>追<rt>お</rt></ruby>い<ruby>求<rt>もと</rt></ruby>めてしまう</div><div class="cn">为那虚幻而易碎的一切</div></div>
+<div class="row"><div class="jp"><ruby>Time<rt>タイム</rt></ruby> <ruby>after<rt>アフター</rt></ruby> <ruby>time<rt>タイム</rt></ruby></div><div class="cn">一直在执着地追求</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>色<rt>いろ</rt></ruby>づく<ruby>街<rt>まち</rt></ruby>で</div><div class="cn">如果在樱花染粉的街道上再次与你相遇的话</div></div>
+<div class="row"><div class="jp"><ruby>出逢<rt>であ</rt></ruby>えたら もう<ruby>約束<rt>やくそく</rt></ruby>はいらない</div><div class="cn">就不再需要任何承诺</div></div>
+<div class="row"><div class="jp"><ruby>誰<rt>だれ</rt></ruby>よりも ずっと <ruby>傷付<rt>きずつ</rt></ruby>きやすい<ruby>君<rt>きみ</rt></ruby>の</div><div class="cn">就想永远留在比谁都容易受伤的你</div></div>
+<div class="row"><div class="jp">そばにいたい<ruby>今度<rt>こんど</rt></ruby>は きっと</div><div class="cn">这次一定要陪着你</div></div></section>
+  </main>
+  <section class="links">
+    <div class="links-head">
+      <div class="links-title">🔗 找歌链接 <small>点击即可打开</small></div>
+      <div class="links-tools">
+        <button id="btnEdit" onclick="toggleEdit()">🔒 管理链接</button>
+        <button id="btnExport" onclick="exportPage()" style="display:none">⬇ 导出本页（含链接）</button>
+      </div>
+    </div>
+    <div id="linkList" class="link-list"></div>
+    <p class="links-empty" id="linksEmpty">还没有添加链接 —— 点右上「管理链接」，粘贴 YouTube / B站 / 网易云 等地址，方便以后快速找歌。</p>
+    <div class="l-editor" id="lEditor" hidden>
+      <input id="inLabel" class="l-in" type="text" placeholder="名称（如：MV / 现场版 / 网易云）">
+      <input id="inUrl" class="l-in" type="url" placeholder="https://… 完整链接">
+      <button id="btnAdd" onclick="addLink()">＋ 添加</button>
+      <button id="btnSetPw" onclick="setPw()" type="button">设密码</button>
+      <div class="l-hint" id="lHint"></div>
+      <p class="l-note" id="lNote"></p>
+    </div>
+  </section>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+<script id="linksData">
+window.__linksInit = [["B站（人工选定）", "https://www.bilibili.com/video/BV14hrSYcECi/"], ["YouTube 搜索", "https://www.youtube.com/results?search_query=Time+after+time+%EF%BD%9E%E8%8A%B1%E8%88%9E%E3%81%86%E8%A1%97%E3%81%A7%EF%BD%9E+%E5%80%89%E6%9C%A8%E9%BA%BB%E8%A1%A3"], ["B站 搜索", "https://search.bilibili.com/all?keyword=Time+after+time+%EF%BD%9E%E8%8A%B1%E8%88%9E%E3%81%86%E8%A1%97%E3%81%A7%EF%BD%9E+%E5%80%89%E6%9C%A8%E9%BA%BB%E8%A1%A3"]];
+window.__linksPw = "";
+</script>
+<script>
+/* ===== 找歌链接管理 =====
+   规则：每首歌的链接 = 页面内置默认 + 本浏览器里的增删（localStorage 按页面名存）。
+   其他访客打开这个文件/网站时，改的是“他自己的浏览器”，永远影响不到你看到的列表。
+   「管理密码」：EDITOR_KEY 非空时（或本机设过密码），增删必须先输密码；导出/分享的文件同样生效。 */
+(function(){
+  var file = decodeURIComponent((location.pathname.split('/').pop() || 'page'));
+  var LS='tk_links_'+file, PS='tk_pw_'+file;
+  var mem={}, memOk=true;
+  try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); }
+  catch(e){ memOk=false; }
+  function load(k){ if(memOk){ try{ return localStorage.getItem(k); }catch(e){ return null; } } return (k in mem)?mem[k]:null; }
+  function save(k,v){ if(memOk){ try{ localStorage.setItem(k,v); return; }catch(e){} } mem[k]=v; }
+  function del(k){ if(memOk){ try{ localStorage.removeItem(k); return; }catch(e){} } delete mem[k]; }
+  var pwStored = load(PS);
+  var PAGE_PW = (typeof window.__linksPw!=='undefined' && window.__linksPw) ? window.__linksPw : '';
+  var baked = (typeof window.__linksInit!=='undefined' && Array.isArray(window.__linksInit)) ? window.__linksInit : [];
+  function bakedUrls(){ return baked.map(function(x){ return x && x[1]; }); }
+  function loadLocalExtras(){
+    var raw = load(LS);
+    if(raw){ try{
+      var o=JSON.parse(raw);
+      if(o && Array.isArray(o.list)){
+        var bu=bakedUrls();
+        // 旧数据里可能存过“整份列表”，过滤掉与数据库重复的部分，只保留本机新增
+        return o.list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+      }
+    }catch(e){} }
+    return [];
+  }
+  var localExtras = loadLocalExtras();
+  // 页面最终列表 = 数据库/内置链接（所有人可见） + 本机新增（只影响自己）
+  function currentList(){ return baked.concat(localExtras); }
+  function persist(list){
+    var bu=bakedUrls();
+    localExtras = list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+    save(LS, JSON.stringify({list:localExtras}));
+  }
+  var editOn=false, req = pwStored || PAGE_PW;
+  function hostOf(u){ try{ return new URL(u).host.replace(/^www\./,''); }catch(e){ return ''; } }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function render(){
+    var list=currentList(), box=document.getElementById('linkList'), empty=document.getElementById('linksEmpty');
+    box.innerHTML='';
+    if(!list.length){ empty.style.display='block'; }
+    else{
+      empty.style.display='none';
+      list.forEach(function(it,i){
+        var label=(it && it[0]) || (it && it[1]) || '', url=(it && it[1]) || '';
+        if(!url) return;
+        var span=document.createElement('span'); span.className='chip';
+        var a=document.createElement('a'); a.href=url; a.target='_blank'; a.rel='noreferrer';
+        a.innerHTML='<span class="cl">'+esc(label)+'</span><span class="host">'+esc(hostOf(url))+'</span>';
+        span.appendChild(a);
+        if(editOn){
+          var x=document.createElement('button');
+          x.className='x'; x.title=(i<baked.length?'来自数据库，需在 songs.db 里删除':'删除本机新增'); x.type='button'; x.textContent='✕';
+          x.onclick=(function(k){ return function(ev){ ev.preventDefault(); ev.stopPropagation();
+            if(k<baked.length){ alert('这条来自数据库（songs.db），所有设备都能看到；要删除请用 linkdb.py rm，或直接告诉我。'); return; }
+            if(confirm('删除这条本机新增的链接？')){ var l=currentList(); l.splice(k,1); persist(l); render(); } }; })(i);
+          span.appendChild(x);
+        }
+        box.appendChild(span);
+      });
+    }
+    if(editOn){
+      document.getElementById('lEditor').hidden=false;
+      var h='列表 = <strong>数据库链接</strong>（所有人可见） + <strong>本机新增</strong>（仅自己）。数据库链接用 _tools\\linkdb.py 管理；点「导出本页」可把全部链接写进一个 html 带走或分享。';
+      if(req){ h+=' 密码已启用：不知道密码的访客无法增删。'; }
+      else{ h+=' 目前<strong>未设密码</strong>：任何访客都能增删，但只影响各自的浏览器。建议点「设密码」或改 lyric_build.py 的 EDITOR_KEY 后重新构建。'; }
+      document.getElementById('lHint').innerHTML=h;
+      document.getElementById('lNote').textContent = memOk ? '' : '注意：此环境不支持 localStorage，本次改动关闭页面后会丢失。';
+    } else {
+      document.getElementById('lEditor').hidden=true;
+    }
+  }
+  window.toggleEdit=function(){
+    if(!editOn){
+      if(req){
+        var p=prompt('请输入管理密码：');
+        if(p===null) return;
+        if(p!==req){ alert('密码错误'); return; }
+      }
+      editOn=true;
+      var b=document.getElementById('btnEdit');
+      b.textContent='🔓 完成编辑'; b.classList.add('on');
+      document.getElementById('btnExport').style.display='';
+    } else {
+      editOn=false;
+      var b2=document.getElementById('btnEdit');
+      b2.textContent='🔒 管理链接'; b2.classList.remove('on');
+      document.getElementById('btnExport').style.display='none';
+    }
+    render();
+  };
+  window.addLink=function(){
+    var label=document.getElementById('inLabel').value.trim();
+    var url=document.getElementById('inUrl').value.trim();
+    if(!/^https?:\/\//i.test(url)){ alert('链接要以 http:// 或 https:// 开头'); return; }
+    if(!label) label=url;
+    var list=currentList(); list.push([label,url]);
+    persist(list); render();
+    document.getElementById('inLabel').value=''; document.getElementById('inUrl').value='';
+  };
+  window.setPw=function(){
+    var p=prompt('设置本机管理密码（留空 = 取消保护）。设置后增删链接都要先输入它。');
+    if(p===null) return;
+    if(p===''){ pwStored=''; del(PS); }
+    else { pwStored=p; save(PS,p); }
+    req = pwStored || PAGE_PW;
+    alert(req ? '密码已启用。' : '保护已取消（任何访客都能增删，但只影响各自浏览器）。');
+  };
+  window.exportPage=function(){
+    var list=currentList();
+    var doc=document.getElementById('linksData');
+    var old=doc.textContent;
+    function jsSafe(o){ return JSON.stringify(o).replace(/<\//g,'<\\/'); }
+    var fresh='window.__linksInit = '+jsSafe(list)+';\nwindow.__linksPw = '+jsSafe(PAGE_PW)+';';
+    var html=document.documentElement.outerHTML.replace(old, fresh);
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=file;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    alert('已导出：'+file+'\n这个新文件已把当前全部链接写进页面，发给别人或上传后，他们也能看到这些链接。');
+  };
+  render();
+})();
+</script>
+</body>
+</html>
