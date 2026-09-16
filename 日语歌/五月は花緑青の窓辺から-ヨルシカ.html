@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,14 +116,14 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · 夏が終わることもこの胸は</div><section class="stanza"><div class="row"><div class="jp"><ruby>夏<rt>なつ</rt></ruby>が<ruby>終<rt>お</rt></ruby>わることもこの<ruby>胸<rt>むね</rt></ruby>は</div><div class="cn">心中一直认为</div></div>
+<div class="row"><div class="jp"><ruby>夏<rt>なつ</rt></ruby>が<ruby>終<rt>お</rt></ruby>わることもこの<ruby>胸<rt>むね</rt></ruby>は</div><div class="cn">心中一直认为</div></div>
 <div class="row"><div class="jp"><ruby>気<rt>き</rt></ruby>のせいだって<ruby>思<rt>おも</rt></ruby>っていた</div><div class="cn">夏天的结束只是错觉罢了</div></div>
 <div class="row"><div class="jp"><ruby>空<rt>あ</rt></ruby>いた<ruby>教室<rt>きょうしつ</rt></ruby> <ruby>風<rt>かぜ</rt></ruby><ruby>揺<rt>ゆ</rt></ruby>れるカーテン</div><div class="cn">空荡的教室里 微风拂动着窗帘</div></div>
 <div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>空<rt>そら</rt></ruby>を<ruby>見上<rt>みあ</rt></ruby>げたあの<ruby>夏<rt>なつ</rt></ruby>が</div><div class="cn">与你一同仰望天空的那个夏天</div></div>
-<div class="row"><div class="jp">いつまでだって<ruby>頭上<rt>ずじょう</rt></ruby>にいた</div><div class="cn">一直都存在于头顶之上</div></div></section>
-<div class="part-label">副歌 · さようなら</div><section class="stanza"><div class="row"><div class="jp">さようなら</div><div class="cn">再见了</div></div>
-<div class="row"><div class="jp"><ruby>青々<rt>あおあお</rt></ruby>と<ruby>息<rt>いき</rt></ruby>を<ruby>呑<rt>の</rt></ruby>んだ <ruby>例<rt>たと</rt></ruby>う<ruby>涙<rt>なみだ</rt></ruby>は<ruby>花<rt>はな</rt></ruby><ruby>緑青<rt>ろくしょう</rt></ruby>だ</div><div class="cn">因青色过浓而吓得不敢呼吸 就连眼泪也好比染上花绿青</div></div></section>
-<div class="part-label">第一段 · 黙ったらもう消えんだよ</div><section class="stanza"><div class="row"><div class="jp"><ruby>黙<rt>だま</rt></ruby>ったらもう<ruby>消<rt>き</rt></ruby>えんだよ</div><div class="cn">继续沉默的话就会消失的</div></div>
+<div class="row"><div class="jp">いつまでだって<ruby>頭上<rt>ずじょう</rt></ruby>にいた</div><div class="cn">一直都存在于头顶之上</div></div>
+<div class="row"><div class="jp">さようなら</div><div class="cn">再见了</div></div>
+<div class="row"><div class="jp"><ruby>青々<rt>あおあお</rt></ruby>と<ruby>息<rt>いき</rt></ruby>を<ruby>呑<rt>の</rt></ruby>んだ <ruby>例<rt>たと</rt></ruby>う<ruby>涙<rt>なみだ</rt></ruby>は<ruby>花<rt>はな</rt></ruby><ruby>緑青<rt>ろくしょう</rt></ruby>だ</div><div class="cn">因青色过浓而吓得不敢呼吸 就连眼泪也好比染上花绿青</div></div>
+<div class="row"><div class="jp"><ruby>黙<rt>だま</rt></ruby>ったらもう<ruby>消<rt>き</rt></ruby>えんだよ</div><div class="cn">继续沉默的话就会消失的</div></div>
 <div class="row"><div class="jp"><ruby>馬鹿<rt>ばか</rt></ruby>みたいだよな</div><div class="cn">像白痴一样</div></div>
 <div class="row"><div class="jp"><ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>せ!</div><div class="cn">快想起来啊！</div></div>
 <div class="row"><div class="jp"><ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>せない、と<ruby>頭<rt>あたま</rt></ruby>が<ruby>叫<rt>さけ</rt></ruby>んだ</div><div class="cn">“想不起来啊”脑中一直这样嘶吼着</div></div>
@@ -139,19 +134,19 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>笑<rt>わら</rt></ruby>われたって<ruby>黙<rt>だま</rt></ruby>っている</div><div class="cn">因为被嘲笑过所以缄口不提</div></div>
 <div class="row"><div class="jp"><ruby>笑<rt>わら</rt></ruby>うなよ <ruby>僕<rt>ぼく</rt></ruby>らの<ruby>価値<rt>かち</rt></ruby>は<ruby>自明<rt>じめい</rt></ruby>だ</div><div class="cn">别笑啊 我们深知我们自身的价值啊</div></div>
 <div class="row"><div class="jp"><ruby>例<rt>たと</rt></ruby>うならばこれは<ruby>魂<rt>たましい</rt></ruby>だ</div><div class="cn">打个比方的话就像是灵魂啊</div></div>
-<div class="row"><div class="jp"><ruby>黙<rt>だま</rt></ruby>っただけ<ruby>辛<rt>つら</rt></ruby>いのに<ruby>馬鹿<rt>ばか</rt></ruby>みたいだろ</div><div class="cn">仅是沉默着很辛苦啊 像傻瓜一样吧</div></div></section>
-<div class="part-label">第二段 · なぁ、言い返せ</div><section class="stanza"><div class="row"><div class="jp">なぁ、<ruby>言<rt>い</rt></ruby>い<ruby>返<rt>かえ</rt></ruby>せ</div><div class="cn">喂，你倒是反驳啊</div></div>
+<div class="row"><div class="jp"><ruby>黙<rt>だま</rt></ruby>っただけ<ruby>辛<rt>つら</rt></ruby>いのに<ruby>馬鹿<rt>ばか</rt></ruby>みたいだろ</div><div class="cn">仅是沉默着很辛苦啊 像傻瓜一样吧</div></div>
+<div class="row"><div class="jp">なぁ、<ruby>言<rt>い</rt></ruby>い<ruby>返<rt>かえ</rt></ruby>せ</div><div class="cn">喂，你倒是反驳啊</div></div>
 <div class="row"><div class="jp"><ruby>言<rt>い</rt></ruby>い<ruby>返<rt>かえ</rt></ruby>せないまま<ruby>一人<rt>ひとり</rt></ruby><ruby>歩<rt>ある</rt></ruby>いた</div><div class="cn">没有反驳的你一个人走开了</div></div>
 <div class="row"><div class="jp"><ruby>指<rt>ゆび</rt></ruby>を<ruby>指<rt>さ</rt></ruby>された<ruby>僕<rt>ぼく</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>った</div><div class="cn">只留下了受人议论的我</div></div>
-<div class="row"><div class="jp">それでも それでも<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>せないのか</div><div class="cn">就算这样 就算这样也想不起来吗</div></div></section>
-<div class="part-label">副歌（再来）· さようなら</div><section class="stanza"><div class="row"><div class="jp">さようなら</div><div class="cn">那再见吧</div></div>
-<div class="row"><div class="jp"><ruby>青々<rt>あおあお</rt></ruby>と<ruby>息<rt>いき</rt></ruby>を<ruby>呑<rt>の</rt></ruby>んだ <ruby>例<rt>たと</rt></ruby>う<ruby>涙<rt>なみだ</rt></ruby>は<ruby>花<rt>はな</rt></ruby><ruby>緑青<rt>ろくしょう</rt></ruby>だ</div><div class="cn">因青色过浓而吓得不敢呼吸 就连眼泪也好比染上花绿青</div></div></section>
-<div class="part-label">第三段 · 黙ってくれ わかったよ</div><section class="stanza"><div class="row"><div class="jp"><ruby>黙<rt>だま</rt></ruby>ってくれ わかったよ</div><div class="cn">闭嘴吧 我明白的啊</div></div>
+<div class="row"><div class="jp">それでも それでも<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>せないのか</div><div class="cn">就算这样 就算这样也想不起来吗</div></div>
+<div class="row"><div class="jp">さようなら</div><div class="cn">那再见吧</div></div>
+<div class="row"><div class="jp"><ruby>青々<rt>あおあお</rt></ruby>と<ruby>息<rt>いき</rt></ruby>を<ruby>呑<rt>の</rt></ruby>んだ <ruby>例<rt>たと</rt></ruby>う<ruby>涙<rt>なみだ</rt></ruby>は<ruby>花<rt>はな</rt></ruby><ruby>緑青<rt>ろくしょう</rt></ruby>だ</div><div class="cn">因青色过浓而吓得不敢呼吸 就连眼泪也好比染上花绿青</div></div>
+<div class="row"><div class="jp"><ruby>黙<rt>だま</rt></ruby>ってくれ わかったよ</div><div class="cn">闭嘴吧 我明白的啊</div></div>
 <div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>がする</div><div class="cn">你的声音说道</div></div>
 <div class="row"><div class="jp">「<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>せ!」</div><div class="cn">“快想起来啊！”</div></div>
 <div class="row"><div class="jp"><ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>したんだ、と<ruby>喉<rt>のど</rt></ruby>が<ruby>叫<rt>さけ</rt></ruby>んだ</div><div class="cn">我想起来了，用喉咙大叫道</div></div>
 <div class="row"><div class="jp">この<ruby>痛<rt>いた</rt></ruby>みが<ruby>君<rt>きみ</rt></ruby>の<ruby>証明<rt>しょうめい</rt></ruby>だ</div><div class="cn">这份疼痛是你存在过的证明啊</div></div>
-<div class="row"><div class="jp">それでも それでも<ruby>聞<rt>き</rt></ruby>こえないというなら</div><div class="cn">要是这样 要是这样你也听不见的话</div></div></section>
+<div class="row"><div class="jp">それでも それでも<ruby>聞<rt>き</rt></ruby>こえないというなら</div><div class="cn">要是这样 要是这样你也听不见的话</div></div>
   </main>
   <section class="links">
     <div class="links-head">

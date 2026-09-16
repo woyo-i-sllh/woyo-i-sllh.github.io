@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,15 +116,15 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · 最後のキスは</div><section class="stanza"><div class="row"><div class="jp"><ruby>最後<rt>さいご</rt></ruby>のキスは</div><div class="cn">最后的吻</div></div>
+<div class="row"><div class="jp"><ruby>最後<rt>さいご</rt></ruby>のキスは</div><div class="cn">最后的吻</div></div>
 <div class="row"><div class="jp">タバコの <ruby>flavor<rt>フレーバー</rt></ruby>がした</div><div class="cn">带着香烟的味道</div></div>
 <div class="row"><div class="jp">ニガくてせつない<ruby>香<rt>かお</rt></ruby>り</div><div class="cn">苦涩又令人心酸的气息</div></div>
 <div class="row"><div class="jp"><ruby>明日<rt>あした</rt></ruby>の<ruby>今頃<rt>いまごろ</rt></ruby>には</div><div class="cn">明天的这个时候</div></div>
 <div class="row"><div class="jp">あなたはどこにいるんだろう</div><div class="cn">你会在哪里呢</div></div>
-<div class="row"><div class="jp"><ruby>誰<rt>だれ</rt></ruby>を<ruby>想<rt>おも</rt></ruby>ってるんだろう</div><div class="cn">又在想着谁呢</div></div></section>
-<div class="part-label">副歌 · You are alwa</div><section class="stanza"><div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>are<rt>アー</rt></ruby> <ruby>always<rt>オールウェイズ</rt></ruby> <ruby>gonna<rt>ゴナ</rt></ruby> <ruby>be<rt>ビー</rt></ruby> <ruby>my<rt>マイ</rt></ruby> <ruby>love<rt>ラブ</rt></ruby></div><div class="cn">You are always gonna be my love（你永远都会是我的爱）</div></div>
-<div class="row"><div class="jp">いつか<ruby>誰<rt>だれ</rt></ruby>かとまた<ruby>恋<rt>こい</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちても</div><div class="cn">哪怕将来你又与谁坠入爱河</div></div></section>
-<div class="part-label">第一段 · I'll remembe</div><section class="stanza"><div class="row"><div class="jp"><ruby>I'll<rt>アイル</rt></ruby> <ruby>remember<rt>リメンバー</rt></ruby> <ruby>to<rt>トゥ</rt></ruby> <ruby>love<rt>ラブ</rt></ruby></div><div class="cn">I'll remember to love（我会记得去爱）</div></div>
+<div class="row"><div class="jp"><ruby>誰<rt>だれ</rt></ruby>を<ruby>想<rt>おも</rt></ruby>ってるんだろう</div><div class="cn">又在想着谁呢</div></div>
+<div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>are<rt>アー</rt></ruby> <ruby>always<rt>オールウェイズ</rt></ruby> <ruby>gonna<rt>ゴナ</rt></ruby> <ruby>be<rt>ビー</rt></ruby> <ruby>my<rt>マイ</rt></ruby> <ruby>love<rt>ラブ</rt></ruby></div><div class="cn">You are always gonna be my love（你永远都会是我的爱）</div></div>
+<div class="row"><div class="jp">いつか<ruby>誰<rt>だれ</rt></ruby>かとまた<ruby>恋<rt>こい</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちても</div><div class="cn">哪怕将来你又与谁坠入爱河</div></div>
+<div class="row"><div class="jp"><ruby>I'll<rt>アイル</rt></ruby> <ruby>remember<rt>リメンバー</rt></ruby> <ruby>to<rt>トゥ</rt></ruby> <ruby>love<rt>ラブ</rt></ruby></div><div class="cn">I'll remember to love（我会记得去爱）</div></div>
 <div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>taught<rt>トウト</rt></ruby> <ruby>me<rt>ミー</rt></ruby> <ruby>how<rt>ハウ</rt></ruby></div><div class="cn">You taught me how（是你教会了我）</div></div>
 <div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>are<rt>アー</rt></ruby> <ruby>always<rt>オールウェイズ</rt></ruby> <ruby>gonna<rt>ゴナ</rt></ruby> <ruby>be<rt>ビー</rt></ruby> <ruby>the<rt>ザ</rt></ruby> <ruby>one<rt>ワン</rt></ruby></div><div class="cn">You are always gonna be the one（你永远都是那唯一）</div></div>
 <div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby>はまだ<ruby>悲<rt>かな</rt></ruby>しい <ruby>love<rt>ラブ</rt></ruby> <ruby>song<rt>ソング</rt></ruby></div><div class="cn">此刻仍只能唱着悲伤的情歌</div></div>
@@ -140,19 +135,19 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>明日<rt>あした</rt></ruby>の<ruby>今頃<rt>いまごろ</rt></ruby>には</div><div class="cn">明天的这个时候</div></div>
 <div class="row"><div class="jp">わたしはきっと<ruby>泣<rt>な</rt></ruby>いている</div><div class="cn">我一定正在哭泣</div></div>
 <div class="row"><div class="jp">あなたを<ruby>想<rt>おも</rt></ruby>ってるんだろう</div><div class="cn">一定正在想着你</div></div>
-<div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>will<rt>ウィル</rt></ruby> <ruby>always<rt>オールウェイズ</rt></ruby> <ruby>be<rt>ビー</rt></ruby> <ruby>inside<rt>インサイド</rt></ruby> <ruby>my<rt>マイ</rt></ruby> <ruby>heart<rt>ハート</rt></ruby></div><div class="cn">You will always be inside my heart（你永远都在我心里）</div></div></section>
-<div class="part-label">第二段 · いつも あなただけの場所</div><section class="stanza"><div class="row"><div class="jp">いつも あなただけの<ruby>場所<rt>ばしょ</rt></ruby>があるから</div><div class="cn">因为我心里永远有一处只属于你</div></div>
+<div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>will<rt>ウィル</rt></ruby> <ruby>always<rt>オールウェイズ</rt></ruby> <ruby>be<rt>ビー</rt></ruby> <ruby>inside<rt>インサイド</rt></ruby> <ruby>my<rt>マイ</rt></ruby> <ruby>heart<rt>ハート</rt></ruby></div><div class="cn">You will always be inside my heart（你永远都在我心里）</div></div>
+<div class="row"><div class="jp">いつも あなただけの<ruby>場所<rt>ばしょ</rt></ruby>があるから</div><div class="cn">因为我心里永远有一处只属于你</div></div>
 <div class="row"><div class="jp"><ruby>I<rt>アイ</rt></ruby> <ruby>hope<rt>ホープ</rt></ruby> <ruby>that<rt>ザット</rt></ruby> <ruby>I<rt>アイ</rt></ruby> <ruby>have<rt>ハブ</rt></ruby> <ruby>a<rt>ア</rt></ruby> <ruby>place<rt>プレイス</rt></ruby> <ruby>in<rt>イン</rt></ruby> <ruby>your<rt>ユア</rt></ruby> <ruby>heart<rt>ハート</rt></ruby> <ruby>too<rt>トゥ</rt></ruby></div><div class="cn">I hope that I have a place in your heart too（希望在你心里也有我的一席之地）</div></div>
 <div class="row"><div class="jp"><ruby>Now<rt>ナウ</rt></ruby> <ruby>and<rt>アンド</rt></ruby> <ruby>forever<rt>フォーエバー</rt></ruby> <ruby>you<rt>ユー</rt></ruby> <ruby>are<rt>アー</rt></ruby> <ruby>still<rt>スティル</rt></ruby> <ruby>the<rt>ザ</rt></ruby> <ruby>one<rt>ワン</rt></ruby></div><div class="cn">Now and forever you are still the one（无论现在还是永远，你依然是唯一）</div></div>
 <div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby>はまだ<ruby>悲<rt>かな</rt></ruby>しい <ruby>love<rt>ラブ</rt></ruby> <ruby>song<rt>ソング</rt></ruby></div><div class="cn">此刻仍只能唱着悲伤的情歌</div></div>
-<div class="row"><div class="jp"><ruby>新<rt>あたら</rt></ruby>しい<ruby>歌<rt>うた</rt></ruby> うたえるまで</div><div class="cn">直到我能唱出新的歌</div></div></section>
-<div class="part-label">副歌（再来）· You are alwa</div><section class="stanza"><div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>are<rt>アー</rt></ruby> <ruby>always<rt>オールウェイズ</rt></ruby> <ruby>gonna<rt>ゴナ</rt></ruby> <ruby>be<rt>ビー</rt></ruby> <ruby>my<rt>マイ</rt></ruby> <ruby>love<rt>ラブ</rt></ruby></div><div class="cn">You are always gonna be my love（你永远都会是我的爱）</div></div>
-<div class="row"><div class="jp">いつか<ruby>誰<rt>だれ</rt></ruby>かとまた<ruby>恋<rt>こい</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちても</div><div class="cn">哪怕将来你又与谁坠入爱河</div></div></section>
-<div class="part-label">第三段 · I'll remembe</div><section class="stanza"><div class="row"><div class="jp"><ruby>I'll<rt>アイル</rt></ruby> <ruby>remember<rt>リメンバー</rt></ruby> <ruby>to<rt>トゥ</rt></ruby> <ruby>love<rt>ラブ</rt></ruby></div><div class="cn">I'll remember to love（我会记得去爱）</div></div>
+<div class="row"><div class="jp"><ruby>新<rt>あたら</rt></ruby>しい<ruby>歌<rt>うた</rt></ruby> うたえるまで</div><div class="cn">直到我能唱出新的歌</div></div>
+<div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>are<rt>アー</rt></ruby> <ruby>always<rt>オールウェイズ</rt></ruby> <ruby>gonna<rt>ゴナ</rt></ruby> <ruby>be<rt>ビー</rt></ruby> <ruby>my<rt>マイ</rt></ruby> <ruby>love<rt>ラブ</rt></ruby></div><div class="cn">You are always gonna be my love（你永远都会是我的爱）</div></div>
+<div class="row"><div class="jp">いつか<ruby>誰<rt>だれ</rt></ruby>かとまた<ruby>恋<rt>こい</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちても</div><div class="cn">哪怕将来你又与谁坠入爱河</div></div>
+<div class="row"><div class="jp"><ruby>I'll<rt>アイル</rt></ruby> <ruby>remember<rt>リメンバー</rt></ruby> <ruby>to<rt>トゥ</rt></ruby> <ruby>love<rt>ラブ</rt></ruby></div><div class="cn">I'll remember to love（我会记得去爱）</div></div>
 <div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>taught<rt>トウト</rt></ruby> <ruby>me<rt>ミー</rt></ruby> <ruby>how<rt>ハウ</rt></ruby></div><div class="cn">You taught me how（是你教会了我）</div></div>
 <div class="row"><div class="jp"><ruby>You<rt>ユー</rt></ruby> <ruby>are<rt>アー</rt></ruby> <ruby>always<rt>オールウェイズ</rt></ruby> <ruby>gonna<rt>ゴナ</rt></ruby> <ruby>be<rt>ビー</rt></ruby> <ruby>the<rt>ザ</rt></ruby> <ruby>one<rt>ワン</rt></ruby></div><div class="cn">You are always gonna be the one（你永远都是那唯一）</div></div>
 <div class="row"><div class="jp">まだ<ruby>悲<rt>かな</rt></ruby>しい <ruby>love<rt>ラブ</rt></ruby> <ruby>song<rt>ソング</rt></ruby></div><div class="cn">仍然悲伤的情歌</div></div>
-<div class="row"><div class="jp"><ruby>新<rt>あたら</rt></ruby>しい<ruby>歌<rt>うた</rt></ruby> うたえるまで</div><div class="cn">直到我能唱出新的歌</div></div></section>
+<div class="row"><div class="jp"><ruby>新<rt>あたら</rt></ruby>しい<ruby>歌<rt>うた</rt></ruby> うたえるまで</div><div class="cn">直到我能唱出新的歌</div></div>
   </main>
   <section class="links">
     <div class="links-head">

@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,7 +116,7 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · なまぬるい風に吹かれなが</div><section class="stanza"><div class="row"><div class="jp">なまぬるい<ruby>風<rt>かぜ</rt></ruby>に<ruby>吹<rt>ふ</rt></ruby>かれながら</div><div class="cn">迎着温吞的风</div></div>
+<div class="row"><div class="jp">なまぬるい<ruby>風<rt>かぜ</rt></ruby>に<ruby>吹<rt>ふ</rt></ruby>かれながら</div><div class="cn">迎着温吞的风</div></div>
 <div class="row"><div class="jp"><ruby>東京<rt>とうきょう</rt></ruby>の<ruby>空<rt>そら</rt></ruby><ruby>眺<rt>なが</rt></ruby>めてたら</div><div class="cn">望着东京的天空</div></div>
 <div class="row"><div class="jp"><ruby>遠<rt>とお</rt></ruby>くで<ruby>暮<rt>く</rt></ruby>らしてるあなたの<ruby>事<rt>こと</rt></ruby>をふと<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す</div><div class="cn">忽然想起了在远方生活的你</div></div>
 <div class="row"><div class="jp"><ruby>元気<rt>げんき</rt></ruby>ですか?</div><div class="cn">你还好吗？</div></div>
@@ -132,8 +127,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">ずっと<ruby>覚<rt>おぼ</rt></ruby>えてるよ そして<ruby>忘<rt>わす</rt></ruby>れないよ</div><div class="cn">我一直记在心里，永远不会忘记</div></div>
 <div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby> <ruby>心<rt>こころ</rt></ruby>からありがとう</div><div class="cn">此刻，发自内心地说一声：谢谢你</div></div>
 <div class="row"><div class="jp"><ruby>出来<rt>でき</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くていつも<ruby>困<rt>こま</rt></ruby>らせた</div><div class="cn">我总是不成器，一直让你操心</div></div>
-<div class="row"><div class="jp">あなたの<ruby>涙<rt>なみだ</rt></ruby><ruby>何度<rt>なんど</rt></ruby>も<ruby>見<rt>み</rt></ruby>た</div><div class="cn">多少次看见你落泪</div></div></section>
-<div class="part-label">第一段 · 素直になれずに罵声を浴び</div><section class="stanza"><div class="row"><div class="jp"><ruby>素直<rt>すなお</rt></ruby>になれずに<ruby>罵声<rt>ばせい</rt></ruby>を<ruby>浴<rt>あ</rt></ruby>びせた</div><div class="cn">别扭的我，总把恶言泼向你</div></div>
+<div class="row"><div class="jp">あなたの<ruby>涙<rt>なみだ</rt></ruby><ruby>何度<rt>なんど</rt></ruby>も<ruby>見<rt>み</rt></ruby>た</div><div class="cn">多少次看见你落泪</div></div>
+<div class="row"><div class="jp"><ruby>素直<rt>すなお</rt></ruby>になれずに<ruby>罵声<rt>ばせい</rt></ruby>を<ruby>浴<rt>あ</rt></ruby>びせた</div><div class="cn">别扭的我，总把恶言泼向你</div></div>
 <div class="row"><div class="jp">そんな<ruby>僕<rt>ぼく</rt></ruby>でも<ruby>愛<rt>あい</rt></ruby>してくれた</div><div class="cn">可你依然爱着这样的我</div></div>
 <div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby>になってやっとその<ruby>言葉<rt>ことば</rt></ruby>の<ruby>本当<rt>ほんとう</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>にも<ruby>気<rt>き</rt></ruby>づきました</div><div class="cn">直到今天，我才终于明白那句话真正的含义</div></div>
 <div class="row"><div class="jp">「<ruby>辛<rt>つら</rt></ruby>くなったときはいつでも<ruby>帰<rt>かえ</rt></ruby>っておいで」と</div><div class="cn">“累了的时候，随时都可以回家”</div></div>
@@ -144,13 +139,13 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">この<ruby>感謝<rt>かんしゃ</rt></ruby>と<ruby>敬意<rt>けいい</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えたい</div><div class="cn">只想把这份感谢与敬意，说给你听</div></div>
 <div class="row"><div class="jp"><ruby>頼<rt>たよ</rt></ruby>りなかった<ruby>僕<rt>ぼく</rt></ruby>も<ruby>少<rt>すこ</rt></ruby>し<ruby>大人<rt>おとな</rt></ruby>になり</div><div class="cn">曾经靠不住的我，也慢慢长成了大人</div></div>
 <div class="row"><div class="jp"><ruby>今度<rt>こんど</rt></ruby>は<ruby>僕<rt>ぼく</rt></ruby>が<ruby>支<rt>ささ</rt></ruby>えていきます</div><div class="cn">这一次，换我来支撑这个家</div></div>
-<div class="row"><div class="jp">そろそろいい<ruby>年<rt>とし</rt></ruby>でしょう <ruby>楽<rt>らく</rt></ruby>して<ruby>暮<rt>く</rt></ruby>らしてください</div><div class="cn">你也上了年纪，请好好享享清福吧</div></div></section>
-<div class="part-label">第二段 · 僕ならもう大丈夫だから</div><section class="stanza"><div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>ならもう<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>だから</div><div class="cn">因为我已经没有问题了</div></div>
+<div class="row"><div class="jp">そろそろいい<ruby>年<rt>とし</rt></ruby>でしょう <ruby>楽<rt>らく</rt></ruby>して<ruby>暮<rt>く</rt></ruby>らしてください</div><div class="cn">你也上了年纪，请好好享享清福吧</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>ならもう<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>だから</div><div class="cn">因为我已经没有问题了</div></div>
 <div class="row"><div class="jp">あなたの<ruby>元<rt>もと</rt></ruby>に<ruby>生<rt>う</rt></ruby>まれ<ruby>本当<rt>ほんとう</rt></ruby>によかったと</div><div class="cn">“能成为你的孩子，真是太好了”</div></div>
 <div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby>こうして<ruby>胸<rt>むね</rt></ruby>を<ruby>張<rt>は</rt></ruby>って<ruby>言<rt>い</rt></ruby>い<ruby>切<rt>き</rt></ruby>れる</div><div class="cn">如今，我可以挺起胸膛，这样断言</div></div>
 <div class="row"><div class="jp">あなたの<ruby>願<rt>ねが</rt></ruby>うような<ruby>僕<rt>ぼく</rt></ruby>になれていますか?</div><div class="cn">我成为你期望中的那个我了吗？</div></div>
 <div class="row"><div class="jp">そんな<ruby>事<rt>こと</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>える</div><div class="cn">我开始思索这样的事</div></div>
-<div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby> <ruby>心<rt>こころ</rt></ruby>からありがとう</div><div class="cn">此刻，发自内心地说一声：谢谢你</div></div></section>
+<div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby> <ruby>心<rt>こころ</rt></ruby>からありがとう</div><div class="cn">此刻，发自内心地说一声：谢谢你</div></div>
   </main>
   <section class="links">
     <div class="links-head">

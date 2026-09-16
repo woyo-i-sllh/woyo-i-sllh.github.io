@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,7 +116,7 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · いつだって振り返ればそこ</div><section class="stanza"><div class="row"><div class="jp">いつだって<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>りかえれ</rt></ruby>ればそこに</div><div class="cn">无论何时回首</div></div>
+<div class="row"><div class="jp">いつだって<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>りかえれ</rt></ruby>ればそこに</div><div class="cn">无论何时回首</div></div>
 <div class="row"><div class="jp">まだ<ruby>誰<rt>だれ</rt></ruby>かがいるでしょ</div><div class="cn">那里也尚有人在</div></div>
 <div class="row"><div class="jp">そうやって<ruby>自分<rt>じぶん</rt></ruby>をごまかして</div><div class="cn">就这么糊弄自己</div></div>
 <div class="row"><div class="jp"><ruby>今日<rt>きょう</rt></ruby>もまた<ruby>過<rt>す</rt></ruby>ぎてく</div><div class="cn">今天还是要过去</div></div>
@@ -132,10 +127,10 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">もうすぐ<ruby>夕日<rt>ゆうひ</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>むけど</div><div class="cn">虽然夕阳就快西沉</div></div>
 <div class="row"><div class="jp"><ruby>帰<rt>か</rt></ruby>り<ruby>道<rt>えりみち</rt></ruby>は<ruby>遠<rt>とお</rt></ruby>くて</div><div class="cn">回家路还很遥远</div></div>
 <div class="row"><div class="jp"><ruby>最近<rt>さいきん</rt></ruby>じゃ<ruby>少<rt>すこ</rt></ruby>し<ruby>風<rt>かぜ</rt></ruby>も<ruby>冷<rt>ひ</rt></ruby>えて</div><div class="cn">近来刮风略带凉意</div></div>
-<div class="row"><div class="jp">こんな<ruby>格好<rt>かっこう</rt></ruby>のままじゃ<ruby>寒<rt>さむ</rt></ruby>いよ</div><div class="cn">若这幅打扮会觉得冷哦</div></div></section>
-<div class="part-label">副歌 · 最初は誰もが同じ</div><section class="stanza"><div class="row"><div class="jp"><ruby>最初<rt>さいしょ</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>もが<ruby>同<rt>おな</rt></ruby>じ</div><div class="cn">起初众人都一样</div></div>
-<div class="row"><div class="jp">ゴールを<ruby>目指<rt>めざ</rt></ruby>していた</div><div class="cn">都瞄准着目标</div></div></section>
-<div class="part-label">第一段 · 遠くに見えた理想が</div><section class="stanza"><div class="row"><div class="jp"><ruby>遠<rt>とお</rt></ruby>くに<ruby>見<rt>み</rt></ruby>えた<ruby>理想<rt>りそう</rt></ruby>が</div><div class="cn">理想在那远处可见</div></div>
+<div class="row"><div class="jp">こんな<ruby>格好<rt>かっこう</rt></ruby>のままじゃ<ruby>寒<rt>さむ</rt></ruby>いよ</div><div class="cn">若这幅打扮会觉得冷哦</div></div>
+<div class="row"><div class="jp"><ruby>最初<rt>さいしょ</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>もが<ruby>同<rt>おな</rt></ruby>じ</div><div class="cn">起初众人都一样</div></div>
+<div class="row"><div class="jp">ゴールを<ruby>目指<rt>めざ</rt></ruby>していた</div><div class="cn">都瞄准着目标</div></div>
+<div class="row"><div class="jp"><ruby>遠<rt>とお</rt></ruby>くに<ruby>見<rt>み</rt></ruby>えた<ruby>理想<rt>りそう</rt></ruby>が</div><div class="cn">理想在那远处可见</div></div>
 <div class="row"><div class="jp"><ruby>自分<rt>じぶん</rt></ruby>のような<ruby>気<rt>き</rt></ruby>がした</div><div class="cn">仿佛那就是自己</div></div>
 <div class="row"><div class="jp"><ruby>頬<rt>ほお</rt></ruby>をきる<ruby>風<rt>かぜ</rt></ruby>が</div><div class="cn">刮过脸颊的风</div></div>
 <div class="row"><div class="jp"><ruby>懐<rt>なつ</rt></ruby>かしい<ruby>香<rt>かお</rt></ruby>り<ruby>運<rt>はこ</rt></ruby>んで</div><div class="cn">带来怀念的香气</div></div>
@@ -144,11 +139,11 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>夕闇<rt>ゆうやみ</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>づく<ruby>空<rt>そら</rt></ruby></div><div class="cn">暮色迫近的天空</div></div>
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>は<ruby>足<rt>あし</rt></ruby>を<ruby>速<rt>はや</rt></ruby>めた</div><div class="cn">我加快了脚步</div></div>
 <div class="row"><div class="jp"><ruby>頑張<rt>がんば</rt></ruby>るよずるしないよ</div><div class="cn">加油 我不会拖拉</div></div>
-<div class="row"><div class="jp"><ruby>誰<rt>だれ</rt></ruby>も<ruby>見<rt>み</rt></ruby>ていないけど</div><div class="cn">别人都不在我眼中</div></div></section>
-<div class="part-label">尾声 · 最初は誰もが同じ</div><section class="stanza"><div class="row"><div class="jp"><ruby>最初<rt>さいしょ</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>もが<ruby>同<rt>おな</rt></ruby>じ</div><div class="cn">起初众人都一样</div></div>
+<div class="row"><div class="jp"><ruby>誰<rt>だれ</rt></ruby>も<ruby>見<rt>み</rt></ruby>ていないけど</div><div class="cn">别人都不在我眼中</div></div>
+<div class="row"><div class="jp"><ruby>最初<rt>さいしょ</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>もが<ruby>同<rt>おな</rt></ruby>じ</div><div class="cn">起初众人都一样</div></div>
 <div class="row"><div class="jp">ゴールを<ruby>目指<rt>めざ</rt></ruby>していた</div><div class="cn">都瞄准着目标</div></div>
 <div class="row"><div class="jp"><ruby>遠<rt>とお</rt></ruby>くに<ruby>見<rt>み</rt></ruby>えた<ruby>理想<rt>りそう</rt></ruby>は</div><div class="cn">理想在那远处可见</div></div>
-<div class="row"><div class="jp"><ruby>近<rt>ちか</rt></ruby>づくほど<ruby>遠<rt>とお</rt></ruby>ざかった</div><div class="cn">却发现越靠近越遥远</div></div></section>
+<div class="row"><div class="jp"><ruby>近<rt>ちか</rt></ruby>づくほど<ruby>遠<rt>とお</rt></ruby>ざかった</div><div class="cn">却发现越靠近越遥远</div></div>
   </main>
   <section class="links">
     <div class="links-head">

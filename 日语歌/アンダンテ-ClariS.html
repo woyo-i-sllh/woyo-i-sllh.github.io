@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,7 +116,7 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · 歩いてゆこうよ 心のまま</div><section class="stanza"><div class="row"><div class="jp"><ruby>歩<rt>ある</rt></ruby>いてゆこうよ <ruby>心<rt>こころ</rt></ruby>のままに</div><div class="cn">就随心而行，往前走下去吧</div></div>
+<div class="row"><div class="jp"><ruby>歩<rt>ある</rt></ruby>いてゆこうよ <ruby>心<rt>こころ</rt></ruby>のままに</div><div class="cn">就随心而行，往前走下去吧</div></div>
 <div class="row"><div class="jp"><ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>刻<rt>きざ</rt></ruby>もう</div><div class="cn">一起铭刻下来</div></div>
 <div class="row"><div class="jp">ふたりのアンダンテ</div><div class="cn">属于两人的行板</div></div>
 <div class="row"><div class="jp">わざと<ruby>駆<rt>か</rt></ruby>け<ruby>足<rt>あし</rt></ruby>で</div><div class="cn">故意小跑起来</div></div>
@@ -133,10 +128,10 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>眩<rt>まぶ</rt></ruby>しい<ruby>空<rt>そら</rt></ruby>へと<ruby>誘<rt>さそ</rt></ruby>うの</div><div class="cn">引诱着我奔向耀眼的天空</div></div>
 <div class="row"><div class="jp"><ruby>何<rt>なん</rt></ruby>でもない<ruby>毎日<rt>まいにち</rt></ruby></div><div class="cn">平平无奇的每一天</div></div>
 <div class="row"><div class="jp">そっとくすぐるメロディ</div><div class="cn">有轻轻挠着心口的旋律</div></div>
-<div class="row"><div class="jp">いつだって<ruby>聞<rt>き</rt></ruby>きたいでしょう?</div><div class="cn">你无论何时都想听吧？</div></div></section>
-<div class="part-label">副歌 · Step by Step</div><section class="stanza"><div class="row"><div class="jp">Step by Step <ruby>違<rt>ちが</rt></ruby>う<ruby>歩幅<rt>ほはば</rt></ruby>でもいいの</div><div class="cn">Step by Step，步幅不同也没关系</div></div>
-<div class="row"><div class="jp"><ruby>世界<rt>せかい</rt></ruby><ruby>中<rt>じゅう</rt></ruby> どこだって<ruby>連<rt>つ</rt></ruby>れてゆくよ</div><div class="cn">全世界无论哪里，我都带你去</div></div></section>
-<div class="part-label">第一段 · It's my way </div><section class="stanza"><div class="row"><div class="jp">It's my way <ruby>気<rt>き</rt></ruby>まぐれも<ruby>楽<rt>たの</rt></ruby>しもうよ</div><div class="cn">It's my way，随心任性也一起享受吧</div></div>
+<div class="row"><div class="jp">いつだって<ruby>聞<rt>き</rt></ruby>きたいでしょう?</div><div class="cn">你无论何时都想听吧？</div></div>
+<div class="row"><div class="jp">Step by Step <ruby>違<rt>ちが</rt></ruby>う<ruby>歩幅<rt>ほはば</rt></ruby>でもいいの</div><div class="cn">Step by Step，步幅不同也没关系</div></div>
+<div class="row"><div class="jp"><ruby>世界<rt>せかい</rt></ruby><ruby>中<rt>じゅう</rt></ruby> どこだって<ruby>連<rt>つ</rt></ruby>れてゆくよ</div><div class="cn">全世界无论哪里，我都带你去</div></div>
+<div class="row"><div class="jp">It's my way <ruby>気<rt>き</rt></ruby>まぐれも<ruby>楽<rt>たの</rt></ruby>しもうよ</div><div class="cn">It's my way，随心任性也一起享受吧</div></div>
 <div class="row"><div class="jp"><ruby>早<rt>はや</rt></ruby>くあの<ruby>虹<rt>にじ</rt></ruby><ruby>君<rt>きみ</rt></ruby>と<ruby>見<rt>み</rt></ruby>たいから</div><div class="cn">因为想快点和你一起看那道彩虹</div></div>
 <div class="row"><div class="jp">ふいに<ruby>振<rt>ふ</rt></ruby>り<ruby>向<rt>む</rt></ruby>いて</div><div class="cn">不经意间回过头</div></div>
 <div class="row"><div class="jp"><ruby>目<rt>め</rt></ruby>と<ruby>目<rt>め</rt></ruby><ruby>合<rt>あ</rt></ruby>えば</div><div class="cn">四目相对的话</div></div>
@@ -147,8 +142,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>知<rt>し</rt></ruby>らない<ruby>扉<rt>とびら</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けるの</div><div class="cn">打开那扇未知的门</div></div>
 <div class="row"><div class="jp"><ruby>何<rt>なに</rt></ruby>かが<ruby>起<rt>お</rt></ruby>こる<ruby>予感<rt>よかん</rt></ruby></div><div class="cn">预感到有什么事将要发生</div></div>
 <div class="row"><div class="jp">もっと<ruby>自由気<rt>じゆうき</rt></ruby>ままに</div><div class="cn">更加自由随性一些</div></div>
-<div class="row"><div class="jp"><ruby>飛<rt>と</rt></ruby>び<ruby>込<rt>こ</rt></ruby>んで<ruby>踊<rt>おど</rt></ruby>りましょう!</div><div class="cn">纵身跳进去，一起起舞吧！</div></div></section>
-<div class="part-label">第二段 · Step by Step</div><section class="stanza"><div class="row"><div class="jp">Step by Step <ruby>君<rt>きみ</rt></ruby>のリズム<ruby>感<rt>かん</rt></ruby>じて</div><div class="cn">Step by Step，感受你的节奏</div></div>
+<div class="row"><div class="jp"><ruby>飛<rt>と</rt></ruby>び<ruby>込<rt>こ</rt></ruby>んで<ruby>踊<rt>おど</rt></ruby>りましょう!</div><div class="cn">纵身跳进去，一起起舞吧！</div></div>
+<div class="row"><div class="jp">Step by Step <ruby>君<rt>きみ</rt></ruby>のリズム<ruby>感<rt>かん</rt></ruby>じて</div><div class="cn">Step by Step，感受你的节奏</div></div>
 <div class="row"><div class="jp"><ruby>深呼吸<rt>しんこきゅう</rt></ruby> <ruby>期待<rt>きたい</rt></ruby>を<ruby>膨<rt>ふく</rt></ruby>らませよう</div><div class="cn">深呼吸，让期待膨胀起来</div></div>
 <div class="row"><div class="jp">Don't worry <ruby>通<rt>とお</rt></ruby>り<ruby>雨<rt>あめ</rt></ruby><ruby>過<rt>す</rt></ruby>ぎたなら</div><div class="cn">Don't worry，阵雨过去之后</div></div>
 <div class="row"><div class="jp">きっと<ruby>新<rt>あたら</rt></ruby>しい<ruby>景色<rt>けしき</rt></ruby>が<ruby>待<rt>ま</rt></ruby>ってる</div><div class="cn">一定有崭新的景色在等着</div></div>
@@ -157,12 +152,12 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>描<rt>えが</rt></ruby>く<ruby>未来<rt>みらい</rt></ruby><ruby>図<rt>ず</rt></ruby>の<ruby>向<rt>む</rt></ruby>こう</div><div class="cn">在描绘的未来蓝图那一边</div></div>
 <div class="row"><div class="jp"><ruby>歩<rt>ある</rt></ruby>くように <ruby>歌<rt>うた</rt></ruby>うように <ruby>明日<rt>あした</rt></ruby>へ</div><div class="cn">像走路一样、像唱歌一样，走向明天</div></div>
 <div class="row"><div class="jp">Be with you <ruby>終<rt>お</rt></ruby>わりのない<ruby>旅<rt>たび</rt></ruby>だって</div><div class="cn">Be with you，哪怕是没有终点的旅程</div></div>
-<div class="row"><div class="jp"><ruby>大丈夫<rt>だいじょうぶ</rt></ruby> ゆっくり<ruby>踏<rt>ふ</rt></ruby>み<ruby>出<rt>だ</rt></ruby>せるよ</div><div class="cn">没关系，可以慢慢地迈出脚步</div></div></section>
-<div class="part-label">副歌（再来）· Step by Step</div><section class="stanza"><div class="row"><div class="jp">Step by Step <ruby>違<rt>ちが</rt></ruby>う<ruby>歩幅<rt>ほはば</rt></ruby>でもいいの</div><div class="cn">Step by Step，步幅不同也没关系</div></div>
-<div class="row"><div class="jp"><ruby>世界<rt>せかい</rt></ruby><ruby>中<rt>じゅう</rt></ruby> どこだって<ruby>連<rt>つ</rt></ruby>れてゆくよ</div><div class="cn">全世界无论哪里，我都带你去</div></div></section>
-<div class="part-label">尾声 · It's my way </div><section class="stanza"><div class="row"><div class="jp">It's my way <ruby>気<rt>き</rt></ruby>まぐれも<ruby>楽<rt>たの</rt></ruby>しもうよ</div><div class="cn">It's my way，随心任性也一起享受吧</div></div>
+<div class="row"><div class="jp"><ruby>大丈夫<rt>だいじょうぶ</rt></ruby> ゆっくり<ruby>踏<rt>ふ</rt></ruby>み<ruby>出<rt>だ</rt></ruby>せるよ</div><div class="cn">没关系，可以慢慢地迈出脚步</div></div>
+<div class="row"><div class="jp">Step by Step <ruby>違<rt>ちが</rt></ruby>う<ruby>歩幅<rt>ほはば</rt></ruby>でもいいの</div><div class="cn">Step by Step，步幅不同也没关系</div></div>
+<div class="row"><div class="jp"><ruby>世界<rt>せかい</rt></ruby><ruby>中<rt>じゅう</rt></ruby> どこだって<ruby>連<rt>つ</rt></ruby>れてゆくよ</div><div class="cn">全世界无论哪里，我都带你去</div></div>
+<div class="row"><div class="jp">It's my way <ruby>気<rt>き</rt></ruby>まぐれも<ruby>楽<rt>たの</rt></ruby>しもうよ</div><div class="cn">It's my way，随心任性也一起享受吧</div></div>
 <div class="row"><div class="jp"><ruby>早<rt>はや</rt></ruby>くあの<ruby>虹<rt>にじ</rt></ruby><ruby>君<rt>きみ</rt></ruby>と<ruby>見<rt>み</rt></ruby>たいから</div><div class="cn">因为想快点和你一起看那道彩虹</div></div>
-<div class="row"><div class="jp">ふたりの<ruby>夢<rt>ゆめ</rt></ruby>はずっと<ruby>続<rt>つづ</rt></ruby>いてく</div><div class="cn">两人的梦会一直延续下去</div></div></section>
+<div class="row"><div class="jp">ふたりの<ruby>夢<rt>ゆめ</rt></ruby>はずっと<ruby>続<rt>つづ</rt></ruby>いてく</div><div class="cn">两人的梦会一直延续下去</div></div>
   </main>
   <section class="links">
     <div class="links-head">

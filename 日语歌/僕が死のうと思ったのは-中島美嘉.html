@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,7 +116,7 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · 僕が死のうと思ったのは</div><section class="stanza"><div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>が<ruby>死<rt>し</rt></ruby>のうと<ruby>思<rt>おも</rt></ruby>ったのは</div><div class="cn">我曾想一了百了，是因为</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>が<ruby>死<rt>し</rt></ruby>のうと<ruby>思<rt>おも</rt></ruby>ったのは</div><div class="cn">我曾想一了百了，是因为</div></div>
 <div class="row"><div class="jp">ウミネコが<ruby>桟橋<rt>さんばし</rt></ruby>で<ruby>鳴<rt>な</rt></ruby>いたから</div><div class="cn">海猫在栈桥上声声哀鸣</div></div>
 <div class="row"><div class="jp"><ruby>波<rt>なみ</rt></ruby>の<ruby>随意<rt>ずいい</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かんで<ruby>消<rt>き</rt></ruby>える</div><div class="cn">随着波浪浮沉、又消失</div></div>
 <div class="row"><div class="jp"><ruby>過去<rt>かこ</rt></ruby>も<ruby>啄<rt>つい</rt></ruby>ばんで<ruby>飛<rt>と</rt></ruby>んでいけ</div><div class="cn">把过去也一并啄起，飞向远方吧</div></div>
@@ -132,8 +127,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>薄荷<rt>はっか</rt></ruby><ruby>飴<rt>あめ</rt></ruby>　<ruby>漁港<rt>ぎょこう</rt></ruby>の<ruby>灯台<rt>とうだい</rt></ruby></div><div class="cn">薄荷糖，渔港的灯塔</div></div>
 <div class="row"><div class="jp"><ruby>錆<rt>さ</rt></ruby>びたアーチ<ruby>橋<rt>はし</rt></ruby>　<ruby>捨<rt>す</rt></ruby>てた<ruby>自転車<rt>じてんしゃ</rt></ruby></div><div class="cn">生锈的拱桥，丢弃的自行车</div></div>
 <div class="row"><div class="jp"><ruby>木造<rt>もくぞう</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>のストーブの<ruby>前<rt>まえ</rt></ruby>で</div><div class="cn">在木造车站的火炉前</div></div>
-<div class="row"><div class="jp">どこにも<ruby>旅立<rt>たびだ</rt></ruby>てない<ruby>心<rt>こころ</rt></ruby></div><div class="cn">是一颗哪里都去不了的心</div></div></section>
-<div class="part-label">第一段 · 今日はまるで昨日みたいだ</div><section class="stanza"><div class="row"><div class="jp"><ruby>今日<rt>きょう</rt></ruby>はまるで<ruby>昨日<rt>きのう</rt></ruby>みたいだ</div><div class="cn">今天简直和昨天一模一样</div></div>
+<div class="row"><div class="jp">どこにも<ruby>旅立<rt>たびだ</rt></ruby>てない<ruby>心<rt>こころ</rt></ruby></div><div class="cn">是一颗哪里都去不了的心</div></div>
+<div class="row"><div class="jp"><ruby>今日<rt>きょう</rt></ruby>はまるで<ruby>昨日<rt>きのう</rt></ruby>みたいだ</div><div class="cn">今天简直和昨天一模一样</div></div>
 <div class="row"><div class="jp"><ruby>明日<rt>あした</rt></ruby>を<ruby>変<rt>か</rt></ruby>えるなら<ruby>今日<rt>きょう</rt></ruby>を<ruby>変<rt>か</rt></ruby>えなきゃ</div><div class="cn">想改变明天，就必须先改变今天</div></div>
 <div class="row"><div class="jp"><ruby>分<rt>わ</rt></ruby>かってる　<ruby>分<rt>わ</rt></ruby>かってる　けれど</div><div class="cn">我明白，我都明白，可是</div></div>
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>が<ruby>死<rt>し</rt></ruby>のうと<ruby>思<rt>おも</rt></ruby>ったのは</div><div class="cn">我曾想一了百了，是因为</div></div>
@@ -144,8 +139,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>靴紐<rt>くつひも</rt></ruby>が<ruby>解<rt>ほど</rt></ruby>けたから</div><div class="cn">鞋带松开了</div></div>
 <div class="row"><div class="jp"><ruby>結<rt>むす</rt></ruby>びなおすのは<ruby>苦手<rt>にがて</rt></ruby>なんだよ</div><div class="cn">我本就不擅长重新系好它</div></div>
 <div class="row"><div class="jp"><ruby>人<rt>ひと</rt></ruby>との<ruby>繋<rt>つな</rt></ruby>がりもまた<ruby>然<rt>しか</rt></ruby>り</div><div class="cn">人与人的牵绊，也是如此</div></div>
-<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>が<ruby>死<rt>し</rt></ruby>のうと<ruby>思<rt>おも</rt></ruby>ったのは</div><div class="cn">我曾想一了百了，是因为</div></div></section>
-<div class="part-label">第二段 · 少年が僕を見つめていたか</div><section class="stanza"><div class="row"><div class="jp"><ruby>少年<rt>しょうねん</rt></ruby>が<ruby>僕<rt>ぼく</rt></ruby>を<ruby>見<rt>み</rt></ruby>つめていたから</div><div class="cn">那个少年一直凝视着我</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>が<ruby>死<rt>し</rt></ruby>のうと<ruby>思<rt>おも</rt></ruby>ったのは</div><div class="cn">我曾想一了百了，是因为</div></div>
+<div class="row"><div class="jp"><ruby>少年<rt>しょうねん</rt></ruby>が<ruby>僕<rt>ぼく</rt></ruby>を<ruby>見<rt>み</rt></ruby>つめていたから</div><div class="cn">那个少年一直凝视着我</div></div>
 <div class="row"><div class="jp">ベッドの<ruby>上<rt>うえ</rt></ruby>で<ruby>土下座<rt>どげざ</rt></ruby>してるよ</div><div class="cn">我跪坐在床上，对他谢罪</div></div>
 <div class="row"><div class="jp">あの<ruby>日<rt>ひ</rt></ruby>の<ruby>僕<rt>ぼく</rt></ruby>にごめんなさいと</div><div class="cn">对那一天的自己，说一声“对不起”</div></div>
 <div class="row"><div class="jp">パソコンの<ruby>薄明かり<rt>うすあかり</rt></ruby></div><div class="cn">电脑屏幕的微弱光亮</div></div>
@@ -156,8 +151,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>六畳一間<rt>ろくじょうひとま</rt></ruby>のドンキホーテ</div><div class="cn">六叠一间的堂吉诃德</div></div>
 <div class="row"><div class="jp">ゴールはどうせ<ruby>醜<rt>みにく</rt></ruby>いものさ</div><div class="cn">反正终点，本来就是丑陋的东西</div></div>
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>が<ruby>死<rt>し</rt></ruby>のうと<ruby>思<rt>おも</rt></ruby>ったのは</div><div class="cn">我曾想一了百了，是因为</div></div>
-<div class="row"><div class="jp"><ruby>冷<rt>つめ</rt></ruby>たい<ruby>人<rt>ひと</rt></ruby>と<ruby>言<rt>い</rt></ruby>われたから</div><div class="cn">被人说成是冷漠的人</div></div></section>
-<div class="part-label">第三段 · 愛されたいと泣いているの</div><section class="stanza"><div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>されたいと<ruby>泣<rt>な</rt></ruby>いているのは</div><div class="cn">会为渴望被爱而哭泣</div></div>
+<div class="row"><div class="jp"><ruby>冷<rt>つめ</rt></ruby>たい<ruby>人<rt>ひと</rt></ruby>と<ruby>言<rt>い</rt></ruby>われたから</div><div class="cn">被人说成是冷漠的人</div></div>
+<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>されたいと<ruby>泣<rt>な</rt></ruby>いているのは</div><div class="cn">会为渴望被爱而哭泣</div></div>
 <div class="row"><div class="jp"><ruby>人<rt>ひと</rt></ruby>の<ruby>温<rt>ぬく</rt></ruby>もりを<ruby>知<rt>し</rt></ruby>ってしまったから</div><div class="cn">是因为已经尝过了人的温暖</div></div>
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>が<ruby>死<rt>し</rt></ruby>のうと<ruby>思<rt>おも</rt></ruby>ったのは</div><div class="cn">我曾想一了百了，是因为</div></div>
 <div class="row"><div class="jp">あなたが<ruby>綺麗<rt>きれい</rt></ruby>に<ruby>笑<rt>わら</rt></ruby>うから</div><div class="cn">你笑得太过美丽</div></div>
@@ -168,7 +163,7 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">あなたのような<ruby>人<rt>ひと</rt></ruby>が<ruby>生<rt>う</rt></ruby>まれた</div><div class="cn">像你这样的人，来到了世上</div></div>
 <div class="row"><div class="jp"><ruby>世界<rt>せかい</rt></ruby>を<ruby>少<rt>すこ</rt></ruby>し<ruby>好<rt>す</rt></ruby>きになったよ</div><div class="cn">我便稍稍喜欢上了这个世界</div></div>
 <div class="row"><div class="jp">あなたのような<ruby>人<rt>ひと</rt></ruby>が<ruby>生<rt>い</rt></ruby>きてる</div><div class="cn">像你这样的人，活在世上</div></div>
-<div class="row"><div class="jp"><ruby>世界<rt>せかい</rt></ruby>に<ruby>少<rt>すこ</rt></ruby>し<ruby>期待<rt>きたい</rt></ruby>するよ</div><div class="cn">我便对这个世界，多了些许期待</div></div></section>
+<div class="row"><div class="jp"><ruby>世界<rt>せかい</rt></ruby>に<ruby>少<rt>すこ</rt></ruby>し<ruby>期待<rt>きたい</rt></ruby>するよ</div><div class="cn">我便对这个世界，多了些许期待</div></div>
   </main>
   <section class="links">
     <div class="links-head">

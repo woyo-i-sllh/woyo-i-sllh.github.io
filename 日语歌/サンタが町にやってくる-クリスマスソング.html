@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,9 +116,9 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">副歌 · さあ</div><section class="stanza"><div class="row"><div class="jp">さあ</div><div class="cn">来吧</div></div>
-<div class="row"><div class="jp">あなたから メリー・クリスマス</div><div class="cn">先对你说，圣诞快乐</div></div></section>
-<div class="part-label">第一段 · わたしから メリー・クリ</div><section class="stanza"><div class="row"><div class="jp">わたしから メリー・クリスマス</div><div class="cn">再从我这里，圣诞快乐</div></div>
+<div class="row"><div class="jp">さあ</div><div class="cn">来吧</div></div>
+<div class="row"><div class="jp">あなたから メリー・クリスマス</div><div class="cn">先对你说，圣诞快乐</div></div>
+<div class="row"><div class="jp">わたしから メリー・クリスマス</div><div class="cn">再从我这里，圣诞快乐</div></div>
 <div class="row"><div class="jp">サンタクロース・イズ・カミング・トゥ・タウン</div><div class="cn">圣诞老人已经进城来（Santa Claus is coming to town）</div></div>
 <div class="row"><div class="jp">ねえ きこえてくるでしょう</div><div class="cn">听啊，你应该听见了吧</div></div>
 <div class="row"><div class="jp"><ruby>鈴<rt>すず</rt></ruby>の<ruby>音<rt>ね</rt></ruby>がすぐそこに</div><div class="cn">铃声就在不远处响起</div></div>
@@ -131,20 +126,20 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>待<rt>ま</rt></ruby>ちきれないで おやすみした<ruby>子<rt>こ</rt></ruby>に</div><div class="cn">对乖乖躺好、等不及入睡的孩子</div></div>
 <div class="row"><div class="jp">きっとすばらしい プレゼントもって</div><div class="cn">圣诞老人一定会带着超棒的礼物</div></div>
 <div class="row"><div class="jp">クリスマス・イブを <ruby>指<rt>ゆび</rt></ruby>おりかぞえた</div><div class="cn">掰着手指，细数着圣诞前夜的日子</div></div>
-<div class="row"><div class="jp"><ruby>幼<rt>おさ</rt></ruby>いおもいでも こよい なつかし</div><div class="cn">童年的回忆，今夜分外令人怀念</div></div></section>
-<div class="part-label">副歌（再来）· さあ</div><section class="stanza"><div class="row"><div class="jp">さあ</div><div class="cn">来吧</div></div>
-<div class="row"><div class="jp">あなたから メリー・クリスマス</div><div class="cn">先对你说，圣诞快乐</div></div></section>
-<div class="part-label">第二段 · わたしから メリー・クリ</div><section class="stanza"><div class="row"><div class="jp">わたしから メリー・クリスマス</div><div class="cn">再从我这里，圣诞快乐</div></div>
+<div class="row"><div class="jp"><ruby>幼<rt>おさ</rt></ruby>いおもいでも こよい なつかし</div><div class="cn">童年的回忆，今夜分外令人怀念</div></div>
+<div class="row"><div class="jp">さあ</div><div class="cn">来吧</div></div>
+<div class="row"><div class="jp">あなたから メリー・クリスマス</div><div class="cn">先对你说，圣诞快乐</div></div>
+<div class="row"><div class="jp">わたしから メリー・クリスマス</div><div class="cn">再从我这里，圣诞快乐</div></div>
 <div class="row"><div class="jp">サンタクロース・イズ・カミング・トゥ・タウン</div><div class="cn">圣诞老人已经进城来</div></div>
 <div class="row"><div class="jp">ねえ きこえてくるでしょう</div><div class="cn">听啊，你应该听见了吧</div></div>
 <div class="row"><div class="jp"><ruby>鈴<rt>すず</rt></ruby>の<ruby>音<rt>ね</rt></ruby>がすぐそこに</div><div class="cn">铃声就在不远处响起</div></div>
 <div class="row"><div class="jp">サンタクロース・イズ・カミング・トゥ・タウン</div><div class="cn">圣诞老人已经进城来</div></div>
 <div class="row"><div class="jp"><ruby>待<rt>ま</rt></ruby>ちきれないで おやすみした<ruby>子<rt>こ</rt></ruby>に</div><div class="cn">对乖乖躺好、等不及入睡的孩子</div></div>
-<div class="row"><div class="jp">きっとすばらしい プレゼントもって</div><div class="cn">圣诞老人一定会带着超棒的礼物</div></div></section>
-<div class="part-label">尾声 · さあ</div><section class="stanza"><div class="row"><div class="jp">さあ</div><div class="cn">来吧</div></div>
+<div class="row"><div class="jp">きっとすばらしい プレゼントもって</div><div class="cn">圣诞老人一定会带着超棒的礼物</div></div>
+<div class="row"><div class="jp">さあ</div><div class="cn">来吧</div></div>
 <div class="row"><div class="jp">あなたから メリー・クリスマス</div><div class="cn">先对你说，圣诞快乐</div></div>
 <div class="row"><div class="jp">わたしから メリー・クリスマス</div><div class="cn">再从我这里，圣诞快乐</div></div>
-<div class="row"><div class="jp">サンタクロース・イズ・カミング・トゥ・タウン</div><div class="cn">圣诞老人已经进城来</div></div></section>
+<div class="row"><div class="jp">サンタクロース・イズ・カミング・トゥ・タウン</div><div class="cn">圣诞老人已经进城来</div></div>
   </main>
   <section class="links">
     <div class="links-head">

@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,7 +116,7 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · いつも不思議でしょうがな</div><section class="stanza"><div class="row"><div class="jp">いつも<ruby>不思議<rt>ふしぎ</rt></ruby>でしょうがない</div><div class="cn">一直觉得不可思议而又无奈</div></div>
+<div class="row"><div class="jp">いつも<ruby>不思議<rt>ふしぎ</rt></ruby>でしょうがない</div><div class="cn">一直觉得不可思议而又无奈</div></div>
 <div class="row"><div class="jp"><ruby>人間<rt>にんげん</rt></ruby>みたいな<ruby>形<rt>かたち</rt></ruby>してる</div><div class="cn">有着人类外表的</div></div>
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>って<ruby>呼<rt>よ</rt></ruby>んでる<ruby>僕<rt>ぼく</rt></ruby>のこと</div><div class="cn">所谓「我」的这种生物</div></div>
 <div class="row"><div class="jp"><ruby>名前<rt>なまえ</rt></ruby>はなんていうんだろう</div><div class="cn">他的名字是什么呢</div></div>
@@ -130,10 +125,10 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>問題<rt>もんだい</rt></ruby>なのはそれを<ruby>咎<rt>とが</rt></ruby>めた</div><div class="cn">而问题就在对其责备求全的</div></div>
 <div class="row"><div class="jp"><ruby>人間<rt>にんげん</rt></ruby>だっていう</div><div class="cn">名为人类的生物</div></div>
 <div class="row"><div class="jp"><ruby>何回<rt>なんかい</rt></ruby><ruby>争<rt>あらそ</rt></ruby>っても<ruby>答<rt>こた</rt></ruby>えなんて</div><div class="cn">明明就算怎么争论</div></div>
-<div class="row"><div class="jp">わかりっこしないのにねぇ</div><div class="cn">也得不到答案的啊</div></div></section>
-<div class="part-label">副歌 · 一閃の欠片で</div><section class="stanza"><div class="row"><div class="jp"><ruby>一閃<rt>いっせん</rt></ruby>の<ruby>欠片<rt>かけら</rt></ruby>で</div><div class="cn">在因一闪而过的碎片</div></div>
-<div class="row"><div class="jp"><ruby>裂<rt>さ</rt></ruby>けてしまった<ruby>世界中<rt>せかいじゅう</rt></ruby></div><div class="cn">而裂开的世界里</div></div></section>
-<div class="part-label">第一段 · 小さくなった灯火の</div><section class="stanza"><div class="row"><div class="jp"><ruby>小<rt>ちー</rt></ruby>さくなった<ruby>灯火<rt>とうか</rt></ruby>の</div><div class="cn">我愿做渐行渐弱的灯火中</div></div>
+<div class="row"><div class="jp">わかりっこしないのにねぇ</div><div class="cn">也得不到答案的啊</div></div>
+<div class="row"><div class="jp"><ruby>一閃<rt>いっせん</rt></ruby>の<ruby>欠片<rt>かけら</rt></ruby>で</div><div class="cn">在因一闪而过的碎片</div></div>
+<div class="row"><div class="jp"><ruby>裂<rt>さ</rt></ruby>けてしまった<ruby>世界中<rt>せかいじゅう</rt></ruby></div><div class="cn">而裂开的世界里</div></div>
+<div class="row"><div class="jp"><ruby>小<rt>ちー</rt></ruby>さくなった<ruby>灯火<rt>とうか</rt></ruby>の</div><div class="cn">我愿做渐行渐弱的灯火中</div></div>
 <div class="row"><div class="jp"><ruby>明<rt>あ</rt></ruby>かり<ruby>一<rt>ひと</rt></ruby>つでよかったの</div><div class="cn">那一片小小的光芒</div></div>
 <div class="row"><div class="jp">いつも<ruby>不思議<rt>ふしぎ</rt></ruby>でしょうがない</div><div class="cn">一直觉得不可思议而又无奈</div></div>
 <div class="row"><div class="jp"><ruby>目<rt>め</rt></ruby>には<ruby>見<rt>み</rt></ruby>えない<ruby>気持<rt>きも</rt></ruby>ちで</div><div class="cn">在看不见的心情中</div></div>
@@ -144,21 +139,21 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">あえてそれを<ruby>拒<rt>こば</rt></ruby>むのが</div><div class="cn">可偏要拒绝如此的是</div></div>
 <div class="row"><div class="jp"><ruby>人間<rt>にんげん</rt></ruby>だっていう</div><div class="cn">名为人类的生物</div></div>
 <div class="row"><div class="jp"><ruby>何回<rt>なんかい</rt></ruby><ruby>争<rt>あらそ</rt></ruby>ってもだれかが<ruby>傷<rt>きず</rt></ruby>つくだけ</div><div class="cn">明明就算怎么争论</div></div>
-<div class="row"><div class="jp">なのにねぇ</div><div class="cn">只会让对方受伤啊</div></div></section>
-<div class="part-label">第二段 · 一瞬の瞬きの</div><section class="stanza"><div class="row"><div class="jp"><ruby>一瞬<rt>いっしゅん</rt></ruby>の<ruby>瞬<rt>またた</rt></ruby>きの</div><div class="cn">在一瞬的闪烁中</div></div>
+<div class="row"><div class="jp">なのにねぇ</div><div class="cn">只会让对方受伤啊</div></div>
+<div class="row"><div class="jp"><ruby>一瞬<rt>いっしゅん</rt></ruby>の<ruby>瞬<rt>またた</rt></ruby>きの</div><div class="cn">在一瞬的闪烁中</div></div>
 <div class="row"><div class="jp"><ruby>途中<rt>とちゅう</rt></ruby>で<ruby>見<rt>み</rt></ruby>えた<ruby>世界地図<rt>せかいちず</rt></ruby></div><div class="cn">看到的世界地图</div></div>
 <div class="row"><div class="jp"><ruby>消<rt>き</rt></ruby>えてしまった<ruby>灯火<rt>とうか</rt></ruby>の</div><div class="cn">即使是消失殆尽的灯火</div></div>
-<div class="row"><div class="jp"><ruby>夢<rt>ゆめ</rt></ruby>の<ruby>果<rt>は</rt></ruby>てに<ruby>朽<rt>く</rt></ruby>ちるまで</div><div class="cn">也会一直燃至梦的尽头</div></div></section>
-<div class="part-label">副歌（再来）· 一閃の欠片で</div><section class="stanza"><div class="row"><div class="jp"><ruby>一閃<rt>いっせん</rt></ruby>の<ruby>欠片<rt>かけら</rt></ruby>で</div><div class="cn">在因一闪而过的碎片</div></div>
-<div class="row"><div class="jp"><ruby>裂<rt>さ</rt></ruby>けてしまった<ruby>世界中<rt>せかいじゅう</rt></ruby></div><div class="cn">而裂开的世界里</div></div></section>
-<div class="part-label">第三段 · 小さくなった灯火の</div><section class="stanza"><div class="row"><div class="jp"><ruby>小<rt>ちー</rt></ruby>さくなった<ruby>灯火<rt>とうか</rt></ruby>の</div><div class="cn">我愿做渐行渐弱的灯火中</div></div>
+<div class="row"><div class="jp"><ruby>夢<rt>ゆめ</rt></ruby>の<ruby>果<rt>は</rt></ruby>てに<ruby>朽<rt>く</rt></ruby>ちるまで</div><div class="cn">也会一直燃至梦的尽头</div></div>
+<div class="row"><div class="jp"><ruby>一閃<rt>いっせん</rt></ruby>の<ruby>欠片<rt>かけら</rt></ruby>で</div><div class="cn">在因一闪而过的碎片</div></div>
+<div class="row"><div class="jp"><ruby>裂<rt>さ</rt></ruby>けてしまった<ruby>世界中<rt>せかいじゅう</rt></ruby></div><div class="cn">而裂开的世界里</div></div>
+<div class="row"><div class="jp"><ruby>小<rt>ちー</rt></ruby>さくなった<ruby>灯火<rt>とうか</rt></ruby>の</div><div class="cn">我愿做渐行渐弱的灯火中</div></div>
 <div class="row"><div class="jp"><ruby>明<rt>あ</rt></ruby>かり<ruby>一<rt>ひと</rt></ruby>つでよかったの</div><div class="cn">那一片小小的光芒</div></div>
 <div class="row"><div class="jp"><ruby>一瞬<rt>いっしゅん</rt></ruby>の<ruby>瞬<rt>またた</rt></ruby>きの</div><div class="cn">在一瞬的闪烁中</div></div>
 <div class="row"><div class="jp"><ruby>途中<rt>とちゅう</rt></ruby>でみえた<ruby>世界地図<rt>せかいちず</rt></ruby></div><div class="cn">看到的世界地图</div></div>
 <div class="row"><div class="jp"><ruby>消<rt>き</rt></ruby>えてしまった<ruby>灯火<rt>とうか</rt></ruby>の</div><div class="cn">即使是消失殆尽的灯火</div></div>
 <div class="row"><div class="jp"><ruby>夢<rt>ゆめ</rt></ruby>の<ruby>果<rt>は</rt></ruby>てに<ruby>朽<rt>く</rt></ruby>ちるまで</div><div class="cn">也会一直燃至梦的尽头</div></div>
 <div class="row"><div class="jp"><ruby>消<rt>き</rt></ruby>えてしまった<ruby>灯火<rt>とうか</rt></ruby>の</div><div class="cn">我愿做消失殆尽的灯火中</div></div>
-<div class="row"><div class="jp"><ruby>明<rt>あ</rt></ruby>かり<ruby>一<rt>ひと</rt></ruby>つでよかったの</div><div class="cn">那一片小小的光芒</div></div></section>
+<div class="row"><div class="jp"><ruby>明<rt>あ</rt></ruby>かり<ruby>一<rt>ひと</rt></ruby>つでよかったの</div><div class="cn">那一片小小的光芒</div></div>
   </main>
   <section class="links">
     <div class="links-head">

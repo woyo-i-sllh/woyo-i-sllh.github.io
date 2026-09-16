@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,11 +116,11 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · はじめよう</div><section class="stanza"><div class="row"><div class="jp">はじめよう</div><div class="cn">早安!</div></div>
-<div class="row"><div class="jp">さぁ<ruby>音<rt>おと</rt></ruby>に<ruby>身<rt>み</rt></ruby>をゆだね</div><div class="cn">聆听心中想法吧</div></div></section>
-<div class="part-label">副歌 · 体中で感じて Take </div><section class="stanza"><div class="row"><div class="jp"><ruby>体中<rt>からだじゅう</rt></ruby>で<ruby>感<rt>かん</rt></ruby>じて Take it easy</div><div class="cn">在身体中感受到 「轻松」</div></div>
-<div class="row"><div class="jp"><ruby>力抜<rt>ちからぬ</rt></ruby>いて<ruby>今日<rt>きょう</rt></ruby>だけ Break free</div><div class="cn">只有今天能够 「冲破藩篱」</div></div></section>
-<div class="part-label">第一段 · 踊ろう</div><section class="stanza"><div class="row"><div class="jp"><ruby>踊<rt>おど</rt></ruby>ろう</div><div class="cn">跳起来吧</div></div>
+<div class="row"><div class="jp">はじめよう</div><div class="cn">早安!</div></div>
+<div class="row"><div class="jp">さぁ<ruby>音<rt>おと</rt></ruby>に<ruby>身<rt>み</rt></ruby>をゆだね</div><div class="cn">聆听心中想法吧</div></div>
+<div class="row"><div class="jp"><ruby>体中<rt>からだじゅう</rt></ruby>で<ruby>感<rt>かん</rt></ruby>じて Take it easy</div><div class="cn">在身体中感受到 「轻松」</div></div>
+<div class="row"><div class="jp"><ruby>力抜<rt>ちからぬ</rt></ruby>いて<ruby>今日<rt>きょう</rt></ruby>だけ Break free</div><div class="cn">只有今天能够 「冲破藩篱」</div></div>
+<div class="row"><div class="jp"><ruby>踊<rt>おど</rt></ruby>ろう</div><div class="cn">跳起来吧</div></div>
 <div class="row"><div class="jp"><ruby>歌<rt>うた</rt></ruby>おう</div><div class="cn">唱起来吧</div></div>
 <div class="row"><div class="jp"><ruby>祝<rt>いわ</rt></ruby>おう</div><div class="cn">祝愿吧</div></div>
 <div class="row"><div class="jp">Everything is alright</div><div class="cn">事事顺心</div></div>
@@ -136,8 +131,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">ああなりたいな</div><div class="cn">真想变成那样啊</div></div>
 <div class="row"><div class="jp">のんびり<ruby>怠<rt>なま</rt></ruby>けたいな</div><div class="cn">真想悠闲地摸鱼啊</div></div>
 <div class="row"><div class="jp">とかぼやいてみて</div><div class="cn">尝试着发牢骚</div></div>
-<div class="row"><div class="jp">だらだらして</div><div class="cn">懒懒散散地</div></div></section>
-<div class="part-label">第二段 · 無駄な時間を過ごすのも</div><section class="stanza"><div class="row"><div class="jp"><ruby>無駄<rt>むだ</rt></ruby>な<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ごすのも</div><div class="cn">就连虚度光阴</div></div>
+<div class="row"><div class="jp">だらだらして</div><div class="cn">懒懒散散地</div></div>
+<div class="row"><div class="jp"><ruby>無駄<rt>むだ</rt></ruby>な<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ごすのも</div><div class="cn">就连虚度光阴</div></div>
 <div class="row"><div class="jp">たまには<ruby>必要<rt>ひつよう</rt></ruby>でしょ</div><div class="cn">偶尔也需要拖泥带水地浪费掉一点时间吧</div></div>
 <div class="row"><div class="jp"><ruby>部屋着<rt>へやぎ</rt></ruby>のまま</div><div class="cn">穿着家居服</div></div>
 <div class="row"><div class="jp"><ruby>朝<rt>あさ</rt></ruby>から<ruby>晩<rt>ばん</rt></ruby>まで</div><div class="cn">一天到晚</div></div>
@@ -145,10 +140,10 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">「<ruby>息苦<rt>いきぐる</rt></ruby>しい」ばっかりで</div><div class="cn">总是说「喘不过气来」</div></div>
 <div class="row"><div class="jp"><ruby>幸<rt>しあわ</rt></ruby>せが<ruby>逃<rt>に</rt></ruby>げちゃわないように</div><div class="cn">实际上只是为了不让幸福逃走</div></div>
 <div class="row"><div class="jp">ありのまま</div><div class="cn">保持原本的样子</div></div>
-<div class="row"><div class="jp"><ruby>音<rt>おと</rt></ruby>に<ruby>身<rt>み</rt></ruby>をゆだね</div><div class="cn">倾听内心的声音</div></div></section>
-<div class="part-label">副歌（再来）· 体中で感じてTake i</div><section class="stanza"><div class="row"><div class="jp"><ruby>体中<rt>からだじゅう</rt></ruby>で<ruby>感<rt>かん</rt></ruby>じてTake it easy</div><div class="cn">在身体中感受到 「轻松」</div></div>
-<div class="row"><div class="jp"><ruby>力抜<rt>ちからぬ</rt></ruby>いて<ruby>今日<rt>きょう</rt></ruby>だけBreak free</div><div class="cn">只有今天能够 「冲破藩篱」</div></div></section>
-<div class="part-label">第三段 · 明日にはなるようになって</div><section class="stanza"><div class="row"><div class="jp"><ruby>明日<rt>あした</rt></ruby>にはなるようになってるんだ</div><div class="cn">明天的事情不用担心</div></div>
+<div class="row"><div class="jp"><ruby>音<rt>おと</rt></ruby>に<ruby>身<rt>み</rt></ruby>をゆだね</div><div class="cn">倾听内心的声音</div></div>
+<div class="row"><div class="jp"><ruby>体中<rt>からだじゅう</rt></ruby>で<ruby>感<rt>かん</rt></ruby>じてTake it easy</div><div class="cn">在身体中感受到 「轻松」</div></div>
+<div class="row"><div class="jp"><ruby>力抜<rt>ちからぬ</rt></ruby>いて<ruby>今日<rt>きょう</rt></ruby>だけBreak free</div><div class="cn">只有今天能够 「冲破藩篱」</div></div>
+<div class="row"><div class="jp"><ruby>明日<rt>あした</rt></ruby>にはなるようになってるんだ</div><div class="cn">明天的事情不用担心</div></div>
 <div class="row"><div class="jp">だから<ruby>今<rt>いま</rt></ruby>はただひと<ruby>休<rt>やす</rt></ruby>み</div><div class="cn">所以现在只是休息一下</div></div>
 <div class="row"><div class="jp">Don’t worry</div><div class="cn">山重水复疑无路</div></div>
 <div class="row"><div class="jp">どうにかなるさ</div><div class="cn">柳暗花明又一村</div></div>
@@ -159,18 +154,18 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">ONとOFF</div><div class="cn">一直启动或者关闭的话</div></div>
 <div class="row"><div class="jp">バグって</div><div class="cn">就会出错</div></div>
 <div class="row"><div class="jp">ずっとON and ON</div><div class="cn">一直都是打开状态</div></div>
-<div class="row"><div class="jp">これじゃもう</div><div class="cn">这样的话</div></div></section>
-<div class="part-label">第四段 · 賞味期限も切れちゃうわ</div><section class="stanza"><div class="row"><div class="jp"><ruby>賞味期限<rt>しょうみきげん</rt></ruby>も<ruby>切<rt>き</rt></ruby>れちゃうわ</div><div class="cn">就要过期了</div></div>
+<div class="row"><div class="jp">これじゃもう</div><div class="cn">这样的话</div></div>
+<div class="row"><div class="jp"><ruby>賞味期限<rt>しょうみきげん</rt></ruby>も<ruby>切<rt>き</rt></ruby>れちゃうわ</div><div class="cn">就要过期了</div></div>
 <div class="row"><div class="jp"><ruby>余裕<rt>よゆう</rt></ruby>がなくて</div><div class="cn">没有多余的时间了</div></div>
 <div class="row"><div class="jp"><ruby>焦<rt>あせ</rt></ruby>ってミスして</div><div class="cn">在焦虑中失误</div></div>
 <div class="row"><div class="jp"><ruby>落<rt>お</rt></ruby>ち<ruby>込<rt>こ</rt></ruby>むループ</div><div class="cn">不断堕落</div></div>
 <div class="row"><div class="jp"><ruby>何時<rt>いつ</rt></ruby>まで<ruby>何歳<rt>なんさい</rt></ruby>までやっていくの</div><div class="cn">要这样到什么时候</div></div>
 <div class="row"><div class="jp">やってられないから<ruby>歌<rt>うた</rt></ruby>うわ</div><div class="cn">因为做不到所以只能唱歌</div></div>
 <div class="row"><div class="jp">はじめよう</div><div class="cn">早上好</div></div>
-<div class="row"><div class="jp">さぁ<ruby>音<rt>おと</rt></ruby>に<ruby>身<rt>み</rt></ruby>をゆだね</div><div class="cn">聆听自己的想法吧</div></div></section>
-<div class="part-label">副歌（再来）· 体中で感じてTake i</div><section class="stanza"><div class="row"><div class="jp"><ruby>体中<rt>からだじゅう</rt></ruby>で<ruby>感<rt>かん</rt></ruby>じてTake it easy</div><div class="cn">从身体中找到宽舒惬意的感觉吧</div></div>
-<div class="row"><div class="jp"><ruby>力抜<rt>ちからぬ</rt></ruby>いて<ruby>今日<rt>きょう</rt></ruby>だけBreak free</div><div class="cn">仅剩今日份的无拘无束</div></div></section>
-<div class="part-label">第五段 · 口ずさむの</div><section class="stanza"><div class="row"><div class="jp"><ruby>口<rt>くち</rt></ruby>ずさむの</div><div class="cn">哼唱着：</div></div>
+<div class="row"><div class="jp">さぁ<ruby>音<rt>おと</rt></ruby>に<ruby>身<rt>み</rt></ruby>をゆだね</div><div class="cn">聆听自己的想法吧</div></div>
+<div class="row"><div class="jp"><ruby>体中<rt>からだじゅう</rt></ruby>で<ruby>感<rt>かん</rt></ruby>じてTake it easy</div><div class="cn">从身体中找到宽舒惬意的感觉吧</div></div>
+<div class="row"><div class="jp"><ruby>力抜<rt>ちからぬ</rt></ruby>いて<ruby>今日<rt>きょう</rt></ruby>だけBreak free</div><div class="cn">仅剩今日份的无拘无束</div></div>
+<div class="row"><div class="jp"><ruby>口<rt>くち</rt></ruby>ずさむの</div><div class="cn">哼唱着：</div></div>
 <div class="row"><div class="jp">「<ruby>何<rt>なん</rt></ruby>か<ruby>良<rt>い</rt></ruby>いことが<ruby>起<rt>お</rt></ruby>こるはずだ」</div><div class="cn">“今天或许会有什么好事发生”</div></div>
 <div class="row"><div class="jp">って<ruby>願<rt>ねが</rt></ruby>っていればね</div><div class="cn">这种祝愿</div></div>
 <div class="row"><div class="jp">いつか</div><div class="cn">终有一日</div></div>
@@ -181,7 +176,7 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>今日<rt>きょう</rt></ruby>を<ruby>生<rt>い</rt></ruby>きてくために</div><div class="cn">为了在今天真正地活着</div></div>
 <div class="row"><div class="jp"><ruby>少<rt>すこ</rt></ruby>しだけTake a break<ruby>大事<rt>だいじ</rt></ruby></div><div class="cn">只要一点点地珍惜</div></div>
 <div class="row"><div class="jp">Noisyな<ruby>世界<rt>せかい</rt></ruby>でこれからも</div><div class="cn">在这嘈杂地世界里</div></div>
-<div class="row"><div class="jp"><ruby>歌<rt>うた</rt></ruby>い<ruby>踊<rt>おど</rt></ruby>るんだ</div><div class="cn">也要继续轻歌曼舞啊</div></div></section>
+<div class="row"><div class="jp"><ruby>歌<rt>うた</rt></ruby>い<ruby>踊<rt>おど</rt></ruby>るんだ</div><div class="cn">也要继续轻歌曼舞啊</div></div>
   </main>
   <section class="links">
     <div class="links-head">

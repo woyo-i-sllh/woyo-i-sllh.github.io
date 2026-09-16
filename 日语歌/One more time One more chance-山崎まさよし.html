@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,11 +116,11 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · これ以上なにを失えば 心</div><section class="stanza"><div class="row"><div class="jp">これ<ruby>以上<rt>いじょう</rt></ruby>なにを<ruby>失<rt>しつ</rt></ruby>えば <ruby>心<rt>こころ</rt></ruby>は<ruby>許<rt>ゆる</rt></ruby>されるの</div><div class="cn">要再失去多少东西 才能得到宽恕</div></div>
-<div class="row"><div class="jp">どれ<ruby>程<rt>ほど</rt></ruby>の<ruby>痛<rt>いた</rt></ruby>みならば もう<ruby>一度<rt>いちど</rt></ruby><ruby>君<rt>くん</rt></ruby>に<ruby>逢<rt>あ</rt></ruby>える</div><div class="cn">要再经历多少痛苦 才能与你重逢</div></div></section>
-<div class="part-label">副歌 · One more tim</div><section class="stanza"><div class="row"><div class="jp">One more time <ruby>季節<rt>きせつ</rt></ruby>よ うつろわないで</div><div class="cn">One more time 季节啊 请不要变化</div></div>
-<div class="row"><div class="jp">One more time ふざけあった<ruby>時間<rt>じかん</rt></ruby>よ</div><div class="cn">One more time 那嬉笑玩闹的岁月</div></div></section>
-<div class="part-label">第一段 · くいちがうときはいつも </div><section class="stanza"><div class="row"><div class="jp">くいちがうときはいつも <ruby>僕<rt>ぼく</rt></ruby>が<ruby>先<rt>さき</rt></ruby>におれたね</div><div class="cn">拌嘴的时候 总是我先让步</div></div>
+<div class="row"><div class="jp">これ<ruby>以上<rt>いじょう</rt></ruby>なにを<ruby>失<rt>しつ</rt></ruby>えば <ruby>心<rt>こころ</rt></ruby>は<ruby>許<rt>ゆる</rt></ruby>されるの</div><div class="cn">要再失去多少东西 才能得到宽恕</div></div>
+<div class="row"><div class="jp">どれ<ruby>程<rt>ほど</rt></ruby>の<ruby>痛<rt>いた</rt></ruby>みならば もう<ruby>一度<rt>いちど</rt></ruby><ruby>君<rt>くん</rt></ruby>に<ruby>逢<rt>あ</rt></ruby>える</div><div class="cn">要再经历多少痛苦 才能与你重逢</div></div>
+<div class="row"><div class="jp">One more time <ruby>季節<rt>きせつ</rt></ruby>よ うつろわないで</div><div class="cn">One more time 季节啊 请不要变化</div></div>
+<div class="row"><div class="jp">One more time ふざけあった<ruby>時間<rt>じかん</rt></ruby>よ</div><div class="cn">One more time 那嬉笑玩闹的岁月</div></div>
+<div class="row"><div class="jp">くいちがうときはいつも <ruby>僕<rt>ぼく</rt></ruby>が<ruby>先<rt>さき</rt></ruby>におれたね</div><div class="cn">拌嘴的时候 总是我先让步</div></div>
 <div class="row"><div class="jp">わがままな<ruby>性格<rt>せいかく</rt></ruby>が なおさら<ruby>愛<rt>いと</rt></ruby>しくさせた</div><div class="cn">你的任性 却让我更加迷恋</div></div>
 <div class="row"><div class="jp">One more chance <ruby>記憶<rt>きおく</rt></ruby>に<ruby>足<rt>あし</rt></ruby>を<ruby>取<rt>と</rt></ruby>られて</div><div class="cn">One more chance 被记忆所牵绊</div></div>
 <div class="row"><div class="jp">One more chance <ruby>次<rt>つぎ</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>べない</div><div class="cn">One more chance 无法选择下一个目的地</div></div>
@@ -138,10 +133,10 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>寂<rt>さび</rt></ruby>しさ<ruby>紛<rt>まぎ</rt></ruby>らすだけなら</div><div class="cn">若只是排解寂寞</div></div>
 <div class="row"><div class="jp"><ruby>誰<rt>だれ</rt></ruby>でもいいはずなのに</div><div class="cn">谁都可以取代</div></div>
 <div class="row"><div class="jp"><ruby>星<rt>ほし</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちそうな<ruby>夜<rt>よる</rt></ruby>だから</div><div class="cn">但在这繁星欲坠之夜</div></div>
-<div class="row"><div class="jp"><ruby>自分<rt>じぶん</rt></ruby>をいつわれない</div><div class="cn">我无法欺骗自己</div></div></section>
-<div class="part-label">副歌（再来）· One more tim</div><section class="stanza"><div class="row"><div class="jp">One more time <ruby>季節<rt>きせつ</rt></ruby>よ うつろわないで</div><div class="cn">One more time 季节啊 请不要变化</div></div>
-<div class="row"><div class="jp">One more time ふざけあった<ruby>時間<rt>じかん</rt></ruby>よ</div><div class="cn">One more time 那嬉笑玩闹的岁月</div></div></section>
-<div class="part-label">第二段 · いつでも捜しているよ ど</div><section class="stanza"><div class="row"><div class="jp">いつでも<ruby>捜<rt>さが</rt></ruby>しているよ どっかに<ruby>君<rt>くん</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby>を</div><div class="cn">我一直在找寻你的踪迹</div></div>
+<div class="row"><div class="jp"><ruby>自分<rt>じぶん</rt></ruby>をいつわれない</div><div class="cn">我无法欺骗自己</div></div>
+<div class="row"><div class="jp">One more time <ruby>季節<rt>きせつ</rt></ruby>よ うつろわないで</div><div class="cn">One more time 季节啊 请不要变化</div></div>
+<div class="row"><div class="jp">One more time ふざけあった<ruby>時間<rt>じかん</rt></ruby>よ</div><div class="cn">One more time 那嬉笑玩闹的岁月</div></div>
+<div class="row"><div class="jp">いつでも<ruby>捜<rt>さが</rt></ruby>しているよ どっかに<ruby>君<rt>くん</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby>を</div><div class="cn">我一直在找寻你的踪迹</div></div>
 <div class="row"><div class="jp"><ruby>交差点<rt>こうさてん</rt></ruby>でも <ruby>夢<rt>ゆめ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>でも</div><div class="cn">在十字路口 在梦中</div></div>
 <div class="row"><div class="jp">こんなとこにいるはずもないのに</div><div class="cn">明知道你不可能在那里</div></div>
 <div class="row"><div class="jp"><ruby>奇跡<rt>きせき</rt></ruby>がもしも<ruby>起<rt>お</rt></ruby>こるなら いますぐきみに<ruby>見<rt>み</rt></ruby>せたい</div><div class="cn">假如能发生奇迹 我希望能马上与你相见</div></div>
@@ -152,8 +147,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">いつでも<ruby>捜<rt>さが</rt></ruby>しているよ どっかに<ruby>君<rt>くん</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby>を</div><div class="cn">我一直在找寻你的踪迹</div></div>
 <div class="row"><div class="jp"><ruby>明<rt>あ</rt></ruby>け<ruby>方<rt>けがた</rt></ruby>の<ruby>街<rt>まち</rt></ruby> <ruby>桜木町<rt>さくらぎちょう</rt></ruby>で</div><div class="cn">黎明的街道 落樱的小镇</div></div>
 <div class="row"><div class="jp">こんなとこに<ruby>来<rt>く</rt></ruby>るはずもないのに</div><div class="cn">明知道你不可能在那里</div></div>
-<div class="row"><div class="jp"><ruby>願<rt>ねが</rt></ruby>いがもしも<ruby>叶<rt>かな</rt></ruby>うなら いますぐ<ruby>君<rt>くん</rt></ruby>のもとへ</div><div class="cn">若能实现愿望的话 我想马上飞到你身边</div></div></section>
-<div class="part-label">第三段 · できないことは もう何も</div><section class="stanza"><div class="row"><div class="jp">できないことは もう<ruby>何<rt>なに</rt></ruby>もない</div><div class="cn">已经没有什么做不到的了</div></div>
+<div class="row"><div class="jp"><ruby>願<rt>ねが</rt></ruby>いがもしも<ruby>叶<rt>かな</rt></ruby>うなら いますぐ<ruby>君<rt>くん</rt></ruby>のもとへ</div><div class="cn">若能实现愿望的话 我想马上飞到你身边</div></div>
+<div class="row"><div class="jp">できないことは もう<ruby>何<rt>なに</rt></ruby>もない</div><div class="cn">已经没有什么做不到的了</div></div>
 <div class="row"><div class="jp">すべてかけて<ruby>抱<rt>だ</rt></ruby>きしめてみせるよ</div><div class="cn">不顾一切将你紧拥</div></div>
 <div class="row"><div class="jp">いつでも<ruby>捜<rt>さが</rt></ruby>しているよ どっかに<ruby>君<rt>くん</rt></ruby>のかけらを</div><div class="cn">我一直在到处搜索你的碎片</div></div>
 <div class="row"><div class="jp"><ruby>旅先<rt>たびさき</rt></ruby>の<ruby>店<rt>みせ</rt></ruby> <ruby>新聞<rt>しんぶん</rt></ruby>の<ruby>隅<rt>すみ</rt></ruby></div><div class="cn">启程的旅店 报纸的角落</div></div>
@@ -166,7 +161,7 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">こんなとこにいるはずもないのに</div><div class="cn">明知道你不可能在那里</div></div>
 <div class="row"><div class="jp"><ruby>命<rt>いのち</rt></ruby>が<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>りかえす</rt></ruby>すならば なんども<ruby>君<rt>くん</rt></ruby>のもとへ</div><div class="cn">假如还有来生 我无论如何都要来到你身边</div></div>
 <div class="row"><div class="jp"><ruby>欲<rt>ほ</rt></ruby>しいものなど もう<ruby>何<rt>なに</rt></ruby>もない</div><div class="cn">我已经没有了其他想要追求的东西</div></div>
-<div class="row"><div class="jp"><ruby>君<rt>くん</rt></ruby>のほかに<ruby>大切<rt>たいせつ</rt></ruby>なものなど</div><div class="cn">因为没有比你更重要的</div></div></section>
+<div class="row"><div class="jp"><ruby>君<rt>くん</rt></ruby>のほかに<ruby>大切<rt>たいせつ</rt></ruby>なものなど</div><div class="cn">因为没有比你更重要的</div></div>
   </main>
   <section class="links">
     <div class="links-head">

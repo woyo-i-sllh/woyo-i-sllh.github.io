@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,17 +116,17 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · O seven appl</div><section class="stanza"><div class="row"><div class="jp">O seven apples on a witch's tree</div><div class="cn">女巫的树上有七颗苹果</div></div>
+<div class="row"><div class="jp">O seven apples on a witch's tree</div><div class="cn">女巫的树上有七颗苹果</div></div>
 <div class="row"><div class="jp">With seven seeds to plant inside of me</div><div class="cn">还有七粒种子，要种进我心里</div></div>
 <div class="row"><div class="jp">In springtime I grew a magic song</div><div class="cn">春天里，我种出了一首魔法之歌</div></div>
 <div class="row"><div class="jp">Then skipping along, oh I sang the song to everyone</div><div class="cn">于是蹦蹦跳跳，把这首歌唱给所有人听</div></div>
 <div class="row"><div class="jp">I looked at the world through apple eyes</div><div class="cn">我用苹果般的眼睛看世界</div></div>
 <div class="row"><div class="jp">And cut myself a slice of sunshine pie</div><div class="cn">给自己切一块阳光派</div></div>
 <div class="row"><div class="jp">I danced with the peanut butterflies</div><div class="cn">我和花生般的蝴蝶共舞</div></div>
-<div class="row"><div class="jp">Till time went and told me to say hello but wave goodbye</div><div class="cn">直到时间走过，让我一边问好一边挥手告别</div></div></section>
-<div class="part-label">副歌 · A thousand s</div><section class="stanza"><div class="row"><div class="jp">A thousand sugar stars</div><div class="cn">一千颗砂糖做的星星</div></div>
-<div class="row"><div class="jp">Oh put them in a jar</div><div class="cn">哦，把它们装进罐子里</div></div></section>
-<div class="part-label">第一段 · And then whi</div><section class="stanza"><div class="row"><div class="jp">And then whistle round the world</div><div class="cn">然后吹着口哨环游世界</div></div>
+<div class="row"><div class="jp">Till time went and told me to say hello but wave goodbye</div><div class="cn">直到时间走过，让我一边问好一边挥手告别</div></div>
+<div class="row"><div class="jp">A thousand sugar stars</div><div class="cn">一千颗砂糖做的星星</div></div>
+<div class="row"><div class="jp">Oh put them in a jar</div><div class="cn">哦，把它们装进罐子里</div></div>
+<div class="row"><div class="jp">And then whistle round the world</div><div class="cn">然后吹着口哨环游世界</div></div>
 <div class="row"><div class="jp">Oh whistle round the world</div><div class="cn">哦，吹着口哨环游世界</div></div>
 <div class="row"><div class="jp">I'm a little wolf inside a girl, you say</div><div class="cn">你说，我是藏在女孩身体里的小狼</div></div>
 <div class="row"><div class="jp">And off I'll go from June to May</div><div class="cn">那我就从六月走到五月</div></div>
@@ -142,8 +137,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">Then I was a sailor, and through the day I sailed away</div><div class="cn">然后我成了水手，白日里扬帆远航</div></div>
 <div class="row"><div class="jp">Bluebird seas I sailed</div><div class="cn">我航行在青鸟之海</div></div>
 <div class="row"><div class="jp">With mermaids riding whales</div><div class="cn">人鱼们骑着鲸鱼</div></div>
-<div class="row"><div class="jp">Oh whistle rond the world</div><div class="cn">哦，吹着口哨环游世界</div></div></section>
-<div class="part-label">第二段 · Oh whistle r</div><section class="stanza"><div class="row"><div class="jp">Oh whistle rond the world</div><div class="cn">哦，吹着口哨环游世界</div></div>
+<div class="row"><div class="jp">Oh whistle rond the world</div><div class="cn">哦，吹着口哨环游世界</div></div>
+<div class="row"><div class="jp">Oh whistle rond the world</div><div class="cn">哦，吹着口哨环游世界</div></div>
 <div class="row"><div class="jp">I'm a little wolf inside a girl, you say</div><div class="cn">你说，我是藏在女孩身体里的小狼</div></div>
 <div class="row"><div class="jp">And off I'll go down Wonder Way</div><div class="cn">那我就沿着奇迹之路出发</div></div>
 <div class="row"><div class="jp">Oh whistling round the world</div><div class="cn">哦，吹着口哨环游世界</div></div>
@@ -154,16 +149,16 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">Through apple eyes</div><div class="cn">透过苹果般的眼睛</div></div>
 <div class="row"><div class="jp">I see for millions of miles</div><div class="cn">我能看见数百万英里之外</div></div>
 <div class="row"><div class="jp">The sun's a diamond shining</div><div class="cn">太阳像钻石般闪耀</div></div>
-<div class="row"><div class="jp">In the nighttime of a summer day</div><div class="cn">在夏日白昼的夜色里</div></div></section>
-<div class="part-label">副歌（再来）· A thousand s</div><section class="stanza"><div class="row"><div class="jp">A thousand sugar stars</div><div class="cn">一千颗砂糖做的星星</div></div>
-<div class="row"><div class="jp">Oh put them in a jar</div><div class="cn">哦，把它们装进罐子里</div></div></section>
-<div class="part-label">第三段 · And then whi</div><section class="stanza"><div class="row"><div class="jp">And then whistle round the world</div><div class="cn">然后吹着口哨环游世界</div></div>
+<div class="row"><div class="jp">In the nighttime of a summer day</div><div class="cn">在夏日白昼的夜色里</div></div>
+<div class="row"><div class="jp">A thousand sugar stars</div><div class="cn">一千颗砂糖做的星星</div></div>
+<div class="row"><div class="jp">Oh put them in a jar</div><div class="cn">哦，把它们装进罐子里</div></div>
+<div class="row"><div class="jp">And then whistle round the world</div><div class="cn">然后吹着口哨环游世界</div></div>
 <div class="row"><div class="jp">Oh whistle round the world</div><div class="cn">哦，吹着口哨环游世界</div></div>
 <div class="row"><div class="jp">I'm a little wolf inside a girl, you say</div><div class="cn">你说，我是藏在女孩身体里的小狼</div></div>
 <div class="row"><div class="jp">And off I'll go (I can not stay)</div><div class="cn">那我就出发（我不能停留）</div></div>
 <div class="row"><div class="jp">Oh whistling round the world</div><div class="cn">哦，吹着口哨环游世界</div></div>
 <div class="row"><div class="jp">Let's whistle round the world</div><div class="cn">让我们吹着口哨环游世界</div></div>
-<div class="row"><div class="jp">Whistle round the world</div><div class="cn">吹着口哨环游世界</div></div></section>
+<div class="row"><div class="jp">Whistle round the world</div><div class="cn">吹着口哨环游世界</div></div>
   </main>
   <section class="links">
     <div class="links-head">

@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,13 +116,13 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · 君の右手は頬を突いている</div><section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>右手<rt>みぎて</rt></ruby>は<ruby>頬<rt>ほお</rt></ruby>を<ruby>突<rt>つ</rt></ruby>いている</div><div class="cn">你用右手戳了一下我的脸颊</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>右手<rt>みぎて</rt></ruby>は<ruby>頬<rt>ほお</rt></ruby>を<ruby>突<rt>つ</rt></ruby>いている</div><div class="cn">你用右手戳了一下我的脸颊</div></div>
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>は<ruby>左手<rt>ひだりて</rt></ruby>に<ruby>温<rt>ぬる</rt></ruby>いマグカップ</div><div class="cn">我的左手握著温暖的马克杯</div></div>
 <div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>右<rt>みぎ</rt></ruby><ruby>眉<rt>まゆ</rt></ruby>は<ruby>少<rt>すこ</rt></ruby>し<ruby>垂<rt>た</rt></ruby>れている</div><div class="cn">你的右眉却稍微的垂了下来</div></div>
-<div class="row"><div class="jp"><ruby>朝<rt>あさ</rt></ruby>がこんなにも<ruby>降<rt>ふ</rt></ruby>った</div><div class="cn">即便如此早晨仍到来</div></div></section>
-<div class="part-label">副歌 · 一つでいい</div><section class="stanza"><div class="row"><div class="jp"><ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一朵就好</div></div>
-<div class="row"><div class="jp"><ruby>散<rt>ち</rt></ruby>らぬ<ruby>牡丹<rt>ぼたん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一朵不会凋零的牡丹就好</div></div></section>
-<div class="part-label">第一段 · 君の胸を打て</div><section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>胸<rt>むね</rt></ruby>を<ruby>打<rt>う</rt></ruby>て</div><div class="cn">想要敲响你的胸口</div></div>
+<div class="row"><div class="jp"><ruby>朝<rt>あさ</rt></ruby>がこんなにも<ruby>降<rt>ふ</rt></ruby>った</div><div class="cn">即便如此早晨仍到来</div></div>
+<div class="row"><div class="jp"><ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一朵就好</div></div>
+<div class="row"><div class="jp"><ruby>散<rt>ち</rt></ruby>らぬ<ruby>牡丹<rt>ぼたん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一朵不会凋零的牡丹就好</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>胸<rt>むね</rt></ruby>を<ruby>打<rt>う</rt></ruby>て</div><div class="cn">想要敲响你的胸口</div></div>
 <div class="row"><div class="jp"><ruby>心<rt>こころ</rt></ruby>を<ruby>亡<rt>わす</rt></ruby>れるほどの<ruby>幸福<rt>こうふく</rt></ruby>を</div><div class="cn">用能让你忘记内心的幸福</div></div>
 <div class="row"><div class="jp"><ruby>一<rt>ひと</rt></ruby>つでいいんだ</div><div class="cn">只要一个就好了</div></div>
 <div class="row"><div class="jp"><ruby>右<rt>みぎ</rt></ruby>も<ruby>左<rt>ひだり</rt></ruby>もわからぬほどに<ruby>手探<rt>てさぐ</rt></ruby>りの<ruby>夜<rt>よる</rt></ruby>の<ruby>中<rt>なか</rt></ruby>を</div><div class="cn">在左右都分不清的夜里摸索着</div></div>
@@ -138,8 +133,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>にはわからないみたい</div><div class="cn">就像是连我也无法明白般</div></div>
 <div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>右手<rt>みぎて</rt></ruby>にはいつか<ruby>買<rt>か</rt></ruby>った<ruby>小説<rt>しょうせつ</rt></ruby></div><div class="cn">你的右手抱著不知道什么时候买来的小说</div></div>
 <div class="row"><div class="jp">あれ、それって<ruby>左手<rt>ひだりて</rt></ruby>だっけ</div><div class="cn">欸？还是用左手拿的阿</div></div>
-<div class="row"><div class="jp"><ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要一瞬就好</div></div></section>
-<div class="part-label">第二段 · 夜の日差しの一つでいい</div><section class="stanza"><div class="row"><div class="jp"><ruby>夜<rt>よる</rt></ruby>の<ruby>日差<rt>ひざ</rt></ruby>しの<ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一瞬的日光从夜里照出就好</div></div>
+<div class="row"><div class="jp"><ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要一瞬就好</div></div>
+<div class="row"><div class="jp"><ruby>夜<rt>よる</rt></ruby>の<ruby>日差<rt>ひざ</rt></ruby>しの<ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一瞬的日光从夜里照出就好</div></div>
 <div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>胸<rt>むね</rt></ruby>を<ruby>打<rt>う</rt></ruby>つ、<ruby>心<rt>こころ</rt></ruby>を<ruby>覗<rt>のぞ</rt></ruby>けるほどの<ruby>感傷<rt>かんしょう</rt></ruby>を</div><div class="cn">能够敲响你的胸口、从心里瞥见的感伤</div></div>
 <div class="row"><div class="jp"><ruby>一<rt>ひと</rt></ruby>つでいいんだ</div><div class="cn">只要有一个就好</div></div>
 <div class="row"><div class="jp"><ruby>夏<rt>なつ</rt></ruby>に<ruby>舞<rt>ま</rt></ruby>う<ruby>雹<rt>ひょう</rt></ruby>のその<ruby>中<rt>なか</rt></ruby>も<ruby>手探<rt>てさぐ</rt></ruby>りで<ruby>行<rt>ゆ</rt></ruby>けることを</div><div class="cn">在夏日中舞动著的冰雹中能摸索前行也</div></div>
@@ -147,10 +142,10 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>の<ruby>身体<rt>からだ</rt></ruby>から<ruby>心<rt>こころ</rt></ruby>を<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>剥<rt>は</rt></ruby>がして</div><div class="cn">从我的身体开始直至内心中一点一点的抽离</div></div>
 <div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>に<ruby>渡<rt>わた</rt></ruby>して　その<ruby>全部<rt>ぜんぶ</rt></ruby>をあげるから</div><div class="cn">从你给我的开始  将那一切全都还给你</div></div>
 <div class="row"><div class="jp"><ruby>剣<rt>つるぎ</rt></ruby>の<ruby>柄<rt>つか</rt></ruby>からルビーを　この<ruby>瞳<rt>ひとみ</rt></ruby>からサファイアを</div><div class="cn">将从剑柄上的红宝石取下还给你  这双眼中镶著的蓝宝石也还给你</div></div>
-<div class="row"><div class="jp"><ruby>鉛<rt>なまり</rt></ruby>の<ruby>心臓<rt>しんぞう</rt></ruby>はただ<ruby>傍<rt>そば</rt></ruby>に<ruby>置<rt>お</rt></ruby>いて</div><div class="cn">而我铅制的心脏就只是被晾在一旁</div></div></section>
-<div class="part-label">副歌（再来）· 一つでいい</div><section class="stanza"><div class="row"><div class="jp"><ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一朵就好</div></div>
-<div class="row"><div class="jp"><ruby>散<rt>ち</rt></ruby>らぬ<ruby>牡丹<rt>ぼたん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一朵不会凋零的牡丹就好</div></div></section>
-<div class="part-label">第三段 · 君の胸を打て</div><section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>胸<rt>むね</rt></ruby>を<ruby>打<rt>う</rt></ruby>て</div><div class="cn">想要敲响你的胸口</div></div>
+<div class="row"><div class="jp"><ruby>鉛<rt>なまり</rt></ruby>の<ruby>心臓<rt>しんぞう</rt></ruby>はただ<ruby>傍<rt>そば</rt></ruby>に<ruby>置<rt>お</rt></ruby>いて</div><div class="cn">而我铅制的心脏就只是被晾在一旁</div></div>
+<div class="row"><div class="jp"><ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一朵就好</div></div>
+<div class="row"><div class="jp"><ruby>散<rt>ち</rt></ruby>らぬ<ruby>牡丹<rt>ぼたん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つでいい</div><div class="cn">只要有一朵不会凋零的牡丹就好</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>胸<rt>むね</rt></ruby>を<ruby>打<rt>う</rt></ruby>て</div><div class="cn">想要敲响你的胸口</div></div>
 <div class="row"><div class="jp"><ruby>涙<rt>なみだ</rt></ruby>も<ruby>忘<rt>わす</rt></ruby>れるほどの<ruby>幸福<rt>こうふく</rt></ruby>を</div><div class="cn">用能让你连泪水都忘记的幸福</div></div>
 <div class="row"><div class="jp"><ruby>少<rt>すこ</rt></ruby>しでいいんだ</div><div class="cn">只要一点点就好</div></div>
 <div class="row"><div class="jp"><ruby>今日<rt>きょう</rt></ruby>の<ruby>小雨<rt>こさめ</rt></ruby>が<ruby>止<rt>や</rt></ruby>むための<ruby>太陽<rt>たいよう</rt></ruby>を</div><div class="cn">只要一些就好</div></div>
@@ -161,11 +156,11 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>右<rt>みぎ</rt></ruby>も<ruby>左<rt>ひだり</rt></ruby>もわからぬほどに<ruby>手探<rt>てさぐ</rt></ruby>りの<ruby>夜<rt>よる</rt></ruby>の<ruby>中<rt>なか</rt></ruby>を</div><div class="cn">在左右都分不清的夜里摸索</div></div>
 <div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>が<ruby>行<rt>ゆ</rt></ruby>く<ruby>長<rt>なが</rt></ruby>いこれからを</div><div class="cn">或你即将前往漫长的从今往后</div></div>
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>だけは<ruby>笑<rt>わら</rt></ruby>わぬことを</div><div class="cn">只有我无法露出的笑颜也好</div></div>
-<div class="row"><div class="jp">その<ruby>一<rt>ひと</rt></ruby>つを<ruby>教<rt>おし</rt></ruby>えられたなら</div><div class="cn">如果能让我知晓其中一个的话</div></div></section>
-<div class="part-label">尾声 · 何を食べても味がしないん</div><section class="stanza"><div class="row"><div class="jp"><ruby>何<rt>なに</rt></ruby>を<ruby>食<rt>た</rt></ruby>べても<ruby>味<rt>あじ</rt></ruby>がしないんだ</div><div class="cn">无论吞下什么也都食之无味</div></div>
+<div class="row"><div class="jp">その<ruby>一<rt>ひと</rt></ruby>つを<ruby>教<rt>おし</rt></ruby>えられたなら</div><div class="cn">如果能让我知晓其中一个的话</div></div>
+<div class="row"><div class="jp"><ruby>何<rt>なに</rt></ruby>を<ruby>食<rt>た</rt></ruby>べても<ruby>味<rt>あじ</rt></ruby>がしないんだ</div><div class="cn">无论吞下什么也都食之无味</div></div>
 <div class="row"><div class="jp"><ruby>身体<rt>からだ</rt></ruby>が<ruby>消<rt>き</rt></ruby>えてしまったようだ</div><div class="cn">仿佛身体逐渐消失般</div></div>
 <div class="row"><div class="jp"><ruby>貴方<rt>あなた</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>と　<ruby>私<rt>わたし</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>が</div><div class="cn">你的心和我的心</div></div>
-<div class="row"><div class="jp">ずっと<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>ってたんだ</div><div class="cn">一直以为它们是一体的阿</div></div></section>
+<div class="row"><div class="jp">ずっと<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>ってたんだ</div><div class="cn">一直以为它们是一体的阿</div></div>
   </main>
   <section class="links">
     <div class="links-head">

@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,14 +116,14 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · 寝息よりそっと夜明けが来</div><section class="stanza"><div class="row"><div class="jp"><ruby>寝息<rt>ねいき</rt></ruby>よりそっと<ruby>夜明<rt>よあ</rt></ruby>けが<ruby>来<rt>く</rt></ruby>る</div><div class="cn">比呼吸更轻地，黎明降临</div></div>
+<div class="row"><div class="jp"><ruby>寝息<rt>ねいき</rt></ruby>よりそっと<ruby>夜明<rt>よあ</rt></ruby>けが<ruby>来<rt>く</rt></ruby>る</div><div class="cn">比呼吸更轻地，黎明降临</div></div>
 <div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>は<ruby>今<rt>いま</rt></ruby> <ruby>森<rt>もり</rt></ruby>を<ruby>駆<rt>か</rt></ruby>ける</div><div class="cn">你的梦此刻正奔驰在森林里</div></div>
 <div class="row"><div class="jp"><ruby>目覚<rt>めざ</rt></ruby>めて<ruby>灯<rt>あか</rt></ruby>りを<ruby>探<rt>さが</rt></ruby>すしぐさ</div><div class="cn">醒来时寻找灯火的模样</div></div>
 <div class="row"><div class="jp">なくしたなら<ruby>見<rt>み</rt></ruby>つけてあげよう</div><div class="cn">若是遗失了，我就替你找回来吧</div></div>
-<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>僕<rt>ぼく</rt></ruby>の<ruby>未来<rt>みらい</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>れている</div><div class="cn">它藏在你和我的未来里</div></div></section>
-<div class="part-label">副歌 · さあここへ</div><section class="stanza"><div class="row"><div class="jp">さあここへ</div><div class="cn">来，到这里来</div></div>
-<div class="row"><div class="jp"><ruby>手<rt>て</rt></ruby>をつないだらほどけないよ</div><div class="cn">牵起手就不会松开了</div></div></section>
-<div class="part-label">第一段 · 君と遠くへ</div><section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>遠<rt>とお</rt></ruby>くへ</div><div class="cn">和你一起，去往远方</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>僕<rt>ぼく</rt></ruby>の<ruby>未来<rt>みらい</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>れている</div><div class="cn">它藏在你和我的未来里</div></div>
+<div class="row"><div class="jp">さあここへ</div><div class="cn">来，到这里来</div></div>
+<div class="row"><div class="jp"><ruby>手<rt>て</rt></ruby>をつないだらほどけないよ</div><div class="cn">牵起手就不会松开了</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>遠<rt>とお</rt></ruby>くへ</div><div class="cn">和你一起，去往远方</div></div>
 <div class="row"><div class="jp"><ruby>遥<rt>はる</rt></ruby>かな<ruby>日<rt>ひ</rt></ruby>の<ruby>記憶<rt>きおく</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>いた</div><div class="cn">绽放在遥远往昔记忆里的</div></div>
 <div class="row"><div class="jp"><ruby>青<rt>あお</rt></ruby>い<ruby>国<rt>くに</rt></ruby>を<ruby>見<rt>み</rt></ruby>るストーリー</div><div class="cn">那个望见蓝色国度的故事</div></div>
 <div class="row"><div class="jp"><ruby>輝<rt>かがや</rt></ruby>く<ruby>瞳<rt>ひとみ</rt></ruby> <ruby>伝<rt>つた</rt></ruby>えよう</div><div class="cn">那闪亮的眼眸，让我来传达吧</div></div>
@@ -139,20 +134,20 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>過<rt>あやま</rt></ruby>ちでも<ruby>選<rt>えら</rt></ruby>んだ<ruby>道<rt>みち</rt></ruby>を<ruby>行<rt>い</rt></ruby>くよ</div><div class="cn">哪怕错了，我也要走在选择的路上</div></div>
 <div class="row"><div class="jp"><ruby>大事<rt>だいじ</rt></ruby>な<ruby>言葉<rt>ことば</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いた</div><div class="cn">我听见了那重要的话语</div></div>
 <div class="row"><div class="jp"><ruby>風<rt>かぜ</rt></ruby>が<ruby>運<rt>はこ</rt></ruby>ぶ <ruby>空<rt>そら</rt></ruby>の<ruby>約束<rt>やくそく</rt></ruby></div><div class="cn">风送来的、天空的约定</div></div>
-<div class="row"><div class="jp"><ruby>時<rt>とき</rt></ruby>が<ruby>君<rt>きみ</rt></ruby>を<ruby>連<rt>つ</rt></ruby>れ<ruby>去<rt>さ</rt></ruby>るのなら</div><div class="cn">倘若时光要将你带走</div></div></section>
-<div class="part-label">第二段 · 今こうして ただふたり</div><section class="stanza"><div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby>こうして ただふたり</div><div class="cn">此刻就这般，只有我们两人</div></div>
+<div class="row"><div class="jp"><ruby>時<rt>とき</rt></ruby>が<ruby>君<rt>きみ</rt></ruby>を<ruby>連<rt>つ</rt></ruby>れ<ruby>去<rt>さ</rt></ruby>るのなら</div><div class="cn">倘若时光要将你带走</div></div>
+<div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby>こうして ただふたり</div><div class="cn">此刻就这般，只有我们两人</div></div>
 <div class="row"><div class="jp">ただふたり…</div><div class="cn">只有我们两人……</div></div>
 <div class="row"><div class="jp"><ruby>守<rt>まも</rt></ruby>るものは <ruby>君<rt>きみ</rt></ruby>の<ruby>笑顔<rt>えがお</rt></ruby></div><div class="cn">我要守护的，是你的笑容</div></div>
 <div class="row"><div class="jp"><ruby>試<rt>ため</rt></ruby>してみる <ruby>心<rt>こころ</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>さを</div><div class="cn">试着去验证内心的坚强</div></div>
 <div class="row"><div class="jp">あぁ <ruby>君<rt>きみ</rt></ruby>が <ruby>振<rt>ふ</rt></ruby>り<ruby>向<rt>む</rt></ruby>く</div><div class="cn">啊，你回过头来</div></div>
-<div class="row"><div class="jp">そして<ruby>今<rt>いま</rt></ruby> <ruby>始<rt>はじ</rt></ruby>まる<ruby>朝<rt>あさ</rt></ruby>を<ruby>歌<rt>うた</rt></ruby>う<ruby>鳥<rt>とり</rt></ruby>よ</div><div class="cn">于是此刻，歌唱着新晨的鸟儿啊</div></div></section>
-<div class="part-label">副歌（再来）· さあここへ</div><section class="stanza"><div class="row"><div class="jp">さあここへ</div><div class="cn">来，到这里来</div></div>
-<div class="row"><div class="jp"><ruby>手<rt>て</rt></ruby>をつないだらほどけないよ</div><div class="cn">牵起手就不会松开了</div></div></section>
-<div class="part-label">第三段 · 君と遠くへ</div><section class="stanza"><div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>遠<rt>とお</rt></ruby>くへ</div><div class="cn">和你一起，去往远方</div></div>
+<div class="row"><div class="jp">そして<ruby>今<rt>いま</rt></ruby> <ruby>始<rt>はじ</rt></ruby>まる<ruby>朝<rt>あさ</rt></ruby>を<ruby>歌<rt>うた</rt></ruby>う<ruby>鳥<rt>とり</rt></ruby>よ</div><div class="cn">于是此刻，歌唱着新晨的鸟儿啊</div></div>
+<div class="row"><div class="jp">さあここへ</div><div class="cn">来，到这里来</div></div>
+<div class="row"><div class="jp"><ruby>手<rt>て</rt></ruby>をつないだらほどけないよ</div><div class="cn">牵起手就不会松开了</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>と<ruby>遠<rt>とお</rt></ruby>くへ</div><div class="cn">和你一起，去往远方</div></div>
 <div class="row"><div class="jp"><ruby>遥<rt>はる</rt></ruby>かな<ruby>日<rt>ひ</rt></ruby>の<ruby>記憶<rt>きおく</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>いた</div><div class="cn">绽放在遥远往昔记忆里的</div></div>
 <div class="row"><div class="jp"><ruby>青<rt>あお</rt></ruby>い<ruby>国<rt>くに</rt></ruby>を<ruby>見<rt>み</rt></ruby>るストーリー</div><div class="cn">那个望见蓝色国度的故事</div></div>
 <div class="row"><div class="jp"><ruby>輝<rt>かがや</rt></ruby>く<ruby>瞳<rt>ひとみ</rt></ruby> <ruby>見<rt>み</rt></ruby>るストーリー</div><div class="cn">那闪亮的眼眸所看见的故事</div></div>
-<div class="row"><div class="jp"><ruby>輝<rt>かがや</rt></ruby>く<ruby>瞳<rt>ひとみ</rt></ruby> その<ruby>歌声<rt>うたごえ</rt></ruby> <ruby>伝<rt>つた</rt></ruby>えよう</div><div class="cn">那闪亮的眼眸、那歌声，让我来传达吧</div></div></section>
+<div class="row"><div class="jp"><ruby>輝<rt>かがや</rt></ruby>く<ruby>瞳<rt>ひとみ</rt></ruby> その<ruby>歌声<rt>うたごえ</rt></ruby> <ruby>伝<rt>つた</rt></ruby>えよう</div><div class="cn">那闪亮的眼眸、那歌声，让我来传达吧</div></div>
   </main>
   <section class="links">
     <div class="links-head">

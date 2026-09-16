@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,9 +116,9 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">副歌 · このままどこまで</div><section class="stanza"><div class="row"><div class="jp">このままどこまで</div><div class="cn">这样下去会怎样呢</div></div>
-<div class="row"><div class="jp"><ruby>歩<rt>ある</rt></ruby>いていくんだろう</div><div class="cn">如此缓慢地走着</div></div></section>
-<div class="part-label">第一段 · 鏡にうつる自分を見つめて</div><section class="stanza"><div class="row"><div class="jp"><ruby>鏡<rt>かがみ</rt></ruby>にうつる<ruby>自分<rt>じぶん</rt></ruby>を<ruby>見<rt>み</rt></ruby>つめて</div><div class="cn">看着镜中的自己</div></div>
+<div class="row"><div class="jp">このままどこまで</div><div class="cn">这样下去会怎样呢</div></div>
+<div class="row"><div class="jp"><ruby>歩<rt>ある</rt></ruby>いていくんだろう</div><div class="cn">如此缓慢地走着</div></div>
+<div class="row"><div class="jp"><ruby>鏡<rt>かがみ</rt></ruby>にうつる<ruby>自分<rt>じぶん</rt></ruby>を<ruby>見<rt>み</rt></ruby>つめて</div><div class="cn">看着镜中的自己</div></div>
 <div class="row"><div class="jp"><ruby>答<rt>こた</rt></ruby>えは<ruby>見<rt>み</rt></ruby>つからない</div><div class="cn">还是无法找到答案</div></div>
 <div class="row"><div class="jp">まだ<ruby>少<rt>すこ</rt></ruby>し<ruby>欠<rt>か</rt></ruby>けてる<ruby>心<rt>こころ</rt></ruby></div><div class="cn">依旧残缺的内心</div></div>
 <div class="row"><div class="jp"><ruby>抱<rt>だ</rt></ruby>き<ruby>締<rt>し</rt></ruby>めていたい<ruby>今<rt>いま</rt></ruby>は</div><div class="cn">现在只想抱住你</div></div>
@@ -134,8 +129,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>続<rt>つづ</rt></ruby>く<ruby>日<rt>ひび</rt></ruby>々の<ruby>中<rt>なか</rt></ruby>で</div><div class="cn">还是想在往后的日子</div></div>
 <div class="row"><div class="jp"><ruby>夢<rt>ゆめ</rt></ruby>を<ruby>見<rt>み</rt></ruby>ていたい</div><div class="cn">过上梦想的生活</div></div>
 <div class="row"><div class="jp"><ruby>朝陽<rt>あさひ</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>る</div><div class="cn">朝阳升起</div></div>
-<div class="row"><div class="jp">「いつか」を<ruby>追<rt>お</rt></ruby>いかける</div><div class="cn">向着追逐的「那一天」</div></div></section>
-<div class="part-label">第二段 · 伸ばした手では</div><section class="stanza"><div class="row"><div class="jp"><ruby>伸<rt>の</rt></ruby>ばした<ruby>手<rt>て</rt></ruby>では</div><div class="cn">那尚未抵达的远方</div></div>
+<div class="row"><div class="jp">「いつか」を<ruby>追<rt>お</rt></ruby>いかける</div><div class="cn">向着追逐的「那一天」</div></div>
+<div class="row"><div class="jp"><ruby>伸<rt>の</rt></ruby>ばした<ruby>手<rt>て</rt></ruby>では</div><div class="cn">那尚未抵达的远方</div></div>
 <div class="row"><div class="jp">まだ<ruby>届<rt>とど</rt></ruby>かない<ruby>場所<rt>ばしょ</rt></ruby></div><div class="cn">伸出了双手</div></div>
 <div class="row"><div class="jp">この<ruby>胸<rt>むね</rt></ruby>の<ruby>奥<rt>おく</rt></ruby>に<ruby>住<rt>す</rt></ruby>みつく<ruby>臆病<rt>おくびょう</rt></ruby>が</div><div class="cn">愿内心深处的懦弱</div></div>
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>を<ruby>蝕<rt>むしば</rt></ruby>まぬように</div><div class="cn">不再将我吞噬</div></div>
@@ -146,8 +141,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">「<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>」</div><div class="cn">「没关系」</div></div>
 <div class="row"><div class="jp"><ruby>口<rt>くち</rt></ruby>に<ruby>出<rt>だ</rt></ruby>す<ruby>言葉<rt>ことば</rt></ruby>は<ruby>感情<rt>かんじょう</rt></ruby>の<ruby>裏返<rt>うらかえ</rt></ruby>し</div><div class="cn">脱口而出藏在情绪里侧</div></div>
 <div class="row"><div class="jp"><ruby>弱虫<rt>よわむし</rt></ruby>なんだ</div><div class="cn">真是胆小鬼啊</div></div>
-<div class="row"><div class="jp"><ruby>減<rt>へ</rt></ruby>っていく<ruby>時間<rt>じかん</rt></ruby>　<ruby>増<rt>ふ</rt></ruby>えていく<ruby>荷物<rt>にもつ</rt></ruby></div><div class="cn">日渐流逝的时间 日益沉重的行李</div></div></section>
-<div class="part-label">第三段 · 逆さまにした砂時計のよう</div><section class="stanza"><div class="row"><div class="jp"><ruby>逆<rt>さか</rt></ruby>さまにした<ruby>砂時計<rt>すなどけい</rt></ruby>のように</div><div class="cn">像被颠倒过来的沙漏</div></div>
+<div class="row"><div class="jp"><ruby>減<rt>へ</rt></ruby>っていく<ruby>時間<rt>じかん</rt></ruby>　<ruby>増<rt>ふ</rt></ruby>えていく<ruby>荷物<rt>にもつ</rt></ruby></div><div class="cn">日渐流逝的时间 日益沉重的行李</div></div>
+<div class="row"><div class="jp"><ruby>逆<rt>さか</rt></ruby>さまにした<ruby>砂時計<rt>すなどけい</rt></ruby>のように</div><div class="cn">像被颠倒过来的沙漏</div></div>
 <div class="row"><div class="jp"><ruby>過<rt>す</rt></ruby>ぎ<ruby>去<rt>さ</rt></ruby>った<ruby>時間<rt>じかん</rt></ruby>をもう<ruby>一度<rt>いちど</rt></ruby></div><div class="cn">即使让过去的时光再次</div></div>
 <div class="row"><div class="jp">やり<ruby>直<rt>なお</rt></ruby>せても</div><div class="cn">重新来过</div></div>
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>はまたきっとこの<ruby>道<rt>みち</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶ</div><div class="cn">我依然会选择这条路</div></div>
@@ -158,19 +153,19 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>踏<rt>ふ</rt></ruby>み<ruby>出<rt>だ</rt></ruby>していくよ</div><div class="cn">向前迈出脚步吧</div></div>
 <div class="row"><div class="jp"><ruby>手繰<rt>たぐ</rt></ruby>り<ruby>寄<rt>よ</rt></ruby>せた<ruby>未来予想図<rt>みらいよそうず</rt></ruby></div><div class="cn">亲手绘制的未来蓝图</div></div>
 <div class="row"><div class="jp">この<ruby>手<rt>て</rt></ruby>で<ruby>書<rt>か</rt></ruby>き<ruby>換<rt>きかえ</rt></ruby>えていく</div><div class="cn">我会用双手将它重写</div></div>
-<div class="row"><div class="jp"><ruby>視<rt>し</rt></ruby>えない<ruby>声<rt>こえ</rt></ruby>に</div><div class="cn">为了不再被</div></div></section>
-<div class="part-label">第四段 · 奪われないように</div><section class="stanza"><div class="row"><div class="jp"><ruby>奪<rt>うば</rt></ruby>われないように</div><div class="cn">看不见的声音裹挟</div></div>
+<div class="row"><div class="jp"><ruby>視<rt>し</rt></ruby>えない<ruby>声<rt>こえ</rt></ruby>に</div><div class="cn">为了不再被</div></div>
+<div class="row"><div class="jp"><ruby>奪<rt>うば</rt></ruby>われないように</div><div class="cn">看不见的声音裹挟</div></div>
 <div class="row"><div class="jp">ここにいるための<ruby>僕<rt>ぼく</rt></ruby>の<ruby>証明<rt>しょうめい</rt></ruby>を</div><div class="cn">我会在此证明</div></div>
 <div class="row"><div class="jp"><ruby>思<rt>おも</rt></ruby>い<ruby>描<rt>えが</rt></ruby>いた<ruby>日<rt>ひび</rt></ruby>々を<ruby>重<rt>おも</rt></ruby>ねていく</div><div class="cn">将心中描绘的日子重叠</div></div>
 <div class="row"><div class="jp"><ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>りかえれ</rt></ruby>ればもう</div><div class="cn">回首望去</div></div>
 <div class="row"><div class="jp"><ruby>無数<rt>むすう</rt></ruby>のゴールライン</div><div class="cn">那无数条终点线</div></div>
-<div class="row"><div class="jp"><ruby>越<rt>こ</rt></ruby>えてきた<ruby>証<rt>しょう</rt></ruby></div><div class="cn">正是跨越的证明</div></div></section>
-<div class="part-label">副歌（再来）· このままどこまで</div><section class="stanza"><div class="row"><div class="jp">このままどこまで</div><div class="cn">这样下去会怎样呢</div></div>
-<div class="row"><div class="jp"><ruby>歩<rt>ある</rt></ruby>いていくんだろう</div><div class="cn">如此缓慢地走着</div></div></section>
-<div class="part-label">尾声 · 鏡にうつる僕が頷く</div><section class="stanza"><div class="row"><div class="jp"><ruby>鏡<rt>かがみ</rt></ruby>にうつる<ruby>僕<rt>ぼく</rt></ruby>が<ruby>頷<rt>がん</rt></ruby>く</div><div class="cn">对着镜中的自己点点头</div></div>
+<div class="row"><div class="jp"><ruby>越<rt>こ</rt></ruby>えてきた<ruby>証<rt>しょう</rt></ruby></div><div class="cn">正是跨越的证明</div></div>
+<div class="row"><div class="jp">このままどこまで</div><div class="cn">这样下去会怎样呢</div></div>
+<div class="row"><div class="jp"><ruby>歩<rt>ある</rt></ruby>いていくんだろう</div><div class="cn">如此缓慢地走着</div></div>
+<div class="row"><div class="jp"><ruby>鏡<rt>かがみ</rt></ruby>にうつる<ruby>僕<rt>ぼく</rt></ruby>が<ruby>頷<rt>がん</rt></ruby>く</div><div class="cn">对着镜中的自己点点头</div></div>
 <div class="row"><div class="jp"><ruby>未完成<rt>みかんせい</rt></ruby>なままでいい</div><div class="cn">即使有所残缺也没关系</div></div>
 <div class="row"><div class="jp"><ruby>足<rt>た</rt></ruby>りない<ruby>欠片<rt>かけら</rt></ruby><ruby>探<rt>さが</rt></ruby>して</div><div class="cn">找寻缺失的碎片</div></div>
-<div class="row"><div class="jp"><ruby>日<rt>ひび</rt></ruby>々をまた<ruby>紡<rt>ぼう</rt></ruby>いでいく</div><div class="cn">将生活再次编织</div></div></section>
+<div class="row"><div class="jp"><ruby>日<rt>ひび</rt></ruby>々をまた<ruby>紡<rt>ぼう</rt></ruby>いでいく</div><div class="cn">将生活再次编织</div></div>
   </main>
   <section class="links">
     <div class="links-head">

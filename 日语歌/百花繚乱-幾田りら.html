@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,7 +116,7 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · ゆらゆらり</div><section class="stanza"><div class="row"><div class="jp">ゆらゆらり</div><div class="cn">轻盈曼舞</div></div>
+<div class="row"><div class="jp">ゆらゆらり</div><div class="cn">轻盈曼舞</div></div>
 <div class="row"><div class="jp">はらはらり</div><div class="cn">翩然飞扬</div></div>
 <div class="row"><div class="jp"><ruby>色<rt>いろ</rt></ruby>とりどり</div><div class="cn">五彩斑斓</div></div>
 <div class="row"><div class="jp"><ruby>乱<rt>みだ</rt></ruby>れ<ruby>咲<rt>ざ</rt></ruby>き</div><div class="cn">纷乱绽放</div></div>
@@ -134,10 +129,10 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">ハっとするほど</div><div class="cn">时至今日我才轰然意识到</div></div>
 <div class="row"><div class="jp"><ruby>鮮<rt>あざ</rt></ruby>やかな<ruby>世界<rt>せかい</rt></ruby>があるんだと<ruby>知<rt>し</rt></ruby>った</div><div class="cn">眼前世界如此绚烂</div></div>
 <div class="row"><div class="jp">あなたの<ruby>無理難題<rt>むりなんだい</rt></ruby>に</div><div class="cn">每每你遇到的难题面前</div></div>
-<div class="row"><div class="jp"><ruby>応<rt>こた</rt></ruby>えていくその<ruby>度<rt>たび</rt></ruby>に</div><div class="cn">我皆给出其谜底</div></div></section>
-<div class="part-label">副歌 · あっと言わせるような</div><section class="stanza"><div class="row"><div class="jp">あっと<ruby>言<rt>い</rt></ruby>わせるような</div><div class="cn">天马行空的答案</div></div>
-<div class="row"><div class="jp"><ruby>奇想<rt>きそう</rt></ruby><ruby>天外<rt>てんがい</rt></ruby>な<ruby>答<rt>こた</rt></ruby>え<ruby>合<rt>あ</rt></ruby>わせで</div><div class="cn">令你瞠目结舌</div></div></section>
-<div class="part-label">第一段 · 辿り着いたその先に</div><section class="stanza"><div class="row"><div class="jp"><ruby>辿<rt>たど</rt></ruby>り<ruby>着<rt>つ</rt></ruby>いたその<ruby>先<rt>さき</rt></ruby>に</div><div class="cn">如此一步步走向的前方</div></div>
+<div class="row"><div class="jp"><ruby>応<rt>こた</rt></ruby>えていくその<ruby>度<rt>たび</rt></ruby>に</div><div class="cn">我皆给出其谜底</div></div>
+<div class="row"><div class="jp">あっと<ruby>言<rt>い</rt></ruby>わせるような</div><div class="cn">天马行空的答案</div></div>
+<div class="row"><div class="jp"><ruby>奇想<rt>きそう</rt></ruby><ruby>天外<rt>てんがい</rt></ruby>な<ruby>答<rt>こた</rt></ruby>え<ruby>合<rt>あ</rt></ruby>わせで</div><div class="cn">令你瞠目结舌</div></div>
+<div class="row"><div class="jp"><ruby>辿<rt>たど</rt></ruby>り<ruby>着<rt>つ</rt></ruby>いたその<ruby>先<rt>さき</rt></ruby>に</div><div class="cn">如此一步步走向的前方</div></div>
 <div class="row"><div class="jp"><ruby>新<rt>あたら</rt></ruby>しい<ruby>景色<rt>けしき</rt></ruby>が<ruby>待<rt>ま</rt></ruby>っているんだ</div><div class="cn">定有全新的光景等待我们</div></div>
 <div class="row"><div class="jp"><ruby>摩訶不思議<rt>まかふしぎ</rt></ruby>なミステリー</div><div class="cn">不可思议的谜团</div></div>
 <div class="row"><div class="jp"><ruby>次<rt>つぎ</rt></ruby>から<ruby>次<rt>つぎ</rt></ruby>に<ruby>起<rt>お</rt></ruby>こるたび</div><div class="cn">接踵而至时</div></div>
@@ -148,16 +143,16 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>副作用<rt>ふくさよう</rt></ruby>は<ruby>気<rt>き</rt></ruby>にしない</div><div class="cn">副作用无需担心</div></div>
 <div class="row"><div class="jp"><ruby>必<rt>かなら</rt></ruby>ずや<ruby>導<rt>みちび</rt></ruby>き<ruby>出<rt>だ</rt></ruby>すから</div><div class="cn">我定为你抽丝剥茧</div></div>
 <div class="row"><div class="jp">あぁこの<ruby>場所<rt>ばしょ</rt></ruby>で<ruby>触<rt>ふ</rt></ruby>れた</div><div class="cn">啊 触及此境之时</div></div>
-<div class="row"><div class="jp"><ruby>人<rt>ひと</rt></ruby>の<ruby>哀<rt>かな</rt></ruby>しみや<ruby>喜<rt>よろこ</rt></ruby>びがある</div><div class="cn">认知悲喜尽入我心</div></div></section>
-<div class="part-label">第二段 · そのひとつひとつが</div><section class="stanza"><div class="row"><div class="jp">そのひとつひとつが</div><div class="cn">每一份情感</div></div>
+<div class="row"><div class="jp"><ruby>人<rt>ひと</rt></ruby>の<ruby>哀<rt>かな</rt></ruby>しみや<ruby>喜<rt>よろこ</rt></ruby>びがある</div><div class="cn">认知悲喜尽入我心</div></div>
+<div class="row"><div class="jp">そのひとつひとつが</div><div class="cn">每一份情感</div></div>
 <div class="row"><div class="jp"><ruby>心<rt>こころ</rt></ruby>を<ruby>震<rt>ふる</rt></ruby>わせる</div><div class="cn">都深深震颤着我的心弦</div></div>
 <div class="row"><div class="jp">ハッとしちゃうほど</div><div class="cn">时至今日我才轰然意识到</div></div>
 <div class="row"><div class="jp"><ruby>鮮<rt>あざ</rt></ruby>やかな<ruby>世界<rt>せかい</rt></ruby>がここにあるんだ</div><div class="cn">纷繁的世界就在眼前</div></div>
 <div class="row"><div class="jp">あなたの<ruby>無理難題<rt>むりなんだい</rt></ruby>に</div><div class="cn">每每你遇到的难题面前</div></div>
-<div class="row"><div class="jp"><ruby>応<rt>こた</rt></ruby>えていく<ruby>毎日<rt>まいにち</rt></ruby>に</div><div class="cn">我皆给出其谜底</div></div></section>
-<div class="part-label">副歌（再来）· あっと言わせるような</div><section class="stanza"><div class="row"><div class="jp">あっと<ruby>言<rt>い</rt></ruby>わせるような</div><div class="cn">天马行空的答案</div></div>
-<div class="row"><div class="jp"><ruby>奇想<rt>きそう</rt></ruby><ruby>天外<rt>てんがい</rt></ruby>な<ruby>答<rt>こた</rt></ruby>え<ruby>合<rt>あ</rt></ruby>わせで</div><div class="cn">令你瞠目结舌</div></div></section>
-<div class="part-label">第三段 · 辿り着いたその先に</div><section class="stanza"><div class="row"><div class="jp"><ruby>辿<rt>たど</rt></ruby>り<ruby>着<rt>つ</rt></ruby>いたその<ruby>先<rt>さき</rt></ruby>に</div><div class="cn">如此一步步走向的前方</div></div>
+<div class="row"><div class="jp"><ruby>応<rt>こた</rt></ruby>えていく<ruby>毎日<rt>まいにち</rt></ruby>に</div><div class="cn">我皆给出其谜底</div></div>
+<div class="row"><div class="jp">あっと<ruby>言<rt>い</rt></ruby>わせるような</div><div class="cn">天马行空的答案</div></div>
+<div class="row"><div class="jp"><ruby>奇想<rt>きそう</rt></ruby><ruby>天外<rt>てんがい</rt></ruby>な<ruby>答<rt>こた</rt></ruby>え<ruby>合<rt>あ</rt></ruby>わせで</div><div class="cn">令你瞠目结舌</div></div>
+<div class="row"><div class="jp"><ruby>辿<rt>たど</rt></ruby>り<ruby>着<rt>つ</rt></ruby>いたその<ruby>先<rt>さき</rt></ruby>に</div><div class="cn">如此一步步走向的前方</div></div>
 <div class="row"><div class="jp"><ruby>新<rt>あたら</rt></ruby>しい<ruby>私<rt>わたし</rt></ruby>が<ruby>待<rt>ま</rt></ruby>っているんだ</div><div class="cn">定有全新的光景等待我们</div></div>
 <div class="row"><div class="jp">あの<ruby>頃<rt>ころ</rt></ruby>は<ruby>想像<rt>そうぞう</rt></ruby>もしていない</div><div class="cn">曾经的我定畅想不到</div></div>
 <div class="row"><div class="jp"><ruby>未来<rt>みらい</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>めている</div><div class="cn">绽放的未来</div></div>
@@ -167,7 +162,7 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>離<rt>はな</rt></ruby>れては</div><div class="cn">若即若离</div></div>
 <div class="row"><div class="jp"><ruby>寄<rt>よ</rt></ruby>り<ruby>添<rt>そ</rt></ruby>って</div><div class="cn">聚散无常</div></div>
 <div class="row"><div class="jp">そよぐ<ruby>風<rt>かぜ</rt></ruby>に<ruby>身<rt>み</rt></ruby>を<ruby>任<rt>まか</rt></ruby>せ</div><div class="cn">任凭清风拂面</div></div>
-<div class="row"><div class="jp"><ruby>幽夜<rt>ゆうや</rt></ruby>に<ruby>舞<rt>ま</rt></ruby>う</div><div class="cn">幽夜翩翩起舞</div></div></section>
+<div class="row"><div class="jp"><ruby>幽夜<rt>ゆうや</rt></ruby>に<ruby>舞<rt>ま</rt></ruby>う</div><div class="cn">幽夜翩翩起舞</div></div>
   </main>
   <section class="links">
     <div class="links-head">

@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,7 +116,7 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · 頬色に茜さす日は柔らかに</div><section class="stanza"><div class="row"><div class="jp"><ruby>頬<rt>ほほ</rt></ruby><ruby>色<rt>いろ</rt></ruby>に<ruby>茜<rt>あかね</rt></ruby>さす<ruby>日<rt>ひ</rt></ruby>は<ruby>柔<rt>やわ</rt></ruby>らかに</div><div class="cn">茜色夕红映上脸颊 柔光微微</div></div>
+<div class="row"><div class="jp"><ruby>頬<rt>ほほ</rt></ruby><ruby>色<rt>いろ</rt></ruby>に<ruby>茜<rt>あかね</rt></ruby>さす<ruby>日<rt>ひ</rt></ruby>は<ruby>柔<rt>やわ</rt></ruby>らかに</div><div class="cn">茜色夕红映上脸颊 柔光微微</div></div>
 <div class="row"><div class="jp"><ruby>爆<rt>は</rt></ruby>ぜた<ruby>斜陽<rt>しゃよう</rt></ruby>に<ruby>僕<rt>ぼく</rt></ruby>らは<ruby>目<rt>め</rt></ruby>も<ruby>開<rt>あ</rt></ruby>かぬまま</div><div class="cn">迸绽的斜阳下 我们连眼睛也睁不开来</div></div>
 <div class="row"><div class="jp"><ruby>悲<rt>かな</rt></ruby>しくってしようがないんだ</div><div class="cn">感到悲伤也是无可奈何的吧</div></div>
 <div class="row"><div class="jp">お<ruby>日様<rt>ひさま</rt></ruby>で<ruby>手<rt>て</rt></ruby>が<ruby>濡<rt>ぬ</rt></ruby>れた</div><div class="cn">太阳光浸染我的双手</div></div>
@@ -132,8 +127,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>は<ruby>僕<rt>ぼく</rt></ruby>を<ruby>一<rt>ひと</rt></ruby>つは<ruby>愛<rt>あい</rt></ruby>せたのに</div><div class="cn">明明我只需要做到洁身自爱就好</div></div>
 <div class="row"><div class="jp"><ruby>斜陽<rt>しゃよう</rt></ruby>に<ruby>気付<rt>きづ</rt></ruby>けば<ruby>目<rt>め</rt></ruby>も<ruby>開<rt>あ</rt></ruby>かぬまま</div><div class="cn">斜阳下恍然察觉 自己已睁不开眼</div></div>
 <div class="row"><div class="jp"><ruby>静<rt>しず</rt></ruby>かな<ruby>夕凪<rt>ゆうなぎ</rt></ruby>の<ruby>中<rt>なか</rt></ruby></div><div class="cn">在那风静的黄昏间</div></div>
-<div class="row"><div class="jp"><ruby>悲<rt>かな</rt></ruby>しくってしようがないんだ</div><div class="cn">感到悲伤也是无可奈何的吧</div></div></section>
-<div class="part-label">第一段 · お日様に手が触れた</div><section class="stanza"><div class="row"><div class="jp">お<ruby>日様<rt>ひさま</rt></ruby>に<ruby>手<rt>て</rt></ruby>が<ruby>触<rt>ふ</rt></ruby>れた</div><div class="cn">伸手触碰到太阳先生</div></div>
+<div class="row"><div class="jp"><ruby>悲<rt>かな</rt></ruby>しくってしようがないんだ</div><div class="cn">感到悲伤也是无可奈何的吧</div></div>
+<div class="row"><div class="jp">お<ruby>日様<rt>ひさま</rt></ruby>に<ruby>手<rt>て</rt></ruby>が<ruby>触<rt>ふ</rt></ruby>れた</div><div class="cn">伸手触碰到太阳先生</div></div>
 <div class="row"><div class="jp">とろとろと<ruby>燃<rt>も</rt></ruby>えるみたいに</div><div class="cn">好像隆隆地着了火般</div></div>
 <div class="row"><div class="jp"><ruby>指先<rt>ゆびさき</rt></ruby>ばかり<ruby>焦<rt>こ</rt></ruby>げた</div><div class="cn">烧得指尖尽是焦黄</div></div>
 <div class="row"><div class="jp"><ruby>高<rt>たか</rt></ruby>く<ruby>成<rt>な</rt></ruby>った<ruby>葡萄<rt>ぶどう</rt></ruby>みたいだ</div><div class="cn">好像高高挂起的葡萄般</div></div>
@@ -146,7 +141,7 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">もう<ruby>少<rt>すこ</rt></ruby>しで<ruby>僕<rt>ぼく</rt></ruby>は<ruby>僕<rt>ぼく</rt></ruby>を<ruby>一<rt>ひと</rt></ruby>つは<ruby>愛<rt>あい</rt></ruby>せるのに</div><div class="cn">再等一下 我明明就快能舍弃一切只爱自己了</div></div>
 <div class="row"><div class="jp"><ruby>斜陽<rt>しゃよう</rt></ruby>にはにかむ<ruby>貴方<rt>あなた</rt></ruby>が<ruby>見<rt>み</rt></ruby>えた</div><div class="cn">却在斜阳下看见羞红了脸的你</div></div>
 <div class="row"><div class="jp"><ruby>静<rt>しず</rt></ruby>かな<ruby>夕凪<rt>ゆうなぎ</rt></ruby>の<ruby>中<rt>なか</rt></ruby></div><div class="cn">风静黄昏浪息间</div></div>
-<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>らは<ruby>目<rt>め</rt></ruby>も<ruby>開<rt>あ</rt></ruby>かぬまま</div><div class="cn">我们始终也睁不开眼</div></div></section>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>らは<ruby>目<rt>め</rt></ruby>も<ruby>開<rt>あ</rt></ruby>かぬまま</div><div class="cn">我们始终也睁不开眼</div></div>
   </main>
   <section class="links">
     <div class="links-head">

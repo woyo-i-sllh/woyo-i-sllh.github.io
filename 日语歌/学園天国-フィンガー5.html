@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,7 +116,7 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · あいつもこいつもあの席を</div><section class="stanza"><div class="row"><div class="jp">あいつもこいつもあの<ruby>席<rt>せき</rt></ruby>を</div><div class="cn">那家伙也好，这家伙也好，都盯着那个座位</div></div>
+<div class="row"><div class="jp">あいつもこいつもあの<ruby>席<rt>せき</rt></ruby>を</div><div class="cn">那家伙也好，这家伙也好，都盯着那个座位</div></div>
 <div class="row"><div class="jp">ただ<ruby>一<rt>ひと</rt></ruby>つねらっているんだよ</div><div class="cn">虎视眈眈地瞄准着同一个目标</div></div>
 <div class="row"><div class="jp">このクラスで<ruby>一<rt>いち</rt></ruby><ruby>番<rt>ばん</rt></ruby>の</div><div class="cn">全班第一的</div></div>
 <div class="row"><div class="jp"><ruby>美人<rt>びじん</rt></ruby>の<ruby>隣<rt>となり</rt></ruby>を</div><div class="cn">那位美人的邻座</div></div>
@@ -129,10 +124,10 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">あー いのちがけだよ</div><div class="cn">啊啊——这可都是在玩命</div></div>
 <div class="row"><div class="jp"><ruby>運命<rt>うんめい</rt></ruby>の<ruby>女神<rt>めがみ</rt></ruby>さまよ</div><div class="cn">命运的女神大人啊</div></div>
 <div class="row"><div class="jp">このぼくにほほえんで</div><div class="cn">请对我露出微笑吧</div></div>
-<div class="row"><div class="jp"><ruby>一<rt>いち</rt></ruby><ruby>度<rt>ど</rt></ruby>だけでも</div><div class="cn">哪怕只有一次也好</div></div></section>
-<div class="part-label">副歌 · 勉強する気もしない気も</div><section class="stanza"><div class="row"><div class="jp"><ruby>勉強<rt>べんきょう</rt></ruby>する<ruby>気<rt>き</rt></ruby>もしない<ruby>気<rt>き</rt></ruby>も</div><div class="cn">想不想学习的念头</div></div>
-<div class="row"><div class="jp">この<ruby>時<rt>とき</rt></ruby>にかかっているんだよ</div><div class="cn">全都系于这一刻了</div></div></section>
-<div class="part-label">第一段 · もし駄目ならこのぼくは</div><section class="stanza"><div class="row"><div class="jp">もし<ruby>駄目<rt>だめ</rt></ruby>ならこのぼくは</div><div class="cn">要是不行的话，我</div></div>
+<div class="row"><div class="jp"><ruby>一<rt>いち</rt></ruby><ruby>度<rt>ど</rt></ruby>だけでも</div><div class="cn">哪怕只有一次也好</div></div>
+<div class="row"><div class="jp"><ruby>勉強<rt>べんきょう</rt></ruby>する<ruby>気<rt>き</rt></ruby>もしない<ruby>気<rt>き</rt></ruby>も</div><div class="cn">想不想学习的念头</div></div>
+<div class="row"><div class="jp">この<ruby>時<rt>とき</rt></ruby>にかかっているんだよ</div><div class="cn">全都系于这一刻了</div></div>
+<div class="row"><div class="jp">もし<ruby>駄目<rt>だめ</rt></ruby>ならこのぼくは</div><div class="cn">要是不行的话，我</div></div>
 <div class="row"><div class="jp">もうグレちまうよ</div><div class="cn">可就真的要堕落给你看了</div></div>
 <div class="row"><div class="jp"><ruby>二枚目<rt>にまいめ</rt></ruby><ruby>気<rt>き</rt></ruby>どりの<ruby>秀才<rt>しゅうさい</rt></ruby>や</div><div class="cn">那个自诩帅哥的优等生</div></div>
 <div class="row"><div class="jp">あのいやな<ruby>悪党<rt>あくとう</rt></ruby><ruby>番長<rt>ばんちょう</rt></ruby>も</div><div class="cn">还有那个讨厌的坏蛋头头</div></div>
@@ -142,11 +137,11 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">あー <ruby>見<rt>み</rt></ruby>つめられたら</div><div class="cn">啊啊——她那迷人的侧脸</div></div>
 <div class="row"><div class="jp"><ruby>授業中<rt>じゅぎょうちゅう</rt></ruby><ruby>天国<rt>てんごく</rt></ruby>だよ</div><div class="cn">那上课时间就是天国啊</div></div>
 <div class="row"><div class="jp">このぼくにしあわせを</div><div class="cn">请把幸福赐予我</div></div>
-<div class="row"><div class="jp"><ruby>与<rt>あた</rt></ruby>えておくれ</div><div class="cn">赐予我这个可怜虫吧</div></div></section>
-<div class="part-label">尾声 · 勉強する気もしない気も</div><section class="stanza"><div class="row"><div class="jp"><ruby>勉強<rt>べんきょう</rt></ruby>する<ruby>気<rt>き</rt></ruby>もしない<ruby>気<rt>き</rt></ruby>も</div><div class="cn">想不想学习的念头</div></div>
+<div class="row"><div class="jp"><ruby>与<rt>あた</rt></ruby>えておくれ</div><div class="cn">赐予我这个可怜虫吧</div></div>
+<div class="row"><div class="jp"><ruby>勉強<rt>べんきょう</rt></ruby>する<ruby>気<rt>き</rt></ruby>もしない<ruby>気<rt>き</rt></ruby>も</div><div class="cn">想不想学习的念头</div></div>
 <div class="row"><div class="jp">この<ruby>時<rt>とき</rt></ruby>にかかっているんだよ</div><div class="cn">全都系于这一刻了</div></div>
 <div class="row"><div class="jp">もし<ruby>駄目<rt>だめ</rt></ruby>ならこのぼくは</div><div class="cn">要是不行的话，我</div></div>
-<div class="row"><div class="jp">もうグレちまうよ</div><div class="cn">可就真的要堕落给你看了</div></div></section>
+<div class="row"><div class="jp">もうグレちまうよ</div><div class="cn">可就真的要堕落给你看了</div></div>
   </main>
   <section class="links">
     <div class="links-head">

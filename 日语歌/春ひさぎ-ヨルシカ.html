@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,7 +116,7 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · 大丈夫だよ大丈夫</div><section class="stanza"><div class="row"><div class="jp"><ruby>大丈夫<rt>だいじょうぶ</rt></ruby>だよ<ruby>大丈夫<rt>だいじょうぶ</rt></ruby></div><div class="cn">没关系 没关系</div></div>
+<div class="row"><div class="jp"><ruby>大丈夫<rt>だいじょうぶ</rt></ruby>だよ<ruby>大丈夫<rt>だいじょうぶ</rt></ruby></div><div class="cn">没关系 没关系</div></div>
 <div class="row"><div class="jp"><ruby>寝<rt>ね</rt></ruby>てれば<ruby>何<rt>なん</rt></ruby>とかなるし</div><div class="cn">一觉睡醒总会好</div></div>
 <div class="row"><div class="jp">どうしたんだいそんな<ruby>顔<rt>かお</rt></ruby>してさぁ</div><div class="cn">怎么了啊 摆着一副那样的表情</div></div>
 <div class="row"><div class="jp"><ruby>別<rt>べつ</rt></ruby>にどうともないよ</div><div class="cn">其实也没什么</div></div>
@@ -132,8 +127,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>苦<rt>くる</rt></ruby>しい<ruby>事<rt>こと</rt></ruby>だって<ruby>何<rt>なん</rt></ruby>でも<ruby>教<rt>おし</rt></ruby>えておくれ</div><div class="cn">痛苦的事情也罢 什么都告诉我吧</div></div>
 <div class="row"><div class="jp"><ruby>左様<rt>さよう</rt></ruby>な<ruby>蜻蛉<rt>かげろう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つが<ruby>善<rt>い</rt></ruby>いなら<ruby>忘<rt>わす</rt></ruby>れた<ruby>方<rt>ほう</rt></ruby>が<ruby>増<rt>ま</rt></ruby>し</div><div class="cn">一样的道理 蚂蝗之中如果有一只是好的话 忘掉它也就更好</div></div>
 <div class="row"><div class="jp"><ruby>詮<rt>せん</rt></ruby>の<ruby>無<rt>な</rt></ruby>いことばかり<ruby>聞<rt>き</rt></ruby>いてられないわ</div><div class="cn">没有好处的东西 已经不想再听</div></div>
-<div class="row"><div class="jp"><ruby>言<rt>い</rt></ruby>いたくないわ</div><div class="cn">也不想再说了</div></div></section>
-<div class="part-label">第一段 · 大丈夫どれだけも吐いても</div><section class="stanza"><div class="row"><div class="jp"><ruby>大丈夫<rt>だいじょうぶ</rt></ruby>どれだけも<ruby>吐<rt>は</rt></ruby>いても</div><div class="cn">无论多少遍地吐出“没关系”的词句</div></div>
+<div class="row"><div class="jp"><ruby>言<rt>い</rt></ruby>いたくないわ</div><div class="cn">也不想再说了</div></div>
+<div class="row"><div class="jp"><ruby>大丈夫<rt>だいじょうぶ</rt></ruby>どれだけも<ruby>吐<rt>は</rt></ruby>いても</div><div class="cn">无论多少遍地吐出“没关系”的词句</div></div>
 <div class="row"><div class="jp"><ruby>言葉<rt>ことば</rt></ruby>は<ruby>言<rt>い</rt></ruby>い<ruby>足<rt>た</rt></ruby>りないし</div><div class="cn">只凭话语总是说不够的</div></div>
 <div class="row"><div class="jp">どうしたんだいあんたにわかるかい</div><div class="cn">怎么了？你能懂得了吗？</div></div>
 <div class="row"><div class="jp">この<ruby>憂<rt>うれ</rt></ruby>いが</div><div class="cn">我的这份忧郁</div></div>
@@ -144,15 +139,15 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>悲<rt>かな</rt></ruby>しい<ruby>事<rt>こと</rt></ruby><ruby>無<rt>な</rt></ruby>しの<ruby>愛<rt>あい</rt></ruby>だけ<ruby>歌<rt>うた</rt></ruby>っておくれ</div><div class="cn">只讴歌没有悲伤之事的爱情吧</div></div>
 <div class="row"><div class="jp"><ruby>終<rt>しま</rt></ruby>いは<ruby>口付<rt>くちづ</rt></ruby>け<ruby>一<rt>ひと</rt></ruby>つが<ruby>善<rt>い</rt></ruby>いのも<ruby>言<rt>い</rt></ruby>わない<ruby>方<rt>ほう</rt></ruby>が<ruby>増<rt>ま</rt></ruby>し</div><div class="cn">结束是一回接吻就好了之类的 还是不要说出来更好</div></div>
 <div class="row"><div class="jp"><ruby>詮<rt>せん</rt></ruby>の<ruby>無<rt>な</rt></ruby>いことでも<ruby>忘<rt>わす</rt></ruby>れられないわ</div><div class="cn">即使是没有好处的东西也无法抛在脑后</div></div>
-<div class="row"><div class="jp"><ruby>知<rt>し</rt></ruby>りたくないわ</div><div class="cn">我不想知道啊</div></div></section>
-<div class="part-label">第二段 · 陽炎や 今日などいつか忘</div><section class="stanza"><div class="row"><div class="jp"><ruby>陽炎<rt>かげろう</rt></ruby>や <ruby>今日<rt>きょう</rt></ruby>などいつか<ruby>忘<rt>わす</rt></ruby>れてしまうのでしょう？<ruby>苦<rt>くる</rt></ruby>しいの</div><div class="cn">地气游丝啊 今天之类也什么时候忘掉了吧？实在是很痛苦啊</div></div>
+<div class="row"><div class="jp"><ruby>知<rt>し</rt></ruby>りたくないわ</div><div class="cn">我不想知道啊</div></div>
+<div class="row"><div class="jp"><ruby>陽炎<rt>かげろう</rt></ruby>や <ruby>今日<rt>きょう</rt></ruby>などいつか<ruby>忘<rt>わす</rt></ruby>れてしまうのでしょう？<ruby>苦<rt>くる</rt></ruby>しいの</div><div class="cn">地气游丝啊 今天之类也什么时候忘掉了吧？实在是很痛苦啊</div></div>
 <div class="row"><div class="jp"><ruby>左様<rt>さよう</rt></ruby>な<ruby>躊躇<rt>ためら</rt></ruby>いの<ruby>一<rt>ひと</rt></ruby>つが<ruby>愛<rt>あい</rt></ruby>なら<ruby>知<rt>し</rt></ruby>らない<ruby>方<rt>ほう</rt></ruby>が<ruby>増<rt>ま</rt></ruby>し</div><div class="cn">如此的踌躇之一正是爱的话 那还是不知道更好</div></div>
 <div class="row"><div class="jp"><ruby>詮<rt>せん</rt></ruby>の<ruby>無<rt>な</rt></ruby>いことだって<ruby>聞<rt>き</rt></ruby>かせてもっと</div><div class="cn">即使是没有好处的东西 我也想更多地听听啊</div></div>
 <div class="row"><div class="jp"><ruby>言<rt>こと</rt></ruby><ruby>勿<rt>なか</rt></ruby>れ <ruby>明日<rt>あす</rt></ruby>など<ruby>忘<rt>わす</rt></ruby>れておくんなまし</div><div class="cn">祈祷万事大吉 明天之类也定然已经忘却</div></div>
 <div class="row"><div class="jp"><ruby>苦<rt>くる</rt></ruby>しい<ruby>事<rt>こと</rt></ruby>だって<ruby>何度<rt>なんど</rt></ruby>も<ruby>教<rt>おし</rt></ruby>えておくれ</div><div class="cn">痛苦的事情也罢 什么都告诉我吧</div></div>
 <div class="row"><div class="jp"><ruby>無粋<rt>ぶすい</rt></ruby>な<ruby>蜻蛉<rt>かげろう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つでいいから、<ruby>溺<rt>おぼ</rt></ruby>れるほどに<ruby>欲<rt>ほ</rt></ruby>しい</div><div class="cn">毫不风雅的一只蚂蝗也好 我想要如同沉溺其中一般的程度</div></div>
 <div class="row"><div class="jp"><ruby>詮<rt>せん</rt></ruby>の<ruby>無<rt>な</rt></ruby>いことだって<ruby>聞<rt>き</rt></ruby>かせてもっと</div><div class="cn">即使是没有好处的东西 我也想更多地听听啊</div></div>
-<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>して<ruby>欲<rt>ほ</rt></ruby>しいわ</div><div class="cn">我想要去爱啊</div></div></section>
+<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>して<ruby>欲<rt>ほ</rt></ruby>しいわ</div><div class="cn">我想要去爱啊</div></div>
   </main>
   <section class="links">
     <div class="links-head">

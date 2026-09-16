@@ -86,18 +86,10 @@
        不再依赖 Hexo 的 inject_jpop.js（那个只是早期补丁）。
      · 歌词正文（.jp）保留明朝体/宋体系（Yu Mincho / MS Mincho / Noto Serif JP），
        保证日文汉字与假名的可读性；翻译（.cn）用黑体系。
-  ◆ 分段与分段语（重点！）
-     · 必须**按歌曲结构**分段，不能按固定行数硬切；
-     · 段落标题统一成「角色 · 首句片段」，例如：
-          开场 · 肩書きの上で
-          副歌 · そんなこといつからできる
-          副歌（再来）· そんなこといつからできる
-          第一段 · わがままな髪
-          尾声 · 有罪な 人生です
-       **不许只写"副歌"、"第N节"这种光秃秃的标签**，必须带首句片段；
-     · 识别副歌的方法：找重复出现的 2~4 行歌词块（重复≥2 次）作为副歌，
-       其余按 10~12 行切主歌段，过短的段（≤2 行）并入相邻段；
-     · 自动分段只是**初稿**，上线的歌要人工复核；工具：tools\resegment.py（见下）。
+  ◆ 分段
+     · 当前已按用户要求取消所有 HTML 分段：歌词按数据顺序连续排列；
+     · lyric_build.py 不再输出 part-label / stanza；
+     · 不要运行 resegment.py，也不要重新添加“开场/副歌/第一段”等标题。
 
 【六、工具一览】
   · linkdb.py            日语歌：链接/曲库管理（add/list/rm/export/sync）
@@ -112,7 +104,7 @@
   · fix_furigana.py      从 UtaTen/萌娘替换缺注音，逐首保存进度
   · fill_remaining_furigana.py  外站没有时用 pykakasi 兜底补齐汉字注音
   · repair_furigana_alignment.py 严格校验词面是否出现在当前行，修复错行注音
-  · resegment.py         按副歌重复和歌词结构重新分段，生成「角色 · 首句」标签
+  · resegment.py         已停用（历史工具；当前 HTML 不输出任何分段）
   · patch_remaining_lyrics.py  对只剩占位页、且不在 lyric_data.py 的歌曲补建条目
   · fill_missing_translations.py 清理制作人/标题等元数据行，补齐剩余中文翻译
   · zh_fetch.py          华语歌：QQ音乐抓歌词 → cpop.db
@@ -122,20 +114,17 @@
 
 
 ◆ 补齐 / 复核歌词卡（页面出现“歌词整理中”时）
-  1) python F:\life\songs	oolsuto_lyrics2.py --limit 100
-  2) python F:\life\songs	oolsix_furigana.py
-  3) python F:\life\songs	oolsill_remaining_furigana.py
-  4) python F:\life\songs	ools
-epair_furigana_alignment.py
-  5) python F:\life\songs	ools
-esegment.py
-  6) cd F:\life\songs\日语歌\_tools
+  1) python F:\life\songs\tools\auto_lyrics2.py --limit 100
+  2) python F:\life\songs\tools\fix_furigana.py
+  3) python F:\life\songs\tools\fill_remaining_furigana.py
+  4) python F:\life\songs\tools\repair_furigana_alignment.py
+  5) cd F:\life\songs\日语歌\_tools
      python lyric_build.py
   验收必须同时满足：
-    · data_songs = 237，html_cards = 237，placeholder_pages = 0；
+    · data_songs = html_cards（当前 238），placeholder_pages = 0；
     · 构建日志中 [无注音汉字] = 0，NOT FOUND = 0；
     · 所有非纯音乐歌词行都有中文翻译；
-    · 每个分段标签都是「开场/第一段/副歌/桥段/尾声 … · 首句片段」格式。
+    · 所有 lyric HTML 中不得出现 part-label 或 stanza。
   纯音乐（如 時代を超える想い、桜花抄、想い出は遠くの日々）统一写成
   「纯音乐 · 无歌词」，不参与翻译和注音校验。
 
@@ -176,7 +165,7 @@ esegment.py
   · 播放器连不上：重启用桌面「启动听歌.bat」。
 
 【九、当前收录】
-  · 日语歌：237 首（完整列表见文末）
+  · 日语歌：238 首（完整列表见文末）
   · 华语歌：35 首（周杰伦 25 + 赵雷 10），数据库 data\cpop.db，卡片在 华语歌\
 
 【十、版权说明】

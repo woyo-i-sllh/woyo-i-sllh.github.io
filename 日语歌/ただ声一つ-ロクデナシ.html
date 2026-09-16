@@ -33,11 +33,6 @@ h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
 .controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
 .lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
   border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
-.part-label{text-align:center;font-size:13px;font-weight:700;letter-spacing:.5em;text-indent:.5em;
-  color:var(--accent);margin:34px 0 14px;}
-.part-label:first-child{margin-top:2px;}
-.part-label::before,.part-label::after{content:"— ";opacity:.55;letter-spacing:0;}
-.stanza{margin:0 0 6px;}
 .row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
   padding:3px 10px;border-radius:10px;transition:background .15s;}
 .row:hover{background:var(--hover);}
@@ -121,14 +116,14 @@ footer a{color:#8a7f7a;}
     </div>
   </header>
   <main class="lyrics">
-<div class="part-label">开场 · 続く 時間の欠片</div><section class="stanza"><div class="row"><div class="jp"><ruby>続<rt>つづ</rt></ruby>く <ruby>時間<rt>じかん</rt></ruby>の<ruby>欠片<rt>かけら</rt></ruby></div><div class="cn">破碎的时间片</div></div>
+<div class="row"><div class="jp"><ruby>続<rt>つづ</rt></ruby>く <ruby>時間<rt>じかん</rt></ruby>の<ruby>欠片<rt>かけら</rt></ruby></div><div class="cn">破碎的时间片</div></div>
 <div class="row"><div class="jp">を<ruby>集<rt>あつ</rt></ruby>めている ただ</div><div class="cn">只是不停地收集着</div></div>
 <div class="row"><div class="jp"><ruby>過<rt>す</rt></ruby>ぎるノートの<ruby>余白<rt>よはく</rt></ruby>に<ruby>書<rt>か</rt></ruby>く</div><div class="cn">旧时的笔记本的空白处写有</div></div>
 <div class="row"><div class="jp">「<ruby>答<rt>こた</rt></ruby>えは、いつ?」</div><div class="cn">「答案是，什么时候?」</div></div>
-<div class="row"><div class="jp">ほんのり<ruby>小<rt>ちい</rt></ruby>さな<ruby>感情<rt>かんじょう</rt></ruby>へ</div><div class="cn">致那小小的感情</div></div></section>
-<div class="part-label">副歌 · 愛をひとつまたねまたね</div><section class="stanza"><div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>をひとつまたねまたね</div><div class="cn">让我们再爱一次吧</div></div>
-<div class="row"><div class="jp"><ruby>夜<rt>よる</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>く<ruby>温度<rt>おんど</rt></ruby>と<ruby>灯<rt>とも</rt></ruby>るまで</div><div class="cn">当夜晚绽放的温度被点燃之前</div></div></section>
-<div class="part-label">第一段 · 呼吸 ひとつ生きる生きる</div><section class="stanza"><div class="row"><div class="jp"><ruby>呼吸<rt>こきゅう</rt></ruby> ひとつ<ruby>生<rt>い</rt></ruby>きる<ruby>生<rt>い</rt></ruby>きる</div><div class="cn">吸一口气 想着活下去</div></div>
+<div class="row"><div class="jp">ほんのり<ruby>小<rt>ちい</rt></ruby>さな<ruby>感情<rt>かんじょう</rt></ruby>へ</div><div class="cn">致那小小的感情</div></div>
+<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>をひとつまたねまたね</div><div class="cn">让我们再爱一次吧</div></div>
+<div class="row"><div class="jp"><ruby>夜<rt>よる</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>く<ruby>温度<rt>おんど</rt></ruby>と<ruby>灯<rt>とも</rt></ruby>るまで</div><div class="cn">当夜晚绽放的温度被点燃之前</div></div>
+<div class="row"><div class="jp"><ruby>呼吸<rt>こきゅう</rt></ruby> ひとつ<ruby>生<rt>い</rt></ruby>きる<ruby>生<rt>い</rt></ruby>きる</div><div class="cn">吸一口气 想着活下去</div></div>
 <div class="row"><div class="jp"><ruby>優<rt>やさ</rt></ruby>しい<ruby>日々<rt>ひび</rt></ruby>の<ruby>横<rt>よこ</rt></ruby>で<ruby>泣<rt>な</rt></ruby>かぬように <ruby>嗚呼<rt>ああ</rt></ruby></div><div class="cn">为了不在美好的日子里 在你身旁哭泣啊</div></div>
 <div class="row"><div class="jp"><ruby>泣<rt>な</rt></ruby>かぬように</div><div class="cn">为了不再哭泣</div></div>
 <div class="row"><div class="jp">ちっちゃな<ruby>言葉<rt>ことば</rt></ruby>チクチクしたの</div><div class="cn">你那微不足道的话语 刺痛了我的心</div></div>
@@ -138,10 +133,10 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp"><ruby>今日<rt>きょう</rt></ruby>だって <ruby>笑<rt>わら</rt></ruby>う<ruby>笑<rt>わら</rt></ruby>う</div><div class="cn">今天也微笑着</div></div>
 <div class="row"><div class="jp"><ruby>泣<rt>な</rt></ruby>いちゃう<ruby>僕<rt>ぼく</rt></ruby>を<ruby>隠<rt>かく</rt></ruby>すために<ruby>笑<rt>わら</rt></ruby>う</div><div class="cn">为了隐藏哭泣的我而微笑着</div></div>
 <div class="row"><div class="jp"><ruby>言<rt>い</rt></ruby>えないことは<ruby>言<rt>い</rt></ruby>えないで<ruby>良<rt>い</rt></ruby>い</div><div class="cn">不能说的事情 不要说就好了</div></div>
-<div class="row"><div class="jp">って<ruby>思<rt>おも</rt></ruby>えたら<ruby>軽<rt>かる</rt></ruby>くなれるのかな</div><div class="cn">这么想的话会好受一点吗</div></div></section>
-<div class="part-label">副歌（再来）· 愛をひとつまたねまたね</div><section class="stanza"><div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>をひとつまたねまたね</div><div class="cn">让我们再爱一次吧</div></div>
-<div class="row"><div class="jp"><ruby>夜<rt>よる</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>く<ruby>温度<rt>おんど</rt></ruby>と<ruby>灯<rt>とも</rt></ruby>るまで</div><div class="cn">当夜晚绽放的温度被点燃之前</div></div></section>
-<div class="part-label">第二段 · 呼吸 ひとつ生きる生きる</div><section class="stanza"><div class="row"><div class="jp"><ruby>呼吸<rt>こきゅう</rt></ruby> ひとつ<ruby>生<rt>い</rt></ruby>きる<ruby>生<rt>い</rt></ruby>きる</div><div class="cn">深吸一口气 想着活下去</div></div>
+<div class="row"><div class="jp">って<ruby>思<rt>おも</rt></ruby>えたら<ruby>軽<rt>かる</rt></ruby>くなれるのかな</div><div class="cn">这么想的话会好受一点吗</div></div>
+<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>をひとつまたねまたね</div><div class="cn">让我们再爱一次吧</div></div>
+<div class="row"><div class="jp"><ruby>夜<rt>よる</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>く<ruby>温度<rt>おんど</rt></ruby>と<ruby>灯<rt>とも</rt></ruby>るまで</div><div class="cn">当夜晚绽放的温度被点燃之前</div></div>
+<div class="row"><div class="jp"><ruby>呼吸<rt>こきゅう</rt></ruby> ひとつ<ruby>生<rt>い</rt></ruby>きる<ruby>生<rt>い</rt></ruby>きる</div><div class="cn">深吸一口气 想着活下去</div></div>
 <div class="row"><div class="jp"><ruby>優<rt>やさ</rt></ruby>しい<ruby>日々<rt>ひび</rt></ruby>の<ruby>横<rt>よこ</rt></ruby>で<ruby>泣<rt>な</rt></ruby>かぬように</div><div class="cn">都是为了不在美好的日子里 在你身旁哭泣啊</div></div>
 <div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>をひとつまたねまたね</div><div class="cn">让我们再爱一次吧</div></div>
 <div class="row"><div class="jp"><ruby>嗚呼<rt>ああ</rt></ruby></div><div class="cn">啊</div></div>
@@ -152,8 +147,8 @@ footer a{color:#8a7f7a;}
 <div class="row"><div class="jp">でも<ruby>生<rt>い</rt></ruby>きるの<ruby>難易度<rt>なんいど</rt></ruby><ruby>高<rt>たか</rt></ruby>すぎて</div><div class="cn">但是活下去的却太难了</div></div>
 <div class="row"><div class="jp">どうにも<ruby>解<rt>と</rt></ruby>けない<ruby>問<rt>と</rt></ruby>いだらけ</div><div class="cn">人生中尽是些无解的难题</div></div>
 <div class="row"><div class="jp"><ruby>嗚呼<rt>ああ</rt></ruby>さっぱりきっかり<ruby>前<rt>まえ</rt></ruby><ruby>向<rt>む</rt></ruby>いて</div><div class="cn">啊 坚定的面向前方</div></div>
-<div class="row"><div class="jp">なんてしなくて<ruby>良<rt>い</rt></ruby>いから<ruby>抱<rt>だ</rt></ruby>きしめて</div><div class="cn">你不用做什么 抱抱我吧</div></div></section>
-<div class="part-label">副歌（再来）· 愛をひとつまたねまたね</div><section class="stanza"><div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>をひとつまたねまたね</div><div class="cn">让我们再爱一次吧</div></div></section>
+<div class="row"><div class="jp">なんてしなくて<ruby>良<rt>い</rt></ruby>いから<ruby>抱<rt>だ</rt></ruby>きしめて</div><div class="cn">你不用做什么 抱抱我吧</div></div>
+<div class="row"><div class="jp"><ruby>愛<rt>あい</rt></ruby>をひとつまたねまたね</div><div class="cn">让我们再爱一次吧</div></div>
   </main>
   <section class="links">
     <div class="links-head">
