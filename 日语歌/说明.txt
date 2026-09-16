@@ -107,6 +107,7 @@
   · resegment.py         已停用（历史工具；当前 HTML 不输出任何分段）
   · patch_remaining_lyrics.py  对只剩占位页、且不在 lyric_data.py 的歌曲补建条目
   · fill_missing_translations.py 清理制作人/标题等元数据行，补齐剩余中文翻译
+  · bulk_add_collection.py  批量导入 B站合集：按歌名查重、内部重复做多版本、生成下载清单
   · zh_fetch.py          华语歌：QQ音乐抓歌词 → cpop.db
   · zh_build.py          华语歌：生成歌词卡
   · zh_find_bilibili.py  华语歌：B站搜视频
@@ -121,10 +122,16 @@
   5) cd F:\life\songs\日语歌\_tools
      python lyric_build.py
   验收必须同时满足：
-    · data_songs = html_cards（当前 238），placeholder_pages = 0；
+    · data_songs = html_cards；补词阶段允许 placeholder_pages > 0，全部补完后必须为 0；
     · 构建日志中 [无注音汉字] = 0，NOT FOUND = 0；
     · 所有非纯音乐歌词行都有中文翻译；
     · 所有 lyric HTML 中不得出现 part-label 或 stanza。
+  B站合集批量流程（已完成 season 4392802）：
+    · 清单：data\collection_4392802.json
+    · 入库/查重结果：data\collection_4392802_status.json
+    · 下载进度/缺项：data\collection_4392802_missing.json
+    · 该合集 524 集：现有库重复 31 集已跳过；内部重复按同曲多版本保留；
+      实际新增 487 曲、493 条 B站链接，全部下载 MP4 + MP3。
   纯音乐（如 時代を超える想い、桜花抄、想い出は遠くの日々）统一写成
   「纯音乐 · 无歌词」，不参与翻译和注音校验。
 
@@ -165,7 +172,7 @@
   · 播放器连不上：重启用桌面「启动听歌.bat」。
 
 【九、当前收录】
-  · 日语歌：238 首（完整列表见文末）
+  · 日语歌：725 首（完整列表见文末）
   · 华语歌：35 首（周杰伦 25 + 赵雷 10），数据库 data\cpop.db，卡片在 华语歌\
 
 【十、版权说明】
