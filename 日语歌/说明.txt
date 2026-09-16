@@ -107,6 +107,8 @@
   · resegment.py         已停用（历史工具；当前 HTML 不输出任何分段）
   · patch_remaining_lyrics.py  对只剩占位页、且不在 lyric_data.py 的歌曲补建条目
   · fill_missing_translations.py 清理制作人/标题等元数据行，补齐剩余中文翻译
+  · fill_translation_gaps.py  清理制作信息并用 MyMemory 批量补齐遗漏中文
+  · force_fill_furigana.py  对日文歌最后兜底补齐/修正注音
   · bulk_add_collection.py  批量导入 B站合集：按歌名查重、内部重复做多版本、生成下载清单
   · zh_fetch.py          华语歌：QQ音乐抓歌词 → cpop.db
   · zh_build.py          华语歌：生成歌词卡
