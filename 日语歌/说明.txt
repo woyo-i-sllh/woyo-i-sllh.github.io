@@ -60,7 +60,7 @@
      混音、监制、助理、出品、Studio/Producer/Engineer 等制作人员或平台元数据禁止写入
      sections；这些信息只能放 credit。来源歌词若带头部/尾部名单，必须先清理再建卡。
      歌手字段只写歌手或团体正式名，禁止包含歌名、版本名、链接标题或站点标签。
-     title_cn 只放真正的中文翻译；电影版/Live/Cover 等版本说明必须去掉，与日文标题重复时留空。
+     歌名翻译已停用：title_cn 必须留空，歌词卡和播放器都不再显示中文歌名或“中文名 · 歌手”。
      title_jp 末尾的 ~since 2007~、~grace edition~、~Acoustic Version~ 等仅表示版本，必须去掉；
      若波浪号内容属于歌名本身（如 secret base～君がくれたもの～），则保留。
      subtitle_cn 只放真正的歌曲介绍；credit 只放作词/作曲/发行/作品出处等版权信息。
