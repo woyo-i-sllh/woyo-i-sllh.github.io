@@ -129,6 +129,10 @@
     · 所有非纯音乐歌词行都有中文翻译；
     · 所有 lyric HTML 中不得出现 part-label 或 stanza。
   B站合集批量流程（已完成 season 4392802）：
+    · 必须先从每集 B站说明中解析“歌曲/歌手/网易云歌曲ID”，再按歌曲ID取歌词；
+    · 严禁只按歌名搜索，否则英文标题的日文歌会匹配到错误歌曲；
+    · 工具：tools\fetch_collection_metadata.py、tools\repair_collection_lyrics.py。
+
     · 清单：data\collection_4392802.json
     · 入库/查重结果：data\collection_4392802_status.json
     · 下载进度/缺项：data\collection_4392802_missing.json
