@@ -82,6 +82,8 @@
         python F:\life\songs\tools\fill_jp_intros_from_netease_search.py --apply  # 歌名+歌手搜索补缺
         python F:\life\songs\tools\fill_jp_intros_fallback.py                 # 最后只写“由X演唱”
      没有可靠来源时禁止编造影视、动画、专辑或游戏出处；最低只能写歌手事实。
+     标题假名使用 UniDic 形态素读音；歌词中的「君」统一为「きみ」，禁止再使用 pykakasi 的上下文猜测结果：
+        tools\venv\Scripts\python.exe tools\repair_jp_furigana.py
   4) 【加链接】播放器里选中这首歌 → 粘贴 B站链接 → 添加；或
         python F:\life\songs\tools\linkdb.py add "歌名" "名称" "https://…" --kind mv
   5) 【下载】python F:\life\songs\tools\download.py fetch --all
@@ -218,7 +220,7 @@
   · 播放器连不上：重启用桌面「启动听歌.bat」。
 
 【九、当前收录】
-  · 日语歌：1890 首（完整列表见文末）
+  · 日语歌：1924 首（完整列表见文末）
   · 华语歌：35 首（周杰伦 25 + 赵雷 10），数据库 data\cpop.db，卡片在 华语歌\
 
 【十、版权说明】
