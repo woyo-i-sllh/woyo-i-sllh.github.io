@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>不可解 - 花譜｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+  .links-tools button,.l-editor,.links-empty{display:none !important;}
+}
+/* ---------- 找歌链接卡片 ---------- */
+.links{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:22px 40px 26px;box-shadow:0 18px 50px rgba(80,60,90,.10);margin-top:22px;}
+.links-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.links-title{font-size:16px;margin:0;color:var(--accent);letter-spacing:.08em;}
+.links-title small{font-weight:400;color:#a09691;font-size:12px;letter-spacing:0;margin-left:6px;}
+.links-tools{display:flex;gap:8px;flex-wrap:wrap;}
+.links-tools button{font-family:inherit;font-size:12.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.links-tools button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.links-tools button.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.link-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.links-empty{color:#a09691;font-size:13px;margin:16px 0 0;line-height:1.8;}
+.chip{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#2b2623;background:#fff;
+  border:1px solid var(--line);border-radius:999px;padding:5px 8px 5px 16px;font-size:13.5px;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);transition:border-color .15s;}
+.chip:hover{border-color:var(--accent);}
+.chip a{display:inline-flex;align-items:center;gap:9px;color:inherit;text-decoration:none;}
+.chip a:hover{color:var(--accent);}
+.chip .host{color:#a09691;font-size:11.5px;}
+.chip .x{border:none;background:none;color:#c9bfb9;font-size:14px;cursor:pointer;line-height:1;padding:2px 8px;border-radius:50%;}
+.chip .x:hover{color:#fff;background:#e03131;}
+.l-editor{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center;}
+.l-editor[hidden]{display:none !important;}
+.l-in{font-family:inherit;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;color:#2b2623;min-width:0;outline:none;}
+.l-in:focus{border-color:var(--accent);}
+.l-in#inLabel{flex:1 1 150px;}
+.l-in#inUrl{flex:2 1 280px;}
+.l-editor button{font-family:inherit;font-size:13.5px;color:#fff;background:var(--accent);border:none;border-radius:10px;padding:9px 18px;cursor:pointer;}
+.l-editor #btnSetPw{background:none;color:var(--accent);border:1px solid var(--accent-soft);}
+.l-hint{flex-basis:100%;color:#a09691;font-size:12.5px;line-height:1.8;}
+.l-hint strong{color:#7d716c;}
+.l-note{flex-basis:100%;color:#e03131;font-size:12px;margin:0;}
+@media (max-width:780px){ .links{padding:18px 16px 20px;} .l-in{flex:1 1 100%;} }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">不可解</h1>
+    <div class="cn-title"></div>
+    <div class="artist">花譜</div>
+    <p class="subtitle">我的歌单 / 01</p>
+    <div class="credit">B站合集《我的歌单 / 01》</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<div class="row"><div class="jp">お<ruby>金<rt>きん</rt></ruby>とか、ビジネスとか、<ruby>効率<rt>こうりつ</rt></ruby>とか</div><div class="cn">金钱、工作、效率什么的</div></div>
+<div class="row"><div class="jp">そういうことをこれから<ruby>考<rt>かんが</rt></ruby>えなくちゃいけないんだ</div><div class="cn">将来必须要考虑这些东西</div></div>
+<div class="row"><div class="jp">そうでしょ？</div><div class="cn">对吧？</div></div>
+<div class="row"><div class="jp">だって<ruby>学校<rt>がっこう</rt></ruby>なんかじゃ<ruby>責任感<rt>せきにんかん</rt></ruby>とか、<ruby>団体行動<rt>だんたいこうどう</rt></ruby>だとか</div><div class="cn">毕竟在学校里不也就教些责任感、团体行动</div></div>
+<div class="row"><div class="jp">ありもしない、<ruby>意味<rt>いみ</rt></ruby>もない<ruby>将来<rt>しょうらい</rt></ruby>のためとか<ruby>言<rt>い</rt></ruby>って<ruby>教<rt>おし</rt></ruby>えてくるじゃん？</div><div class="cn">还有「为了将来」这种虚无缥缈毫无意义的东西，不是么？</div></div>
+<div class="row"><div class="jp">「あるべき<ruby>人間<rt>にんげん</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby>へ」</div><div class="cn">「做该做的事」</div></div>
+<div class="row"><div class="jp">「<ruby>正<rt>ただ</rt></ruby>しい<ruby>人間<rt>にんげん</rt></ruby>の<ruby>姿<rt>すがた</rt></ruby>へ」</div><div class="cn">「做正确的事」</div></div>
+<div class="row"><div class="jp">そう<ruby>思<rt>おも</rt></ruby>えばなんだか<ruby>人間<rt>にんげん</rt></ruby><ruby>全<rt>すべ</rt></ruby>てが<ruby>汚<rt>ぎたな</rt></ruby>く<ruby>思<rt>おも</rt></ruby>えてくるな</div><div class="cn">这样想的话总觉得所有人都是污浊的</div></div>
+<div class="row"><div class="jp"><ruby>仮想世界<rt>かそうせかい</rt></ruby>とか、<ruby>妄想<rt>もうそう</rt></ruby>だとか、そういうものこそ<ruby>美<rt>うつく</rt></ruby>しくなる</div><div class="cn">假想世界、妄想之流，这些东西反而愈发美丽</div></div>
+<div class="row"><div class="jp">ああなんだこの<ruby>感情<rt>かんじょう</rt></ruby>は、<ruby>人間<rt>にんげん</rt></ruby>らしくない<ruby>私<rt>わたし</rt></ruby>だ</div><div class="cn">居然会产生这样的想法，我真是不像人类啊</div></div>
+<div class="row"><div class="jp">「<ruby>寂<rt>さび</rt></ruby>しい」とか</div><div class="cn">「真寂寞」</div></div>
+<div class="row"><div class="jp">「<ruby>愛<rt>いと</rt></ruby>しい」とか</div><div class="cn">「真可怜」</div></div>
+<div class="row"><div class="jp">そんな<ruby>言葉<rt>ことば</rt></ruby>では<ruby>表<rt>あらわ</rt></ruby>せない</div><div class="cn">只用这样的话语是无法表达的</div></div>
+<div class="row"><div class="jp"><ruby>不可解<rt>ふかかい</rt></ruby>な<ruby>未<rt>ひつじ</rt></ruby><ruby>観測<rt>かんそく</rt></ruby><ruby>情景<rt>じょうけい</rt></ruby>。</div><div class="cn">不可解的未被观测的情景</div></div>
+<div class="row"><div class="jp"><ruby>名前<rt>なまえ</rt></ruby>のない<ruby>花<rt>はな</rt></ruby>のような</div><div class="cn">就像无名之花一样</div></div>
+<div class="row"><div class="jp"><ruby>悠<rt>ゆう</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>き<ruby>乱<rt>みだ</rt></ruby>れるこの<ruby>号哭<rt>ごうこく</rt></ruby>が</div><div class="cn">蔫然凋零飞散的号哭声</div></div>
+<div class="row"><div class="jp">やりたいことすらできなくて</div><div class="cn">就连所望之事都无法企及</div></div>
+<div class="row"><div class="jp"><ruby>身動<rt>みうご</rt></ruby>きすら<ruby>取<rt>と</rt></ruby>れない、さびれた<ruby>心臓<rt>しんぞう</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>いた</div><div class="cn">身陷囹圄，在凋零的心脏中绽放</div></div>
+<div class="row"><div class="jp"><ruby>不安定<rt>ふあんてい</rt></ruby>な、<ruby>未完成<rt>みかんせい</rt></ruby><ruby>宣言<rt>せんげん</rt></ruby></div><div class="cn">不安定的、未完成宣言</div></div>
+<div class="row"><div class="jp"><ruby>言葉<rt>ことば</rt></ruby>じゃ<ruby>表<rt>あらわ</rt></ruby>せない</div><div class="cn">只用言语无法表达</div></div>
+<div class="row"><div class="jp"><ruby>現実<rt>げんじつ</rt></ruby>や、<ruby>社会<rt>しゃかい</rt></ruby>に<ruby>刃<rt>は</rt></ruby><ruby>向<rt>む</rt></ruby>かうための</div><div class="cn">为了对现实、对社会刀刃相向的</div></div>
+<div class="row"><div class="jp"><ruby>未<rt>ひつじ</rt></ruby><ruby>覚醒<rt>かくせい</rt></ruby>の、<ruby>不完全<rt>ふかんぜん</rt></ruby>な<ruby>魔法<rt>まほう</rt></ruby></div><div class="cn">未觉醒的、不完全的魔法</div></div>
+<div class="row"><div class="jp">「<ruby>人間<rt>にんげん</rt></ruby>の<ruby>正<rt>ただ</rt></ruby>しさってやつを<ruby>今<rt>いま</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>しているわけですが</div><div class="cn">「你应该学习人类的正义</div></div>
+<div class="row"><div class="jp">セオリー<ruby>通<rt>とう</rt></ruby>りに<ruby>生<rt>い</rt></ruby>きて</div><div class="cn">按照伦理生活</div></div>
+<div class="row"><div class="jp"><ruby>教<rt>おし</rt></ruby>えられた<ruby>通<rt>とう</rt></ruby>りにやることが、そりゃ<ruby>正<rt>ただ</rt></ruby>しいと<ruby>思<rt>おも</rt></ruby>うよ</div><div class="cn">按照指示做事，这样才是正确的。</div></div>
+<div class="row"><div class="jp">でもさ、きっとそれだけじゃないでしょう？」</div><div class="cn">但是啊， 一定不仅仅如此吧？」</div></div>
+<div class="row"><div class="jp"><ruby>何<rt>なに</rt></ruby>かを<ruby>間違<rt>まちが</rt></ruby>いだって<ruby>思<rt>おも</rt></ruby>うから、<ruby>誰<rt>だれ</rt></ruby>かに<ruby>間違<rt>まちが</rt></ruby>いだって<ruby>言<rt>い</rt></ruby>われた</div><div class="cn">正因为指出了错误，才会被他人恶言相向。</div></div>
+<div class="row"><div class="jp">それじゃあこの<ruby>気持<rt>きも</rt></ruby>ちはなんだ？</div><div class="cn">这样的话这种感情又是什么？</div></div>
+<div class="row"><div class="jp"><ruby>愛情<rt>あいじょう</rt></ruby>とはまたほど<ruby>遠<rt>とお</rt></ruby>い</div><div class="cn">这还远远算不上爱情。</div></div>
+<div class="row"><div class="jp"><ruby>激動<rt>げきどう</rt></ruby>とも<ruby>言<rt>い</rt></ruby>い<ruby>難<rt>いがたい</rt></ruby>い、とうにも<ruby>表<rt>あらわ</rt></ruby>せない<ruby>歪<rt>ひず</rt></ruby>な<ruby>感情<rt>かんじょう</rt></ruby></div><div class="cn">也说不上是冲动的，无论如何都无法表达的歪曲的感情。</div></div>
+<div class="row"><div class="jp">これこそ<ruby>美<rt>うつく</rt></ruby>しいのではないか？</div><div class="cn">这样才是一种美吧？</div></div>
+<div class="row"><div class="jp">この<ruby>美<rt>うつく</rt></ruby>しさは<ruby>間違<rt>まちが</rt></ruby>いか？</div><div class="cn">这种美有什么不对吗？</div></div>
+<div class="row"><div class="jp">ならこんな<ruby>世界<rt>せかい</rt></ruby>いらない</div><div class="cn">那么这样的世界不要也罢</div></div>
+<div class="row"><div class="jp"><ruby>私<rt>わたし</rt></ruby>の<ruby>信<rt>しん</rt></ruby>じるものを<ruby>信<rt>しん</rt></ruby>じたい</div><div class="cn">我只想相信我自己相信的事物</div></div>
+<div class="row"><div class="jp">「<ruby>死<rt>し</rt></ruby>にたい」とか</div><div class="cn">「好想死」</div></div>
+<div class="row"><div class="jp">「<ruby>生<rt>い</rt></ruby>きたい」とか</div><div class="cn">「好想活下去」</div></div>
+<div class="row"><div class="jp">そんな<ruby>痛<rt>いた</rt></ruby>みでは<ruby>嫌<rt>きら</rt></ruby>われる</div><div class="cn">被这种痛苦憎恶着</div></div>
+<div class="row"><div class="jp">でも<ruby>不可解<rt>ふかかい</rt></ruby>な<ruby>未完<rt>みかん</rt></ruby>の<ruby>声明<rt>せいめい</rt></ruby></div><div class="cn">但这不可解的、尚未结束的声明</div></div>
+<div class="row"><div class="jp">それだけが<ruby>頼<rt>たよ</rt></ruby>りだろう</div><div class="cn">只有它才能让我依靠了吧</div></div>
+<div class="row"><div class="jp">ずっと<ruby>未知<rt>みち</rt></ruby>なる<ruby>現実<rt>げんじつ</rt></ruby>に<ruby>無力<rt>むりょく</rt></ruby>で</div><div class="cn">在未知的现实中循环往复化为虚无</div></div>
+<div class="row"><div class="jp"><ruby>生<rt>い</rt></ruby>きることも<ruby>難<rt>むずか</rt></ruby>しくって</div><div class="cn">就连活下去都很艰难</div></div>
+<div class="row"><div class="jp"><ruby>身動<rt>みうご</rt></ruby>きすら<ruby>取<rt>と</rt></ruby>れない<ruby>寂<rt>じゃく</rt></ruby>れた<ruby>肺<rt>はい</rt></ruby>ががなった</div><div class="cn">变成无法动弹、凋零的只能呼吸的躯壳</div></div>
+<div class="row"><div class="jp"><ruby>不可<rt>ふか</rt></ruby><ruby>測<rt>そく</rt></ruby>な<ruby>異端<rt>いたん</rt></ruby>の<ruby>証明<rt>しょうめい</rt></ruby></div><div class="cn">不可解的异端的证明</div></div>
+<div class="row"><div class="jp"><ruby>画面<rt>がめん</rt></ruby>に<ruby>花<rt>はな</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>いて</div><div class="cn">画面中鲜花在绽放</div></div>
+<div class="row"><div class="jp"><ruby>現実<rt>げんじつ</rt></ruby>に<ruby>社会<rt>しゃかい</rt></ruby>に<ruby>反抗<rt>はんこう</rt></ruby>する</div><div class="cn">反抗现实、反抗社会</div></div>
+<div class="row"><div class="jp"><ruby>不完全<rt>ふかんぜん</rt></ruby>な、<ruby>不安定<rt>ふあんてい</rt></ruby>な<ruby>魔法<rt>まほう</rt></ruby></div><div class="cn">不完全的、不安定的魔法</div></div>
+<div class="row"><div class="jp">このまま<ruby>清<rt>きよし</rt></ruby>く<ruby>正<rt>ただ</rt></ruby>しく</div><div class="cn">照这样下去成为一个纯洁而正直的、</div></div>
+<div class="row"><div class="jp"><ruby>誠実<rt>せいじつ</rt></ruby>な<ruby>大人<rt>おとな</rt></ruby>になることが</div><div class="cn">诚实的大人</div></div>
+<div class="row"><div class="jp">それだって<ruby>正解<rt>せいかい</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだ</div><div class="cn">也是正解的其中之一</div></div>
+<div class="row"><div class="jp">でもそれで<ruby>満足<rt>まんぞく</rt></ruby>できないのは<ruby>皆<rt>みな</rt></ruby>わかってるはずなんだ</div><div class="cn">但是大家都知道这样是无法得到满足的</div></div>
+<div class="row"><div class="jp">だってそうでしょう？</div><div class="cn">事实就是如此吧？</div></div>
+<div class="row"><div class="jp"><ruby>満足<rt>まんぞく</rt></ruby>してたらこんなところで<ruby>歌<rt>うた</rt></ruby>なんて<ruby>歌<rt>うた</rt></ruby>わない</div><div class="cn">满足的话就不会在这种地方唱歌</div></div>
+<div class="row"><div class="jp">こんなに<ruby>苦<rt>くる</rt></ruby>しくならない</div><div class="cn">不会变得这么痛苦</div></div>
+<div class="row"><div class="jp">こんなところで<ruby>踊<rt>おど</rt></ruby>らない</div><div class="cn">不会在这种地方跳舞</div></div>
+<div class="row"><div class="jp">こんな<ruby>気持<rt>きも</rt></ruby>ちで<ruby>叫<rt>さけ</rt></ruby>んでいない</div><div class="cn">不会怀着这样的心情叫喊</div></div>
+<div class="row"><div class="jp">こんなに<ruby>美<rt>うつく</rt></ruby>しくはなれない</div><div class="cn">不会变得如此美丽</div></div>
+<div class="row"><div class="jp">こんなに<ruby>楽<rt>たの</rt></ruby>しくなってない</div><div class="cn">不会变得如此快乐</div></div>
+<div class="row"><div class="jp"><ruby>踏<rt>ふ</rt></ruby>み<ruby>潰<rt>つぶ</rt></ruby>された<ruby>涙<rt>なみだ</rt></ruby>が<ruby>固<rt>かた</rt></ruby>まってできた</div><div class="cn">丢人的眼泪凝成一块</div></div>
+<div class="row"><div class="jp">この<ruby>不可解<rt>ふかかい</rt></ruby>な<ruby>感情<rt>かんじょう</rt></ruby>に<ruby>名前<rt>なまえ</rt></ruby>はない</div><div class="cn">这种不可解的感情叫不出名字</div></div>
+<div class="row"><div class="jp"><ruby>不可解<rt>ふかかい</rt></ruby>な<ruby>未<rt>ひつじ</rt></ruby><ruby>観測<rt>かんそく</rt></ruby><ruby>情景<rt>じょうけい</rt></ruby></div><div class="cn">不可解的未被观测的情景</div></div>
+<div class="row"><div class="jp"><ruby>名前<rt>なまえ</rt></ruby>のない<ruby>花<rt>はな</rt></ruby>のような</div><div class="cn">就像无名之花一样</div></div>
+<div class="row"><div class="jp"><ruby>悠<rt>ゆう</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>き<ruby>乱<rt>みだ</rt></ruby>れるこの<ruby>号哭<rt>ごうこく</rt></ruby>が</div><div class="cn">蔫然凋零飞散的号哭声</div></div>
+<div class="row"><div class="jp">やりたいことすらできなくて</div><div class="cn">就连所望之事都无法企及</div></div>
+<div class="row"><div class="jp"><ruby>身動<rt>みうご</rt></ruby>きすら<ruby>取<rt>と</rt></ruby>れない、さびれた<ruby>心臓<rt>しんぞう</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>いた</div><div class="cn">身陷囹圄，在凋零的心脏中绽放</div></div>
+<div class="row"><div class="jp"><ruby>不安定<rt>ふあんてい</rt></ruby>な<ruby>未完成<rt>みかんせい</rt></ruby><ruby>情景<rt>じょうけい</rt></ruby></div><div class="cn">不安定的、未完成的情景</div></div>
+<div class="row"><div class="jp"><ruby>言葉<rt>ことば</rt></ruby>じゃ<ruby>表<rt>あらわ</rt></ruby>せない</div><div class="cn">只用言语无法表达</div></div>
+<div class="row"><div class="jp"><ruby>現実<rt>げんじつ</rt></ruby>や<ruby>社会<rt>しゃかい</rt></ruby>に<ruby>抗<rt>あらが</rt></ruby>うための</div><div class="cn">为了反抗现实、反抗社会的</div></div>
+<div class="row"><div class="jp"><ruby>不可解<rt>ふかかい</rt></ruby>で<ruby>不完全<rt>ふかんぜん</rt></ruby>な<ruby>魔法<rt>まほう</rt></ruby></div><div class="cn">不可解的、不完全的魔法</div></div>
+<div class="row"><div class="jp">お<ruby>金<rt>きん</rt></ruby>とか、ビジネスとか、<ruby>効率<rt>こうりつ</rt></ruby>とか</div><div class="cn">金钱、工作、效率什么的</div></div>
+<div class="row"><div class="jp">そういうことじゃないでしょう？</div><div class="cn">这些东西根本不重要吧？</div></div>
+<div class="row"><div class="jp"><ruby>愛情<rt>あいじょう</rt></ruby>とか、<ruby>友情<rt>ゆうじょう</rt></ruby>とかそういう<ruby>何<rt>なに</rt></ruby>かじゃ<ruby>計<rt>はか</rt></ruby>り<ruby>知<rt>し</rt></ruby>れない</div><div class="cn">爱情、友情这些才是无法估量的。</div></div>
+<div class="row"><div class="jp"><ruby>心<rt>こころ</rt></ruby>が<ruby>打<rt>う</rt></ruby>ちひしがれたあの<ruby>不確<rt>ふたし</rt></ruby>かな<ruby>情景<rt>じょうけい</rt></ruby>な<ruby>綺麗<rt>きれい</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>うのは</div><div class="cn">心灵被摧毁到模糊的情景、还认为是美丽的话</div></div>
+<div class="row"><div class="jp">きっとそれこそが</div><div class="cn">一定这样才是</div></div>
+<div class="row"><div class="jp"><ruby>人間<rt>にんげん</rt></ruby>の<ruby>証<rt>しょう</rt></ruby>だ。</div><div class="cn">生而为人的证据吧</div></div>
+  </main>
+  <section class="links">
+    <div class="links-head">
+      <div class="links-title">🔗 找歌链接 <small>点击即可打开</small></div>
+      <div class="links-tools">
+        <button id="btnEdit" onclick="toggleEdit()">🔒 管理链接</button>
+        <button id="btnExport" onclick="exportPage()" style="display:none">⬇ 导出本页（含链接）</button>
+      </div>
+    </div>
+    <div id="linkList" class="link-list"></div>
+    <p class="links-empty" id="linksEmpty">还没有添加链接 —— 点右上「管理链接」，粘贴 YouTube / B站 / 网易云 等地址，方便以后快速找歌。</p>
+    <div class="l-editor" id="lEditor" hidden>
+      <input id="inLabel" class="l-in" type="text" placeholder="名称（如：MV / 现场版 / 网易云）">
+      <input id="inUrl" class="l-in" type="url" placeholder="https://… 完整链接">
+      <button id="btnAdd" onclick="addLink()">＋ 添加</button>
+      <button id="btnSetPw" onclick="setPw()" type="button">设密码</button>
+      <div class="l-hint" id="lHint"></div>
+      <p class="l-note" id="lNote"></p>
+    </div>
+  </section>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+<script id="linksData">
+window.__linksInit = [["“作曲力爆炸！花谱表现力超棒！！！”《不可解》", "https://www.bilibili.com/video/BV1AVwYecEUk/"], ["YouTube 搜索", "https://www.youtube.com/results?search_query=%E4%B8%8D%E5%8F%AF%E8%A7%A3+%E8%8A%B1%E8%AD%9C"], ["B站 搜索", "https://search.bilibili.com/all?keyword=%E4%B8%8D%E5%8F%AF%E8%A7%A3+%E8%8A%B1%E8%AD%9C"]];
+window.__linksPw = "";
+</script>
+<script>
+/* ===== 找歌链接管理 =====
+   规则：每首歌的链接 = 页面内置默认 + 本浏览器里的增删（localStorage 按页面名存）。
+   其他访客打开这个文件/网站时，改的是“他自己的浏览器”，永远影响不到你看到的列表。
+   「管理密码」：EDITOR_KEY 非空时（或本机设过密码），增删必须先输密码；导出/分享的文件同样生效。 */
+(function(){
+  var file = decodeURIComponent((location.pathname.split('/').pop() || 'page'));
+  var LS='tk_links_'+file, PS='tk_pw_'+file;
+  var mem={}, memOk=true;
+  try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); }
+  catch(e){ memOk=false; }
+  function load(k){ if(memOk){ try{ return localStorage.getItem(k); }catch(e){ return null; } } return (k in mem)?mem[k]:null; }
+  function save(k,v){ if(memOk){ try{ localStorage.setItem(k,v); return; }catch(e){} } mem[k]=v; }
+  function del(k){ if(memOk){ try{ localStorage.removeItem(k); return; }catch(e){} } delete mem[k]; }
+  var pwStored = load(PS);
+  var PAGE_PW = (typeof window.__linksPw!=='undefined' && window.__linksPw) ? window.__linksPw : '';
+  var baked = (typeof window.__linksInit!=='undefined' && Array.isArray(window.__linksInit)) ? window.__linksInit : [];
+  function bakedUrls(){ return baked.map(function(x){ return x && x[1]; }); }
+  function loadLocalExtras(){
+    var raw = load(LS);
+    if(raw){ try{
+      var o=JSON.parse(raw);
+      if(o && Array.isArray(o.list)){
+        var bu=bakedUrls();
+        // 旧数据里可能存过“整份列表”，过滤掉与数据库重复的部分，只保留本机新增
+        return o.list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+      }
+    }catch(e){} }
+    return [];
+  }
+  var localExtras = loadLocalExtras();
+  // 页面最终列表 = 数据库/内置链接（所有人可见） + 本机新增（只影响自己）
+  function currentList(){ return baked.concat(localExtras); }
+  function persist(list){
+    var bu=bakedUrls();
+    localExtras = list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+    save(LS, JSON.stringify({list:localExtras}));
+  }
+  var editOn=false, req = pwStored || PAGE_PW;
+  function hostOf(u){ try{ return new URL(u).host.replace(/^www\./,''); }catch(e){ return ''; } }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function render(){
+    var list=currentList(), box=document.getElementById('linkList'), empty=document.getElementById('linksEmpty');
+    box.innerHTML='';
+    if(!list.length){ empty.style.display='block'; }
+    else{
+      empty.style.display='none';
+      list.forEach(function(it,i){
+        var label=(it && it[0]) || (it && it[1]) || '', url=(it && it[1]) || '';
+        if(!url) return;
+        var span=document.createElement('span'); span.className='chip';
+        var a=document.createElement('a'); a.href=url; a.target='_blank'; a.rel='noreferrer';
+        a.innerHTML='<span class="cl">'+esc(label)+'</span><span class="host">'+esc(hostOf(url))+'</span>';
+        span.appendChild(a);
+        if(editOn){
+          var x=document.createElement('button');
+          x.className='x'; x.title=(i<baked.length?'来自数据库，需在 songs.db 里删除':'删除本机新增'); x.type='button'; x.textContent='✕';
+          x.onclick=(function(k){ return function(ev){ ev.preventDefault(); ev.stopPropagation();
+            if(k<baked.length){ alert('这条来自数据库（songs.db），所有设备都能看到；要删除请用 linkdb.py rm，或直接告诉我。'); return; }
+            if(confirm('删除这条本机新增的链接？')){ var l=currentList(); l.splice(k,1); persist(l); render(); } }; })(i);
+          span.appendChild(x);
+        }
+        box.appendChild(span);
+      });
+    }
+    if(editOn){
+      document.getElementById('lEditor').hidden=false;
+      var h='列表 = <strong>数据库链接</strong>（所有人可见） + <strong>本机新增</strong>（仅自己）。数据库链接用 _tools\\linkdb.py 管理；点「导出本页」可把全部链接写进一个 html 带走或分享。';
+      if(req){ h+=' 密码已启用：不知道密码的访客无法增删。'; }
+      else{ h+=' 目前<strong>未设密码</strong>：任何访客都能增删，但只影响各自的浏览器。建议点「设密码」或改 lyric_build.py 的 EDITOR_KEY 后重新构建。'; }
+      document.getElementById('lHint').innerHTML=h;
+      document.getElementById('lNote').textContent = memOk ? '' : '注意：此环境不支持 localStorage，本次改动关闭页面后会丢失。';
+    } else {
+      document.getElementById('lEditor').hidden=true;
+    }
+  }
+  window.toggleEdit=function(){
+    if(!editOn){
+      if(req){
+        var p=prompt('请输入管理密码：');
+        if(p===null) return;
+        if(p!==req){ alert('密码错误'); return; }
+      }
+      editOn=true;
+      var b=document.getElementById('btnEdit');
+      b.textContent='🔓 完成编辑'; b.classList.add('on');
+      document.getElementById('btnExport').style.display='';
+    } else {
+      editOn=false;
+      var b2=document.getElementById('btnEdit');
+      b2.textContent='🔒 管理链接'; b2.classList.remove('on');
+      document.getElementById('btnExport').style.display='none';
+    }
+    render();
+  };
+  window.addLink=function(){
+    var label=document.getElementById('inLabel').value.trim();
+    var url=document.getElementById('inUrl').value.trim();
+    if(!/^https?:\/\//i.test(url)){ alert('链接要以 http:// 或 https:// 开头'); return; }
+    if(!label) label=url;
+    var list=currentList(); list.push([label,url]);
+    persist(list); render();
+    document.getElementById('inLabel').value=''; document.getElementById('inUrl').value='';
+  };
+  window.setPw=function(){
+    var p=prompt('设置本机管理密码（留空 = 取消保护）。设置后增删链接都要先输入它。');
+    if(p===null) return;
+    if(p===''){ pwStored=''; del(PS); }
+    else { pwStored=p; save(PS,p); }
+    req = pwStored || PAGE_PW;
+    alert(req ? '密码已启用。' : '保护已取消（任何访客都能增删，但只影响各自浏览器）。');
+  };
+  window.exportPage=function(){
+    var list=currentList();
+    var doc=document.getElementById('linksData');
+    var old=doc.textContent;
+    function jsSafe(o){ return JSON.stringify(o).replace(/<\//g,'<\\/'); }
+    var fresh='window.__linksInit = '+jsSafe(list)+';\nwindow.__linksPw = '+jsSafe(PAGE_PW)+';';
+    var html=document.documentElement.outerHTML.replace(old, fresh);
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=file;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    alert('已导出：'+file+'\n这个新文件已把当前全部链接写进页面，发给别人或上传后，他们也能看到这些链接。');
+  };
+  render();
+})();
+</script>
+</body>
+</html>

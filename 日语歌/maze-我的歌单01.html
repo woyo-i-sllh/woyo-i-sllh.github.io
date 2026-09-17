@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>maze - savage genius、近江知永｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+  .links-tools button,.l-editor,.links-empty{display:none !important;}
+}
+/* ---------- 找歌链接卡片 ---------- */
+.links{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:22px 40px 26px;box-shadow:0 18px 50px rgba(80,60,90,.10);margin-top:22px;}
+.links-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.links-title{font-size:16px;margin:0;color:var(--accent);letter-spacing:.08em;}
+.links-title small{font-weight:400;color:#a09691;font-size:12px;letter-spacing:0;margin-left:6px;}
+.links-tools{display:flex;gap:8px;flex-wrap:wrap;}
+.links-tools button{font-family:inherit;font-size:12.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.links-tools button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.links-tools button.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.link-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.links-empty{color:#a09691;font-size:13px;margin:16px 0 0;line-height:1.8;}
+.chip{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#2b2623;background:#fff;
+  border:1px solid var(--line);border-radius:999px;padding:5px 8px 5px 16px;font-size:13.5px;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);transition:border-color .15s;}
+.chip:hover{border-color:var(--accent);}
+.chip a{display:inline-flex;align-items:center;gap:9px;color:inherit;text-decoration:none;}
+.chip a:hover{color:var(--accent);}
+.chip .host{color:#a09691;font-size:11.5px;}
+.chip .x{border:none;background:none;color:#c9bfb9;font-size:14px;cursor:pointer;line-height:1;padding:2px 8px;border-radius:50%;}
+.chip .x:hover{color:#fff;background:#e03131;}
+.l-editor{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center;}
+.l-editor[hidden]{display:none !important;}
+.l-in{font-family:inherit;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;color:#2b2623;min-width:0;outline:none;}
+.l-in:focus{border-color:var(--accent);}
+.l-in#inLabel{flex:1 1 150px;}
+.l-in#inUrl{flex:2 1 280px;}
+.l-editor button{font-family:inherit;font-size:13.5px;color:#fff;background:var(--accent);border:none;border-radius:10px;padding:9px 18px;cursor:pointer;}
+.l-editor #btnSetPw{background:none;color:var(--accent);border:1px solid var(--accent-soft);}
+.l-hint{flex-basis:100%;color:#a09691;font-size:12.5px;line-height:1.8;}
+.l-hint strong{color:#7d716c;}
+.l-note{flex-basis:100%;color:#e03131;font-size:12px;margin:0;}
+@media (max-width:780px){ .links{padding:18px 16px 20px;} .l-in{flex:1 1 100%;} }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">maze</h1>
+    <div class="cn-title"></div>
+    <div class="artist">savage genius、近江知永</div>
+    <p class="subtitle">我的歌单 / 01</p>
+    <div class="credit">B站合集《我的歌单 / 01》</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<div class="row"><div class="jp">…<ruby>永遠<rt>えいえん</rt></ruby>(えいえん)<ruby>普遍<rt>ふへん</rt></ruby>(ふへん)の<ruby>愛<rt>あい</rt></ruby>(あい)なんて <ruby>信<rt>しん</rt></ruby>(しん)じられるのかしら?…</div><div class="cn">...永远不动摇的爱 是否能够让人相信？...</div></div>
+<div class="row"><div class="jp"><ruby>甘<rt>かん</rt></ruby>(あま)い<ruby>紅茶<rt>こうちゃ</rt></ruby>(こうちゃ)に<ruby>溶<rt>よう</rt></ruby>(と)かす ため<ruby>息<rt>いき</rt></ruby>(いき)<ruby>模様<rt>もよう</rt></ruby>(もよう)</div><div class="cn">甜甜的红茶融化时露出感叹的摸样</div></div>
+<div class="row"><div class="jp">もう <ruby>待<rt>たい</rt></ruby>(ま)ちくたびれたのよ</div><div class="cn">因为等待我已经疲惫不堪</div></div>
+<div class="row"><div class="jp">あなたを<ruby>追<rt>つい</rt></ruby>(お)いかけて <ruby>堕<rt>だ</rt></ruby>(お)ちるワンダーランド</div><div class="cn">我追寻你而去 坠落到那片美妙的大陆</div></div>
+<div class="row"><div class="jp">どこまで<ruby>行<rt>ぎょう</rt></ruby>(い)けばいいの?</div><div class="cn">应当何去何从?</div></div>
+<div class="row"><div class="jp">イロトリドリの<ruby>闇<rt>やみ</rt></ruby>(やみ)を<ruby>抜<rt>ばつ</rt></ruby>(ぬ)け</div><div class="cn">穿过数不尽的黑暗</div></div>
+<div class="row"><div class="jp"><ruby>道標<rt>どうひょう</rt></ruby>(みちしるべ)の<ruby>旋律<rt>せんりつ</rt></ruby>(せんりつ) <ruby>心<rt>こころ</rt></ruby>(こころ)が<ruby>騒<rt>そう</rt></ruby>(さわ)ぎだす</div><div class="cn">旋律引领前方道路 内心浮现出不安</div></div>
+<div class="row"><div class="jp"><ruby>時計仕掛<rt>とけいじかけ</rt></ruby>(とけいじか)けの<ruby>運命<rt>うんめい</rt></ruby>(さだめ)ならば<ruby>壊<rt>かい</rt></ruby>(こわ)してしまえ</div><div class="cn">若命运如同时钟一般 困锁住我</div></div>
+<div class="row"><div class="jp"><ruby>私<rt>わたし</rt></ruby>(わたし)は<ruby>自由<rt>じゆう</rt></ruby>(じゆう) あなたが<ruby>真実<rt>しんじつ</rt></ruby>(しんじつ)</div><div class="cn">将它毁坏掉吧 我便能获得自由</div></div>
+<div class="row"><div class="jp">Catcher in a Maze <ruby>生<rt>なま</rt></ruby>(い)きる<ruby>証<rt>しょう</rt></ruby>(あかし)</div><div class="cn">存在的证明</div></div>
+<div class="row"><div class="jp"><ruby>浅<rt>せん</rt></ruby>(あさ)い<ruby>眠<rt>みん</rt></ruby>(ねむ)りのほとり <ruby>歪<rt>ひずみ</rt></ruby>(ゆが)んだ<ruby>夢<rt>ゆめ</rt></ruby>(ゆめ)のパレード</div><div class="cn">于浅浅入眠的身畔 有扭曲梦魇的游行</div></div>
+<div class="row"><div class="jp">ふざけた<ruby>猫<rt>ねこ</rt></ruby>(ねこ)にあげよう ひなぎくの<ruby>輪<rt>わ</rt></ruby>(わ)</div><div class="cn">给嬉戏玩耍的小猫 递一朵小小的雏菊</div></div>
+<div class="row"><div class="jp">もう <ruby>自分<rt>じぶん</rt></ruby>(いぶん)の<ruby>名前<rt>なまえ</rt></ruby>(なまえ)さえ<ruby>忘<rt>ぼう</rt></ruby>(わす)れそうだよ</div><div class="cn">就连自己的姓名 我也几乎要遗忘</div></div>
+<div class="row"><div class="jp"><ruby>焦燥<rt>しょうそう</rt></ruby>(しょうそう)のサイン リング・ワンダリング</div><div class="cn">原地彷徨的足迹 正是焦躁的痕迹</div></div>
+<div class="row"><div class="jp"><ruby>私<rt>わたし</rt></ruby>(わたし)はどこにいるの?</div><div class="cn">我到底是身在何方?</div></div>
+<div class="row"><div class="jp"><ruby>気付<rt>きつけ</rt></ruby>(きづ)けば<ruby>囚<rt>しゅう</rt></ruby>(とら)われの<ruby>迷子<rt>まいご</rt></ruby>(まいご)</div><div class="cn">回过神来我已成为迷途羔羊</div></div>
+<div class="row"><div class="jp"><ruby>涙<rt>なみだ</rt></ruby>(ナミダ)ノ<ruby>海<rt>うみ</rt></ruby>(ウミ) <ruby>溺<rt>でき</rt></ruby>(オボ)レル…<ruby>悪夢<rt>あくむ</rt></ruby>(あくむ)ならいいのに</div><div class="cn">被泪水的汪洋淹没 真希望是噩梦一场</div></div>
+<div class="row"><div class="jp">やみくもの<ruby>賭<rt>かけ</rt></ruby>(か)け <ruby>勝<rt>かち</rt></ruby>(か)てるはずよ</div><div class="cn">即使胡乱的赌局 明明也理应能赢</div></div>
+<div class="row"><div class="jp"><ruby>彼<rt>かれ</rt></ruby>(かれ)の<ruby>足跡<rt>そくせき</rt></ruby>(あしあと)<ruby>隠<rt>いん</rt></ruby>(かく)す Queen of Heart</div><div class="cn">心之女王却掩去了他的足迹</div></div>
+<div class="row"><div class="jp"><ruby>容易<rt>ようい</rt></ruby>(たやす)く<ruby>泣<rt>きゅう</rt></ruby>(な)かない</div><div class="cn">我不愿这么轻易地哭泣</div></div>
+<div class="row"><div class="jp">Catcher in a Maze <ruby>朝<rt>あさ</rt></ruby>(あさ)がくるわ</div><div class="cn">在迷宫中追寻 黎明终将会来临</div></div>
+<div class="row"><div class="jp">イビツな<ruby>丘<rt>おか</rt></ruby>(おか)で<ruby>眠<rt>みん</rt></ruby>(ねむ)る <ruby>未熟<rt>みじゅく</rt></ruby>(みじゅく)なサナギ…<ruby>私<rt>わたし</rt></ruby>(わたし)</div><div class="cn">沉眠于倾斜的山坡 我如同未熟的蝶蛹</div></div>
+<div class="row"><div class="jp"><ruby>白<rt>しろ</rt></ruby>(しろ)いあの<ruby>月<rt>がつ</rt></ruby>(つき)を<ruby>捕<rt>ほ</rt></ruby>(つか)まえられたなら</div><div class="cn">若是能抓住那皎洁的明月</div></div>
+<div class="row"><div class="jp">もしかしたら あなたに<ruby>逢<rt>ほう</rt></ruby>(あ)えるのかしら?</div><div class="cn">我是不是就可能见到你?</div></div>
+<div class="row"><div class="jp">「どこまで<ruby>行<rt>ぎょう</rt></ruby>(い)けばいいの?」</div><div class="cn">「我到底该走到哪里?」</div></div>
+<div class="row"><div class="jp">「イロトリドリの<ruby>闇<rt>やみ</rt></ruby>(やみ)を<ruby>行<rt>ぎょう</rt></ruby>(ゆ)け!」</div><div class="cn">「穿越数不尽数的黑暗而去!」</div></div>
+<div class="row"><div class="jp">アンバランスな<ruby>足取<rt>あしどり</rt></ruby>(あしど)り <ruby>茨<rt>いばら</rt></ruby>(いばら)のトンネルでも</div><div class="cn">即使迈着蹒跚的脚步 走在荆棘的隧道</div></div>
+<div class="row"><div class="jp"><ruby>信<rt>しん</rt></ruby>(しん)じてみるの <ruby>芽<rt>め</rt></ruby><ruby>吹<rt>すい</rt></ruby>(めぶ)いた<ruby>夢<rt>ゆめ</rt></ruby>(ゆめ)</div><div class="cn">我愿试着相信 相信刚刚萌芽的梦想</div></div>
+<div class="row"><div class="jp">いつかはちゃんと<ruby>辿<rt>てん</rt></ruby>(たど)り<ruby>着<rt>ちゃく</rt></ruby>(つ)けるわ</div><div class="cn">相信总有一天我能平安抵达</div></div>
+<div class="row"><div class="jp">あなたが<ruby>真実<rt>しんじつ</rt></ruby>(しんじつ)</div><div class="cn">你就是我的真实</div></div>
+<div class="row"><div class="jp">Catcher in a Maze <ruby>生<rt>なま</rt></ruby>(い)きる<ruby>証<rt>しょう</rt></ruby>(あかし)</div><div class="cn">在迷宫中追寻 活着的证明</div></div>
+  </main>
+  <section class="links">
+    <div class="links-head">
+      <div class="links-title">🔗 找歌链接 <small>点击即可打开</small></div>
+      <div class="links-tools">
+        <button id="btnEdit" onclick="toggleEdit()">🔒 管理链接</button>
+        <button id="btnExport" onclick="exportPage()" style="display:none">⬇ 导出本页（含链接）</button>
+      </div>
+    </div>
+    <div id="linkList" class="link-list"></div>
+    <p class="links-empty" id="linksEmpty">还没有添加链接 —— 点右上「管理链接」，粘贴 YouTube / B站 / 网易云 等地址，方便以后快速找歌。</p>
+    <div class="l-editor" id="lEditor" hidden>
+      <input id="inLabel" class="l-in" type="text" placeholder="名称（如：MV / 现场版 / 网易云）">
+      <input id="inUrl" class="l-in" type="url" placeholder="https://… 完整链接">
+      <button id="btnAdd" onclick="addLink()">＋ 添加</button>
+      <button id="btnSetPw" onclick="setPw()" type="button">设密码</button>
+      <div class="l-hint" id="lHint"></div>
+      <p class="l-note" id="lNote"></p>
+    </div>
+  </section>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+<script id="linksData">
+window.__linksInit = [["“这ed也超神！潘多拉之心，心中永远的经典！！！”《maze》", "https://www.bilibili.com/video/BV1XFdrYJExe/"], ["YouTube 搜索", "https://www.youtube.com/results?search_query=maze+savage+genius%E3%80%81%E8%BF%91%E6%B1%9F%E7%9F%A5%E6%B0%B8"], ["B站 搜索", "https://search.bilibili.com/all?keyword=maze+savage+genius%E3%80%81%E8%BF%91%E6%B1%9F%E7%9F%A5%E6%B0%B8"]];
+window.__linksPw = "";
+</script>
+<script>
+/* ===== 找歌链接管理 =====
+   规则：每首歌的链接 = 页面内置默认 + 本浏览器里的增删（localStorage 按页面名存）。
+   其他访客打开这个文件/网站时，改的是“他自己的浏览器”，永远影响不到你看到的列表。
+   「管理密码」：EDITOR_KEY 非空时（或本机设过密码），增删必须先输密码；导出/分享的文件同样生效。 */
+(function(){
+  var file = decodeURIComponent((location.pathname.split('/').pop() || 'page'));
+  var LS='tk_links_'+file, PS='tk_pw_'+file;
+  var mem={}, memOk=true;
+  try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); }
+  catch(e){ memOk=false; }
+  function load(k){ if(memOk){ try{ return localStorage.getItem(k); }catch(e){ return null; } } return (k in mem)?mem[k]:null; }
+  function save(k,v){ if(memOk){ try{ localStorage.setItem(k,v); return; }catch(e){} } mem[k]=v; }
+  function del(k){ if(memOk){ try{ localStorage.removeItem(k); return; }catch(e){} } delete mem[k]; }
+  var pwStored = load(PS);
+  var PAGE_PW = (typeof window.__linksPw!=='undefined' && window.__linksPw) ? window.__linksPw : '';
+  var baked = (typeof window.__linksInit!=='undefined' && Array.isArray(window.__linksInit)) ? window.__linksInit : [];
+  function bakedUrls(){ return baked.map(function(x){ return x && x[1]; }); }
+  function loadLocalExtras(){
+    var raw = load(LS);
+    if(raw){ try{
+      var o=JSON.parse(raw);
+      if(o && Array.isArray(o.list)){
+        var bu=bakedUrls();
+        // 旧数据里可能存过“整份列表”，过滤掉与数据库重复的部分，只保留本机新增
+        return o.list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+      }
+    }catch(e){} }
+    return [];
+  }
+  var localExtras = loadLocalExtras();
+  // 页面最终列表 = 数据库/内置链接（所有人可见） + 本机新增（只影响自己）
+  function currentList(){ return baked.concat(localExtras); }
+  function persist(list){
+    var bu=bakedUrls();
+    localExtras = list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+    save(LS, JSON.stringify({list:localExtras}));
+  }
+  var editOn=false, req = pwStored || PAGE_PW;
+  function hostOf(u){ try{ return new URL(u).host.replace(/^www\./,''); }catch(e){ return ''; } }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function render(){
+    var list=currentList(), box=document.getElementById('linkList'), empty=document.getElementById('linksEmpty');
+    box.innerHTML='';
+    if(!list.length){ empty.style.display='block'; }
+    else{
+      empty.style.display='none';
+      list.forEach(function(it,i){
+        var label=(it && it[0]) || (it && it[1]) || '', url=(it && it[1]) || '';
+        if(!url) return;
+        var span=document.createElement('span'); span.className='chip';
+        var a=document.createElement('a'); a.href=url; a.target='_blank'; a.rel='noreferrer';
+        a.innerHTML='<span class="cl">'+esc(label)+'</span><span class="host">'+esc(hostOf(url))+'</span>';
+        span.appendChild(a);
+        if(editOn){
+          var x=document.createElement('button');
+          x.className='x'; x.title=(i<baked.length?'来自数据库，需在 songs.db 里删除':'删除本机新增'); x.type='button'; x.textContent='✕';
+          x.onclick=(function(k){ return function(ev){ ev.preventDefault(); ev.stopPropagation();
+            if(k<baked.length){ alert('这条来自数据库（songs.db），所有设备都能看到；要删除请用 linkdb.py rm，或直接告诉我。'); return; }
+            if(confirm('删除这条本机新增的链接？')){ var l=currentList(); l.splice(k,1); persist(l); render(); } }; })(i);
+          span.appendChild(x);
+        }
+        box.appendChild(span);
+      });
+    }
+    if(editOn){
+      document.getElementById('lEditor').hidden=false;
+      var h='列表 = <strong>数据库链接</strong>（所有人可见） + <strong>本机新增</strong>（仅自己）。数据库链接用 _tools\\linkdb.py 管理；点「导出本页」可把全部链接写进一个 html 带走或分享。';
+      if(req){ h+=' 密码已启用：不知道密码的访客无法增删。'; }
+      else{ h+=' 目前<strong>未设密码</strong>：任何访客都能增删，但只影响各自的浏览器。建议点「设密码」或改 lyric_build.py 的 EDITOR_KEY 后重新构建。'; }
+      document.getElementById('lHint').innerHTML=h;
+      document.getElementById('lNote').textContent = memOk ? '' : '注意：此环境不支持 localStorage，本次改动关闭页面后会丢失。';
+    } else {
+      document.getElementById('lEditor').hidden=true;
+    }
+  }
+  window.toggleEdit=function(){
+    if(!editOn){
+      if(req){
+        var p=prompt('请输入管理密码：');
+        if(p===null) return;
+        if(p!==req){ alert('密码错误'); return; }
+      }
+      editOn=true;
+      var b=document.getElementById('btnEdit');
+      b.textContent='🔓 完成编辑'; b.classList.add('on');
+      document.getElementById('btnExport').style.display='';
+    } else {
+      editOn=false;
+      var b2=document.getElementById('btnEdit');
+      b2.textContent='🔒 管理链接'; b2.classList.remove('on');
+      document.getElementById('btnExport').style.display='none';
+    }
+    render();
+  };
+  window.addLink=function(){
+    var label=document.getElementById('inLabel').value.trim();
+    var url=document.getElementById('inUrl').value.trim();
+    if(!/^https?:\/\//i.test(url)){ alert('链接要以 http:// 或 https:// 开头'); return; }
+    if(!label) label=url;
+    var list=currentList(); list.push([label,url]);
+    persist(list); render();
+    document.getElementById('inLabel').value=''; document.getElementById('inUrl').value='';
+  };
+  window.setPw=function(){
+    var p=prompt('设置本机管理密码（留空 = 取消保护）。设置后增删链接都要先输入它。');
+    if(p===null) return;
+    if(p===''){ pwStored=''; del(PS); }
+    else { pwStored=p; save(PS,p); }
+    req = pwStored || PAGE_PW;
+    alert(req ? '密码已启用。' : '保护已取消（任何访客都能增删，但只影响各自浏览器）。');
+  };
+  window.exportPage=function(){
+    var list=currentList();
+    var doc=document.getElementById('linksData');
+    var old=doc.textContent;
+    function jsSafe(o){ return JSON.stringify(o).replace(/<\//g,'<\\/'); }
+    var fresh='window.__linksInit = '+jsSafe(list)+';\nwindow.__linksPw = '+jsSafe(PAGE_PW)+';';
+    var html=document.documentElement.outerHTML.replace(old, fresh);
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=file;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    alert('已导出：'+file+'\n这个新文件已把当前全部链接写进页面，发给别人或上传后，他们也能看到这些链接。');
+  };
+  render();
+})();
+</script>
+</body>
+</html>

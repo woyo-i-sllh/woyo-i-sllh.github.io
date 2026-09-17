@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOODOO KINGDOM - SOUL'd OUT｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+  .links-tools button,.l-editor,.links-empty{display:none !important;}
+}
+/* ---------- 找歌链接卡片 ---------- */
+.links{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:22px 40px 26px;box-shadow:0 18px 50px rgba(80,60,90,.10);margin-top:22px;}
+.links-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.links-title{font-size:16px;margin:0;color:var(--accent);letter-spacing:.08em;}
+.links-title small{font-weight:400;color:#a09691;font-size:12px;letter-spacing:0;margin-left:6px;}
+.links-tools{display:flex;gap:8px;flex-wrap:wrap;}
+.links-tools button{font-family:inherit;font-size:12.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.links-tools button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.links-tools button.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.link-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.links-empty{color:#a09691;font-size:13px;margin:16px 0 0;line-height:1.8;}
+.chip{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#2b2623;background:#fff;
+  border:1px solid var(--line);border-radius:999px;padding:5px 8px 5px 16px;font-size:13.5px;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);transition:border-color .15s;}
+.chip:hover{border-color:var(--accent);}
+.chip a{display:inline-flex;align-items:center;gap:9px;color:inherit;text-decoration:none;}
+.chip a:hover{color:var(--accent);}
+.chip .host{color:#a09691;font-size:11.5px;}
+.chip .x{border:none;background:none;color:#c9bfb9;font-size:14px;cursor:pointer;line-height:1;padding:2px 8px;border-radius:50%;}
+.chip .x:hover{color:#fff;background:#e03131;}
+.l-editor{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center;}
+.l-editor[hidden]{display:none !important;}
+.l-in{font-family:inherit;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;color:#2b2623;min-width:0;outline:none;}
+.l-in:focus{border-color:var(--accent);}
+.l-in#inLabel{flex:1 1 150px;}
+.l-in#inUrl{flex:2 1 280px;}
+.l-editor button{font-family:inherit;font-size:13.5px;color:#fff;background:var(--accent);border:none;border-radius:10px;padding:9px 18px;cursor:pointer;}
+.l-editor #btnSetPw{background:none;color:var(--accent);border:1px solid var(--accent-soft);}
+.l-hint{flex-basis:100%;color:#a09691;font-size:12.5px;line-height:1.8;}
+.l-hint strong{color:#7d716c;}
+.l-note{flex-basis:100%;color:#e03131;font-size:12px;margin:0;}
+@media (max-width:780px){ .links{padding:18px 16px 20px;} .l-in{flex:1 1 100%;} }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">VOODOO KINGDOM</h1>
+    <div class="cn-title"></div>
+    <div class="artist">SOUL'd OUT</div>
+    <p class="subtitle">我的歌单 / 01</p>
+    <div class="credit">B站合集《我的歌单 / 01》</div>
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<div class="row"><div class="jp">Yo, I'm feelin' tha VOODOO in my brain</div><div class="cn">耶 我的脑子里充满着黑暗给我的鼓动</div></div>
+<div class="row"><div class="jp">I ain't my usual self tonight</div><div class="cn">今晚 已经不一样了...</div></div>
+<div class="row"><div class="jp">Walk in the beautiful rain</div><div class="cn">走在这华丽的雨之中</div></div>
+<div class="row"><div class="jp">The world rotates around me</div><div class="cn">这个世界将要以我为中心而动</div></div>
+<div class="row"><div class="jp">Here's a little story must be told</div><div class="cn">来 告诉你一个小故事</div></div>
+<div class="row"><div class="jp"><ruby>血統<rt>けっとう</rt></ruby>の<ruby>妙<rt>みょう</rt></ruby></div><div class="cn">血统奥妙</div></div>
+<div class="row"><div class="jp"><ruby>血統<rt>けっとう</rt></ruby>の<ruby>業<rt>ぎょう</rt></ruby></div><div class="cn">血缘之罪</div></div>
+<div class="row"><div class="jp">Yo, look into my evil eyes</div><div class="cn">看我邪恶的眼吧</div></div>
+<div class="row"><div class="jp"><ruby>鮮<rt>せん</rt></ruby>やかな Time と Tired guy</div><div class="cn">鲜丽的时间与疲累的家伙</div></div>
+<div class="row"><div class="jp"><ruby>飼<rt>か</rt></ruby>い<ruby>慣<rt>な</rt></ruby>らされた Butler <ruby>誅殺<rt>ちゅうさつ</rt></ruby> Hey you,</div><div class="cn">就像个待宰羔羊般卑微</div></div>
+<div class="row"><div class="jp">Just serve my world Aight ?!</div><div class="cn">你 臣服于我的世界吧？！</div></div>
+<div class="row"><div class="jp"><ruby>染<rt>そ</rt></ruby>まる<ruby>樹海<rt>じゅかい</rt></ruby> <ruby>大気<rt>たいき</rt></ruby>の<ruby>重<rt>おも</rt></ruby>さに</div><div class="cn">从染红的树海中 感染大气的沉重</div></div>
+<div class="row"><div class="jp">Moonrise Dramatize and また Bite</div><div class="cn">月 戏剧性的升起又再度亏蚀</div></div>
+<div class="row"><div class="jp"><ruby>幻覚<rt>げんかく</rt></ruby> Siamese <ruby>差<rt>さ</rt></ruby>し<ruby>込<rt>しこむ</rt></ruby>む</div><div class="cn">幻觉奇想注入无数的月光中</div></div>
+<div class="row"><div class="jp">Moonbeams So, you can't disguise</div><div class="cn">所以你无法再掩饰</div></div>
+<div class="row"><div class="jp">Yo, cuttin' wit this my rhyme, my sight...</div><div class="cn">也不能停止这美妙旋律 在我的面前</div></div>
+<div class="row"><div class="jp">All time is on my side</div><div class="cn">所有时间都站在我这边</div></div>
+<div class="row"><div class="jp">Design to get what I want</div><div class="cn">我只需计划去得到我想得到的</div></div>
+<div class="row"><div class="jp"><ruby>卓抜<rt>たくばつ</rt></ruby>な<ruby>着想<rt>ちゃくそう</rt></ruby> and <ruby>調和<rt>ちょうわ</rt></ruby>した<ruby>真実<rt>しんじつ</rt></ruby>の<ruby>世界<rt>せかい</rt></ruby></div><div class="cn">我想要 异想天开的点子来调和这真实的世界</div></div>
+<div class="row"><div class="jp"><ruby>汚<rt>よご</rt></ruby>れた<ruby>大地<rt>だいち</rt></ruby> <ruby>仮面<rt>かめん</rt></ruby><ruby>無<rt>な</rt></ruby>しじゃ</div><div class="cn">污秽的大地 不伪装自己就感到害怕畏惧</div></div>
+<div class="row"><div class="jp">No life <ruby>怪奇<rt>かいき</rt></ruby><ruby>満<rt>み</rt></ruby>ちて So divine</div><div class="cn">异闻虚假的世界 这真是棒极了</div></div>
+<div class="row"><div class="jp"><ruby>真夜中<rt>まよなか</rt></ruby>の<ruby>裁決<rt>さいけつ</rt></ruby>と Vampire's</div><div class="cn">午夜的裁决与吸血鬼的</div></div>
+<div class="row"><div class="jp"><ruby>祭典<rt>さいてん</rt></ruby> Now you fantasize</div><div class="cn">祭典 现在你正幻想吧？</div></div>
+<div class="row"><div class="jp">Here's a taste of tha remedy (Yeah!)</div><div class="cn">这里有一口解药</div></div>
+<div class="row"><div class="jp"><ruby>己<rt>おのれ</rt></ruby>を<ruby>憂<rt>うれ</rt></ruby>い Got it ?! (Woo-yes, I got it!)</div><div class="cn">忧烦吗？ 你要吗？（是的，我要）</div></div>
+<div class="row"><div class="jp">Got it ?! (Got it) Got it ?! (Yes, I got it)</div><div class="cn">你要吗？（我要）你要吗？（是的，我要）</div></div>
+<div class="row"><div class="jp">Here's a taste of tha remedy (Yeah!)</div><div class="cn">这里有一口解药</div></div>
+<div class="row"><div class="jp"><ruby>己<rt>おのれ</rt></ruby>を<ruby>憂<rt>うれ</rt></ruby>い Got it ?! (Woo-yes, I got it !)</div><div class="cn">忧烦吗？ 你要吗？（是的，我想要）</div></div>
+<div class="row"><div class="jp">RUDIment's gon' succeed</div><div class="cn">理想的雏形已经形成</div></div>
+<div class="row"><div class="jp">Yeah !</div><div class="cn">耶！</div></div>
+<div class="row"><div class="jp">LOOK INTO MY EVIL EYEZ</div><div class="cn">看着我邪恶的双眼</div></div>
+<div class="row"><div class="jp">SEE SOMETHIN' INSIDE</div><div class="cn">看到里面的东西</div></div>
+<div class="row"><div class="jp"><ruby>時代<rt>じだい</rt></ruby>をも<ruby>抱<rt>だ</rt></ruby>いて お<ruby>前<rt>まえ</rt></ruby>を<ruby>殺<rt>さつ</rt></ruby>めんばかりの MY MIND</div><div class="cn">为了开创属于理想的时代而杀戮 来满足我的欲望</div></div>
+<div class="row"><div class="jp"><ruby>凍<rt>こお</rt></ruby>るような MY SPINE</div><div class="cn">这彷佛结冻脊髓般的勇气</div></div>
+<div class="row"><div class="jp"><ruby>囚<rt>とら</rt></ruby>われたまま<ruby>災<rt>わざわ</rt></ruby>いから</div><div class="cn">继续被囚禁下去的话也只会带来灾祸</div></div>
+<div class="row"><div class="jp">YOU WANNA RUN AWAY OR WANNA DIE ?!</div><div class="cn">你想逃跑还是就此而死？</div></div>
+<div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby> SADISTIC な<ruby>愛<rt>あい</rt></ruby>に<ruby>支配<rt>しはい</rt></ruby>されて</div><div class="cn">即刻被残酷的爱支配</div></div>
+<div class="row"><div class="jp">OH, THIS WORLD'S SO DAMN FINE</div><div class="cn">这个世界真是该死的美好</div></div>
+<div class="row"><div class="jp"><ruby>堂<rt>どうどう</rt></ruby>々<ruby>巡<rt>めぐ</rt></ruby>る<ruby>歳月<rt>さいげつ</rt></ruby> <ruby>今宵<rt>こよい</rt></ruby><ruby>響<rt>ひび</rt></ruby>く<ruby>嗚咽<rt>おえつ</rt></ruby> <ruby>威光<rt>いこう</rt></ruby> <ruby>空<rt>そら</rt></ruby>に<ruby>発<rt>た</rt></ruby>つ</div><div class="cn">从不回头的岁月 今宵回响的呜咽 威光 向天空发射</div></div>
+<div class="row"><div class="jp">What's Immoral things? <ruby>愛<rt>あい</rt></ruby>に<ruby>欲<rt>よく</rt></ruby>に<ruby>渇望<rt>かつぼう</rt></ruby></div><div class="cn">什么是永生不死的东西？ 爱、欲、渴望</div></div>
+<div class="row"><div class="jp">うねる<ruby>炎<rt>ほのお</rt></ruby> It's in my blood <ruby>美徳<rt>びとく</rt></ruby>と<ruby>化<rt>か</rt></ruby>す</div><div class="cn">跳动的火焰 在我的血液里 化为美德</div></div>
+<div class="row"><div class="jp">Now it's knockin' on <ruby>背徳<rt>はいとく</rt></ruby>の<ruby>門<rt>もん</rt></ruby></div><div class="cn">现在正敲打着 背德之门</div></div>
+<div class="row"><div class="jp"><ruby>悠久<rt>ゆうきゅう</rt></ruby>の<ruby>霧<rt>きり</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>を<ruby>紅<rt>あか</rt></ruby>く<ruby>焦<rt>こ</rt></ruby>がす<ruby>刺客<rt>しかく</rt></ruby></div><div class="cn">进入悠久的雾都 化为红色焦土的刺客</div></div>
+<div class="row"><div class="jp"><ruby>闇<rt>やみ</rt></ruby>の<ruby>業火<rt>ごうか</rt></ruby>へと<ruby>誘<rt>さそ</rt></ruby>う</div><div class="cn">并带领我走进黑暗业火</div></div>
+<div class="row"><div class="jp">Time has come get off</div><div class="cn">时候到了 走吧上吧 已经可以动身了</div></div>
+<div class="row"><div class="jp">Virgin blood…<ruby>触<rt>ふ</rt></ruby>れて So mellow</div><div class="cn">处女之血 多么香淳</div></div>
+<div class="row"><div class="jp"><ruby>賢者<rt>けんじゃ</rt></ruby>さえも<ruby>下僕<rt>げぼく</rt></ruby> Get on get on</div><div class="cn">即使贤者也只是我忠诚的仆人</div></div>
+<div class="row"><div class="jp">Imagine that…<ruby>永遠<rt>えいえん</rt></ruby>に No sorrow</div><div class="cn">想像一下... 这似乎永远都没有悲伤</div></div>
+<div class="row"><div class="jp">この<ruby>異教<rt>いきょう</rt></ruby><ruby>渦巻<rt>うずまき</rt></ruby>く<ruby>現世<rt>げんせい</rt></ruby>のShadow</div><div class="cn">异教横行是现世的缩影</div></div>
+<div class="row"><div class="jp">うなる<ruby>怒号<rt>どごう</rt></ruby> <ruby>刻<rt>きざ</rt></ruby>む<ruby>罪<rt>つみ</rt></ruby>は<ruby>深<rt>ふか</rt></ruby>く</div><div class="cn">低鸣的怒号 刻下的罪孽如此深重</div></div>
+<div class="row"><div class="jp"><ruby>故<rt>ゆえ</rt></ruby>に<ruby>存在<rt>そんざい</rt></ruby>は<ruby>強<rt>つよ</rt></ruby>く<ruby>輝<rt>かがや</rt></ruby>く <ruby>尚<rt>たかし</rt></ruby>も<ruby>終<rt>お</rt></ruby>えない<ruby>因果<rt>いんが</rt></ruby>は<ruby>重<rt>おも</rt></ruby>く</div><div class="cn">因此存在会强烈的闪耀 无法终止的因果相互轮回</div></div>
+<div class="row"><div class="jp"><ruby>時<rt>とき</rt></ruby>の<ruby>狭間<rt>はざま</rt></ruby>で <ruby>今<rt>いま</rt></ruby> お<ruby>前<rt>まえ</rt></ruby>を<ruby>待<rt>ま</rt></ruby>つ</div><div class="cn">如今 在时间的狭缝中 等待你</div></div>
+<div class="row"><div class="jp">Here's a taste of tha remedy (Yeah!)</div><div class="cn">这里有一口解药</div></div>
+<div class="row"><div class="jp"><ruby>己<rt>おのれ</rt></ruby>を<ruby>憂<rt>うれ</rt></ruby>い Got it ?! (Woo-yes, I got it!)</div><div class="cn">忧烦吗？ 你要吗？（是的，我要）</div></div>
+<div class="row"><div class="jp">Got it ?! (Got it) Got it ?! (Yes, I got it)</div><div class="cn">你要吗？（我要） 你要吗？（是的，我要）</div></div>
+<div class="row"><div class="jp">Here's a taste of tha remedy (Yeah!)</div><div class="cn">这里有一口解药</div></div>
+<div class="row"><div class="jp"><ruby>己<rt>おのれ</rt></ruby>を<ruby>憂<rt>うれ</rt></ruby>い Got it ?! (Woo-yes, I got it !)</div><div class="cn">你要吗？（是的，我要）</div></div>
+<div class="row"><div class="jp">RUDIment's gon' succeed</div><div class="cn">把所有的一切都抓在我的手上</div></div>
+<div class="row"><div class="jp">Yeah !</div><div class="cn">耶！</div></div>
+<div class="row"><div class="jp">LOOK INTO MY EVIL EYEZ</div><div class="cn">看着我邪恶的双眼</div></div>
+<div class="row"><div class="jp">SEE SOMETHIN' INSIDE</div><div class="cn">看到里面的东西</div></div>
+<div class="row"><div class="jp"><ruby>時代<rt>じだい</rt></ruby>をも<ruby>抱<rt>だ</rt></ruby>いて お<ruby>前<rt>まえ</rt></ruby>を<ruby>殺<rt>さつ</rt></ruby>めんばかりの MY MIND</div><div class="cn">为了开创属于理想的时代而杀戮 来满足我的欲望</div></div>
+<div class="row"><div class="jp"><ruby>凍<rt>こお</rt></ruby>るような MY SPINE</div><div class="cn">这彷佛结冻脊髓般的勇气</div></div>
+<div class="row"><div class="jp"><ruby>囚<rt>とら</rt></ruby>われたまま<ruby>災<rt>わざわ</rt></ruby>いから</div><div class="cn">继续被囚禁下去的话也只会带来灾祸</div></div>
+<div class="row"><div class="jp">YOU WANNA RUN AWAY OR WANNA DIE ?!</div><div class="cn">你想逃跑还是就此而死？</div></div>
+<div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby> SADISTIC な<ruby>愛<rt>あい</rt></ruby>に<ruby>支配<rt>しはい</rt></ruby>されて</div><div class="cn">即刻被残酷的爱支配</div></div>
+<div class="row"><div class="jp">OH, THIS WORLD'S SO DAMN FINE</div><div class="cn">这个世界真是该死的美好</div></div>
+<div class="row"><div class="jp">LOOK INTO MY EVIL EYEZ</div><div class="cn">凝视我邪恶的双眼</div></div>
+<div class="row"><div class="jp">DREAMIN' ON A LIE</div><div class="cn">作恶梦吧</div></div>
+<div class="row"><div class="jp">SOMEBODY NEED TO JUSTIFY</div><div class="cn">人都需要去辩解谎言</div></div>
+<div class="row"><div class="jp"><ruby>構<rt>かま</rt></ruby>いやしない</div><div class="cn">但此刻都无所谓了</div></div>
+<div class="row"><div class="jp">WHEN YOU CROSS THA LINE YOU DON'T KNOW</div><div class="cn">当你跨越过那条界线</div></div>
+<div class="row"><div class="jp">THERE'S NO SUNSHINE</div><div class="cn">你不知道那里有没有阳光</div></div>
+<div class="row"><div class="jp">したたる PEN に<ruby>見<rt>み</rt></ruby>る</div><div class="cn">只能看着被...吞噬像电影演的一般</div></div>
+<div class="row"><div class="jp"><ruby>吸<rt>す</rt></ruby>い<ruby>込<rt>いこま</rt></ruby>まれるしなやかなタッチ BLACK AND WHITE</div><div class="cn">柔软的触感 黑与白</div></div>
+<div class="row"><div class="jp"><ruby>刻<rt>きざ</rt></ruby>まれた STAR ON THA NECK</div><div class="cn">刻在脖子的星痕</div></div>
+<div class="row"><div class="jp">IT JUST SUGGESTS A GUY'S MYSTERIOUS SIDE</div><div class="cn">只是暗示了那个男人神秘的一面</div></div>
+<div class="row"><div class="jp"><ruby>疎外<rt>そがい</rt></ruby> <ruby>厄介<rt>やっかい</rt></ruby>な Fighter Fights to Find tha cipha Fire Fire</div><div class="cn">疏离 危险的战士 寻求无尽战火的战士 战斗、争斗、决斗</div></div>
+<div class="row"><div class="jp">I'm a pions guy who try to be tha hypa hypa hypa...</div><div class="cn">我只是一个想要尝试的人</div></div>
+<div class="row"><div class="jp"><ruby>破壊<rt>はかい</rt></ruby><ruby>欲<rt>よく</rt></ruby> <ruby>快楽<rt>かいらく</rt></ruby> <ruby>開花<rt>かいか</rt></ruby> <ruby>才知<rt>さいち</rt></ruby>を<ruby>開花<rt>かいか</rt></ruby> Bite off Bite off</div><div class="cn">杀戮 破坏 快乐 升华 让智慧开花 弱肉强食 强者为王</div></div>
+<div class="row"><div class="jp">v, v,v, violence I write off goin' goin' MAD</div><div class="cn">再多的杀业也不足以对我邪恶的描述</div></div>
+<div class="row"><div class="jp">LOOK INTO MY EVIL EYEZ</div><div class="cn">看着我邪恶的双眼</div></div>
+<div class="row"><div class="jp">SEE SOMETHIN' INSIDE</div><div class="cn">看到里面的东西</div></div>
+<div class="row"><div class="jp"><ruby>時代<rt>じだい</rt></ruby>をも<ruby>抱<rt>だ</rt></ruby>いて お<ruby>前<rt>まえ</rt></ruby>を<ruby>殺<rt>さつ</rt></ruby>めんばかりの MY MIND</div><div class="cn">为了开创属于理想的时代而杀戮 来满足我的欲望</div></div>
+<div class="row"><div class="jp"><ruby>凍<rt>こお</rt></ruby>るような MY SPINE</div><div class="cn">那种气魄冻结我的背骨</div></div>
+<div class="row"><div class="jp"><ruby>囚<rt>とら</rt></ruby>われたまま<ruby>災<rt>わざわ</rt></ruby>いから</div><div class="cn">再坐视不管的话也只会带来更大的灾祸</div></div>
+<div class="row"><div class="jp">YOU WANNA RUN AWAY OR WANNA DIE ?!</div><div class="cn">你会想逃跑还是就此死亡？</div></div>
+<div class="row"><div class="jp"><ruby>今<rt>いま</rt></ruby> SADISTIC な<ruby>愛<rt>あい</rt></ruby>に<ruby>支配<rt>しはい</rt></ruby>されて</div><div class="cn">现在就被残酷的爱支配</div></div>
+<div class="row"><div class="jp">OH, THIS WORLD'S SO DAMN FINE</div><div class="cn">因为世界是这样该死的美好</div></div>
+<div class="row"><div class="jp">LOOK INTO MY EVIL EYEZ</div><div class="cn">看着我邪恶的双眼</div></div>
+<div class="row"><div class="jp">DREAMIN' ON A LIE</div><div class="cn">煎熬在崇拜我的折磨当中</div></div>
+<div class="row"><div class="jp">SOMEBODY NEED TO JUSTIFY</div><div class="cn">这已无关正义所及的约束</div></div>
+<div class="row"><div class="jp"><ruby>構<rt>かま</rt></ruby>いやしない</div><div class="cn">但此刻都无所谓了</div></div>
+<div class="row"><div class="jp">WHEN YOU CROSS THA LINE YOU DON'T KNOW</div><div class="cn">当你跨越过那条界线</div></div>
+<div class="row"><div class="jp">THERE'S NO SUNSHINE</div><div class="cn">你不知道那里有没有阳光</div></div>
+<div class="row"><div class="jp">したたる PEN に<ruby>見<rt>み</rt></ruby>る</div><div class="cn">只能看着被...吞噬像电影演的一般</div></div>
+<div class="row"><div class="jp"><ruby>吸<rt>す</rt></ruby>い<ruby>込<rt>いこま</rt></ruby>まれるしなやかなタッチ BLACK AND WHITE</div><div class="cn">柔软的触感 黑与白</div></div>
+<div class="row"><div class="jp"><ruby>刻<rt>きざ</rt></ruby>まれた STAR ON THA NECK</div><div class="cn">刻在我脖子上的星痕</div></div>
+<div class="row"><div class="jp">IT JUST SUGGESTS A GUY'S MYSTERIOUS SIDE</div><div class="cn">只是暗示了那个男人神秘的一面</div></div>
+<div class="row"><div class="jp">IT JUST SUGGESTS A GUY'S MYSTERIOUS SIDE</div><div class="cn">只是暗示了那个男人神秘的一面</div></div>
+<div class="row"><div class="jp">IT JUST SUGGESTS A GUY'S MYSTERIOUS SIDE</div><div class="cn">只是暗示了那个男人神秘的一面</div></div>
+<div class="row"><div class="jp">おわり</div><div class="cn">Otomo</div></div>
+  </main>
+  <section class="links">
+    <div class="links-head">
+      <div class="links-title">🔗 找歌链接 <small>点击即可打开</small></div>
+      <div class="links-tools">
+        <button id="btnEdit" onclick="toggleEdit()">🔒 管理链接</button>
+        <button id="btnExport" onclick="exportPage()" style="display:none">⬇ 导出本页（含链接）</button>
+      </div>
+    </div>
+    <div id="linkList" class="link-list"></div>
+    <p class="links-empty" id="linksEmpty">还没有添加链接 —— 点右上「管理链接」，粘贴 YouTube / B站 / 网易云 等地址，方便以后快速找歌。</p>
+    <div class="l-editor" id="lEditor" hidden>
+      <input id="inLabel" class="l-in" type="text" placeholder="名称（如：MV / 现场版 / 网易云）">
+      <input id="inUrl" class="l-in" type="url" placeholder="https://… 完整链接">
+      <button id="btnAdd" onclick="addLink()">＋ 添加</button>
+      <button id="btnSetPw" onclick="setPw()" type="button">设密码</button>
+      <div class="l-hint" id="lHint"></div>
+      <p class="l-note" id="lNote"></p>
+    </div>
+  </section>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+<script id="linksData">
+window.__linksInit = [["“DIO处刑曲！！没人能在我的bgm里输给我！！！”《VOODOO KINGDOM》", "https://www.bilibili.com/video/BV1T4ASeJETY/"], ["YouTube 搜索", "https://www.youtube.com/results?search_query=VOODOO+KINGDOM+SOUL%27d+OUT"], ["B站 搜索", "https://search.bilibili.com/all?keyword=VOODOO+KINGDOM+SOUL%27d+OUT"]];
+window.__linksPw = "";
+</script>
+<script>
+/* ===== 找歌链接管理 =====
+   规则：每首歌的链接 = 页面内置默认 + 本浏览器里的增删（localStorage 按页面名存）。
+   其他访客打开这个文件/网站时，改的是“他自己的浏览器”，永远影响不到你看到的列表。
+   「管理密码」：EDITOR_KEY 非空时（或本机设过密码），增删必须先输密码；导出/分享的文件同样生效。 */
+(function(){
+  var file = decodeURIComponent((location.pathname.split('/').pop() || 'page'));
+  var LS='tk_links_'+file, PS='tk_pw_'+file;
+  var mem={}, memOk=true;
+  try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); }
+  catch(e){ memOk=false; }
+  function load(k){ if(memOk){ try{ return localStorage.getItem(k); }catch(e){ return null; } } return (k in mem)?mem[k]:null; }
+  function save(k,v){ if(memOk){ try{ localStorage.setItem(k,v); return; }catch(e){} } mem[k]=v; }
+  function del(k){ if(memOk){ try{ localStorage.removeItem(k); return; }catch(e){} } delete mem[k]; }
+  var pwStored = load(PS);
+  var PAGE_PW = (typeof window.__linksPw!=='undefined' && window.__linksPw) ? window.__linksPw : '';
+  var baked = (typeof window.__linksInit!=='undefined' && Array.isArray(window.__linksInit)) ? window.__linksInit : [];
+  function bakedUrls(){ return baked.map(function(x){ return x && x[1]; }); }
+  function loadLocalExtras(){
+    var raw = load(LS);
+    if(raw){ try{
+      var o=JSON.parse(raw);
+      if(o && Array.isArray(o.list)){
+        var bu=bakedUrls();
+        // 旧数据里可能存过“整份列表”，过滤掉与数据库重复的部分，只保留本机新增
+        return o.list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+      }
+    }catch(e){} }
+    return [];
+  }
+  var localExtras = loadLocalExtras();
+  // 页面最终列表 = 数据库/内置链接（所有人可见） + 本机新增（只影响自己）
+  function currentList(){ return baked.concat(localExtras); }
+  function persist(list){
+    var bu=bakedUrls();
+    localExtras = list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+    save(LS, JSON.stringify({list:localExtras}));
+  }
+  var editOn=false, req = pwStored || PAGE_PW;
+  function hostOf(u){ try{ return new URL(u).host.replace(/^www\./,''); }catch(e){ return ''; } }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function render(){
+    var list=currentList(), box=document.getElementById('linkList'), empty=document.getElementById('linksEmpty');
+    box.innerHTML='';
+    if(!list.length){ empty.style.display='block'; }
+    else{
+      empty.style.display='none';
+      list.forEach(function(it,i){
+        var label=(it && it[0]) || (it && it[1]) || '', url=(it && it[1]) || '';
+        if(!url) return;
+        var span=document.createElement('span'); span.className='chip';
+        var a=document.createElement('a'); a.href=url; a.target='_blank'; a.rel='noreferrer';
+        a.innerHTML='<span class="cl">'+esc(label)+'</span><span class="host">'+esc(hostOf(url))+'</span>';
+        span.appendChild(a);
+        if(editOn){
+          var x=document.createElement('button');
+          x.className='x'; x.title=(i<baked.length?'来自数据库，需在 songs.db 里删除':'删除本机新增'); x.type='button'; x.textContent='✕';
+          x.onclick=(function(k){ return function(ev){ ev.preventDefault(); ev.stopPropagation();
+            if(k<baked.length){ alert('这条来自数据库（songs.db），所有设备都能看到；要删除请用 linkdb.py rm，或直接告诉我。'); return; }
+            if(confirm('删除这条本机新增的链接？')){ var l=currentList(); l.splice(k,1); persist(l); render(); } }; })(i);
+          span.appendChild(x);
+        }
+        box.appendChild(span);
+      });
+    }
+    if(editOn){
+      document.getElementById('lEditor').hidden=false;
+      var h='列表 = <strong>数据库链接</strong>（所有人可见） + <strong>本机新增</strong>（仅自己）。数据库链接用 _tools\\linkdb.py 管理；点「导出本页」可把全部链接写进一个 html 带走或分享。';
+      if(req){ h+=' 密码已启用：不知道密码的访客无法增删。'; }
+      else{ h+=' 目前<strong>未设密码</strong>：任何访客都能增删，但只影响各自的浏览器。建议点「设密码」或改 lyric_build.py 的 EDITOR_KEY 后重新构建。'; }
+      document.getElementById('lHint').innerHTML=h;
+      document.getElementById('lNote').textContent = memOk ? '' : '注意：此环境不支持 localStorage，本次改动关闭页面后会丢失。';
+    } else {
+      document.getElementById('lEditor').hidden=true;
+    }
+  }
+  window.toggleEdit=function(){
+    if(!editOn){
+      if(req){
+        var p=prompt('请输入管理密码：');
+        if(p===null) return;
+        if(p!==req){ alert('密码错误'); return; }
+      }
+      editOn=true;
+      var b=document.getElementById('btnEdit');
+      b.textContent='🔓 完成编辑'; b.classList.add('on');
+      document.getElementById('btnExport').style.display='';
+    } else {
+      editOn=false;
+      var b2=document.getElementById('btnEdit');
+      b2.textContent='🔒 管理链接'; b2.classList.remove('on');
+      document.getElementById('btnExport').style.display='none';
+    }
+    render();
+  };
+  window.addLink=function(){
+    var label=document.getElementById('inLabel').value.trim();
+    var url=document.getElementById('inUrl').value.trim();
+    if(!/^https?:\/\//i.test(url)){ alert('链接要以 http:// 或 https:// 开头'); return; }
+    if(!label) label=url;
+    var list=currentList(); list.push([label,url]);
+    persist(list); render();
+    document.getElementById('inLabel').value=''; document.getElementById('inUrl').value='';
+  };
+  window.setPw=function(){
+    var p=prompt('设置本机管理密码（留空 = 取消保护）。设置后增删链接都要先输入它。');
+    if(p===null) return;
+    if(p===''){ pwStored=''; del(PS); }
+    else { pwStored=p; save(PS,p); }
+    req = pwStored || PAGE_PW;
+    alert(req ? '密码已启用。' : '保护已取消（任何访客都能增删，但只影响各自浏览器）。');
+  };
+  window.exportPage=function(){
+    var list=currentList();
+    var doc=document.getElementById('linksData');
+    var old=doc.textContent;
+    function jsSafe(o){ return JSON.stringify(o).replace(/<\//g,'<\\/'); }
+    var fresh='window.__linksInit = '+jsSafe(list)+';\nwindow.__linksPw = '+jsSafe(PAGE_PW)+';';
+    var html=document.documentElement.outerHTML.replace(old, fresh);
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=file;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    alert('已导出：'+file+'\n这个新文件已把当前全部链接写进页面，发给别人或上传后，他们也能看到这些链接。');
+  };
+  render();
+})();
+</script>
+</body>
+</html>
