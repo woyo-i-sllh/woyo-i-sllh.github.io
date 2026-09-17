@@ -50,3 +50,13 @@ html.dark body::before {
   opacity: 0.9;
   filter: none;
 }
+
+/* 图注里的链接 */
+.markdown-body figure figcaption a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+}
+.markdown-body figure figcaption a:hover {
+  color: #d6336c;
+}
