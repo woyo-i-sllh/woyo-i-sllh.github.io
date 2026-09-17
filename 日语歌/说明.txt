@@ -144,6 +144,14 @@
     · 416 首写入正确日文歌词与中文翻译，2 首无可靠来源保持占位；
     · 清单：data\collection_7691148.json，说明元数据：data\collection_7691148_metadata.json，
       查重结果：data\collection_7691148_dedupe.json，状态：data\collection_7691148_status.json。
+  B站合集批量流程（season 6772384，下载进行中）：
+    · 合集 848 集，按歌名+歌手和网易云歌曲ID查重，跳过已有 135 集；
+    · 新增 713 首、713 条 B站链接；没有可靠来源的 11 首标记“暂无歌词”；
+    · 清单/元数据/查重/状态：data\collection_6772384*.json。
+  纯音乐分类：
+    · 目录：F:\life\songs\纯音乐，数据库：data\instrumental.db；
+    · 合集 BV1qB4y1W7HS 共 99 个分P，播放器顶部新增“🎼 纯音乐”分类；
+    · 服务端 /api/songs?lang=inst 和 /lyrics/inst/<页面> 已启用。
   纯音乐（如 時代を超える想い、桜花抄、想い出は遠くの日々）统一写成
   「纯音乐 · 无歌词」，不参与翻译和注音校验。
 
