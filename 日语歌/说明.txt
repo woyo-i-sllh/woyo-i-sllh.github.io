@@ -61,15 +61,20 @@
      sections；这些信息只能放 credit。来源歌词若带头部/尾部名单，必须先清理再建卡。
      歌手字段只写歌手或团体正式名，禁止包含歌名、版本名、链接标题或站点标签。
      title_cn 只放真正的中文翻译；电影版/Live/Cover 等版本说明必须去掉，与日文标题重复时留空。
+     title_jp 末尾的 ~since 2007~、~grace edition~、~Acoustic Version~ 等仅表示版本，必须去掉；
+     若波浪号内容属于歌名本身（如 secret base～君がくれたもの～），则保留。
      subtitle_cn 只放真正的歌曲介绍；credit 只放作词/作曲/发行/作品出处等版权信息。
      “我的歌单”“B站合集”“日推歌曲”等合集/歌单占位文字禁止出现在歌手、title_cn、
      subtitle_cn 或 credit 中。
   2) 【中文翻译】由 AI（Codex）直接翻译，意译即可、看懂就行，不照抄网络译本。
   3) 【写卡片】把 (日文, 注音, 中文) 写进 日语歌\_tools\lyric_data.py，然后
         python F:\life\songs\tools\normalize_jp_metadata.py
+        python F:\life\songs\tools\dedupe_jp_songs.py          # 先预览重复组
+        python F:\life\songs\tools\dedupe_jp_songs.py --apply  # 确认后合并重复版本
         cd F:\life\songs\日语歌\_tools
         python lyric_build.py        # 校验注音 + 生成 html/index/说明.txt
      normalizer 会清理混入正文的制作人员行；builder 若再发现这类行会直接停止，防止错卡上线。
+     dedupe 会把重复入口的链接和 MP4/MP3 迁到保留歌曲，不丢版本。
   4) 【加链接】播放器里选中这首歌 → 粘贴 B站链接 → 添加；或
         python F:\life\songs\tools\linkdb.py add "歌名" "名称" "https://…" --kind mv
   5) 【下载】python F:\life\songs\tools\download.py fetch --all
