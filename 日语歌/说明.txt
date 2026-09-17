@@ -77,8 +77,11 @@
      dedupe 会把重复入口的链接和 MP4/MP3 迁到保留歌曲，不丢版本。
      歌曲介绍（subtitle_cn）可持续分批补。优先从已保存的 B站说明提取明确来源：
         python F:\life\songs\tools\fill_jp_intros_from_bili.py          # 预览
-        python F:\life\songs\tools\fill_jp_intros_from_bili.py --apply  # 写入
-     没有可靠来源时留空，禁止为了凑介绍编造影视、动画或游戏出处。
+        python F:\life\songs\tools\fill_jp_intros_from_bili.py --apply  # B站说明来源
+        python F:\life\songs\tools\fill_jp_intros_from_netease.py --apply  # 网易云ID→专辑/年份
+        python F:\life\songs\tools\fill_jp_intros_from_netease_search.py --apply  # 歌名+歌手搜索补缺
+        python F:\life\songs\tools\fill_jp_intros_fallback.py                 # 最后只写“由X演唱”
+     没有可靠来源时禁止编造影视、动画、专辑或游戏出处；最低只能写歌手事实。
   4) 【加链接】播放器里选中这首歌 → 粘贴 B站链接 → 添加；或
         python F:\life\songs\tools\linkdb.py add "歌名" "名称" "https://…" --kind mv
   5) 【下载】python F:\life\songs\tools\download.py fetch --all
