@@ -14,6 +14,13 @@ h1{text-align:center;font-size:clamp(24px,4vw,34px);letter-spacing:.08em;margin:
 .t{font-size:15px}
 .m{font-size:12px;color:#a09691}
 footer{text-align:center;color:#b3a8a3;font-size:12px;margin-top:30px}
+
+
+.search-wrap{max-width:520px;margin:-10px auto 34px;text-align:center;}
+#songSearch{width:100%;padding:13px 22px;border-radius:999px;border:1.5px solid rgba(214,51,108,.22);background:rgba(255,255,255,.92);font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Microsoft YaHei',sans-serif;font-size:15px;color:#2b2623;outline:none;box-shadow:0 6px 20px rgba(70,60,90,.08);transition:border .15s, box-shadow .15s;}
+#songSearch:focus{border-color:rgba(214,51,108,.55);box-shadow:0 6px 22px rgba(214,51,108,.16);}
+.search-count{margin-top:9px;font-family:'ZCOOL KuaiLe','幼圆','YouYuan',sans-serif;font-size:13px;color:#a09691;letter-spacing:.1em;}
+
 </style></head><body><div class="page">
 <h1>华语歌单</h1><div class="sub">共 35 首 · 周杰伦 / 赵雷 · 更新于 2026-09-17 18:35</div>
 <div><h2 class="group">周杰伦</h2>
@@ -54,4 +61,25 @@ footer{text-align:center;color:#b3a8a3;font-size:12px;margin-top:30px}
 <a class="card" href="画-赵雷.html"><span class="t">画</span><span class="m">赵小雷</span></a>
 <a class="card" href="鼓楼-赵雷.html"><span class="t">鼓楼</span><span class="m">无法长大</span></a></div>
 <footer>歌词版权归原作者所有，仅供个人学习使用</footer>
-</div></body></html>
+</div><script>
+(function(){
+  var input = document.getElementById('songSearch');
+  if (!input) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var count = document.getElementById('songCount');
+  function render(){
+    var q = (input.value||'').trim().toLowerCase();
+    var n = 0;
+    cards.forEach(function(c){
+      var hit = !q || (c.textContent||'').toLowerCase().indexOf(q) > -1;
+      c.style.display = hit ? '' : 'none';
+      if (hit) n++;
+    });
+    if (count) count.textContent = q ? ('找到 ' + n + ' / ' + cards.length + ' 首') : ('共 ' + cards.length + ' 首歌');
+  }
+  input.addEventListener('input', render);
+  render();
+})();
+</script>
+
+</body></html>
