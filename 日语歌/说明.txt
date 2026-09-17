@@ -56,10 +56,16 @@
         → 萌娘百科日文页（带 ruby）→ j-lyric
      注音要求：汉字按词连缀整体标注；带送假名只标汉字部分；
      特殊读法（能力=チカラ、標的=やつ、運命=さだめ 等）必须按官方标注。
+     歌词正文第一行必须是真正可唱的第一句。演唱、歌手、乐团、作词、作曲、编曲、录音、
+     混音、监制、助理、出品、Studio/Producer/Engineer 等制作人员或平台元数据禁止写入
+     sections；这些信息只能放 credit。来源歌词若带头部/尾部名单，必须先清理再建卡。
+     歌手字段只写歌手或团体正式名，禁止包含歌名、版本名、链接标题或站点标签。
   2) 【中文翻译】由 AI（Codex）直接翻译，意译即可、看懂就行，不照抄网络译本。
   3) 【写卡片】把 (日文, 注音, 中文) 写进 日语歌\_tools\lyric_data.py，然后
+        python F:\life\songs\tools\normalize_jp_metadata.py
         cd F:\life\songs\日语歌\_tools
         python lyric_build.py        # 校验注音 + 生成 html/index/说明.txt
+     normalizer 会清理混入正文的制作人员行；builder 若再发现这类行会直接停止，防止错卡上线。
   4) 【加链接】播放器里选中这首歌 → 粘贴 B站链接 → 添加；或
         python F:\life\songs\tools\linkdb.py add "歌名" "名称" "https://…" --kind mv
   5) 【下载】python F:\life\songs\tools\download.py fetch --all
@@ -169,6 +175,7 @@
   · 「隐藏假名」= body 加 no-rt 类 → body.no-rt ruby rt{display:none}
 
 (3) 构建器（lyric_build.py）
+  · 先硬校验歌词正文：发现演唱/歌手/作词/作曲/录音/混音/Studio/Producer 等元数据立即停止；
   · 校验每行汉字的注音覆盖是否完整、与 pykakasi 的差异（差异需人工判断）；
   · 生成每首歌 html + index.html；
   · 用 说明_template.txt 生成 说明.txt。
