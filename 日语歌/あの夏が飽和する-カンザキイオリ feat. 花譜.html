@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>あの夏が飽和する - カンザキイオリ feat. 花譜｜日语歌词卡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+body{--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);}
+</style>
+<style>
+
+*{box-sizing:border-box}
+body{margin:0;padding:0;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+  background-attachment:fixed;color:#2b2623;
+  font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+.page{max-width:1160px;margin:0 auto;padding:38px 22px 60px;}
+header{text-align:center;margin-bottom:34px;}
+.badge{display:inline-block;font-size:12px;letter-spacing:.35em;color:var(--accent);
+  border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px 4px;margin-bottom:16px;}
+h1.title{margin:0 0 4px;font-size:clamp(30px,5vw,46px);line-height:1.35;letter-spacing:.03em;color:#201a18;font-family:'Yu Mincho','YuMincho','Hiragino Mincho ProN','Noto Serif JP','MS Mincho',serif;}
+h1.title ruby rt{font-size:.42em;color:var(--accent);font-weight:600;}
+.cn-title{font-size:clamp(16px,2.2vw,21px);color:#6b5f5a;letter-spacing:.18em;margin:6px 0 2px;font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Microsoft YaHei',sans-serif;}
+.artist{font-size:15px;color:#8a7f7a;letter-spacing:.12em;margin-top:2px;font-family:'Yu Gothic UI','YuGothic','Hiragino Sans','Meiryo',sans-serif;}
+.subtitle{font-size:14.5px;color:#7d716c;max-width:760px;margin:14px auto 4px;line-height:1.9;}
+.credit{font-size:12.5px;color:#a09691;margin-top:10px;}
+.controls{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.controls button{font-family:inherit;font-size:13.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:8px 18px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.controls button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.lyrics{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:38px 40px 30px;box-shadow:0 18px 50px rgba(80,60,90,.10);}
+.row{display:grid;grid-template-columns:1.08fr 1fr;column-gap:36px;align-items:start;
+  padding:3px 10px;border-radius:10px;transition:background .15s;}
+.row:hover{background:var(--hover);}
+.jp{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","MS Mincho",serif;
+  font-size:clamp(18px,2.0vw,23px);line-height:2.0;letter-spacing:.02em;color:#241d1a;}
+.jp ruby{ruby-position:over;ruby-align:distribute-space;}
+.jp ruby rt{font-size:.5em;font-weight:600;color:var(--accent);letter-spacing:.05em;
+  font-family:"Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;}
+.cn{font-family:'ZCOOL KuaiLe','幼圆','YouYuan','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  font-size:clamp(14.5px,1.6vw,17.5px);line-height:2.0;color:#625a55;padding-top:.28em;}
+body.no-rt ruby rt{display:none;}
+body.no-cn .cn{display:none;}
+body.no-cn .row{grid-template-columns:1fr;}
+footer{margin-top:26px;text-align:center;font-size:12px;color:#a49a95;line-height:1.9;}
+footer a{color:#8a7f7a;}
+@media (max-width:780px){
+  .lyrics{padding:24px 16px 18px;}
+  .row{grid-template-columns:1fr;row-gap:2px;margin:8px 0;}
+  .jp{line-height:1.95;}
+  .cn{display:block;border-top:1px dashed var(--line);margin-top:2px;padding-top:4px;}
+  h1.title{font-size:30px;}
+}
+@media print{
+  body{background:#fff !important;color:#000;}
+  .controls,.badge{display:none !important;}
+  .lyrics{box-shadow:none;border:none;padding:0;}
+  .jp{color:#000;}
+  .cn{color:#333;}
+  .links-tools button,.l-editor,.links-empty{display:none !important;}
+}
+/* ---------- 找歌链接卡片 ---------- */
+.links{background:var(--card);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.6);
+  border-radius:24px;padding:22px 40px 26px;box-shadow:0 18px 50px rgba(80,60,90,.10);margin-top:22px;}
+.links-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.links-title{font-size:16px;margin:0;color:var(--accent);letter-spacing:.08em;}
+.links-title small{font-weight:400;color:#a09691;font-size:12px;letter-spacing:0;margin-left:6px;}
+.links-tools{display:flex;gap:8px;flex-wrap:wrap;}
+.links-tools button{font-family:inherit;font-size:12.5px;color:var(--accent);background:#fff;border:1px solid var(--accent-soft);
+  border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .18s;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.links-tools button:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.links-tools button.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.link-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.links-empty{color:#a09691;font-size:13px;margin:16px 0 0;line-height:1.8;}
+.chip{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#2b2623;background:#fff;
+  border:1px solid var(--line);border-radius:999px;padding:5px 8px 5px 16px;font-size:13.5px;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);transition:border-color .15s;}
+.chip:hover{border-color:var(--accent);}
+.chip a{display:inline-flex;align-items:center;gap:9px;color:inherit;text-decoration:none;}
+.chip a:hover{color:var(--accent);}
+.chip .host{color:#a09691;font-size:11.5px;}
+.chip .x{border:none;background:none;color:#c9bfb9;font-size:14px;cursor:pointer;line-height:1;padding:2px 8px;border-radius:50%;}
+.chip .x:hover{color:#fff;background:#e03131;}
+.l-editor{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center;}
+.l-editor[hidden]{display:none !important;}
+.l-in{font-family:inherit;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;color:#2b2623;min-width:0;outline:none;}
+.l-in:focus{border-color:var(--accent);}
+.l-in#inLabel{flex:1 1 150px;}
+.l-in#inUrl{flex:2 1 280px;}
+.l-editor button{font-family:inherit;font-size:13.5px;color:#fff;background:var(--accent);border:none;border-radius:10px;padding:9px 18px;cursor:pointer;}
+.l-editor #btnSetPw{background:none;color:var(--accent);border:1px solid var(--accent-soft);}
+.l-hint{flex-basis:100%;color:#a09691;font-size:12.5px;line-height:1.8;}
+.l-hint strong{color:#7d716c;}
+.l-note{flex-basis:100%;color:#e03131;font-size:12px;margin:0;}
+@media (max-width:780px){ .links{padding:18px 16px 20px;} .l-in{flex:1 1 100%;} }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="badge">♪ 日本語の歌詞カード</div>
+    <h1 class="title">あの夏が飽和する</h1>
+    <div class="artist">カンザキイオリ feat. 花譜</div>
+    
+    
+    <div class="controls">
+      <button id="btnRt" onclick="toggleRt()">隐藏假名</button>
+      <button id="btnCn" onclick="toggleCn()">隐藏翻译</button>
+      <button onclick="window.print()">🖨 打印</button>
+    </div>
+  </header>
+  <main class="lyrics">
+<div class="row"><div class="jp">「<ruby>昨日<rt>きのう</rt></ruby><ruby>人<rt>ひと</rt></ruby>を<ruby>殺<rt>ころ</rt></ruby>したんだ」</div><div class="cn">“我昨天杀了人。”</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>はそう<ruby>言<rt>い</rt></ruby>っていた</div><div class="cn">你这样说过。</div></div>
+<div class="row"><div class="jp"><ruby>梅雨時<rt>つゆどき</rt></ruby>ずぶ<ruby>濡<rt>ぬ</rt></ruby>れのまんま<ruby>部屋<rt>へや</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で<ruby>泣<rt>な</rt></ruby>いていた</div><div class="cn">梅雨季里浑身湿透，就那样在房间前哭着。</div></div>
+<div class="row"><div class="jp"><ruby>夏<rt>なつ</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まったばかりというのに</div><div class="cn">明明夏天才刚刚开始。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>はひどく<ruby>震<rt>ふる</rt></ruby>えていた</div><div class="cn">你却抖得很厉害。</div></div>
+<div class="row"><div class="jp">そんな<ruby>話<rt>はなし</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まるあの<ruby>夏<rt>なつ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>の<ruby>記憶<rt>きおく</rt></ruby>だ</div><div class="cn">那就是由那样一番话开始的那个夏日记忆。</div></div>
+<div class="row"><div class="jp">「<ruby>殺<rt>ころ</rt></ruby>したのは<ruby>隣<rt>となり</rt></ruby>の<ruby>席<rt>せき</rt></ruby>のいつも<ruby>虐<rt>いじ</rt></ruby>めてくるアイツ」</div><div class="cn">“杀的是隔壁座位上那个总是欺负我的家伙。”</div></div>
+<div class="row"><div class="jp">「もう<ruby>嫌<rt>いや</rt></ruby>になって<ruby>肩<rt>かた</rt></ruby>を<ruby>突<rt>つ</rt></ruby>き<ruby>飛<rt>と</rt></ruby>ばして」</div><div class="cn">“我已经烦了，就猛地推了他的肩膀。”</div></div>
+<div class="row"><div class="jp">「<ruby>打<rt>う</rt></ruby>ち<ruby>所<rt>どころ</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>かったんだ」</div><div class="cn">“结果撞到了要害。”</div></div>
+<div class="row"><div class="jp">「もうここには<ruby>居<rt>い</rt></ruby>られないと<ruby>思<rt>おも</rt></ruby>うしどっか<ruby>遠<rt>とお</rt></ruby>いとこで<ruby>死<rt>し</rt></ruby>んでくるよ」</div><div class="cn">“我已经没法待在这里了，所以要去很远的地方死掉。”</div></div>
+<div class="row"><div class="jp">そんな<ruby>君<rt>きみ</rt></ruby>に<ruby>僕<rt>ぼく</rt></ruby>は<ruby>言<rt>い</rt></ruby>った</div><div class="cn">我对那样的你说。</div></div>
+<div class="row"><div class="jp">「それじゃ<ruby>僕<rt>ぼく</rt></ruby>も<ruby>連<rt>つ</rt></ruby>れてって」</div><div class="cn">“那也把我一起带去吧。”</div></div>
+<div class="row"><div class="jp"><ruby>財布<rt>さいふ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ってナイフを<ruby>持<rt>も</rt></ruby>って</div><div class="cn">带着钱包，带着刀。</div></div>
+<div class="row"><div class="jp"><ruby>携帯<rt>けいたい</rt></ruby>ゲームもカバンに<ruby>詰<rt>つ</rt></ruby>めて</div><div class="cn">把掌机游戏也塞进包里。</div></div>
+<div class="row"><div class="jp">いらないものは<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>壊<rt>こわ</rt></ruby>していこう</div><div class="cn">不需要的东西全都破坏掉吧。</div></div>
+<div class="row"><div class="jp">あの<ruby>写真<rt>しゃしん</rt></ruby>もあの<ruby>日記<rt>にっき</rt></ruby>も<ruby>今<rt>いま</rt></ruby>となっちゃもういらないさ</div><div class="cn">那张照片也好，那本日记也好，现在已经都不需要了。</div></div>
+<div class="row"><div class="jp"><ruby>人殺<rt>ひとごろ</rt></ruby>しとダメ<ruby>人間<rt>にんげん</rt></ruby>の<ruby>君<rt>きみ</rt></ruby>と<ruby>僕<rt>ぼく</rt></ruby>の<ruby>旅<rt>たび</rt></ruby>だ Ah</div><div class="cn">这是杀人犯和废人的你与我的旅程 Ah</div></div>
+<div class="row"><div class="jp">そして<ruby>僕<rt>ぼく</rt></ruby>らは<ruby>逃<rt>に</rt></ruby>げ<ruby>出<rt>だ</rt></ruby>した</div><div class="cn">然后我们逃了出去。</div></div>
+<div class="row"><div class="jp">この<ruby>狭<rt>せま</rt></ruby>い<ruby>狭<rt>せま</rt></ruby>いこの<ruby>世界<rt>せかい</rt></ruby>から</div><div class="cn">从这个狭小狭小的世界里。</div></div>
+<div class="row"><div class="jp"><ruby>家族<rt>かぞく</rt></ruby>もクラスの<ruby>奴<rt>やつ</rt></ruby>らも<ruby>何<rt>なに</rt></ruby>もかも<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>捨<rt>す</rt></ruby>てて<ruby>君<rt>きみ</rt></ruby>と<ruby>二人<rt>ふたり</rt></ruby>で</div><div class="cn">把家人、班上的家伙、一切都全部抛下，和你两个人。</div></div>
+<div class="row"><div class="jp"><ruby>遠<rt>とお</rt></ruby>い<ruby>遠<rt>とお</rt></ruby>い<ruby>誰<rt>だれ</rt></ruby>もいない<ruby>場所<rt>ばしょ</rt></ruby>で<ruby>二人<rt>ふたり</rt></ruby>で<ruby>死<rt>し</rt></ruby>のうよ</div><div class="cn">在远远的、没有人的地方，两个人一起死吧。</div></div>
+<div class="row"><div class="jp">もうこの<ruby>世界<rt>せかい</rt></ruby>に<ruby>価値<rt>かち</rt></ruby>などないよ</div><div class="cn">这个世界已经没有什么价值了。</div></div>
+<div class="row"><div class="jp"><ruby>人殺<rt>ひとごろ</rt></ruby>しなんてそこら<ruby>中<rt>じゅう</rt></ruby><ruby>湧<rt>わ</rt></ruby>いてるじゃんか</div><div class="cn">杀人犯什么的，不是到处都是吗。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>も<ruby>悪<rt>わる</rt></ruby>くないよ　<ruby>君<rt>きみ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>も<ruby>悪<rt>わる</rt></ruby>くないよ</div><div class="cn">你没有任何错哦　你没有任何错哦</div></div>
+<div class="row"><div class="jp"><ruby>結局<rt>けっきょく</rt></ruby><ruby>僕<rt>ぼく</rt></ruby>ら<ruby>誰<rt>だれ</rt></ruby>にも<ruby>愛<rt>あい</rt></ruby>されたことなど<ruby>無<rt>な</rt></ruby>かったんだ</div><div class="cn">到头来，我们从来没有被任何人爱过。</div></div>
+<div class="row"><div class="jp">そんな<ruby>嫌<rt>いや</rt></ruby>な<ruby>共通点<rt>きょうつうてん</rt></ruby>で<ruby>僕<rt>ぼく</rt></ruby>らは<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>信<rt>しん</rt></ruby>じあってきた</div><div class="cn">因为那样讨厌的共同点，我们轻易地相互信任了。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>手<rt>て</rt></ruby>を<ruby>握<rt>にぎ</rt></ruby>った<ruby>時<rt>とき</rt></ruby><ruby>微<rt>かす</rt></ruby>かな<ruby>震<rt>ふる</rt></ruby>えも<ruby>既<rt>すで</rt></ruby>に<ruby>無<rt>な</rt></ruby>くなっていて</div><div class="cn">握住你的手时，那一点微弱的颤抖也已经消失了。</div></div>
+<div class="row"><div class="jp"><ruby>誰<rt>だれ</rt></ruby>にも<ruby>縛<rt>しば</rt></ruby>られないで<ruby>二人<rt>ふたり</rt></ruby><ruby>線路<rt>せんろ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いた</div><div class="cn">不被任何人束缚，两个人走在铁轨上。</div></div>
+<div class="row"><div class="jp"><ruby>金<rt>かね</rt></ruby>を<ruby>盗<rt>ぬす</rt></ruby>んで<ruby>二人<rt>ふたり</rt></ruby>で<ruby>逃<rt>に</rt></ruby>げて</div><div class="cn">偷了钱，两个人一起逃走。</div></div>
+<div class="row"><div class="jp">どこにも<ruby>行<rt>い</rt></ruby>ける<ruby>気<rt>き</rt></ruby>がしたんだ</div><div class="cn">感觉哪里都能去。</div></div>
+<div class="row"><div class="jp"><ruby>今更<rt>いまさら</rt></ruby><ruby>怖<rt>こわ</rt></ruby>いものは<ruby>僕<rt>ぼく</rt></ruby>らにはなかったんだ</div><div class="cn">事到如今，我们已经没有什么可怕的了。</div></div>
+<div class="row"><div class="jp"><ruby>額<rt>ひたい</rt></ruby>の<ruby>汗<rt>あせ</rt></ruby>も<ruby>落<rt>お</rt></ruby>ちたメガネも</div><div class="cn">额头上的汗也好，掉落的眼镜也好。</div></div>
+<div class="row"><div class="jp">「<ruby>今<rt>いま</rt></ruby>となっちゃどうでもいいさ」</div><div class="cn">“现在已经无所谓了。”</div></div>
+<div class="row"><div class="jp">「あぶれ<ruby>者<rt>もの</rt></ruby>の<ruby>小<rt>ちい</rt></ruby>さな<ruby>逃避行<rt>とうひこう</rt></ruby>の<ruby>旅<rt>たび</rt></ruby>だ Ah」</div><div class="cn">“这是漂泊者小小逃亡的旅程 Ah”</div></div>
+<div class="row"><div class="jp">いつか<ruby>夢見<rt>ゆめみ</rt></ruby>た<ruby>優<rt>やさ</rt></ruby>しくて<ruby>誰<rt>だれ</rt></ruby>にも<ruby>好<rt>す</rt></ruby>かれる<ruby>主人公<rt>しゅじんこう</rt></ruby>なら</div><div class="cn">如果是从前梦见的那个温柔、被所有人喜欢的主角的话。</div></div>
+<div class="row"><div class="jp"><ruby>汚<rt>きたな</rt></ruby>くなった<ruby>僕<rt>ぼく</rt></ruby>たちも<ruby>見捨<rt>みす</rt></ruby>てずにちゃんと<ruby>救<rt>すく</rt></ruby>ってくれるのかな？</div><div class="cn">他也会不抛弃变得肮脏的我们，好好拯救我们吗？</div></div>
+<div class="row"><div class="jp">「そんな<ruby>夢<rt>ゆめ</rt></ruby>なら<ruby>捨<rt>す</rt></ruby>てたよ」</div><div class="cn">“那样的梦，我早就扔掉了。”</div></div>
+<div class="row"><div class="jp">「だって<ruby>現実<rt>げんじつ</rt></ruby>を<ruby>見<rt>み</rt></ruby>ろよ？」</div><div class="cn">“因为，你倒是看看现实啊？”</div></div>
+<div class="row"><div class="jp">「シアワセの<ruby>四文字<rt>よもじ</rt></ruby>なんてなかった<ruby>今<rt>いま</rt></ruby>までの<ruby>人生<rt>じんせい</rt></ruby>で<ruby>思<rt>おも</rt></ruby>い<ruby>知<rt>し</rt></ruby>ったじゃないか」</div><div class="cn">“幸福那四个字根本不存在，到现在为止的人生里你不是已经体会到了吗？”</div></div>
+<div class="row"><div class="jp">「<ruby>自分<rt>じぶん</rt></ruby>は<ruby>何<rt>なに</rt></ruby>も<ruby>悪<rt>わる</rt></ruby>くねえと<ruby>誰<rt>だれ</rt></ruby>もがきっと<ruby>思<rt>おも</rt></ruby>ってる」</div><div class="cn">“每个人都一定觉得，自己什么都没做错。”</div></div>
+<div class="row"><div class="jp">あても<ruby>無<rt>な</rt></ruby>く<ruby>彷徨<rt>さまよ</rt></ruby>う<ruby>蝉<rt>せみ</rt></ruby>の<ruby>群<rt>む</rt></ruby>れに</div><div class="cn">向着漫无目的彷徨的蝉群。</div></div>
+<div class="row"><div class="jp"><ruby>水<rt>みず</rt></ruby>も<ruby>無<rt>な</rt></ruby>くなり<ruby>揺<rt>ゆ</rt></ruby>れ<ruby>出<rt>だ</rt></ruby>す<ruby>視界<rt>しかい</rt></ruby>に</div><div class="cn">向着连水也没有、开始摇晃的视野。</div></div>
+<div class="row"><div class="jp"><ruby>迫<rt>せま</rt></ruby>り<ruby>狂<rt>くる</rt></ruby>う<ruby>鬼<rt>おに</rt></ruby>たちの<ruby>怒号<rt>どごう</rt></ruby>に</div><div class="cn">向着逼近发狂的鬼们的怒吼。</div></div>
+<div class="row"><div class="jp">バカみたいにはしゃぎあい</div><div class="cn">像傻瓜一样互相嬉闹。</div></div>
+<div class="row"><div class="jp">ふと<ruby>君<rt>きみ</rt></ruby>はナイフをとった</div><div class="cn">忽然，你拿起了刀。</div></div>
+<div class="row"><div class="jp">「<ruby>君<rt>きみ</rt></ruby>が<ruby>今<rt>いま</rt></ruby>までそばにいたからここまでこれたんだ」</div><div class="cn">“因为你一直在我身边，我才能走到这里。”</div></div>
+<div class="row"><div class="jp">「だからもういいよ」</div><div class="cn">“所以已经够了。”</div></div>
+<div class="row"><div class="jp">「もういいよ」</div><div class="cn">“已经够了。”</div></div>
+<div class="row"><div class="jp">「<ruby>死<rt>し</rt></ruby>ぬのは<ruby>私<rt>わたし</rt></ruby><ruby>一人<rt>ひとり</rt></ruby>でいいよ」</div><div class="cn">“要死的话，我一个人就好。”</div></div>
+<div class="row"><div class="jp">そして<ruby>君<rt>きみ</rt></ruby>は<ruby>首<rt>くび</rt></ruby>を<ruby>切<rt>き</rt></ruby>った</div><div class="cn">然后你割了脖子。</div></div>
+<div class="row"><div class="jp">まるで<ruby>何<rt>なに</rt></ruby>かの<ruby>映画<rt>えいが</rt></ruby>のワンシーンだ</div><div class="cn">简直像某部电影里的一个场景。</div></div>
+<div class="row"><div class="jp"><ruby>白昼夢<rt>はくちゅうむ</rt></ruby>を<ruby>見<rt>み</rt></ruby>ている<ruby>気<rt>き</rt></ruby>がした</div><div class="cn">感觉像在做一个白日梦。</div></div>
+<div class="row"><div class="jp"><ruby>気<rt>き</rt></ruby>づけば<ruby>僕<rt>ぼく</rt></ruby>は<ruby>捕<rt>つか</rt></ruby>まって</div><div class="cn">回过神来，我已经被抓了。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>がどこにも<ruby>見<rt>み</rt></ruby>つからなくって</div><div class="cn">你却哪里都找不到。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>だけがどこにもいなくって</div><div class="cn">唯独你，哪里都不在。</div></div>
+<div class="row"><div class="jp">そして<ruby>時<rt>とき</rt></ruby>は<ruby>過<rt>す</rt></ruby>ぎていった</div><div class="cn">然后时光流逝。</div></div>
+<div class="row"><div class="jp">ただ<ruby>暑<rt>あつ</rt></ruby>い<ruby>暑<rt>あつ</rt></ruby>い<ruby>日<rt>ひ</rt></ruby>が<ruby>過<rt>す</rt></ruby>ぎてった</div><div class="cn">只是炎热的日子一天天过去。</div></div>
+<div class="row"><div class="jp"><ruby>家族<rt>かぞく</rt></ruby>もクラスの<ruby>奴<rt>やつ</rt></ruby>らもいるのに</div><div class="cn">明明家人和班上的家伙都在。</div></div>
+<div class="row"><div class="jp">なぜか<ruby>君<rt>きみ</rt></ruby>だけはどこにもいない</div><div class="cn">可不知为何，唯独你哪里都不在。</div></div>
+<div class="row"><div class="jp">あの<ruby>夏<rt>なつ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>を<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す</div><div class="cn">我想起那个夏日。</div></div>
+<div class="row"><div class="jp"><ruby>僕<rt>ぼく</rt></ruby>は<ruby>今<rt>いま</rt></ruby>も<ruby>今<rt>いま</rt></ruby>でも歌ってる</div><div class="cn">我现在也，直到现在也仍在唱着。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>をずっと<ruby>探<rt>さが</rt></ruby>しているんだ</div><div class="cn">一直在寻找你。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>に<ruby>言<rt>い</rt></ruby>いたいことがあるんだ</div><div class="cn">我有话想对你说。</div></div>
+<div class="row"><div class="jp"><ruby>九月<rt>くがつ</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりにくしゃみして</div><div class="cn">在九月底打了个喷嚏。</div></div>
+<div class="row"><div class="jp"><ruby>六月<rt>ろくがつ</rt></ruby>の<ruby>匂<rt>にお</rt></ruby>いを<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>す</div><div class="cn">又反复闻到六月的味道。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>笑顔<rt>えがお</rt></ruby>は</div><div class="cn">你的笑容。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>の<ruby>無邪気<rt>むじゃき</rt></ruby>さは<ruby>頭<rt>あたま</rt></ruby>の<ruby>中<rt>なか</rt></ruby>を<ruby>飽和<rt>ほうわ</rt></ruby>している</div><div class="cn">你的天真，正在我的脑海中饱和。</div></div>
+<div class="row"><div class="jp"><ruby>誰<rt>だれ</rt></ruby>も<ruby>何<rt>なに</rt></ruby>も<ruby>悪<rt>わる</rt></ruby>くないよ</div><div class="cn">谁都没有错，什么都没有错哦。</div></div>
+<div class="row"><div class="jp"><ruby>君<rt>きみ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>も<ruby>悪<rt>わる</rt></ruby>くはないから</div><div class="cn">因为你什么都没有错。</div></div>
+<div class="row"><div class="jp">もういいよ<ruby>投<rt>な</rt></ruby>げ<ruby>出<rt>だ</rt></ruby>してしまおう</div><div class="cn">已经够了，干脆全都抛下吧。</div></div>
+<div class="row"><div class="jp">そう<ruby>言<rt>い</rt></ruby>って<ruby>欲<rt>ほ</rt></ruby>しかったのだろう？</div><div class="cn">你是想让我那样说吧？</div></div>
+<div class="row"><div class="jp">なあ？</div><div class="cn">喂？</div></div>
+  </main>
+  <section class="links">
+    <div class="links-head">
+      <div class="links-title">🔗 找歌链接 <small>点击即可打开</small></div>
+      <div class="links-tools">
+        <button id="btnEdit" onclick="toggleEdit()">🔒 管理链接</button>
+        <button id="btnExport" onclick="exportPage()" style="display:none">⬇ 导出本页（含链接）</button>
+      </div>
+    </div>
+    <div id="linkList" class="link-list"></div>
+    <p class="links-empty" id="linksEmpty">还没有添加链接 —— 点右上「管理链接」，粘贴 YouTube / B站 / 网易云 等地址，方便以后快速找歌。</p>
+    <div class="l-editor" id="lEditor" hidden>
+      <input id="inLabel" class="l-in" type="text" placeholder="名称（如：MV / 现场版 / 网易云）">
+      <input id="inUrl" class="l-in" type="url" placeholder="https://… 完整链接">
+      <button id="btnAdd" onclick="addLink()">＋ 添加</button>
+      <button id="btnSetPw" onclick="setPw()" type="button">设密码</button>
+      <div class="l-hint" id="lHint"></div>
+      <p class="l-note" id="lNote"></p>
+    </div>
+  </section>
+  <footer>
+    歌詞出典：<a href="https://www.uta-net.com" target="_blank" rel="noreferrer">歌ネット（uta-net.com）</a>／中文翻译为个人学习用意译<br>
+    仅供个人学习日语使用，请勿用于商业用途。
+  </footer>
+</div>
+<script>
+function toggleRt(){
+  var on=document.body.classList.toggle('no-rt');
+  document.getElementById('btnRt').textContent = on ? '显示假名' : '隐藏假名';
+}
+function toggleCn(){
+  var on=document.body.classList.toggle('no-cn');
+  document.getElementById('btnCn').textContent = on ? '显示翻译' : '隐藏翻译';
+}
+</script>
+<script id="linksData">
+window.__linksInit = [["「HiRes」あの夏が飽和する（feat.花譜）- カンザキイオリ （96Khz高保真无损音频）", "https://www.bilibili.com/video/BV1v84y1o7Cp"], ["YouTube 搜索", "https://www.youtube.com/results?search_query=%E3%81%82%E3%81%AE%E5%A4%8F%E3%81%8C%E9%A3%BD%E5%92%8C%E3%81%99%E3%82%8B+%E3%82%AB%E3%83%B3%E3%82%B6%E3%82%AD%E3%82%A4%E3%82%AA%E3%83%AA+feat.+%E8%8A%B1%E8%AD%9C"], ["B站 搜索", "https://search.bilibili.com/all?keyword=%E3%81%82%E3%81%AE%E5%A4%8F%E3%81%8C%E9%A3%BD%E5%92%8C%E3%81%99%E3%82%8B+%E3%82%AB%E3%83%B3%E3%82%B6%E3%82%AD%E3%82%A4%E3%82%AA%E3%83%AA+feat.+%E8%8A%B1%E8%AD%9C"]];
+window.__linksPw = "";
+</script>
+<script>
+/* ===== 找歌链接管理 =====
+   规则：每首歌的链接 = 页面内置默认 + 本浏览器里的增删（localStorage 按页面名存）。
+   其他访客打开这个文件/网站时，改的是“他自己的浏览器”，永远影响不到你看到的列表。
+   「管理密码」：EDITOR_KEY 非空时（或本机设过密码），增删必须先输密码；导出/分享的文件同样生效。 */
+(function(){
+  var file = decodeURIComponent((location.pathname.split('/').pop() || 'page'));
+  var LS='tk_links_'+file, PS='tk_pw_'+file;
+  var mem={}, memOk=true;
+  try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); }
+  catch(e){ memOk=false; }
+  function load(k){ if(memOk){ try{ return localStorage.getItem(k); }catch(e){ return null; } } return (k in mem)?mem[k]:null; }
+  function save(k,v){ if(memOk){ try{ localStorage.setItem(k,v); return; }catch(e){} } mem[k]=v; }
+  function del(k){ if(memOk){ try{ localStorage.removeItem(k); return; }catch(e){} } delete mem[k]; }
+  var pwStored = load(PS);
+  var PAGE_PW = (typeof window.__linksPw!=='undefined' && window.__linksPw) ? window.__linksPw : '';
+  var baked = (typeof window.__linksInit!=='undefined' && Array.isArray(window.__linksInit)) ? window.__linksInit : [];
+  function bakedUrls(){ return baked.map(function(x){ return x && x[1]; }); }
+  function loadLocalExtras(){
+    var raw = load(LS);
+    if(raw){ try{
+      var o=JSON.parse(raw);
+      if(o && Array.isArray(o.list)){
+        var bu=bakedUrls();
+        // 旧数据里可能存过“整份列表”，过滤掉与数据库重复的部分，只保留本机新增
+        return o.list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+      }
+    }catch(e){} }
+    return [];
+  }
+  var localExtras = loadLocalExtras();
+  // 页面最终列表 = 数据库/内置链接（所有人可见） + 本机新增（只影响自己）
+  function currentList(){ return baked.concat(localExtras); }
+  function persist(list){
+    var bu=bakedUrls();
+    localExtras = list.filter(function(it){ return it && it[1] && bu.indexOf(it[1])<0; });
+    save(LS, JSON.stringify({list:localExtras}));
+  }
+  var editOn=false, req = pwStored || PAGE_PW;
+  function hostOf(u){ try{ return new URL(u).host.replace(/^www\./,''); }catch(e){ return ''; } }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function render(){
+    var list=currentList(), box=document.getElementById('linkList'), empty=document.getElementById('linksEmpty');
+    box.innerHTML='';
+    if(!list.length){ empty.style.display='block'; }
+    else{
+      empty.style.display='none';
+      list.forEach(function(it,i){
+        var label=(it && it[0]) || (it && it[1]) || '', url=(it && it[1]) || '';
+        if(!url) return;
+        var span=document.createElement('span'); span.className='chip';
+        var a=document.createElement('a'); a.href=url; a.target='_blank'; a.rel='noreferrer';
+        a.innerHTML='<span class="cl">'+esc(label)+'</span><span class="host">'+esc(hostOf(url))+'</span>';
+        span.appendChild(a);
+        if(editOn){
+          var x=document.createElement('button');
+          x.className='x'; x.title=(i<baked.length?'来自数据库，需在 songs.db 里删除':'删除本机新增'); x.type='button'; x.textContent='✕';
+          x.onclick=(function(k){ return function(ev){ ev.preventDefault(); ev.stopPropagation();
+            if(k<baked.length){ alert('这条来自数据库（songs.db），所有设备都能看到；要删除请用 linkdb.py rm，或直接告诉我。'); return; }
+            if(confirm('删除这条本机新增的链接？')){ var l=currentList(); l.splice(k,1); persist(l); render(); } }; })(i);
+          span.appendChild(x);
+        }
+        box.appendChild(span);
+      });
+    }
+    if(editOn){
+      document.getElementById('lEditor').hidden=false;
+      var h='列表 = <strong>数据库链接</strong>（所有人可见） + <strong>本机新增</strong>（仅自己）。数据库链接用 _tools\\linkdb.py 管理；点「导出本页」可把全部链接写进一个 html 带走或分享。';
+      if(req){ h+=' 密码已启用：不知道密码的访客无法增删。'; }
+      else{ h+=' 目前<strong>未设密码</strong>：任何访客都能增删，但只影响各自的浏览器。建议点「设密码」或改 lyric_build.py 的 EDITOR_KEY 后重新构建。'; }
+      document.getElementById('lHint').innerHTML=h;
+      document.getElementById('lNote').textContent = memOk ? '' : '注意：此环境不支持 localStorage，本次改动关闭页面后会丢失。';
+    } else {
+      document.getElementById('lEditor').hidden=true;
+    }
+  }
+  window.toggleEdit=function(){
+    if(!editOn){
+      if(req){
+        var p=prompt('请输入管理密码：');
+        if(p===null) return;
+        if(p!==req){ alert('密码错误'); return; }
+      }
+      editOn=true;
+      var b=document.getElementById('btnEdit');
+      b.textContent='🔓 完成编辑'; b.classList.add('on');
+      document.getElementById('btnExport').style.display='';
+    } else {
+      editOn=false;
+      var b2=document.getElementById('btnEdit');
+      b2.textContent='🔒 管理链接'; b2.classList.remove('on');
+      document.getElementById('btnExport').style.display='none';
+    }
+    render();
+  };
+  window.addLink=function(){
+    var label=document.getElementById('inLabel').value.trim();
+    var url=document.getElementById('inUrl').value.trim();
+    if(!/^https?:\/\//i.test(url)){ alert('链接要以 http:// 或 https:// 开头'); return; }
+    if(!label) label=url;
+    var list=currentList(); list.push([label,url]);
+    persist(list); render();
+    document.getElementById('inLabel').value=''; document.getElementById('inUrl').value='';
+  };
+  window.setPw=function(){
+    var p=prompt('设置本机管理密码（留空 = 取消保护）。设置后增删链接都要先输入它。');
+    if(p===null) return;
+    if(p===''){ pwStored=''; del(PS); }
+    else { pwStored=p; save(PS,p); }
+    req = pwStored || PAGE_PW;
+    alert(req ? '密码已启用。' : '保护已取消（任何访客都能增删，但只影响各自浏览器）。');
+  };
+  window.exportPage=function(){
+    var list=currentList();
+    var doc=document.getElementById('linksData');
+    var old=doc.textContent;
+    function jsSafe(o){ return JSON.stringify(o).replace(/<\//g,'<\\/'); }
+    var fresh='window.__linksInit = '+jsSafe(list)+';\nwindow.__linksPw = '+jsSafe(PAGE_PW)+';';
+    var html=document.documentElement.outerHTML.replace(old, fresh);
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=file;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    alert('已导出：'+file+'\n这个新文件已把当前全部链接写进页面，发给别人或上传后，他们也能看到这些链接。');
+  };
+  render();
+})();
+</script>
+</body>
+</html>
