@@ -5,10 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>我的日语歌词卡</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
-
 *{box-sizing:border-box}
-body{margin:0;font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Yu Gothic UI','Microsoft YaHei',system-ui,sans-serif;
+body{margin:0;font-family:"Yu Gothic UI","Hiragino Sans","Meiryo","Microsoft YaHei",system-ui,sans-serif;
   background:linear-gradient(160deg,#fdf6f8 0%,#eef1fb 60%,#f8f2fb 100%);min-height:100vh;color:#2b2623;}
 .page{max-width:1000px;margin:0 auto;padding:50px 22px 70px;}
 h1{text-align:center;font-size:clamp(26px,4vw,38px);letter-spacing:.12em;margin:0 0 6px;}
@@ -25,26 +23,13 @@ h1{text-align:center;font-size:clamp(26px,4vw,38px);letter-spacing:.12em;margin:
 .c-artist{margin-top:12px;color:#8a7f7a;font-size:13px;}
 .c-go{margin-top:20px;color:var(--accent);font-size:13.5px;font-weight:700;}
 .note{text-align:center;margin-top:46px;color:#a09691;font-size:13px;line-height:2;}
-
-
-.search-wrap{max-width:520px;margin:-10px auto 34px;text-align:center;}
-#songSearch{width:100%;padding:13px 22px;border-radius:999px;border:1.5px solid rgba(214,51,108,.22);background:rgba(255,255,255,.92);font-family:'ZCOOL KuaiLe','幼圆','YouYuan','Microsoft YaHei',sans-serif;font-size:15px;color:#2b2623;outline:none;box-shadow:0 6px 20px rgba(70,60,90,.08);transition:border .15s, box-shadow .15s;}
-#songSearch:focus{border-color:rgba(214,51,108,.55);box-shadow:0 6px 22px rgba(214,51,108,.16);}
-.search-count{margin-top:9px;font-family:'ZCOOL KuaiLe','幼圆','YouYuan',sans-serif;font-size:13px;color:#a09691;letter-spacing:.1em;}
-
 </style>
 </head>
 <body>
 <div class="page">
   <h1>🎵 我的日语歌词卡</h1>
   <p class="sub">日文歌词（汉字标注平假名）＋ 中文翻译，左右对照</p>
-  
-<div class="search-wrap">
-  <input id="songSearch" type="search" placeholder="搜索歌名 / 歌手 / 中文名..." autocomplete="off">
-  <div class="search-count" id="songCount"></div>
-</div>
-
-<div class="cards">
+  <div class="cards">
     <a class="card" style="--accent:#0c8599;--accent-soft:rgba(12,133,153,.28);--bg1:#f2fbfc;--bg2:#d6f0f5;--bg3:#e9f8fb;--card:rgba(255,255,255,.87);--hover:rgba(12,133,153,.07);--line:rgba(12,133,153,.18);" href="3月9日-レミオロメン.html">
       <div class="c-num">01</div>
       <div class="c-title">3<ruby>月<rt>がつ</rt></ruby>9<ruby>日<rt>ここのか</rt></ruby></div>
@@ -15023,30 +15008,30 @@ h1{text-align:center;font-size:clamp(26px,4vw,38px);letter-spacing:.12em;margin:
       <div class="c-title">カフェ・オ・レ</div>
       <div class="c-artist">森七菜</div>
       <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);" href="○○ちゃん-あいみょん.html">
+      <div class="c-num">2141</div>
+      <div class="c-title">○○ちゃん</div>
+      <div class="c-artist">あいみょん</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);" href="ナウなヤングにバカウケするのは当たり前だのクラッ歌-あいみょん.html">
+      <div class="c-num">2142</div>
+      <div class="c-title">ナウなヤングにバカウケするのは<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby>だのクラッ<ruby>歌<rt>うた</rt></ruby></div>
+      <div class="c-artist">あいみょん</div>
+      <div class="c-go">打开歌词 →</div>
+    </a>
+
+    <a class="card" style="--accent:#3b5bdb;--accent-soft:rgba(59,91,219,.28);--bg1:#f6f8ff;--bg2:#e3ecff;--bg3:#eef3ff;--card:rgba(255,255,255,.88);--hover:rgba(59,91,219,.07);--line:rgba(59,91,219,.18);" href="ノット・オーケー-あいみょん.html">
+      <div class="c-num">2143</div>
+      <div class="c-title">ノット・オーケー</div>
+      <div class="c-artist">あいみょん</div>
+      <div class="c-go">打开歌词 →</div>
     </a></div>
   <p class="note">想加入新的歌？直接告诉我歌名就行，我会往这个文件夹里继续添加 ♪<br>
   歌词出典：歌ネット（uta-net.com）／翻译为个人学习用意译，请勿商用。</p>
 </div>
-<script>
-(function(){
-  var input = document.getElementById('songSearch');
-  if (!input) return;
-  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
-  var count = document.getElementById('songCount');
-  function render(){
-    var q = (input.value||'').trim().toLowerCase();
-    var n = 0;
-    cards.forEach(function(c){
-      var hit = !q || (c.textContent||'').toLowerCase().indexOf(q) > -1;
-      c.style.display = hit ? '' : 'none';
-      if (hit) n++;
-    });
-    if (count) count.textContent = q ? ('找到 ' + n + ' / ' + cards.length + ' 首') : ('共 ' + cards.length + ' 首歌');
-  }
-  input.addEventListener('input', render);
-  render();
-})();
-</script>
-
 </body>
 </html>

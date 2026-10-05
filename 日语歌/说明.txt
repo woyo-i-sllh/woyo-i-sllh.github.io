@@ -1,5 +1,5 @@
 ﻿============================================================
- 我的歌（日语 + 华语）— 使用说明 & 技术复现手册
+ 我的歌（日语歌 + 华语歌 + 纯音乐 + CD原声）— 使用说明 & 技术复现手册
  根目录：F:\life\songs
 ============================================================
 
@@ -7,7 +7,9 @@
 把喜欢的歌做成「歌词卡 + 本地播放器」：
   · 日语歌：左日文（汉字上方标平假名注音）/ 右中文翻译，逐行对应；
   · 华语歌：纯歌词（不做翻译和注音）；
-  · 本地播放器：可听 mp3 / 看 mp4，支持切版本、记音量、记上次播放版本；
+  · 纯音乐：无歌词，只保留链接与音频；
+  · CD原声：直接播放原版 WAV，不压缩、不转码，音质优先；
+  · 本地播放器：可听 MP3/WAV、看 MP4，支持切版本、记音量、记上次播放版本；
   · 纯 HTML/CSS/少量 JS + 一个零依赖本地服务，断网可用。
 
 【二、目录结构】（重要：所有脚本都按这个结构找文件）
@@ -18,14 +20,18 @@
     │         ├─ lyric_build.py     构建器：校验注音 → 生成 html/index/说明.txt
     │         └─ 说明_template.txt  说明.txt 的模板（改这里，别直接改说明.txt）
     ├─ 华语歌\                     ← 华语歌词卡（每首 .html + index.html）
-    ├─ media\<歌名>\                ← 下载好的 mp4 + mp3（两个库共用）
+    ├─ media\<歌名>\                ← 下载好的 mp4 + mp3（日语/华语/纯音乐共用）
+    ├─ CD\<专辑名>\                 ← CD原声 WAV（每个子目录一张专辑）
     ├─ app\
-    │    ├─ server.py              播放器服务端（双库：日语/华语）
+    │    ├─ server.py              播放器服务端（四分类：日语/华语/纯音乐/CD原声）
     │    └─ player.html            播放器界面
     ├─ tools\                      各类工具脚本（见第六节）
     ├─ data\
     │    ├─ songs.db               日语歌数据库（歌名/链接/媒体）
-    │    └─ cpop.db                华语歌数据库
+    │    ├─ cpop.db                华语歌数据库
+    │    ├─ instrumental.db        纯音乐数据库
+    │    ├─ cd.db                  CD原声数据库（WAV 媒体）
+    │    └─ cd_album_meta.json     CD 专辑→歌手元数据映射
     └─ logs\                       运行日志、pid 文件
 
 【三、页面功能】
@@ -37,7 +43,7 @@
 
 【四、播放器（本地听歌/看 MV）】
   · 启动：双击桌面「启动听歌.bat」，或 python F:\life\songs\tools\start_server.py
-  · 地址：http://127.0.0.1:8787/   （顶部可切 日语歌 / 华语歌）
+  · 地址：http://127.0.0.1:8787/   （顶部可切 日语歌 / 华语歌 / 纯音乐 / CD原声）
   · 停止：桌面「停止听歌.bat」，或 python F:\life\songs\tools\stop_server.py
   · 功能：
       - 左边歌单（可搜索），右边播放区 + 歌词联动；
@@ -52,12 +58,21 @@
 
 ◆ 日语歌：加一首新歌
   1) 【日文歌词 + 注音】以日本歌词站为准，优先级：
-        uta-net（歌ネット，最权威，常限流）→ UtaTen（うたてん，带官方ふりがな）
-        → 萌娘百科日文页（带 ruby）→ j-lyric
+        UtaTen（うたてん，优先；通常同时提供日文原文和官方ふりがな）
+        → 歌ネット（uta-net，最权威但常限流）
+        → 官方 MV / 官方发行页 → 萌娘百科日文页（带 ruby）→ j-lyric。
+        UtaTen 页面若显示“歌詞掲載に向けて準備中”，说明官方歌词尚未公开，不得用自动分词或猜测歌词替代。
      注音要求：汉字按词连缀整体标注；带送假名只标汉字部分；
      特殊读法（能力=チカラ、標的=やつ、運命=さだめ 等）必须按官方标注。
+     歌词正文严禁写「漢字(かな)」或「漢字（かな）」；所有读音必须放 notes，由构建器生成上方 ruby。
+     如果来源本身用括号注音，先运行 tools\convert_inline_furigana.py 迁移；括号属于和声、重复句、
+     强调词而不是读音时保留，不能为了清括号误删歌词。
+     没有可靠官方注音源时，由 Codex 根据完整句意、人物称呼和歌曲语境逐句人工注音；
+     禁止直接把 pykakasi、UniDic、Sudachi 等自动注音结果写入正式歌词。
+     上述分词器只可作为找疑点的排查工具，不能生成或覆盖正式读音。
+     「君」必须按上下文区分：代词/直接称呼“你”读 きみ；人名后敬称“某某君”读 くん。
      歌词正文第一行必须是真正可唱的第一句。演唱、歌手、乐团、作词、作曲、编曲、录音、
-     混音、监制、助理、出品、Studio/Producer/Engineer 等制作人员或平台元数据禁止写入
+     混音、母带、监制、助理、出品、原声吉他、电吉他、人声、编程、贝斯、小提琴、中提琴、大提琴、萨克斯、小号、长号、键盘、弦乐、词曲、OP/ED 来源行、Studio/Producer/Engineer 等制作人员或平台元数据禁止写入
      sections；这些信息只能放 credit。来源歌词若带头部/尾部名单，必须先清理再建卡。
      歌手字段只写歌手或团体正式名，禁止包含歌名、版本名、链接标题或站点标签。
      歌名翻译已停用：title_cn 必须留空，歌词卡和播放器都不再显示中文歌名或“中文名 · 歌手”。
@@ -73,8 +88,15 @@
         python F:\life\songs\tools\dedupe_jp_songs.py --apply  # 确认后合并重复版本
         cd F:\life\songs\日语歌\_tools
         python lyric_build.py        # 校验注音 + 生成 html/index/说明.txt
-     normalizer 会清理混入正文的制作人员行；builder 若再发现这类行会直接停止，防止错卡上线。
+     normalizer 会清理混入正文的制作人员行，并剥掉歌词行开头残留的 LRC 时间戳；builder 若再发现这类行会直接停止，防止错卡上线。
+     典型制作人员行包括“原声吉他/电吉他/人声/编程/贝斯/小提琴/萨克斯/键盘/混音/母带/词曲/CAST/OP・ED 来源”等。
+     误判风险较高的 OP/ED 规则必须限制为明确来源格式，不能只因英文词尾出现“ED”就删除。
      dedupe 会把重复入口的链接和 MP4/MP3 迁到保留歌曲，不丢版本。
+     同名歌曲禁止只按歌名合并。合并前必须比较日文歌词正文：
+       · 歌名相同且日文歌词归一化后相似度 ≥ 0.98，才可视为同曲/翻唱并合并版本；
+       · 歌词不同的同名歌曲必须保留，例如《ありがとう》的不同作品、不同歌手的同名异曲；
+       · 合并时优先保留媒体和链接更完整、非占位、带正式歌词的页面；
+       · 合并后检查链接、MP4、MP3 和歌单引用全部迁到保留页。
      歌曲介绍（subtitle_cn）可持续分批补。优先从已保存的 B站说明提取明确来源：
         python F:\life\songs\tools\fill_jp_intros_from_bili.py          # 预览
         python F:\life\songs\tools\fill_jp_intros_from_bili.py --apply  # B站说明来源
@@ -82,18 +104,45 @@
         python F:\life\songs\tools\fill_jp_intros_from_netease_search.py --apply  # 歌名+歌手搜索补缺
         python F:\life\songs\tools\fill_jp_intros_fallback.py                 # 最后只写“由X演唱”
      没有可靠来源时禁止编造影视、动画、专辑或游戏出处；最低只能写歌手事实。
-     标题假名使用 UniDic 形态素读音；歌词中的「君」统一为「きみ」，禁止再使用 pykakasi 的上下文猜测结果：
-        tools\venv\Scripts\python.exe tools\repair_jp_furigana.py
+     标题和歌词读音以可靠官方来源为第一优先级。没有官方源时由 Codex 按上下文人工注音；
+     不允许自动注音工具直接写库。历史数据修正可运行：
+        python F:\life\songs\tools\convert_inline_furigana.py --apply
+        tools\venv\Scripts\python.exe tools\repair_jp_furigana.py   # 仅用于遗留数据修复
   4) 【加链接】播放器里选中这首歌 → 粘贴 B站链接 → 添加；或
         python F:\life\songs\tools\linkdb.py add "歌名" "名称" "https://…" --kind mv
   5) 【下载】python F:\life\songs\tools\download.py fetch --all
         （只下没下过的；单首 --song "歌名"，指定链接 --link-id N）
   6) 【发布】日语歌词站：运行 F:\life\hexo\woyoblog\sync_jpop.ps1
 
-◆ 日语歌：加 B站 合集里的歌
-  · 用分P接口列出全部曲目：https://api.bilibili.com/x/player/pagelist?bvid=<BV号>
-  · 已有歌 → 给那首歌加一个版本（链接带 &p=N）；新歌 → 建条目 + 占位页 + 链接
-  · 再按上面的 3)~6) 走一遍（歌词卡可分批补）
+◆ 日语歌：加 B站合集 / 演唱会 Live
+  A) 普通分P合集
+     · 用分P接口列出全部曲目：https://api.bilibili.com/x/player/pagelist?bvid=<BV号>；
+     · 已有歌 → 给那首歌追加版本；新歌 → 建立正式条目、歌词卡、歌手歌单和链接。
+
+  B) UGC合集 / season / 演唱会
+     · 从 view 接口读取 `ugc_season.sections[*].episodes`，不要只看当前BV的 pages；
+     · 先过滤实际现场表演，排除 Reaction、翻弹、猜歌、朗读、教程、混剪；
+     · 一个视频包含多首歌曲时，同一链接分别挂到每个对应歌曲下；
+     · 已有歌曲只追加 live 版本，保留原 MV 和旧版本，不覆盖、不替换；
+     · 缺少歌曲页时补建正式条目，并加入对应歌手歌单；
+     · 纯音乐只建“纯音乐 · 无歌词”卡，不进入翻译/注音校验。
+
+  C) 新歌歌词必须同步补齐
+     · 日文原文/官方 ruby：UtaTen → 歌ネット → 官方发行渠道 → 网易云 → Codex 人工处理；
+     · 中文翻译和注音可使用本机 DeepSeek skill：
+       C:\Users\woyo4\.codex\skills\deepseek-japanese-lyrics\SKILL.md
+       默认模型 `deepseek-flash`；只有用户明确同意才使用 `deepseek-v4-pro`；
+     · 写库后依次运行：
+       python F:\life\songs\tools\split_furigana_surfaces.py --apply
+       python F:\life\songs\tools\audit_furigana.py
+       python F:\life\songs\日语歌\_tools\lyric_build.py
+     · 新建歌曲不得以“歌词整理中”直接发布；只有用户明确要求暂缓歌词时才允许占位。
+
+  D) 下载与发布
+     · 给整批链接使用统一 note，如 `live:season:<id>`：
+       python F:\life\songs\tools\download.py fetch --tag live:season:<id>
+     · 校验 MP4/MP3 数量、大小、时长和重复项；
+     · 最后运行 sync_jpop.ps1，将歌词卡、链接和新歌一起发布。
 
 ◆ 华语歌：加一首新歌
   1) python F:\life\songs\tools\zh_fetch.py fetch      # QQ音乐抓歌词（含词曲、专辑）
@@ -101,6 +150,39 @@
   3) python F:\life\songs\tools\zh_find_bilibili.py --missing   # 自动搜 B站 视频
   4) python F:\life\songs\tools\zh_download.py --all   # 下载 mp4+mp3
   5) 发布：把 华语歌\*.html 复制到 F:\life\hexo\woyoblog\source\华语歌 后 hexo g -d
+
+◆ CD原声：新增一张专辑 / WAV
+  1) 把 WAV 按专辑分目录放好，例如：
+       F:\life\songs\CD\だから僕は音楽を辞めた\01 - 8-31.wav
+       飞牛对应目录：N:\CD\だから僕は音楽を辞めた\01 - 8-31.wav
+     推荐文件名格式：两位以上音轨号 + " - " + 日文曲名；文件内部无标签也可正确建档。
+  2) 在 data\cd_album_meta.json 登记专辑名与歌手；目录名会自动忽略首尾及全角空格：
+       "だから僕は音楽を辞めた": {"artist": "ヨルシカ", "artist_cn": ""}
+     未登记的专辑会把专辑目录名临时当作歌手，随后应补登记。
+  3) 重建 CD 数据库（脚本会用 ffprobe 读取时长）：
+       python F:\life\songs\tools\build_cd_db.py --source F:\life\songs\CD --db F:\life\songs\data\cd.db
+  4) 本机验证：启动播放器，切到「💿 CD原声」，确认曲序、歌手、WAV 时长和播放正常。
+  5) 同步 NAS：运行 tools\upload_to_nas.ps1 -Destination N:\；脚本会同步 cd.db、CD\ 和四个分类需要的部署文件。
+  6) CD原声始终使用 WAV 原文件，不生成 MP3、不转码；服务端以 /api/songs?lang=cd 返回曲库。
+
+◆ 本机 → NAS：更新方式必须区分
+  A) 只改了以下数据：database、CD\WAV、media、歌词卡/html/歌单/JPG 等静态资源
+     · 运行 upload_to_nas.ps1；
+     · 飞牛容器无需重启；浏览器刷新即可；PWA 若仍显示旧页面，升级 sw.js 缓存版本后重新打开。
+  B) 改了 app\server.py
+     · 上传后必须在飞牛 Docker Compose 中重启/重新部署 songs 项目，让 Python 进程重新加载服务端。
+     · 普通刷新页面不会加载新 server.py。
+     · 重启后必须做媒体冒烟测试：jp / zh / inst 的 URL 应为 /media/<相对路径>，CD 应为 /media/cd/<相对路径>；
+       各取一首带媒体歌曲发送 Range: bytes=0-1023，正确结果必须为 HTTP 206。
+     · 若出现 /media/media/... 双重前缀，说明 media_relative_path 拼接错误；不得发布，先修 server.py 再重启。
+  C) 改了 docker-compose.yml、Dockerfile 或新增/删除 volume
+     · 数据文件若在已有 volume（如 cd.db 位于 data\）中，普通重启即可让曲库和入口出现；
+     · 但新增的 volume 不会随普通重启可靠挂入容器。2026-09-29 实测：普通重启后 CD
+       曲库可见，但 /media/cd/... 返回 404，说明 WAV 目录没有挂载；
+     · 新增或修改 volume 后，标准做法是执行“重新部署 / 重建并启动”，而不是只做普通重启。
+  D) 改了 app\player.html 或 app\sw.js
+     · 静态文件会从映射目录读取；仍需刷新浏览器；
+     · 改页面缓存策略或 PWA 外壳时必须同步升级 sw.js 中的 CACHE 版本。
 
 
 【五·补、卡片"长相"规范（每次写卡片必须遵守）】
@@ -124,15 +206,22 @@
   · progress.py          看下载进度（多少首已下、还剩哪些）
   · start_server.py / stop_server.py   播放器服务启停（桌面 bat 调用）
   · queue_after.py       排队：等某批次下完自动接着下
-  · auto_lyrics2.py      批量补歌词卡（网易云 → UtaTen → 萌娘兜底；快速源优先）
+  · verify_furigana_official.py  用 UtaTen 官方 ruby 逐行核对；只比较/采用官方读音，不生成读音
+  · audit_furigana.py    结构审计：缺注音、词面找不到、坏 pair、行内括号注音
+  · repair_three_collections.py  修复 B站合集原始标题：已有歌曲归并版本、新歌建规范条目
+  · fetch_bilibili_space_cdp.py  通过 Edge CDP 抓 B站空间投稿全量；不读取用户 cookies
+  · add_chico_space.py           导入 CHiCO 空间歌曲、排除非歌曲、查重并建立歌单
+  · fix_side_reading_context.py  逐行区分「側」=そば / 向こう側=がわ 的上下文读音
+  · split_furigana_surfaces.py   把带送假名的词面拆成纯汉字词面，不生成新读音
+  · auto_lyrics2.py      历史工具：可抓歌词文本；其自动假名结果禁止写入正式库
   · fix_furigana.py      从 UtaTen/萌娘替换缺注音，逐首保存进度
-  · fill_remaining_furigana.py  外站没有时用 pykakasi 兜底补齐汉字注音
+  · fill_remaining_furigana.py  已停用：pykakasi 兜底注音禁止写入正式库
   · repair_furigana_alignment.py 严格校验词面是否出现在当前行，修复错行注音
   · resegment.py         已停用（历史工具；当前 HTML 不输出任何分段）
   · patch_remaining_lyrics.py  对只剩占位页、且不在 lyric_data.py 的歌曲补建条目
   · fill_missing_translations.py 清理制作人/标题等元数据行，补齐剩余中文翻译
   · fill_translation_gaps.py  清理制作信息并用 MyMemory 批量补齐遗漏中文
-  · force_fill_furigana.py  对日文歌最后兜底补齐/修正注音
+  · force_fill_furigana.py  已停用：自动读音只能用于发现疑点，不能覆盖正式注音
   · bulk_add_collection.py  批量导入 B站合集：按歌名查重、内部重复做多版本、生成下载清单
   · zh_fetch.py          华语歌：QQ音乐抓歌词 → cpop.db
   · zh_build.py          华语歌：生成歌词卡
@@ -141,17 +230,37 @@
 
 
 ◆ 补齐 / 复核歌词卡（页面出现“歌词整理中”时）
-  1) python F:\life\songs\tools\auto_lyrics2.py --limit 100
-  2) python F:\life\songs\tools\fix_furigana.py
-  3) python F:\life\songs\tools\fill_remaining_furigana.py
-  4) python F:\life\songs\tools\repair_furigana_alignment.py
-  5) cd F:\life\songs\日语歌\_tools
-     python lyric_build.py
-  验收必须同时满足：
-    · data_songs = html_cards；补词阶段允许 placeholder_pages > 0，全部补完后必须为 0；
-    · 构建日志中 [无注音汉字] = 0，NOT FOUND = 0；
-    · 所有非纯音乐歌词行都有中文翻译；
-    · 所有 lyric HTML 中不得出现 part-label 或 stanza。
+  1) 先抓可靠歌词原文与官方 ruby；没有官方源时，由 Codex 结合完整句意和歌曲语境逐条人工注音；
+  2) python F:\life\songs\tools\verify_furigana_official.py   # 只采用逐行完全匹配的 UtaTen 官方 ruby
+  3) python F:\life\songs\tools\audit_furigana.py              # 查看结构异常清单
+  4) python F:\life\songs\tools\fix_side_reading_context.py --apply
+  5) python F:\life\songs\tools\split_furigana_surfaces.py --apply
+  6) F:\life\songs\tools\venv\Scripts\python.exe F:\life\songs\日语歌\_tools\lyric_build.py
+  · 禁止把 pykakasi、UniDic、Sudachi、auto_lyrics2、fill_remaining_furigana、
+    force_fill_furigana 的自动读音直接写进正式库；这些工具至多用于找疑点。
+  · 「側」必须按上下文区分：`向こう側 / 内側 / 外側 / 優れた側` 等读 がわ；
+    `側にいる / 側で / お側に / 海の側` 等一般读 そば。每次批量修订后运行上面的
+    fix_side_reading_context.py 复核。
+  · 注音词面原则上是纯汉字连续段；`真ん中=まんなか` 这类应拆成 `真=ま`、`中=なか`。
+    只有《自由の翼》等明确的外语别名读法可以保留跨越假名的整词 ruby。
+  · 「君」必须区分：代词/直接称呼读 きみ；人名后的敬称（A君/B君）读 くん。
+  · 验收必须同时满足：结构审计中非占位歌词不得有 missing_kanji / not_found_notes；
+    坏 pair 为 0；行内括号注音为 0；所有非纯音乐歌词行有中文翻译；
+    HTML 中不出现 part-label / stanza；构建日志无致命错误。
+
+  本次已完成的 B站空间（CHiCO-CwHW，2026-09-18）：
+    · 空间 3546669182356408 共 46 条投稿；排除专访、BML 问候、账号开通 3 条非歌曲；
+    · 43 条歌曲链接，42 个歌曲页；《鬼ノ森》保留普通 MV + Lyric MV 两个版本；
+    · 39 首新建，4 条已有歌曲替换为官方原版；MP4+MP3 共 86 个媒体文件全部完成；
+    · 已建立歌单「CHiCO with HoneyWorks」；清单：data\chico_space_items.json，
+      导入报告：data\chico_space_import.json。
+  本次已完成的 B站合集（2026-09-18）：
+    · 幾田りら BV155411s7wy：30 条，MP4+MP3 全部完成；
+    · Uru BV1qEwjzwEvM：78 条，p1-p32 为 MP4+MP3，p33-p78 按要求仅 MP3；
+    · Aimer BV17W41137Ge：17 条，MP4+MP3 全部完成；
+    · 其中 109 条归并到已有歌曲，16 条新建规范歌曲条目；原始 B站标题条目不作为正式卡。
+    · CHiCO 空间 3546669182356408 抓取时被 B站返回 412；需要完整 cookies（必须含 SESSDATA）后重试，
+      不能用搜索猜测并冒充“空间全量”。
   B站合集批量流程（已完成 season 4392802）：
     · 必须先从每集 B站说明中解析“歌曲/歌手/网易云歌曲ID”，再按歌曲ID取歌词；
     · 严禁只按歌名搜索，否则英文标题的日文歌会匹配到错误歌曲；
@@ -175,6 +284,26 @@
   歌手空间原版（ヒバナ-HIBANA-）：
     · 空间 43 个视频，按歌名归并为 35 首；9 首旧版本已替换为官方原版；
     · 已创建歌单“ヒバナ-HIBANA-”，全部下载 MP4+MP3；无可靠歌词源的保持“暂无歌词”。
+  YouTube SABR-only 处理流程（2026-09-24 实测）：
+    · 先用 `yt-dlp -F URL` 判断。如果只有 sb0/sb1/sb2/sb3（storyboard），且日志提示
+      `YouTube is forcing SABR streaming for this client`，则属于 SABR-only，不是 Cookie、PO Token 或 ffmpeg 问题。
+    · 依次测试客户端：android、tv、tv_embedded、web_safari、web_creator、visionos；
+      仅当其中任一客户端能列出 137/140 等真实音视频格式时，才继续用该客户端下载。
+    · 若所有客户端仍只有 storyboard，或出现 `The page needs to be reloaded` / bot 验证，
+      不要继续盲试 Cookie/PO Token，直接进入“B站严格匹配回退”。
+    · B站回退必须使用 bili_wbi.py 的 WBI 搜索，要求完整歌名匹配且标题/作者明确出现歌手；
+      严禁用“只匹配前几个字”或低分结果冒充。
+    · 用户提供 B站链接时优先采用。若视频属于 ugc_season，先调用
+      `https://api.bilibili.com/x/web-interface/view?bvid=<BV>` 读取 season 全部 episodes，
+      再逐首按歌名和歌手查重；该方式成功补齐过『ユイカ』原唱清单。
+    · 回退链接加入数据库后，统一用 `download.py fetch --tag <批次标签>` 下载 MP4 + MP3，
+      并按规范补歌词、翻译和注音。
+    · `yt-dlp-ytse` 属于实验性 SABR 补充方案：部分视频或特定 yt-dlp 版本曾报告可以成功，
+      但在本机 2026-09-24 的 stable/nightly 环境中因缺少 `STREAMING_DATA_INITIAL_PO_TOKEN`、
+      `short_client_name` 等符号无法加载，当前日志没有它成功产出文件的记录。
+      因此不得写成主流程；若某个版本组合成功，必须同时记录 yt-dlp 版本、ytse 版本、
+      视频 ID、实际输出格式和文件，验证后才可用于该视频。
+
   纯音乐分类：
     · 目录：F:\life\songs\纯音乐，数据库：data\instrumental.db；
     · 合集 BV1qB4y1W7HS 共 99 个分P；纯音乐不再生成 HTML 歌词卡，只保留链接/媒体；
@@ -198,30 +327,44 @@
   · 生成每首歌 html + index.html；
   · 用 说明_template.txt 生成 说明.txt。
 
-(4) 数据库（data\songs.db / data\cpop.db）
+(4) 数据库（data\songs.db / data\cpop.db / data\instrumental.db / data\cd.db）
   · songs 表：歌名/歌手/专辑；links 表：链接（主键=页面文件名，唯一约束 (song_file,url)）；
   · media 表：下载结果（kind、path、size、duration、video_id、title、来源 url）；
   · 构建时把 links 写进 HTML 的 window.__linksInit → 链接随网页同步到所有设备。
 
 (5) 播放器服务端（app\server.py，Python 标准库，零依赖）
-  · GET /api/songs?lang=jp|zh ；GET /media/<相对路径>（支持 Range，可拖进度条）；
+  · GET /api/songs?lang=jp|zh|inst|cd；GET /media/<相对路径>（支持 Range，可拖进度条）；
+  · CD 使用 /media/cd/<相对路径> 映射，只读挂载 CD\；WAV 同样支持拖动进度条。
   · GET /lyrics/<lang>/<页面名>（iframe 联动）；POST /api/link（绑定当前页加链接）。
 
 (6) 下载（yt-dlp + ffmpeg）
+  · 空间投稿页使用“真实 Edge 页面 + CDP DOM 抓取”而非直接请求 WBI API；直接 API 会遇到 -352/412。
+    工具会把不同分页的视频标题、BV 号和页面原始标题落盘，后续导入器再做过滤和查重。
   · 优先 H.264(avc1)+AAC（兼容性好）；先下 mp4，再抽 320k mp3；
   · 绿色版工具在 tools\bin、tools\venv，不动系统。
 
 【八、常见问题】
   · uta-net 403：被限流，等恢复或改用 UtaTen/萌娘；恢复后用于交叉核对。
   · B站搜索 412：需要 cookies；脚本自动读 tools\cookies.txt 或 F:\life\songs\cookies.txt。
+  · B站空间/合集列表 412（如 space.bilibili.com 上传页）：优先使用不读取用户 cookies 的 CDP 页面方法：
+      1) 启动带 --remote-debugging-port=9223、--remote-allow-origins=* 和正常浏览器 UA 的 Edge；
+      2) 打开 space.bilibili.com/<mid>/upload/video；
+      3) 等待页面出现“TA的视频”卡片；
+      4) 运行 tools\fetch_bilibili_space_cdp.py --mid <mid> --out data\<name>.json --port 9223。
+    若页面仍要求验证，再才需要含 SESSDATA 的 cookies.txt；不要把用户 cookies 写入仓库或日志。
   · cookies 不生效：多数插件不含 HttpOnly 的 SESSDATA；用「Get cookies.txt LOCALLY」
     重新导出，或完全退出 Edge 后用 --cookies-from-browser edge；bili_check.py 可体检。
   · 控制台乱码：脚本统一 UTF-8；bat 用 UTF-8(无BOM) + chcp 65001。
   · 播放器连不上：重启用桌面「启动听歌.bat」。
+  · NAS 已上传 CD/WAV 但播放器仍没有 CD原声：先看 /api/songs?lang=cd 是否返回曲库；
+    如果曲库有 14 首但 /media/cd/... 为 404，说明 CD volume 未挂入，必须重新部署/重建容器。
+  · 能选歌、能收藏，但点播放没反应：先查 API 媒体 URL 是否出现 /media/media/... 双前缀；
+    四个分类的媒体 Range 请求都应为 HTTP 206。此问题只需修正 media_relative_path 并重启 server.py。
 
 【九、当前收录】
-  · 日语歌：1924 首（完整列表见文末）
+  · 日语歌：2143 首（完整列表见文末）
   · 华语歌：35 首（周杰伦 25 + 赵雷 10），数据库 data\cpop.db，卡片在 华语歌\
+  · CD原声：14 首 WAV（ヨルシカ《だから僕は音楽を辞めた》），数据库 data\cd.db，目录 CD\
 
 【十、版权说明】
   歌词原文版权归原作者所有；中文翻译为本工具（AI）意译，仅供个人学习日语使用，
