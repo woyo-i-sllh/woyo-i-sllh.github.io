@@ -139,7 +139,8 @@
      · 新建歌曲不得以“歌词整理中”直接发布；只有用户明确要求暂缓歌词时才允许占位。
 
   D) 下载与发布
-     · 给整批链接使用统一 note，如 `live:season:<id>`：
+     · 人工选定/用户提供的批次，note 统一写成 `user:<批次标签>`（例如 `user:batch:aimyon_master:BV1qfRxBgEM1`），播放器会优先人工版本；`download.py --tag <批次标签>` 仍可按 note 子串匹配。
+     · 自动筛选批次可使用 `live:season:<id>` 等其他标签：
        python F:\life\songs\tools\download.py fetch --tag live:season:<id>
      · 校验 MP4/MP3 数量、大小、时长和重复项；
      · 最后运行 sync_jpop.ps1，将歌词卡、链接和新歌一起发布。
@@ -372,3 +373,4 @@
 ------------------------------------------------------------
 （本说明文件由 _tools\lyric_build.py 从 _tools\说明_template.txt 自动生成）
 ------------------------------------------------------------
+
