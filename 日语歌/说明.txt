@@ -157,6 +157,13 @@
        F:\life\songs\CD\だから僕は音楽を辞めた\01 - 8-31.wav
        飞牛对应目录：N:\CD\だから僕は音楽を辞めた\01 - 8-31.wav
      推荐文件名格式：两位以上音轨号 + " - " + 日文曲名；文件内部无标签也可正确建档。
+     自动抓轨（实体 Audio CD）：
+       · 光驱盘符可用 Get-CimInstance Win32_CDROMDrive 检查；H: 为常见盘符。
+       · 工具：tools\rip_audio_cd.py，读取 libdiscid 的 TOC/ISRC，再调用系统 ffmpeg 的 libcdio 输入抓成 PCM WAV。
+       · 例：python F:\life\songs\tools\rip_audio_cd.py --drive H: --album "AIMYON BEST ALBUM - 唇を追え！ -" --disc 1 --tracklist F:\life\songs\data\cd_rip_AIMYON_BEST_DISC1.json
+       · MusicBrainz ISRC 查询用于识别专辑和曲名；ISRC 重复或光驱偶发返回错误时必须用人工核对后的 tracklist JSON，不能盲信。
+       · USB 光驱读到碟尾可能重试或迟迟不结束；前 N-1 轨可保留，末轨单独用 -ss/-t 抓取并比较两次 SHA256，稳定后将 RIFF/data size 修正为合法偶数 PCM 边界，再用 ffmpeg 解码验收。
+       · 抓轨后必须运行 build_cd_db.py，确认 WAV 时长和曲序，再同步 N:\CD 与 N:\data\cd.db。
   2) 在 data\cd_album_meta.json 登记专辑名与歌手；目录名会自动忽略首尾及全角空格：
        "だから僕は音楽を辞めた": {"artist": "ヨルシカ", "artist_cn": ""}
      未登记的专辑会把专辑目录名临时当作歌手，随后应补登记。
@@ -365,7 +372,7 @@
 【九、当前收录】
   · 日语歌：2143 首（完整列表见文末）
   · 华语歌：35 首（周杰伦 25 + 赵雷 10），数据库 data\cpop.db，卡片在 华语歌\
-  · CD原声：14 首 WAV（ヨルシカ《だから僕は音楽を辞めた》），数据库 data\cd.db，目录 CD\
+  · CD原声：40 首 WAV。ヨルシカ 28 首（《だから僕は音楽を辞めた》《エルマ》），あいみょん 12 首（《AIMYON BEST ALBUM - 唇を追え！ -》Disc 1），数据库 data\cd.db，目录 CD\
 
 【十、版权说明】
   歌词原文版权归原作者所有；中文翻译为本工具（AI）意译，仅供个人学习日语使用，
