@@ -164,6 +164,9 @@
        · MusicBrainz ISRC 查询用于识别专辑和曲名；ISRC 重复或光驱偶发返回错误时必须用人工核对后的 tracklist JSON，不能盲信。
        · USB 光驱读到碟尾可能重试或迟迟不结束；前 N-1 轨可保留，末轨单独用 -ss/-t 抓取并比较两次 SHA256，稳定后将 RIFF/data size 修正为合法偶数 PCM 边界，再用 ffmpeg 解码验收。
        · 抓轨后必须运行 build_cd_db.py，确认 WAV 时长和曲序，再同步 N:\CD 与 N:\data\cd.db。
+       · 当前 NAS 若因旧容器未重建而让 /media/cd/... 返回 404，可运行 tools\publish_cd_to_media.py：
+         把 CD\ 镜像到 media\_cd\（本机优先硬链接，不额外占空间），并把 cd.db 的 path 改到 media 卷；
+         这样无需重建容器即可播放 WAV，CD\ 仍保留为母版。正式重建并挂载 CD volume 后，重新运行 build_cd_db.py 即可切回 CD\。
   2) 在 data\cd_album_meta.json 登记专辑名与歌手；目录名会自动忽略首尾及全角空格：
        "だから僕は音楽を辞めた": {"artist": "ヨルシカ", "artist_cn": ""}
      未登记的专辑会把专辑目录名临时当作歌手，随后应补登记。
