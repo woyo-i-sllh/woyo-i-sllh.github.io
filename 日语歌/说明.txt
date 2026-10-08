@@ -196,6 +196,20 @@
      · 改页面缓存策略或 PWA 外壳时必须同步升级 sw.js 中的 CACHE 版本。
 
 
+◆ LRCLIB 同步歌词（LRC 格式）
+  1) 数据源：https://lrclib.net/ ，优先使用带同步时间轴的 syncedLyrics；plainLyrics 只用于覆盖率统计。
+  2) 覆盖率扫描：python F:\life\songs\tools\lrclib_coverage.py
+     · 结果写入 data\lrclib_coverage_report.json 和 data\lrclib_cache.json；
+     · 默认按曲名+歌手逐首查询，严格标题/歌手匹配，支持断点续跑。
+     · 2026-10-08 当前库结果：2143 首中匹配 1277 首（59.59%），其中同步歌词 1104 首，纯文本 1256 首。
+  3) 导入 LRC：python F:\life\songs\tools\import_lrclib.py --workers 8
+     · 只导入 score>=90 的同步歌词；文件放 data\lrc\<歌词卡文件名>.lrc；
+     · 索引放 data\lrc_manifest.json；已导入 1104 首，其中 1066 首为标题+歌手精确匹配，38 首为带版本/副标题匹配；
+     · 原始 LRCLIB 歌词保留时间轴，附加 [ar:]、[ti:]、[al:]、[length:]、[lrclib_id:] 元数据。
+  4) 播放器支持：app\server.py 提供 GET /api/lrc?file=<歌词卡.html>，返回对应 .lrc 文本；
+     player.html 在歌曲有 LRC 时显示「🎤 LRC 同步」按钮，播放时按时间轴高亮当前行；无 LRC 时保持原 HTML 歌词卡。
+  5) 版权与来源：LRC 仅用于个人听歌和日语学习，来源在 LRC 元数据和 manifest 中保留 lrclib_id；不得对外商业分发。
+
 【五·补、卡片"长相"规范（每次写卡片必须遵守）】
   ◆ 字体（可爱体）
      · 卡片界面文字统一用 **ZCOOL KuaiLe（站酷快乐体）**，兜底 幼圆/YouYuan；
