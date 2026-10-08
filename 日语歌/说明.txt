@@ -169,6 +169,9 @@
          - 输出 F:\life\songs\CD\video\compatible_mp4（H.264 静态封面 + AAC 320k，兼容性好但音频有损）；
          - 曲目封面、视频清单见 CD\video\covers 和 CD\video\video_manifest.json。当前 CD 共 71 首，已全部生成 MOV+MP4。
          - CD 曲目的 LRCLIB 匹配不是 100%：71 首中 35 首有匹配、22 首有同步 LRC、36 首无匹配；视频不依赖 LRC，LRC 不烧录。
+         - 字幕版：python F:\life\songs\tools\add_cd_video_subtitles.py --workers 4
+           为有同步 LRC 的 CD 曲目生成 CD\video\with_subtitles（烧录字幕）和 CD\video\subtitles（独立 SRT）；
+           当前 22 首有字幕版，其余 49 首没有可靠时间轴，只保留干净视频。
        · 当前 NAS 若因旧容器未重建而让 /media/cd/... 返回 404，可运行 tools\publish_cd_to_media.py：
          把 CD\ 镜像到 media\_cd\（本机优先硬链接，不额外占空间），并把 cd.db 的 path 改到 media 卷；
          这样无需重建容器即可播放 WAV，CD\ 仍保留为母版。正式重建并挂载 CD volume 后，重新运行 build_cd_db.py 即可切回 CD\。
